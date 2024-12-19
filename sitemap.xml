@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://umr-marbec.github.io/den_pages/index.html</loc>
-    <lastmod>2024-12-19T12:02:47.133Z</lastmod>
+    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
+  </url>
+  <url>
+    <loc>https://umr-marbec.github.io/den_pages/pages_fr/introduction.html</loc>
+    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
+  </url>
+  <url>
+    <loc>https://umr-marbec.github.io/den_pages/pages_fr/apercu.html</loc>
+    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
   </url>
   <url>
     <loc>https://umr-marbec.github.io/den_pages/about.html</loc>
-    <lastmod>2024-12-19T12:02:47.133Z</lastmod>
+    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
   </url>
 </urlset>

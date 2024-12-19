@@ -6,9 +6,27 @@
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Home",
+      "apercu",
+      "Système de contrôle de version "
+    ]
+  },
+  {
+    "objectID": "pages_fr/introduction.html",
+    "href": "pages_fr/introduction.html",
+    "title": "introduction",
+    "section": "",
+    "text": "Introduction aux sections\n\n\n\n Back to top",
+    "crumbs": [
+      "apercu",
       "Introduction"
     ]
+  },
+  {
+    "objectID": "pages_fr/apercu.html",
+    "href": "pages_fr/apercu.html",
+    "title": "apercu",
+    "section": "",
+    "text": "Plan d’ensemble du site\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html",
