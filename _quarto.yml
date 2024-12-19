@@ -9,6 +9,11 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   page-footer: "Copyright UMR MARBEC (IRD, Ifremer, Montpellier university, CNRS)" 
+  search:
+    location: sidebar
+    type: textbox
+    copy-button: true
+    show-item-context: tree
 
   navbar:
     left:
@@ -17,18 +22,17 @@ website:
       - about.qmd
     tools:
       - icon: github
-      menu:
-        - text: Source Code
-        href: https://github.com/umr-marbec/den_pages
-        - text: Report a Bug
-        href: https://github.com/umr-marbec/den_pages/issues
+        menu:
+          - text: Source Code
+            href: https://github.com/umr-marbec/den_pages
+          - text: Report a Bug
+            href: https://github.com/umr-marbec/den_pages/issues
       - icon: box-arrow-up-right
-      text: DEN global website
-      href: https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/
+        text: DEN global website
+        href: https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/
 
   sidebar:
     style: "docked"
-    search: false
     contents:
       - text: "Introduction"
         href: index.qmd
@@ -45,7 +49,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: pulse
     css: styles.css
     toc: true
 
