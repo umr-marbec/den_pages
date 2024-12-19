@@ -5,45 +5,43 @@ execute:
   freeze: auto
 
 website:
-  title: "DEN support website"
+  title: "Site web de soutien du Dispositif d’Ecologie Numérique (DEN)"
   page-navigation: true
   back-to-top-navigation: true
   page-footer: "Copyright UMR MARBEC (IRD, Ifremer, Montpellier university, CNRS)" 
   search:
-    location: sidebar
+    location: navbar
     type: textbox
     copy-button: true
     show-item-context: tree
 
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "apercu"
+        href: pages_fr/apercu.qmd
+      - text: "Aide"
+        menu:
+          - text: "Signaler un bug"
+            href: https://github.com/umr-marbec/den_pages/issues
+          - text: "Poser une question"
+            href: https://github.com/umr-marbec/den_pages/discussions
     tools:
       - icon: github
-        menu:
-          - text: Source Code
-            href: https://github.com/umr-marbec/den_pages
-          - text: Report a Bug
-            href: https://github.com/umr-marbec/den_pages/issues
+        text: "Code source"
+        href: https://github.com/umr-marbec/den_pages
       - icon: box-arrow-up-right
-        text: DEN global website
+        text: "Site global du DEN"
         href: https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/
 
   sidebar:
     style: "docked"
     contents:
       - text: "Introduction"
-        href: index.qmd
-      - section: "Basics"
+        href: pages_fr/introduction.qmd
+      - section: "Système de contrôle de version "
         href: index.qmd
         contents:
           - index.qmd
-          - index.qmd
-          - index.qmd
-      - section: "Layout"
-        contents:
           - index.qmd
           - index.qmd
 
