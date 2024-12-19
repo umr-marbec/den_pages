@@ -5,12 +5,43 @@ execute:
   freeze: auto
 
 website:
-  title: "den_pages"
+  title: "DEN support website"
+  page-navigation: true
+  back-to-top-navigation: true
+  page-footer: "Copyright UMR MARBEC (IRD, Ifremer, Montpellier university, CNRS)" 
+
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+    tools:
+      - icon: github
+      menu:
+        - text: Source Code
+        href: https://github.com/umr-marbec/den_pages
+        - text: Report a Bug
+        href: https://github.com/umr-marbec/den_pages/issues
+      - icon: box-arrow-up-right
+      text: DEN global website
+      href: https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/
+
+  sidebar:
+    style: "docked"
+    search: false
+    contents:
+      - text: "Introduction"
+        href: index.qmd
+      - section: "Basics"
+        href: index.qmd
+        contents:
+          - index.qmd
+          - index.qmd
+          - index.qmd
+      - section: "Layout"
+        contents:
+          - index.qmd
+          - index.qmd
 
 format:
   html:
