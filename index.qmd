@@ -1,5 +1,11 @@
 ---
-title: "Première page"
+title: "index"
 ---
 
+::: {.content-visible when-profile="english"}
+First page
+:::
+
+::: {.content-visible when-profile="french"}
 Première page
+:::
