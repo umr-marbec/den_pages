@@ -1,73 +1,115 @@
 [
   {
+    "objectID": "en/git/index_git.html",
+    "href": "en/git/index_git.html",
+    "title": "index_git",
+    "section": "",
+    "text": "Introduction to the git section\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "en/package_r/index_package_r.html",
+    "href": "en/package_r/index_package_r.html",
+    "title": "index_package_r",
+    "section": "",
+    "text": "Introduction to the R package section\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "en/introduction.html",
+    "href": "en/introduction.html",
+    "title": "introduction",
+    "section": "",
+    "text": "Introduction to sections\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "fr/git/index_git.html",
+    "href": "fr/git/index_git.html",
+    "title": "index_git",
+    "section": "",
+    "text": "Introduction à la section git\n\n\n\n Back to top",
+    "crumbs": [
+      "Aperçu",
+      "Système de contrôle de version"
+    ]
+  },
+  {
+    "objectID": "fr/package_r/index_package_r.html",
+    "href": "fr/package_r/index_package_r.html",
+    "title": "index_package_r",
+    "section": "",
+    "text": "Introduction à la section package R\n\n\n\n Back to top",
+    "crumbs": [
+      "Aperçu",
+      "Package R"
+    ]
+  },
+  {
+    "objectID": "fr/introduction.html",
+    "href": "fr/introduction.html",
+    "title": "introduction",
+    "section": "",
+    "text": "Introduction aux sections\n\n\n\n Back to top",
+    "crumbs": [
+      "Aperçu",
+      "Introduction"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Première page",
+    "title": "index",
     "section": "",
     "text": "Première page\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages_fr/git/miroir_github_gitlab.html",
-    "href": "pages_fr/git/miroir_github_gitlab.html",
-    "title": "miroir_github_git",
-    "section": "",
-    "text": "Documentation et procédure\n\n\n\n Back to top",
-    "crumbs": [
-      "Apercu",
-      "Système de contrôle de version",
-      "Miroir depuis Github vers un depot git"
-    ]
-  },
-  {
-    "objectID": "pages_fr/package_r/package_sparck.html",
-    "href": "pages_fr/package_r/package_sparck.html",
-    "title": "sparck_documentation",
-    "section": "",
-    "text": "Section concernant le package R sparck : “Support Package for Analysis, Research, Collaboration and Knowledge”\n\n\n\n Back to top",
-    "crumbs": [
-      "Apercu",
-      "Package R",
-      "sparck"
-    ]
-  },
-  {
-    "objectID": "pages_fr/apercu.html",
-    "href": "pages_fr/apercu.html",
+    "objectID": "fr/apercu.html",
+    "href": "fr/apercu.html",
     "title": "apercu",
     "section": "",
     "text": "Plan d’ensemble du site\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages_fr/introduction.html",
-    "href": "pages_fr/introduction.html",
-    "title": "introduction",
+    "objectID": "fr/package_r/package_sparck.html",
+    "href": "fr/package_r/package_sparck.html",
+    "title": "sparck_documentation",
     "section": "",
-    "text": "Introduction aux sections\n\n\n\n Back to top",
+    "text": "Section concernant le package R sparck : “Support Package for Analysis, Research, Collaboration and Knowledge”\n\n\n\n Back to top",
     "crumbs": [
-      "Apercu",
-      "Introduction"
+      "Aperçu",
+      "Package R",
+      "sparck"
     ]
   },
   {
-    "objectID": "pages_fr/package_r/index_package_r.html",
-    "href": "pages_fr/package_r/index_package_r.html",
-    "title": "index_package_r",
+    "objectID": "fr/git/miroir_github_gitlab.html",
+    "href": "fr/git/miroir_github_gitlab.html",
+    "title": "miroir_github_git",
     "section": "",
-    "text": "Introduction à la section package R\n\n\n\n Back to top",
+    "text": "Documentation et procédure\n\n\n\n Back to top",
     "crumbs": [
-      "Apercu",
-      "Package R"
+      "Aperçu",
+      "Système de contrôle de version",
+      "Miroir depuis Github vers un dépôt git"
     ]
   },
   {
-    "objectID": "pages_fr/git/index_git.html",
-    "href": "pages_fr/git/index_git.html",
-    "title": "index_git",
+    "objectID": "en/overview.html",
+    "href": "en/overview.html",
+    "title": "overview",
     "section": "",
-    "text": "Introduction à la section git\n\n\n\n Back to top",
-    "crumbs": [
-      "Apercu",
-      "Système de contrôle de version"
-    ]
+    "text": "Site map\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "en/package_r/package_sparck.html",
+    "href": "en/package_r/package_sparck.html",
+    "title": "sparck_documentation",
+    "section": "",
+    "text": "Section concerning the R sparck package: Support Package for Analysis, Research, Collaboration and Knowledge\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "en/git/miroir_github_gitlab.html",
+    "href": "en/git/miroir_github_gitlab.html",
+    "title": "miroir_github_git",
+    "section": "",
+    "text": "Documentation and process\n\n\n\n Back to top"
   }
 ]
