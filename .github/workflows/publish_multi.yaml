@@ -1,10 +1,10 @@
-name: Deploy Quarto site to GitHub Pages
+name: Deploy multi-language Quarto site to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # ou la branche principale
-
+      - main  
+    
 jobs:
   deploy:
     runs-on: ubuntu-latest
