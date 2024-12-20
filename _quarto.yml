@@ -1,6 +1,16 @@
 project:
   type: website
 
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+
 profile:
   default: french
-  group: [french, english]
+  group: 
+    - [french, english]
