@@ -5,7 +5,7 @@ execute:
   freeze: auto
 
 website:
-  title: "Site web de soutien du Dispositif d’Ecologie Numérique (DEN)"
+  title: "Ressources et supports du Dispositif d’Écologie Numérique (DEN)"
   page-navigation: true
   back-to-top-navigation: true
   page-footer: "Copyright UMR MARBEC (IRD, Ifremer, Montpellier university, CNRS)" 
@@ -17,7 +17,7 @@ website:
 
   navbar:
     left:
-      - text: "apercu"
+      - text: "Apercu"
         href: pages_fr/apercu.qmd
       - text: "Aide"
         menu:
@@ -38,12 +38,16 @@ website:
     contents:
       - text: "Introduction"
         href: pages_fr/introduction.qmd
-      - section: "Système de contrôle de version "
-        href: index.qmd
+      - section: "Système de contrôle de version"
+        href: pages_fr/git/index_git.qmd
         contents:
-          - index.qmd
-          - index.qmd
-          - index.qmd
+          - text: "Miroir depuis Github vers un depot git"
+            href: pages_fr/git/miroir_github_gitlab.qmd
+      - section: "Package R"
+        href: pages_fr/package_r/index_package_r.qmd
+        contents:
+          - text: "sparck"
+            href: pages_fr/package_r/package_sparck.qmd
 
 format:
   html:
