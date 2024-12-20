@@ -2,18 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://umr-marbec.github.io/den_pages/index.html</loc>
-    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
+    <lastmod>2024-12-20T08:54:27.443Z</lastmod>
   </url>
   <url>
-    <loc>https://umr-marbec.github.io/den_pages/pages_fr/introduction.html</loc>
-    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
+    <loc>https://umr-marbec.github.io/den_pages/pages_fr/git/miroir_github_gitlab.html</loc>
+    <lastmod>2024-12-20T08:54:27.444Z</lastmod>
+  </url>
+  <url>
+    <loc>https://umr-marbec.github.io/den_pages/pages_fr/package_r/package_sparck.html</loc>
+    <lastmod>2024-12-20T08:54:27.444Z</lastmod>
   </url>
   <url>
     <loc>https://umr-marbec.github.io/den_pages/pages_fr/apercu.html</loc>
-    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
+    <lastmod>2024-12-20T08:54:27.443Z</lastmod>
   </url>
   <url>
-    <loc>https://umr-marbec.github.io/den_pages/about.html</loc>
-    <lastmod>2024-12-19T16:01:41.616Z</lastmod>
+    <loc>https://umr-marbec.github.io/den_pages/pages_fr/introduction.html</loc>
+    <lastmod>2024-12-20T08:54:27.444Z</lastmod>
+  </url>
+  <url>
+    <loc>https://umr-marbec.github.io/den_pages/pages_fr/package_r/index_package_r.html</loc>
+    <lastmod>2024-12-20T08:54:27.444Z</lastmod>
+  </url>
+  <url>
+    <loc>https://umr-marbec.github.io/den_pages/pages_fr/git/index_git.html</loc>
+    <lastmod>2024-12-20T08:54:27.444Z</lastmod>
   </url>
 </urlset>

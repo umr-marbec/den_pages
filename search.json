@@ -2,23 +2,32 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "den_pages",
+    "title": "Première page",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top",
+    "text": "Première page\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "pages_fr/git/miroir_github_gitlab.html",
+    "href": "pages_fr/git/miroir_github_gitlab.html",
+    "title": "miroir_github_git",
+    "section": "",
+    "text": "Documentation et procédure\n\n\n\n Back to top",
     "crumbs": [
-      "apercu",
-      "Système de contrôle de version "
+      "Apercu",
+      "Système de contrôle de version",
+      "Miroir depuis Github vers un depot git"
     ]
   },
   {
-    "objectID": "pages_fr/introduction.html",
-    "href": "pages_fr/introduction.html",
-    "title": "introduction",
+    "objectID": "pages_fr/package_r/package_sparck.html",
+    "href": "pages_fr/package_r/package_sparck.html",
+    "title": "sparck_documentation",
     "section": "",
-    "text": "Introduction aux sections\n\n\n\n Back to top",
+    "text": "Section concernant le package R sparck : “Support Package for Analysis, Research, Collaboration and Knowledge”\n\n\n\n Back to top",
     "crumbs": [
-      "apercu",
-      "Introduction"
+      "Apercu",
+      "Package R",
+      "sparck"
     ]
   },
   {
@@ -29,10 +38,36 @@
     "text": "Plan d’ensemble du site\n\n\n\n Back to top"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "pages_fr/introduction.html",
+    "href": "pages_fr/introduction.html",
+    "title": "introduction",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "text": "Introduction aux sections\n\n\n\n Back to top",
+    "crumbs": [
+      "Apercu",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "pages_fr/package_r/index_package_r.html",
+    "href": "pages_fr/package_r/index_package_r.html",
+    "title": "index_package_r",
+    "section": "",
+    "text": "Introduction à la section package R\n\n\n\n Back to top",
+    "crumbs": [
+      "Apercu",
+      "Package R"
+    ]
+  },
+  {
+    "objectID": "pages_fr/git/index_git.html",
+    "href": "pages_fr/git/index_git.html",
+    "title": "index_git",
+    "section": "",
+    "text": "Introduction à la section git\n\n\n\n Back to top",
+    "crumbs": [
+      "Apercu",
+      "Système de contrôle de version"
+    ]
   }
 ]
