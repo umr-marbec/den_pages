@@ -12,5 +12,4 @@ format:
 
 profile:
   default: french
-  group: 
-    - [french, english]
+  group: [french, english]

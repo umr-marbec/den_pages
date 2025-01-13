@@ -1,3 +1,6 @@
+project:
+  output-dir: ./docs/
+
 website:
   title: "Ressources et supports du Dispositif d’Écologie Numérique (DEN)"
   page-navigation: true
@@ -22,6 +25,8 @@ website:
     right:
       - text: "Anglais"
         href: ../en
+      - text: "Français"
+        href: ../
     tools:
       - icon: github
         text: "Code source"
@@ -45,3 +50,5 @@ website:
         contents:
           - text: "sparck"
             href: fr/package_r/package_sparck.qmd
+
+lan: fr

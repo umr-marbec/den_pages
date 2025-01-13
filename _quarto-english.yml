@@ -1,3 +1,6 @@
+project:
+  output-dir: ./docs/en
+
 website:
   title: "Digital Ecology Scheme (DEN) Resources and Materials"
   page-navigation: true
@@ -20,8 +23,10 @@ website:
           - text: "Ask a Question"
             href: https://github.com/umr-marbec/den_pages/discussions
     right:
+      - text: "English"
+        href: ../en
       - text: "French"
-        href: ../fr  
+        href: ../
     tools:
       - icon: github
         text: "Source code"
@@ -45,3 +50,5 @@ website:
         contents:
           - text: "sparck"
             href: en/package_r/package_sparck.qmd
+
+lang: en
