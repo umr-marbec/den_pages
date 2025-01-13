@@ -1,5 +1,0 @@
----
-title: "sparck_documentation"
----
-
-Section concerning the R sparck package: Support Package for Analysis, Research, Collaboration and Knowledge

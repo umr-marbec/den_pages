@@ -1,11 +1,11 @@
 ---
-title: "index"
+title: "index_git"
 ---
 
 ::: {.content-visible when-profile="french"}
-Première page
+Introduction à la section git
 :::
 
 ::: {.content-visible when-profile="english"}
-First page
+Introduction to the git section
 :::

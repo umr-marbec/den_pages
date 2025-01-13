@@ -1,5 +1,0 @@
----
-title: "introduction"
----
-
-Introduction aux sections

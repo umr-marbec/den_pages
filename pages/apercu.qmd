@@ -1,11 +1,11 @@
 ---
-title: "index"
+title: "apercu"
 ---
 
 ::: {.content-visible when-profile="french"}
-Première page
+Plan d'ensemble du site
 :::
 
 ::: {.content-visible when-profile="english"}
-First page
+Site map
 :::

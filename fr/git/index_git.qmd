@@ -1,5 +1,0 @@
----
-title: "index_git"
----
-
-Introduction à la section git

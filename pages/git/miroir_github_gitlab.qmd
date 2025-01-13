@@ -1,11 +1,11 @@
 ---
-title: "index"
+title: "miroir_github_git"
 ---
 
 ::: {.content-visible when-profile="french"}
-Première page
+Documentation et procédure
 :::
 
 ::: {.content-visible when-profile="english"}
-First page
+Documentation and process
 :::

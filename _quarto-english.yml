@@ -15,7 +15,7 @@ website:
   navbar:
     left:
       - text: "Overview"
-        href: en/overview.qmd
+        href: pages/apercu.qmd
       - text: "Help"
         menu:
           - text: "Report a Bug"
@@ -39,16 +39,16 @@ website:
     style: "docked"
     contents:
       - text: "Introduction"
-        href: en/introduction.qmd
+        href: pages/introduction.qmd
       - section: "Version Control System"
-        href: en/git/index_git.qmd
+        href: pages/git/index_git.qmd
         contents:
           - text: "Mirroring from Github to a Git Repository"
-            href: en/git/miroir_github_gitlab.qmd
+            href: pages/git/miroir_github_gitlab.qmd
       - section: "R Package"
-        href: en/package_r/index_package_r.qmd
+        href: pages/package_r/index_package_r.qmd
         contents:
           - text: "sparck"
-            href: en/package_r/package_sparck.qmd
+            href: pages/package_r/package_sparck.qmd
 
 lang: en-US

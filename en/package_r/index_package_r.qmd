@@ -1,5 +1,0 @@
----
-title: "index_package_r"
----
-
-Introduction to the R package section

@@ -1,11 +1,11 @@
 ---
-title: "index"
+title: "introduction"
 ---
 
 ::: {.content-visible when-profile="french"}
-Première page
+Introduction aux sections
 :::
 
 ::: {.content-visible when-profile="english"}
-First page
+Introduction to sections
 :::
