@@ -38,3 +38,12 @@ jobs:
           render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish english version
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          render: false
+          path: ./en
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
