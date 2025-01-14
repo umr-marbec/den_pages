@@ -1,6 +1,6 @@
 project:
   title: "Digital Ecology Scheme (DEN) Resources and Materials"
-  output-dir: ./docs/en
+  output-dir: ./_site/en
 
 website:
   page-navigation: true

@@ -1,6 +1,6 @@
 project:
   title: "Ressources et supports du Dispositif d’Écologie Numérique (DEN)"
-  output-dir: ./docs/
+  output-dir: ./_site/
 
 website:
   page-navigation: true
