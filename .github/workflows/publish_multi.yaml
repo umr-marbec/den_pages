@@ -35,6 +35,7 @@ jobs:
         with:
           target-branch: gh-pages
           target-path: ./docs
+          id: french-site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -44,5 +45,6 @@ jobs:
           target-branch: gh-pages
           target-path: ./docs/en
           site-prefix: en
+          id: english-site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
