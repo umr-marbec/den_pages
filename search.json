@@ -4,18 +4,18 @@
     "href": "index.html",
     "title": "index",
     "section": "",
-    "text": "Première page\n\n\n\n Back to top"
+    "text": "First page\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/git/miroir_github_gitlab.html",
     "href": "pages/git/miroir_github_gitlab.html",
     "title": "miroir_github_git",
     "section": "",
-    "text": "Documentation et procédure\n\n\n\n Back to top",
+    "text": "Documentation and process\n\n\n\n Back to top",
     "crumbs": [
-      "Aperçu",
-      "Système de contrôle de version",
-      "Miroir depuis Github vers un dépôt git"
+      "Overview",
+      "Version Control System",
+      "Mirroring from Github to a Git Repository"
     ]
   },
   {
@@ -23,10 +23,10 @@
     "href": "pages/package_r/package_sparck.html",
     "title": "sparck_documentation",
     "section": "",
-    "text": "Section concernant le package R sparck : “Support Package for Analysis, Research, Collaboration and Knowledge”\n\n\n\n Back to top",
+    "text": "Section concerning the R sparck package: Support Package for Analysis, Research, Collaboration and Knowledge\n\n\n\n Back to top",
     "crumbs": [
-      "Aperçu",
-      "Package R",
+      "Overview",
+      "R Package",
       "sparck"
     ]
   },
@@ -35,16 +35,16 @@
     "href": "pages/apercu.html",
     "title": "apercu",
     "section": "",
-    "text": "Plan d’ensemble du site\n\n\n\n Back to top"
+    "text": "Site map\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/introduction.html",
     "href": "pages/introduction.html",
     "title": "introduction",
     "section": "",
-    "text": "Introduction aux sections\n\n\n\n Back to top",
+    "text": "Introduction to sections\n\n\n\n Back to top",
     "crumbs": [
-      "Aperçu",
+      "Overview",
       "Introduction"
     ]
   },
@@ -53,10 +53,10 @@
     "href": "pages/package_r/index_package_r.html",
     "title": "index_package_r",
     "section": "",
-    "text": "Introduction à la section package R\n\n\n\n Back to top",
+    "text": "Introduction to the R package section\n\n\n\n Back to top",
     "crumbs": [
-      "Aperçu",
-      "Package R"
+      "Overview",
+      "R Package"
     ]
   },
   {
@@ -64,10 +64,10 @@
     "href": "pages/git/index_git.html",
     "title": "index_git",
     "section": "",
-    "text": "Introduction à la section git\n\n\n\n Back to top",
+    "text": "Introduction to the git section\n\n\n\n Back to top",
     "crumbs": [
-      "Aperçu",
-      "Système de contrôle de version"
+      "Overview",
+      "Version Control System"
     ]
   }
 ]
