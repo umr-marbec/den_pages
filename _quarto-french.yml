@@ -23,9 +23,9 @@ website:
             href: https://github.com/umr-marbec/den_pages/discussions
     right:
       - text: "Anglais"
-        href: ../en
+        href: en
       - text: "Français"
-        href: ../
+        href: ./
     tools:
       - icon: github
         text: "Code source"
