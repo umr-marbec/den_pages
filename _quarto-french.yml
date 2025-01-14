@@ -24,8 +24,6 @@ website:
     right:
       - text: "Anglais"
         href: en
-      - text: "Français"
-        href: ./
     tools:
       - icon: github
         text: "Code source"

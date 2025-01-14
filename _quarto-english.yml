@@ -22,8 +22,6 @@ website:
           - text: "Ask a Question"
             href: https://github.com/umr-marbec/den_pages/discussions
     right:
-      - text: "English"
-        href: ../en
       - text: "French"
         href: ../
     tools:
