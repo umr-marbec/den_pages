@@ -1,8 +1,8 @@
 project:
+  title: "Digital Ecology Scheme (DEN) Resources and Materials"
   output-dir: ./docs/en
 
 website:
-  title: "Digital Ecology Scheme (DEN) Resources and Materials"
   page-navigation: true
   back-to-top-navigation: true
   page-footer: "Copyright UMR MARBEC (IRD, Ifremer, Montpellier University, CNRS)"
@@ -11,7 +11,6 @@ website:
     type: textbox
     copy-button: true
     show-item-context: tree
-
   navbar:
     left:
       - text: "Overview"
@@ -34,7 +33,6 @@ website:
       - icon: box-arrow-up-right
         text: "DEN Global Website"
         href: https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/
-
   sidebar:
     style: "docked"
     contents:

@@ -16,14 +16,33 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Quarto site (fr)
-        run: quarto render --profile french
-
-      - name: Render Quarto site (en)
-        run: quarto render --profile english
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Render Quarto Project french version
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: french
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/
+          to: html
+
+      - name: Render Quarto Project french version
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: english
+        with:
+          to: html
+
+      - name: Publish French Site
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target-branch: gh-pages
+          target-path: ./docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish English Site
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target-branch: gh-pages
+          target-path: ./docs/en
+          site-prefix: en
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

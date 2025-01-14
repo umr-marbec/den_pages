@@ -1,8 +1,8 @@
 project:
+  title: "Ressources et supports du Dispositif d’Écologie Numérique (DEN)"
   output-dir: ./docs/
 
 website:
-  title: "Ressources et supports du Dispositif d’Écologie Numérique (DEN)"
   page-navigation: true
   back-to-top-navigation: true
   page-footer: "Copyright UMR MARBEC (IRD, Ifremer, Montpellier university, CNRS)"
@@ -11,7 +11,6 @@ website:
     type: textbox
     copy-button: true
     show-item-context: tree
-
   navbar:
     left:
       - text: "Aperçu"
@@ -34,7 +33,6 @@ website:
       - icon: box-arrow-up-right
         text: "Site global du DEN"
         href: https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/
-
   sidebar:
     style: "docked"
     contents:
