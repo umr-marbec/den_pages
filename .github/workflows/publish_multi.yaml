@@ -4,18 +4,30 @@ on:
   push:
     branches:
       - main  
-    
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Étape 1 : Vérifier le dépôt
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Étape 2 : Configurer Quarto
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # Étape 3 : Nettoyer la branche de publication
+      - name: Clean gh-pages branch
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages || git checkout --orphan gh-pages
+          git rm -rf . || true
+          git commit --allow-empty -m "Clean branch"
+          git push origin gh-pages
+
+      # Étape 4 : Générer le site pour la version française
       - name: Render Quarto Project french version
         uses: quarto-dev/quarto-actions/render@v2
         env:
@@ -23,28 +35,29 @@ jobs:
         with:
           to: html
 
-      - name: Render Quarto Project french version
+      # Étape 5 : Publier le site en français (à la racine de gh-pages)
+      - name: Publish French Site
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target-branch: gh-pages
+          target-path: ./docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Étape 6 : Générer le site pour la version anglaise
+      - name: Render Quarto Project english version
         uses: quarto-dev/quarto-actions/render@v2
         env:
           QUARTO_PROFILE: english
         with:
           to: html
 
-      - name: Publish French Site
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target-branch: gh-pages
-          target-path: ./docs
-          id: french-site
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+      # Étape 7 : Publier le site en anglais (dans un sous-dossier "en")
       - name: Publish English Site
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target-branch: gh-pages
           target-path: ./docs/en
           site-prefix: en
-          id: english-site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
