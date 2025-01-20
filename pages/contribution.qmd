@@ -1,0 +1,13 @@
+---
+format:
+  html:
+    css: styles.css
+---
+
+::: {.content-visible when-profile="french"}
+Introduction aux sections
+:::
+
+::: {.content-visible when-profile="english"}
+Introduction to sections
+:::

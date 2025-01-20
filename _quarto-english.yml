@@ -34,8 +34,8 @@ website:
   sidebar:
     style: "docked"
     contents:
-      - text: "Introduction"
-        href: pages/introduction.qmd
+      - text: "I want to contribute!"
+        href: pages/contribution.qmd
       - section: "Version Control System"
         href: pages/git/index_git.qmd
         contents:
