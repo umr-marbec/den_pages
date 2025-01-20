@@ -1,0 +1,33 @@
+---
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+# Package R sparck 
+
+<a href="https://umr-marbec.github.io/sparck/" rel="nofollow" target="_blank">
+<img src="https://github.com/umr-marbec/sparck/raw/main/man/figures/logo.png" align="right" height="130" alt="sparck website" style="max-width: 100%;">
+</a>
+
+## "Support Package for Analysis, Research, Collaboration and Knowledge"
+
+Le package [sparck](https://github.com/umr-marbec/sparck){.external target="_blank"} est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d'appuyer le travail des personnes de l'UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l'analyse de données ou encore la configuration de l'environnement de travail. Loin de l'idée d'aborder de manière exhaustive l'ensemble des thématiques ou sujets, sa vocation est vraiment d'apporter un standard en termes de développement afin d'améliorer la transversalité des actions et améliorer les liens associés.
+
+En lien notamment avec la section ["Je veux contribuer !"](../contribution.qmd){.external target="_blank"}, n'hesitez pas à jeter un coup d'oeil à la [documentation](https://umr-marbec.github.io/sparck/){.external target="_blank"} générale mais aussi la section [issues](https://github.com/umr-marbec/sparck/issues){.external target="_blank"} du dépôt GitHub.
+:::
+
+::: {.content-visible when-profile="english"}
+# R package sparck 
+
+<a href="https://umr-marbec.github.io/sparck/" rel="nofollow" target="_blank">
+<img src="https://github.com/umr-marbec/sparck/raw/main/man/figures/logo.png" align="right" height="130" alt="sparck website" style="max-width: 100%;">
+</a>
+
+## Support Package for Analysis, Research, Collaboration and Knowledge
+
+The [sparck](https://github.com/umr-marbec/sparck){.external target="_blank"} package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.
+
+In relation with the [“I want to contribute!”](../contribution.qmd){.external target="_blank"} section, take a look at the general [documentation](https://umr-marbec.github.io/sparck/){.external target=“_blank”}, as well as the [issues](https://github.com/umr-marbec/sparck/issues){.external target=“_blank”} section of the GitHub repository.
+:::

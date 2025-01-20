@@ -1,0 +1,13 @@
+---
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+Vous trouverez dans cette section tous les packages, logiciels ou de manière générale les ressources informatiques developés ou utilisés par les personnels et partenaires associés de l'UMR MARBEC.  
+:::
+
+::: {.content-visible when-profile="english"}
+In this section you'll find all the packages, software and general informatics resources resources developed or used by UMR MARBEC and associated partners.
+:::

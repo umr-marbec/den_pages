@@ -41,10 +41,10 @@ website:
         contents:
           - text: "Mirroring from Github to a Git Repository"
             href: pages/git/miroir_github_gitlab.qmd
-      - section: "R Package"
-        href: pages/package_r/index_package_r.qmd
+      - section: "Packages and software"
+        href: pages/packages_software/index_packages_software.qmd
         contents:
-          - text: "sparck"
-            href: pages/package_r/package_sparck.qmd
+          - text: "R package sparck"
+            href: pages/packages_software/r_package_sparck.qmd
 
 lang: en-US

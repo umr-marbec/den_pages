@@ -1,11 +1,25 @@
 ---
-title: "apercu"
+format:
+  html:
+    css: ../styles.css
 ---
 
 ::: {.content-visible when-profile="french"}
-Plan d'ensemble du site
+Liens utiles : 
+
+* [UMR MARBEC](https://umr-marbec.fr/nous-connaitre/presentation-de-lumr/){.external target="_blank"}
+* ["Issues" du dépôt GitHub](https://github.com/umr-marbec/den_pages/issues){.external target="_blank"}
+* [Forum de discussion du dépôt GitHub](https://github.com/umr-marbec/den_pages/discussions){.external target="_blank"}
+* [ULR du serveur rocket chat de l'UMR](https://tchat.ird.fr/home){.external target=“_blank”}
+* [Contact reférent(e)s du DEN](mailto:marbec-den-admin@listes.ird.fr)
 :::
 
 ::: {.content-visible when-profile="english"}
-Site map
+Useful links:
+
+* [UMR MARBEC](https://umr-marbec.fr/nous-connaitre/presentation-de-lumr/){.external target="_blank"}
+* [GitHub repository issues](https://github.com/umr-marbec/den_pages/issues){.external target="_blank"}
+* [GitHub repository discussion forum](https://github.com/umr-marbec/den_pages/discussions){.external target=“_blank”}
+* [UMR rocket chat server URL](https://tchat.ird.fr/home){.external target=“_blank”}
+* [DEN admin ressource contact](mailto:marbec-den-admin@listes.ird.fr)
 :::
