@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "index",
+    "title": "Welcome!",
     "section": "",
-    "text": "First page\n\n\n\n Back to top"
+    "text": "Welcome!\nThe aim of this site is to centralize and provide easy access to informatics resources, procedures and other support for the work of personnel and associates of the UMR MARBEC. This structuring is based in particular on the Dispositif d’Ecologie Numérique, or DEN, which is a transversal entity associated with the UMR. Its missions are to set up, coordinate and share technical resources, and to exchange methodologies and new approaches in support of the digital aspects of scientific research.\nThere’s also an Issues section where you can, for example, report a problem in the site’s source code, or suggest an improvement or new content. These “GitHub Issues” are really to be seen as objects closely linked to a “to-do list” items, and are focused on tasks to be accomplished (for example, throught the creation of a branch dedicated to the subject).\nFor your information, UMR also has a Rocket chat server accessible through the following URL https://tchat.ird.fr/home. It is possible to access the workspace directly from the URL or by installing a heavy client (=software) on your computer and adding the URL in the “add workspace” section.\nFurthermore, to facilitate access and use by many as possible, you’ll find this website and related resources in French (by default) but also in English (use the button on the left of the search bar to switch language).\nFeel free to visit the “I want to contribute!” section if you have resources to contribute to those available, or even more generally if you want to contribute to the provision of common resources.\nIf you have any specific requirements, please contact the DEN representatives at marbec-den-admin@listes.ird.fr.\nFor your information, this site was generated using the Quarto publishing system.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/git/miroir_github_gitlab.html",
@@ -38,15 +38,22 @@
     "text": "Site map\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages/introduction.html",
-    "href": "pages/introduction.html",
-    "title": "introduction",
+    "objectID": "pages/contribution.html",
+    "href": "pages/contribution.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
     "section": "",
     "text": "Introduction to sections\n\n\n\n Back to top",
     "crumbs": [
       "Overview",
-      "Introduction"
+      "I want to contribute!"
     ]
+  },
+  {
+    "objectID": "pages/introduction.html",
+    "href": "pages/introduction.html",
+    "title": "introduction",
+    "section": "",
+    "text": "Introduction to sections\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/package_r/index_package_r.html",

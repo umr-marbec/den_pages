@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "index",
+    "title": "Bienvenu !",
     "section": "",
-    "text": "Première page\n\n\n\n Back to top"
+    "text": "Bienvenu !\nL’objectif de ce site est de centraliser et mettre facilement à disposition des ressources informatiques, procédures et autres supports permettant d’appuyer de manière globale les travaux des personnelles et personnes associées de l’UMR MARBEC. Cette structuration s’appuie notamment sur Dispositif d’Ecologie Numérique, ou DEN, qui est une structure transversale associée à l’UMR. Ces missions sont la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique.\nVous disposez aussi d’une section Issues vous permettant par exemple de faire remonter un problème dans le code source du site ou encore proposer une amélioration ou du contenu. Ces “GitHub Issues” sont vraiment à voir comme des objets s’apparentent davantage à des éléments « à faire » et sont axées sur les tâches à accomplir (par exemple via la création de branche dédié au sujet).\nDe plus, vous trouverez un forum de discussion afin d’échanger sur des sujets ou des problématiques communes. Les discussions sont destinées aux conversations qui doivent être transparentes et accessibles, mais qui n’ont pas besoin d’être suivies sur un projet et qui ne sont pas liées au code, contrairement aux “GitHub Issues”.\nPour information, l’UMR dispose aussi d’un serveur Rocket chat accessible via l’URL suivante https://tchat.ird.fr/home. Il est possible d’accéder à l’espace de travail directement depuis l’URL ou en installant un client lourd (=logiciel) sur votre ordinateur et en ajoutant l’URL dans la section “add workspace”.\nPar ailleurs, afin de faciliter l’accès et l’utilisation par le plus grand nombre, vous trouverez ce site et les ressources associées en français (par défaut) mais aussi en anglais (utilisez le bouton à gauche de barre de recherche pour changer de langue).\nN’hésitez pas visiter aussi la section “Je veux contribuer !” si vous disposez de ressources susceptibles d’alimenter celles disponibles via ce site ou même de manière générale si vous voulez contribuer à la mise a disposition de ressources communes.\nEn cas de besoin spécifique, vous pouvez contacter les représentant(e)s et référent(e)s du DEN à l’adresse suivante : marbec-den-admin@listes.ird.fr\nPour information, ce site a été généré via le système de publication Quarto.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/git/miroir_github_gitlab.html",
@@ -38,15 +38,22 @@
     "text": "Plan d’ensemble du site\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages/introduction.html",
-    "href": "pages/introduction.html",
-    "title": "introduction",
+    "objectID": "pages/contribution.html",
+    "href": "pages/contribution.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
     "section": "",
     "text": "Introduction aux sections\n\n\n\n Back to top",
     "crumbs": [
       "Aperçu",
-      "Introduction"
+      "I want to contribute!"
     ]
+  },
+  {
+    "objectID": "pages/introduction.html",
+    "href": "pages/introduction.html",
+    "title": "introduction",
+    "section": "",
+    "text": "Introduction aux sections\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/package_r/index_package_r.html",
