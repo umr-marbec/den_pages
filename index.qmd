@@ -35,7 +35,7 @@ For your information, UMR also has a [Rocket chat](https://www.rocket.chat/){.ex
 
 Furthermore, to facilitate access and use by many as possible, you'll find this website and related resources in French (by default) but also in English (use the button on the left of the search bar to switch language).
 
-Feel free to visit the [“I want to contribute!”](en/pages/contribution.qmd) section if you have resources to contribute to those available, or even more generally if you want to contribute to the provision of common resources.
+Feel free to visit the [“I want to contribute!”](pages/contribution.qmd) section if you have resources to contribute to those available, or even more generally if you want to contribute to the provision of common resources.
 
 If you have any specific requirements, please contact the DEN representatives at [marbec-den-admin@listes.ird.fr](mailto:marbec-den-admin@listes.ird.fr).
 
