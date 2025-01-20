@@ -19,23 +19,15 @@
     ]
   },
   {
-    "objectID": "pages/package_r/package_sparck.html",
-    "href": "pages/package_r/package_sparck.html",
-    "title": "sparck_documentation",
+    "objectID": "pages/packages_software/index_packages_software.html",
+    "href": "pages/packages_software/index_packages_software.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
     "section": "",
-    "text": "Section concernant le package R sparck : “Support Package for Analysis, Research, Collaboration and Knowledge”\n\n\n\n Back to top",
+    "text": "Vous trouverez dans cette section tous les packages, logiciels ou de manière générale les ressources informatiques developés ou utilisés par les personnels et partenaires associés de l’UMR MARBEC.\n\n\n\n Back to top",
     "crumbs": [
       "Aperçu",
-      "Package R",
-      "sparck"
+      "Packages et logiciels"
     ]
-  },
-  {
-    "objectID": "pages/apercu.html",
-    "href": "pages/apercu.html",
-    "title": "apercu",
-    "section": "",
-    "text": "Plan d’ensemble du site\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/contribution.html",
@@ -49,21 +41,34 @@
     ]
   },
   {
-    "objectID": "pages/introduction.html",
-    "href": "pages/introduction.html",
-    "title": "introduction",
+    "objectID": "pages/apercu.html",
+    "href": "pages/apercu.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
     "section": "",
-    "text": "Introduction aux sections\n\n\n\n Back to top"
+    "text": "Liens utiles :\n\nUMR MARBEC\n“Issues” du dépôt GitHub\nForum de discussion du dépôt GitHub\nULR du serveur rocket chat de l’UMR\nContact reférent(e)s du DEN\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages/package_r/index_package_r.html",
-    "href": "pages/package_r/index_package_r.html",
-    "title": "index_package_r",
+    "objectID": "pages/packages_software/r_package_sparck.html",
+    "href": "pages/packages_software/r_package_sparck.html",
+    "title": "Package R sparck",
     "section": "",
-    "text": "Introduction à la section package R\n\n\n\n Back to top",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
     "crumbs": [
       "Aperçu",
-      "Package R"
+      "Packages et logiciels",
+      "Package R sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_software/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "href": "pages/packages_software/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "title": "Package R sparck",
+    "section": "",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
+    "crumbs": [
+      "Aperçu",
+      "Packages et logiciels",
+      "Package R sparck"
     ]
   },
   {
