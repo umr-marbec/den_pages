@@ -1,11 +1,13 @@
 ---
-title: "miroir_github_git"
+format:
+  html:
+    css: ../../styles.css
 ---
 
 ::: {.content-visible when-profile="french"}
-Documentation et procédure
+La documentation et la procédure est en cours de création.
 :::
 
 ::: {.content-visible when-profile="english"}
-Documentation and process
+Documentation and procedures are currently being created.
 :::
