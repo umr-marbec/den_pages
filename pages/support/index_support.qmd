@@ -1,0 +1,13 @@
+---
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+Cette section est dédiée aux procédures et processus permettant d'apporter un support global aux personnelles de l'UMR. Cela va aussi bien de l'aide à la configuration de certains logiciels (comme les clients lourds de messagerie) ou encore des processus plus généraux comme la mise en place de solution de sauvegarde quotidienne ou encore par exemple des suggestions pour la gestion des mots de passe. 
+:::
+
+::: {.content-visible when-profile="english"}
+This section is dedicated to procedures and processes for providing global support to UMR. These include support in configuring for several software (such as email clients), as well as more general processes such as setting up a daily backup solution or suggestions for password management.
+:::

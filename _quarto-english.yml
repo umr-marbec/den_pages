@@ -13,8 +13,8 @@ website:
     show-item-context: tree
   navbar:
     left:
-      - text: "Overview"
-        href: pages/apercu.qmd
+      - text: "Useful links"
+        href: pages/liens.qmd
       - text: "Help"
         menu:
           - text: "Report a Bug"
@@ -42,9 +42,13 @@ website:
           - text: "Mirroring from Github to a Git Repository"
             href: pages/git/miroir_github_gitlab.qmd
       - section: "Packages and software"
-        href: pages/packages_software/index_packages_software.qmd
+        href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
           - text: "R package sparck"
-            href: pages/packages_software/r_package_sparck.qmd
+            href: pages/packages_logiciels/r_package_sparck.qmd
+      - text: "Training"
+        href: pages/formations/index_formations.qmd
+      - text: "Global support"
+        href: pages/support/index_support.qmd
 
 lang: en-US

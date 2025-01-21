@@ -1,0 +1,17 @@
+---
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+Cette section est dédié à référencer les formations et supports associés mis à disposition de l'UMR et de ses partenaires. En lien avec le caractère spécifique des formations, il est possible que les supports associés ne soient pas disponibles en plusieurs langues. Par ailleurs en suivante ce [lien à définir](./index_formations.qmd){.external target="_blank"} vous trouverez une liste des formations dispensée par l'UMR et surtout les prochaines dates de réalisation. 
+
+Pour information, la plupart des sous-sections suivantes renvoi vers des dépôts Git ou sont stockées sur les ressources des formations. Si vous avez des questions en rapport avec ces dernières, le mieux est d'utiliser les services mis à disposition du dépôt (la section "Issues" par exemple) ou à défaut de contacter directement la ou les personnes-ressources associées.
+:::
+
+::: {.content-visible when-profile="english"}
+This section is dedicated to referencing the training courses and associated materials made available to UMR and its partners. Due to the specific nature of the training programs, the associated materials may not be available in several languages. In addition, by following this [link to be defined](./index_formations.qmd){.external target=“_blank”} you will find a list of the training courses organized by the UMR and, above all, the dates on which they will take place. 
+
+For your information, most of the following subsections link to Git repositories where you can find training resources. If you have any questions relating to these, it's best to use the services provided by the repository (the Issues section, for example) or, alternatively, to contact the associated contact person(s) directly.
+:::

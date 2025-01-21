@@ -1,11 +1,21 @@
 ---
-title: "index_git"
+format:
+  html:
+    css: ../../styles.css
 ---
 
 ::: {.content-visible when-profile="french"}
-Introduction à la section git
+Vous trouverez dans cette section tous les ressources en lien avec l'utilisation des systèmes de controle de version. Au niveau de l'UMR plusieurs forges sont utilisées, à savoir :
+
+* [GitHub MARBEC](https://github.com/umr-marbec){.external target="_blank"}
+* [GitLab IRD](https://forge.ird.fr/){.external target="_blank"}
+* [GitLab Ifremer](https://gitlab.ifremer.fr/){.external target="_blank"}
 :::
 
 ::: {.content-visible when-profile="english"}
-Introduction to the git section
+In this section you will find all the resources related to the use of version control systems. Several forges are used at UMR:
+
+* [GitHub MARBEC](https://github.com/umr-marbec){.external target="_blank"}
+* [GitLab IRD](https://forge.ird.fr/){.external target="_blank"}
+* [GitLab Ifremer](https://gitlab.ifremer.fr/){.external target="_blank"}
 :::

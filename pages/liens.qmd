@@ -5,8 +5,6 @@ format:
 ---
 
 ::: {.content-visible when-profile="french"}
-Liens utiles : 
-
 * [UMR MARBEC](https://umr-marbec.fr/nous-connaitre/presentation-de-lumr/){.external target="_blank"}
 * ["Issues" du dépôt GitHub](https://github.com/umr-marbec/den_pages/issues){.external target="_blank"}
 * [Forum de discussion du dépôt GitHub](https://github.com/umr-marbec/den_pages/discussions){.external target="_blank"}
@@ -15,8 +13,6 @@ Liens utiles :
 :::
 
 ::: {.content-visible when-profile="english"}
-Useful links:
-
 * [UMR MARBEC](https://umr-marbec.fr/nous-connaitre/presentation-de-lumr/){.external target="_blank"}
 * [GitHub repository issues](https://github.com/umr-marbec/den_pages/issues){.external target="_blank"}
 * [GitHub repository discussion forum](https://github.com/umr-marbec/den_pages/discussions){.external target=“_blank”}
