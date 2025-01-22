@@ -1,11 +1,55 @@
 ---
+author: Mathieu Depetris [mathieu.depetris@cnrs.fr](mailto:mathieu.depetris@cnrs.fr)
+date-modified: "`r Sys.Date()`"
 format:
   html:
     css: ../../styles.css
 ---
 
+```{r include=FALSE}
+Sys.Date()
+```
+
 ::: {.content-visible when-profile="french"}
-La documentation et la procédure est en cours de création.
+## Pourquoi utiliser une forge Git ?
+
+Dés lors que l'on commencer à vouloir travailler en équipe sur des bouts de code, voir de manière générale sur des développement informatique, l'utilisation d'un outil de contrôle de version est rapidement un outil incontourable et un allié précieux pour toute personne soucieuse de gérer efficacement son travail. Ici nous n'abordrons pas les caractéristique d'un git, ou système de contrôle de version, mais plutôt une proposition de solution à un question que l'on se pose souvent, à savoir vers quel système, ou forge, se tourner.
+
+Un rapide coup d'oeil sur internet vous montrera qu'il existe plusieurs forges. L'une des plus populaires est [GitHub](https://github.com/){.external target="_blank"} mais il en existe d'autres comme [GitLab](https://gitlab.com/){.external target="_blank"} ou encore [Bitbucket](https://bitbucket.org/){.external target="_blank"}. Il est aussi tout à fait possible de votre institut ou organisme utilise l'un de ces systèmes pour heberger sa propre forge (jeter un coup d'oeil [ici](index_git.qmd){.external target="_blank"}). Chaque sytème présente des avantages et des inconveinients et votre choix doit être guidé par vos besoins. A titre d'exemple vous trouverez un rapide comparatif des principales forges dans le tableau ci-dessous.
+
+| Critères | GitHub | GitLab | Bitbucket | Gitea |
+|---|---|---|---|---|
+| Popularité | Très élevée | Elevée | Moyenne | Faible |
+| CI/CD intégré | GitHub Actions (simple et puissant) | Très robuste et flexible | Intégré mais limité | Dépend de l'intégration manuelle |
+| Open source | Non | Oui | Non | Oui |
+| Hébergement gratuit | Depôt privés gratuits illimités | Depôt privés gratuits illimités | Idem | Nécessite un serveur |
+| Auto-hébergement | Non | Oui | Oui | Oui |
+| Focus équipes privées | Moyen | Fort | Très fort (intégré à Jira) | Adapté |
+
+## Pourquoi se tourner vers GitHub ?
+
+La procédure que vous êtes en train de lire vous propose une solution afin de copier de manière automatique le contenu d'un dépôt vers le dépôt d'une autre forge, tel que GitLab. Sans rentrer trop dans les délais et toujours en gardant à l'esprit que la section de votre forge doit se faire en accord avec vos besoins, pourquoi avons-nous faire le choix de se tourner vers GitHub. 
+
+La raison principale est que GitHub propose par défaut un écosystème riche et surtout des intégrations natives, notamment via les [GitHub actions](https://github.com/features/actions){.external target="_blank"}. Ces outils sont vraiment des alliés très efficaces pour vos développements et facilitent grandement les processus d'intégration/déploiement continus. De nombreuses communautés, tels que la celle de R, a déjà [mis à disposition](https://github.com/r-lib/actions){.external target="_blank"} de nombreuse de nombreuses Github actions. Ces dernières permettent d'automatiser de nombreux processus, qui vont aussi bien de la vérification code que de la publication de documentation associée aux développements/packages. De plus, une grande partie des workflows peut être centralisée via GitHub, ce qui réduit considérable la dépendance à d'autres outils tiers.
+
+Par ailleurs, GitHub est la forge la plus utilisée au monde, avec une immense communauté d’utilisateur. Concrètement il est très difficile pour une autre forge de rivaliser au niveau du référencement ou de la visibilité de GitHub. De plus, de nombreuses fonctionnalités, comme la section [Discussions](https://github.com/features/discussions){.external target="_blank"} ou encore l'affichage ouvert des contributions, renforcent la collaboration et son interface est souvent perçue comme étant la plus simple et intuitive parmi les forges.
+
+Outre le fait qu'il soit largement adopté par les entreprises et les projets open source, le volet IA de GitHub, via son utilitaire [GitHub Copilot](https://github.com/features/copilot){.external target="_blank"}, peut être une aide dans la construction de vos ressources.
+
+Pour finir, la version gratuite est déjà très performante et présente l'avantage de proposer des dépôts privés illimités ainsi que la collaboration avec plusieurs contributeurs sans frais supplémentaires.
+
+## Pourquoi ne pas utiliser uniquement GitHub ?
+
+Au vue de la section précedente, on peut se demander pourquoi ne pas utiliser uniquement GitHub qui semble être le choix le plus judicieux. Malgré tout ces avantages, il ne faut pas oublier que GitHub reste la propriété de Microsoft et que par conséquent il est possible que dans un future changement de la politque commercial de Microsoft ne deviennent pénalisant ou même incompatible avec votre travail. Même s'il est peu probable que qu'une tel évolution soit "brutale" au point de ne pas vous permettre de prendre les mesures nécessaires, il peut être judicieux de réfléchir à des solutions permettant en quelque sorte de profiter du meilleur des mondes mis à notre disposition.
+
+L'objectif de cette procédure est donc de fournir un solution permettent de copier, de manière automatique, l'intégralité d'un dêpot GitHub vers une autre forge. Pour se tutoriel nous prendrons l'exemple d'une forge [GitLab hebergé par l'IRD](https://forge.ird.fr/){.external target="_blank"}.
+
+## Procédure pour créer un miroir entre deux dépôts (GitHub vers GitLab IRD)
+
+### Prérequis
+
+Afin de suivre au mieux la procédure, il est conseillé d'être un minimum familiarisé avec l'utilisation d'une forge git, idéalement GitHub. Par ailleurs, nous partirons du principe que vous disposez d'un compte correctement configuré sur GitHub et la forge de destination (pour l'exemple ici le GitLab de l'IRD). Dans tous les cas, vous trouverez l'adresse mail de la personne ressource à l'origine de cette procédure en haut de la page. N'hesitez pas à la contacter si vous avez besoin d'aide.
+
 :::
 
 ::: {.content-visible when-profile="english"}
