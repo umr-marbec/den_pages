@@ -50,6 +50,9 @@ website:
             href: pages/packages_logiciels/ichthyop.qmd
       - text: "Training"
         href: pages/formations/index_formations.qmd
+        contents:
+           - text: "Git Training"
+             href : pages/formations/git.qmd
       - text: "Global support"
         href: pages/support/index_support.qmd
 
