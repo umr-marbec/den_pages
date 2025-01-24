@@ -3,6 +3,7 @@ project:
 
 execute:
   freeze: auto
+  default-kernel: knitr
 
 format:
   html:
