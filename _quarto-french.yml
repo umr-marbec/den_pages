@@ -48,6 +48,22 @@ website:
             href: pages/packages_logiciels/r_package_sparck.qmd
       - text: "Formations"
         href: pages/formations/index_formations.qmd
+      - section: "Marbec GPU"
+        href: pages/marbec_gpu/index_marbec_gpu.qmd
+        contents:
+          - text: "Initiation"
+            href: pages/marbec_gpu/init_marbec_gpu.qmd
+          - section: "Python"
+            href: pages/marbec_gpu/python/index_python.qmd
+            contents:
+              - text: "Gestion des Environments"
+                href: pages/marbec_gpu/python/env_management.qmd
+              - text: "Python Script"
+                href: pages/marbec_gpu/python/python_script.qmd
+              - text: "Soumission Slurmm "
+                href: pages/marbec_gpu/python/slurm_sub.qmd
+              - text: "Execution"
+                href: pages/marbec_gpu/python/execution.qmd
       - text: "Support global"
         href: pages/support/index_support.qmd
 
