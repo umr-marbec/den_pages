@@ -1,0 +1,98 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-01-13"
+---
+
+::: {.content-visible when-profile="french"}
+# Script Bash et arguments SLURM
+
+Afin de d'exécuter correctement le script python vous aurez besion de créer un script bash `launch.sh` en prenant soin de mentionner les trois choses suivantes :
+
+1. les arguments SLURM permmant de spécifier quelles ressources allouer, le nom du job, le fichier de sortie, etc.
+2. l'activation de l'environnement virtuel Python.
+3. l'exécution du script Python.
+
+Voici un exemple minimal de script bash :
+
+```bash
+#!/bin/bash
+
+#SBATCH --job-name=my_job         # Job name
+#SBATCH --output=output.log       # Standard output and error log
+#SBATCH --gres=gpu:1              # Number of GPUs (optional)
+#SBATCH --mem=4G                  # Memory allocation (4 GB)
+#SBATCH -c 1                      # Number of CPU cores
+
+######    Pour PYTHON-VENV   ###### 
+source my_venv/bin/activate 
+
+######   Pour CONDA   ######
+source /etc/miniconda3/etc/profile.d/conda.sh
+conda activate my_env
+
+########## Pour un environment préexistant  ###########
+module load python
+source /etc/miniconda3/etc/profile.d/conda.sh
+conda activate /usr/local/share/jupyter/kernels/torch2.2.0  # changer si env différent
+
+
+# execute python file
+python test.py                    
+
+
+deactivate
+conda deactivate
+```
+
+Il possible de spécifier d'autres arguments SLURM. Pour plus d'informations sur les arguments SLURM, vous pouvez consulter la documentation officielle de SLURM [ici](https://slurm.schedmd.com/sbatch.html).
+
+:::
+
+::: {.content-visible when-profile="english"}
+
+# Bash Script and SLURM arguments
+
+In order to run the Python script correctly, you will need to create a Bash script `launch.sh` that includes three main parts:  
+
+1. SLURM arguments to specify the resources to allocate, the job name, the output file, etc.
+2. Activation of the Python virtual environment.
+3. Python Execution
+
+Here is a minimal example of a Bash script:
+
+```bash
+#!/bin/bash
+
+#SBATCH --job-name=my_job         # Job name
+#SBATCH --output=output.log       # Standard output and error log
+#SBATCH --gres=gpu:1              # Number of GPUs (optional)
+#SBATCH --mem=4G                  # Memory allocation (4 GB)
+#SBATCH -c 1                      # Number of CPU cores
+
+######    For PYTHON-VENV   ###### 
+source my_venv/bin/activate 
+
+######   For CONDA   ######
+source /etc/miniconda3/etc/profile.d/conda.sh
+conda activate my_env
+
+########## For an existing environment ###########
+module load python
+source /etc/miniconda3/etc/profile.d/conda.sh
+conda activate /usr/local/share/jupyter/kernels/torch2.2.0  # changer si env différent
+
+
+# execute python file
+python test.py                    
+
+
+deactivate
+conda deactivate
+```
+
+It is possible to specify other SLURM arguments. For more information on SLURM arguments, you can consult the official SLURM documentation [here](https://slurm.schedmd.com/sbatch.html).
+
+:::

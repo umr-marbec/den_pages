@@ -1,0 +1,99 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-01-13"
+---
+
+::: {.content-visible when-profile="french"}
+# Soumission Slurmm
+
+A l'issu des 3 étapes précédentes, le dossier de travail devrait contenir les fichiers suivants : `launch.sh`, `main.py` et optionnellment `my_venv` si avez créé un environnement `python-venv` :
+![final_screen](../../../ressources/images/marbec_gpu/python/final_screen.jpg)
+La dernière étape consiste à soumettre votre script `launch.sh` créé à la partie précédente. Pour cela vous devez utiliser la commande `sbatch` ([voir documentation](https://slurm.schedmd.com/sbatch.html)) :  
+
+> `sbatch launch.sh` 
+
+
+
+Si les parramètres SLURM (`#SBATCH arg`) sont bien renseignés, vous devriez voir un message de confirmation de soumission de votre job : ` Submitted batch job 1234567`. Sinon un message d'erreur s'affiche à la place.  Lors d'une soumission réussi, SLURM regarde les ressources demandés et place le job en file d'attente ( état `PENDING`) tant que les ressources ne sont pas disponible. Une fois les ressources disponibles, le job s'exécute (état `RUNNING`). Un fichier de sortie est alors créé dans le répertoire courant avec le nom renseigné dans le script bash (`#SBATCH --output=job_%j.out`). Un deuxième fichier contenant les message d'erreur peut apparaître si cela est spécifié (`#SBATCH --error=job_%j.err`).
+
+Il est possible de suivre l'avancement de votre job avec la commande `squeue -u $USER` ou `squeue -j 1234567` (avec 1234567 le numéro de votre job). Mais aussi de lister tous les jobs en cours d'exécution ou en file d'attente avec `squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID`. La colonne `STATE` notamment indique l'état du job (`PENDING` `RUNNING`). Pour plus de détail sur la command `squeue` vous pouvez consulter la [documentation](https://slurm.schedmd.com/squeue.html).
+
+Pour annuler un job (en cours d'éxecution ou encore en file d'attente), utilisez la commande `scancel 1234567` (avec 1234567 le numéro de votre job).
+
+Le fichier `output.log` contenant les sorties de votre script python est créé dans le répertoire courant. Vous pouvez le consulter avec la commande `cat output.log` ou simplement en double-cliquant dessus. Il doit ressembler à ceci :
+```
+Fri Jan 24 12:15:15 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.120                Driver Version: 550.120        CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:A2:00.0 Off |                    0 |
+|  0%   27C    P0             37W /  300W |     513MiB /  46068MiB |      7%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A    112423      C   python                                        504MiB |
++-----------------------------------------------------------------------------------------+
+Device utilisé : cuda
+Mémoire GPU totale : 47.61 GB
+Mémoire GPU allouée : 0.24 GB
+```
+
+
+
+:::
+
+::: {.content-visible when-profile="english"}
+# Slurmm Submission
+
+After the previous 3 steps, the working directory should contain the following files: `launch.sh`, `main.py`, and optionally `my_venv` if you created a python-venv environment:
+![final_screen](../../../ressources/images/marbec_gpu/python/final_screen.jpg)
+The final step is to submit your `launch.sh` script created in the previous section. To do this, you need to use the `sbatch` command ([see documentation](https://slurm.schedmd.com/sbatch.html)):
+
+> `sbatch launch.sh`
+
+If the SLURM parameters (`#SBATCH arg`) are correctly filled in, you should see a job submission confirmation message: `Submitted batch job 1234567`. Otherwise, an error message will appear instead. Upon successful submission, SLURM checks the requested resources and places the job in the queue (state `PENDING`) until the resources become available. Once the resources are available, the job runs (state `RUNNING`). An output file is then created in the current directory with the name specified in the bash script (`#SBATCH --output=job_%j.out`). A second file containing error messages can appear if specified (`#SBATCH --error=job_%j.err`).
+
+You can track the progress of your job with the `squeue -u $USER` or `squeue -j 1234567` command (with 1234567 being your job number). You can also list all jobs currently running or in the queue with `squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID`. The `STATE` column in particular indicates the job's status (`PENDING` `RUNNING`). For more details on the `squeue` command, you can consult the [documentation](https://slurm.schedmd.com/squeue.html).
+
+To cancel a job (running or still in the queue), use the `scancel 1234567` command (with 1234567 being your job number).
+
+The `output.log` file containing the outputs of your python script is created in the current directory. You can view it with the `cat output.log` command or simply by double-clicking on it. It should look like this:
+
+```
+Fri Jan 24 12:15:15 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.120                Driver Version: 550.120        CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:A2:00.0 Off |                    0 |
+|  0%   27C    P0             37W /  300W |     513MiB /  46068MiB |      7%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A    112423      C   python                                        504MiB |
++-----------------------------------------------------------------------------------------+
+Device utilisé : cuda
+Mémoire GPU totale : 47.61 GB
+Mémoire GPU allouée : 0.24 GB
+```
+:::

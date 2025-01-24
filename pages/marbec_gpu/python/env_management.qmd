@@ -1,0 +1,148 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-01-13"
+---
+
+::: {.content-visible when-profile="french"}
+# Gestion de l'environnements Python
+
+MARBEC-GPU fournit deux principaux gestionnaires d'environnements Python : [python-venv](https://docs.python.org/3/library/venv.html) et [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). Il existe deux façons de préparer votre environnement Python :
+
+1. **Utilisation d'environnements préexistants** : Ceci est recommandé si vous n'êtes pas du tout familier avec `python-venv`/`conda` ou si vos besoins correspondent étroitement à un environnement existant.
+
+2. **Création d'un nouvel environnement** : Choisissez cette option si vous souhaitez contrôler les versions de vos packages.
+
+
+# 1. Utilisation d'environnements préexistants
+
+Il existe cinq environnements préexistants (soulignés en rouge sur l'image ci-dessous) disponibles sur MARBEC-GPU :
+
+![Environnements préexistants](../../../ressources/images/marbec_gpu/python/launcher_p_env.jpg)
+Vous pouvez les lister et les localiser avec la commande : `jupyter kernelspec list`. Pour ajouter un package vous pouvez simplement ouvrir un notebook de l'environnement souhaité et installer le package avec `!pip install package_name`. Attention le package sera installé dans `~/.local/lib/python3.10/site-packages` et est lié au cinq environnments (ce qui peut provoquer des conflits). Il ne sera pas supprimé à la fermeture de la session.
+
+Pour utliser le bon environnment lors de la soumission de votre job ([étape 4](execution.qmd)), vous pouvez éxectuer la commande `!sbatch launch.sh` depuis le notebook de l'environnement souhaité/modifié. Ou sinon préciser le chemin de l'environnement dans le script bash `launch.sh` comme suit : 
+
+```bash	
+module load python                                   # charger le module python
+source /etc/miniconda3/etc/profile.d/conda.sh        # charger conda
+conda activate /usr/local/share/jupyter/kernels/torch2.2.0     # changer torch2.2.0 par le nom de l'environnement souhaité
+```
+
+
+# 2. Création d'un nouvel environnement
+La création d'un environnment `python_venv` reste la méthode la plus pratique. Pour cela, vous pouvez suivre les étapes suivantes :
+
+```bash	
+# Désactivation de conda
+conda deactivate
+
+# Création de l'environnement python 3.11
+python -m venv my_venv/
+
+# Activation de l'environnement
+source my_venv/bin/activate
+
+# Installation de packages 
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # installation de torch 2.5.0
+
+```
+Attention l'environnement  `python_venv` sera créé dans le répertoire courant.
+
+
+
+C'est sensiblement la même chose en utilisant conda :
+
+```bash
+
+# Activation de conda
+conda activate
+
+# Création de l'environnement python 3.11
+conda create -n my_env python=3.11
+
+# Activation de l'environnement
+deactivate
+conda activate my_env
+
+# Installation de packages
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # installation de torch 2.5.0
+
+```
+Un aperçu de dossier de travail à l'issu de cette étape : 
+
+![venv](../../../ressources/images/marbec_gpu/python/venv.jpg)
+:::
+
+::: {.content-visible when-profile="english"}
+# Python Environment Management
+
+MARBEC-GPU provides two main Python environment managers: [python-venv](https://docs.python.org/3/library/venv.html) and [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). There are two ways to prepare your Python environment:
+
+1. **Using Pre-existing Environments**: This is recommended if you are not familiar with python-venv/conda at all, or if your needs closely match an existing environment.
+
+2. **Creating a New Environment**: Choose this option if you want to control the versions of your packages.
+
+
+
+# 1. Using Pre-existing Environments
+
+There are five pre-existing environments (highlighted in red in the image below) available on MARBEC-GPU: 
+
+![Pre-existing Environments](../../../ressources/images/marbec_gpu/python/launcher_p_env.jpg) 
+
+You can list and locate them with the command: `jupyter kernelspec list`. To add a package, you can simply open a notebook of the desired environment and install the package with `!pip install package_name`. Note that the package will be installed in `~/.local/lib/python3.10/site-packages` and is linked to all five environments (which can cause conflicts). Packages added this way are not removed when the session is closed.
+
+To use the correct environment when submitting your job ([step 4](execution.qmd)), you can execute the command `!sbatch launch.sh` from the notebook of the desired environment. Alternatively, specify the environment path in the `launch.sh` bash script:
+
+```bash
+module load python                                   # load the python module
+source /etc/miniconda3/etc/profile.d/conda.sh        # charger conda
+conda activate /usr/local/share/jupyter/kernels/torch2.2.0     # changer torch2.2.0 par le nom de l'environnement souhaité
+```
+
+# 2. Creating a New Environment
+
+Creating a python_venv environment remains the most practical method. You can follow these steps:
+
+```bash
+# Création de l'environnement python 3.11
+python -m venv my_venv/
+
+# Activation de l'environnement
+conda deactivate
+source my_venv/bin/activate
+
+# Installation de packages 
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # installation de torch 2.5.0
+```
+
+Be aware that the `python_venv` environment will be created in the current directory.
+
+It's essentially the same using conda:
+
+```bash
+# conda activation
+conda activate
+
+# Création de l'environnement python 3.11
+conda create -n my_env python=3.11
+
+# Activation de l'environnement
+deactivate
+conda activate my_env
+
+# Installation de packages
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  # installation de torch 2.5.0
+```
+
+A preview of the working directory after this step:
+
+![venv](../../../ressources/images/marbec_gpu/python/venv.jpg)
+
+
+
+
+:::

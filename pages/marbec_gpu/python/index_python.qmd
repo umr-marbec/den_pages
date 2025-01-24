@@ -1,0 +1,82 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-01-13"
+---
+
+::: {.content-visible when-profile="french"}
+# Projet Python 
+
+Avant de commencer, je vous recommande fortement de vous assurer que votre projet Python fonctionne localement (sur votre ordinateur personnel). Cela signifie configurer votre environnement Python et déboguer votre script localement. Une fois que tout fonctionne avec succès sur votre PC (même en utilisant seulement 1% de l'ensemble de données si vous rencontrez des contraintes de calcul), vous pouvez ensuite déployer votre projet sur MARBEC-GPU.
+
+Tout au long de ce tutoriel, vous trouverez tout ce dont vous avez besoin pour lancer un projet Python, ainsi que des conseils et des ressources supplémentaires qui vous seront utiles pour d'autres tâches sur MARBEC-GPU.
+
+Commencez par créer un dossier de travail dans lequel les direffents fichiers seront créés. En commande bash cela donnerait :
+
+```bash
+cd ~  # aller dans le répertoire personnel
+mkdir mon_projet_python  # créer un dossier pour le projet
+```
+
+Sinon il est possible d'utliser l'interface Jupyter pour créer un dossier de travail avec l'icone encadrée en rouge ci-dessous :
+
+![Créer un dossier de travail](../../../ressources/images/marbec_gpu/python/create_folder.jpg)
+
+Placez vous ensuite dans ce dossier ( ```cd mon_projet_python/``` ).
+
+
+# Étapes
+Il y a **quatre étapes principales** pour soumettre avec succès un travail pour un projet Python :
+
+1. [**Configurer l'environnement**](env_management.qmd) 
+   - Créer un environnement en utilisant [python-venv](https://docs.python.org/3/library/venv.html) ou [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).  
+   - Alternativement, vous pouvez modifier un environnement existant.
+
+2. [**Préparer le script Python**](python_script.qmd)
+   - Ce script devrait être similaire à votre script local `main.py`.
+
+3. [**Préparer un script Bash avec les arguments SLURM**](slurm_sub.qmd) 
+
+4. [**Exécuter le script Bash**](execution.qmd)  
+   - Utilisez la commande `sbatch` ([voir documentation](https://slurm.schedmd.com/sbatch.html)) pour soumettre votre travail.
+
+
+:::
+
+::: {.content-visible when-profile="english"}
+# Python Project
+
+Before proceeding, I strongly recommend ensuring that your Python project works locally (on your personal computer). This means setting up your Python environment and debugging your script locally. Once everything runs successfully on your PC (even using only 1% of the dataset if you face computational constraints), you can then deploy your project on MARBEC-GPU.
+
+Throughout this tutorial, you will find everything you need to launch a Python project, along with additional tips and resources that will be helpful for other MARBEC-GPU tasks. 
+
+Start by creating a working directory in which the different files will be created. In bash command it would be :
+
+```bash
+cd ~  # go to the home directory
+mkdir my_python_project  # create a folder for the project
+```
+
+Otherwise you can use the Jupyter interface to create a working directory with the icon framed in red below:
+
+![Create a working directory](../../../ressources/images/marbec_gpu/python/create_folder.jpg)
+
+Then move to this directory ( ```cd my_python_project/``` ).
+
+
+# Steps
+There are **four main steps** to successfully submit a job for a Python project:
+
+1. [**Set Up the Environment**](env_management.qmd) 
+   - Create an environment using [python-venv](https://docs.python.org/3/library/venv.html) or [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).  
+   - Alternatively, override an existing environment.
+
+2. [**Prepare the Python Script**](python_script.qmd)
+
+3. [**Prepare a Bash Script with SLURM Arguments**](slurm_sub.qmd) 
+
+4. [**Execute the Bash Script**](execution.qmd)
+   
+:::
