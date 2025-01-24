@@ -10,7 +10,7 @@ The sources of the Git training are available on [GitHub](https://github.com/umr
 
 :::
 
-::: {.content-visible when-profile="english"}
+::: {.content-visible when-profile="french"}
 
 # Atelier Gitt
 
