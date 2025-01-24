@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mathieu Depetris mathieu.depetris@cnrs.fr">
 
 <title>miroir_github_gitlab – Ressources et supports du Dispositif d’Écologie Numérique (DEN)</title>
 <style>
@@ -19,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -40,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d5097aa80c65647230c11f5dd2d5ea0a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-737b2148242961c97b8958fb7f3d437a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -197,18 +232,458 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pourquoi-utiliser-une-forge-git" id="toc-pourquoi-utiliser-une-forge-git" class="nav-link active" data-scroll-target="#pourquoi-utiliser-une-forge-git">Pourquoi utiliser une forge Git ?</a></li>
+  <li><a href="#pourquoi-se-tourner-vers-github" id="toc-pourquoi-se-tourner-vers-github" class="nav-link" data-scroll-target="#pourquoi-se-tourner-vers-github">Pourquoi se tourner vers GitHub ?</a></li>
+  <li><a href="#pourquoi-ne-pas-utiliser-uniquement-github" id="toc-pourquoi-ne-pas-utiliser-uniquement-github" class="nav-link" data-scroll-target="#pourquoi-ne-pas-utiliser-uniquement-github">Pourquoi ne pas utiliser uniquement GitHub ?</a></li>
+  <li><a href="#procédure-pour-créer-un-miroir-entre-deux-dépôts-github-vers-gitlab-ird" id="toc-procédure-pour-créer-un-miroir-entre-deux-dépôts-github-vers-gitlab-ird" class="nav-link" data-scroll-target="#procédure-pour-créer-un-miroir-entre-deux-dépôts-github-vers-gitlab-ird">Procédure pour créer un miroir entre deux dépôts (GitHub vers GitLab IRD)</a>
+  <ul class="collapse">
+  <li><a href="#prérequis-et-cadre-de-la-procédure" id="toc-prérequis-et-cadre-de-la-procédure" class="nav-link" data-scroll-target="#prérequis-et-cadre-de-la-procédure">Prérequis et cadre de la procédure</a></li>
+  <li><a href="#initialisation-des-dépôts" id="toc-initialisation-des-dépôts" class="nav-link" data-scroll-target="#initialisation-des-dépôts">1. Initialisation des dépôts</a></li>
+  <li><a href="#connexion-entre-les-deux-forges" id="toc-connexion-entre-les-deux-forges" class="nav-link" data-scroll-target="#connexion-entre-les-deux-forges">2. Connexion entre les deux forges</a></li>
+  <li><a href="#création-du-processus-de-miroir-et-automatisation" id="toc-création-du-processus-de-miroir-et-automatisation" class="nav-link" data-scroll-target="#création-du-processus-de-miroir-et-automatisation">3. Création du processus de miroir et automatisation</a></li>
+  <li><a href="#petit-mot-de-la-fin" id="toc-petit-mot-de-la-fin" class="nav-link" data-scroll-target="#petit-mot-de-la-fin">4. Petit mot de la fin</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/git/index_git.html">Système de contrôle de version</a></li><li class="breadcrumb-item"><a href="../../pages/git/miroir_github_gitlab.html">Miroir depuis Github vers un dépôt git</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/git/index_git.html">Système de contrôle de version</a></li><li class="breadcrumb-item"><a href="../../pages/git/miroir_github_gitlab.html">Miroir depuis Github vers un dépôt git</a></li></ol></nav>
+<div class="quarto-title">
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p>La documentation et la procédure est en cours de création.</p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mathieu Depetris <a href="mailto:mathieu.depetris@cnrs.fr">mathieu.depetris@cnrs.fr</a> </p>
+          </div>
+  </div>
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">January 24, 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="pourquoi-utiliser-une-forge-git" class="level2">
+<h2 class="anchored" data-anchor-id="pourquoi-utiliser-une-forge-git">Pourquoi utiliser une forge Git ?</h2>
+<p>Dès lors que l’on commence à vouloir travailler en équipe sur des bouts de code, voir de manière générale sur des développements informatiques, l’utilisation d’un outil de contrôle de version est rapidement un outil incontournable et un allié précieux pour toute personne soucieuse de gérer efficacement son travail. Ici nous n’aborderons pas les caractéristiques d’un git, ou système de contrôle de version, mais nous proposons une solution pouvant aider à résoudre une question que l’on se pose souvent, à savoir vers quel système, ou forge, se tourner.</p>
+<p>Un rapide coup d’œil sur internet vous montrera qu’il existe plusieurs forges. L’une des plus populaires est <a href="https://github.com/" class="external" target="_blank">GitHub</a> mais il en existe d’autres comme <a href="https://gitlab.com/" class="external" target="_blank">GitLab</a> ou encore <a href="https://bitbucket.org/" class="external" target="_blank">Bitbucket</a>. Il est aussi tout à fait possible que votre institut ou organisme utilise l’un de ces systèmes pour héberger sa propre forge (jeter un coup d’œil <a href="../../pages/git/index_git.html" class="external" target="_blank">ici</a>). Chaque système présente des avantages et des inconvénients et votre choix doit être guidé par vos besoins. À titre d’exemple vous trouverez un rapide comparatif des principales forges dans le tableau ci-dessous.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critères</th>
+<th>GitHub</th>
+<th>GitLab</th>
+<th>Bitbucket</th>
+<th>Gitea</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Popularité</td>
+<td>Très élevée</td>
+<td>Élevée</td>
+<td>Moyenne</td>
+<td>Faible</td>
+</tr>
+<tr class="even">
+<td>CI/CD intégré</td>
+<td>GitHub Actions (simple et puissant)</td>
+<td>Très robuste et flexible</td>
+<td>Intégré, mais limité</td>
+<td>Dépends de l’intégration manuelle</td>
+</tr>
+<tr class="odd">
+<td>Open source</td>
+<td>Non</td>
+<td>Oui</td>
+<td>Non</td>
+<td>Oui</td>
+</tr>
+<tr class="even">
+<td>Hébergement gratuit</td>
+<td>Dépôt privé gratuit illimité</td>
+<td>Dépôt privé gratuit illimité</td>
+<td>Dépôt privé gratuit illimité</td>
+<td>Nécessite un serveur</td>
+</tr>
+<tr class="odd">
+<td>Autohébergement</td>
+<td>Non</td>
+<td>Oui</td>
+<td>Oui</td>
+<td>Oui</td>
+</tr>
+<tr class="even">
+<td>Focus équipes privées</td>
+<td>Moyen</td>
+<td>Fort</td>
+<td>Très fort (intégré à Jira)</td>
+<td>Adapté</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pourquoi-se-tourner-vers-github" class="level2">
+<h2 class="anchored" data-anchor-id="pourquoi-se-tourner-vers-github">Pourquoi se tourner vers GitHub ?</h2>
+<p>La procédure que vous êtes en train de lire vous propose une solution afin de copier de manière automatique le contenu d’un dépôt GitHub vers le dépôt d’une autre forge, tel que GitLab. Sans rentrer trop dans les délais et toujours en gardant à l’esprit que la selection de votre forge doit se faire en accord avec vos besoins, pourquoi avons-nous fait le choix de se tourner vers GitHub.</p>
+<p>La raison principale est que GitHub propose par défaut un écosystème riche et surtout des intégrations natives, notamment via les <a href="https://github.com/features/actions" class="external" target="_blank">GitHub actions</a>. Ces outils sont vraiment des alliés très efficaces pour vos développements et facilitent grandement les processus d’intégration/déploiement continus. De nombreuses communautés, tels que la celle de R, a déjà <a href="https://github.com/r-lib/actions" class="external" target="_blank">mis à disposition</a> de nombreuses “Github actions”. Ces dernières permettent d’automatiser de nombreux processus, qui vont aussi bien de la vérification de votre code, que de la publication de documentation associée aux développements/packages. De plus, une grande partie des workflows peut être centralisée via GitHub, ce qui réduit considérable la dépendance à d’autres outils tiers.</p>
+<p>Par ailleurs, GitHub est la forge la plus utilisée au monde, avec une immense communauté d’utilisateur. Concrètement il est très difficile pour une autre forge de rivaliser au niveau du référencement ou de la visibilité de GitHub. De plus, de nombreuses fonctionnalités, comme la section <a href="https://github.com/features/discussions" class="external" target="_blank">Discussions</a> ou encore l’affichage ouvert des contributions, renforcent la collaboration et son interface est souvent perçue comme étant la plus simple et intuitive parmi les forges.</p>
+<p>Outre le fait qu’il soit largement adopté par les entreprises et les projets open source, le volet IA de GitHub, via son utilitaire <a href="https://github.com/features/copilot" class="external" target="_blank">GitHub Copilot</a>, peut être une aide dans la construction de vos ressources.</p>
+<p>Pour finir, la version gratuite est déjà très performante et présente l’avantage de proposer des dépôts privés illimités ainsi que la collaboration avec plusieurs contributeurs sans frais supplémentaires.</p>
+</section>
+<section id="pourquoi-ne-pas-utiliser-uniquement-github" class="level2">
+<h2 class="anchored" data-anchor-id="pourquoi-ne-pas-utiliser-uniquement-github">Pourquoi ne pas utiliser uniquement GitHub ?</h2>
+<p>Au vu de la section précédente, on peut se demander pourquoi ne pas utiliser uniquement GitHub qui semble être le choix le plus judicieux. Malgré tous ces avantages, il ne faut pas oublier que GitHub reste la propriété de Microsoft et que par conséquent il est possible qu’un futur changement de la politique commerciale de Microsoft ne devienne pénalisant ou même incompatible avec votre travail. Même s’il est peu probable qu’une telle évolution soit “brutale” au point de ne pas vous permettre de prendre les mesures nécessaires, il peut être judicieux de réfléchir à des solutions permettant en quelque sorte de profiter du meilleur des mondes mis à notre disposition.</p>
+<p>L’objectif de cette procédure est donc de fournir une solution qui permet de copier, de manière automatique, l’intégralité d’un dépôt GitHub vers une autre forge. Pour ce tutoriel nous prendrons l’exemple d’une forge <a href="https://forge.ird.fr/" class="external" target="_blank">GitLab hébergé par l’IRD</a>.</p>
+</section>
+<section id="procédure-pour-créer-un-miroir-entre-deux-dépôts-github-vers-gitlab-ird" class="level2">
+<h2 class="anchored" data-anchor-id="procédure-pour-créer-un-miroir-entre-deux-dépôts-github-vers-gitlab-ird">Procédure pour créer un miroir entre deux dépôts (GitHub vers GitLab IRD)</h2>
+<section id="prérequis-et-cadre-de-la-procédure" class="level3">
+<h3 class="anchored" data-anchor-id="prérequis-et-cadre-de-la-procédure">Prérequis et cadre de la procédure</h3>
+<p>Afin de suivre au mieux la procédure, il est conseillé d’être un minimum familiarisé avec l’utilisation d’une forge git, idéalement GitHub. Par ailleurs, nous partirons du principe que vous disposez d’un compte correctement configuré sur GitHub et la forge de destination (pour l’exemple ici le GitLab de l’IRD). Au besoin, vous trouverez l’adresse mail de la personne ressource à l’origine de cette procédure en haut de la page. N’hésitez pas à la contacter si vous avez besoin d’aide.</p>
+<p>Pour informatique, les images en lien avec la procédure ont été générées via des interfaces en anglais, ce qui devrait être la configuration par défaut sur la majorité des logiciels concernés.</p>
+<table class="caption-top table">
+<caption>Tableau 1 : État des tests de la procédure.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Système d’exploitation</th>
+<th>Procédure fonctionnelle</th>
+<th>Édition et version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Windows</td>
+<td>Oui</td>
+<td>11 Professionnel, version 23H2</td>
+</tr>
+<tr class="even">
+<td>Mac</td>
+<td>Non testée</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Linux</td>
+<td>Non testée</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="initialisation-des-dépôts" class="level3">
+<h3 class="anchored" data-anchor-id="initialisation-des-dépôts">1. Initialisation des dépôts</h3>
+<section id="création-dun-dépôt-source-sur-github" class="level4">
+<h4 class="anchored" data-anchor-id="création-dun-dépôt-source-sur-github">1.1 Création d’un dépôt source sur GitHub</h4>
+<p>Tout d’abord nous allons créer un dépôt source sur la forge GitHub. Pour l’exemple ici nous avons créé un dépôt public nommé “my_github_repository” avec des paramètres initiaux configuré globalement pour abriter des codes R (figure 1).</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../ressources/git/miroir_github_gitlab/images/01_create_new_repository_github.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Figure 1 : Configuration du dépôt source GitHub</figcaption>
+</figure>
+</div>
+</div>
+<p>Pour information notre test ici créer un dépôt “public”, car nous sommes parties du principe que notre contenu en développement a vocation à être partagé avec tout le monde et ne présente aucun caractère confidentiel ou privé. Vous pouvez tout à fait appliquer cette procédure sur un dépôt “private” (à tester, peut-être certains paramètres en lien avec les secrets cités plus loin devront être modifiés), mais dans ce cas il est judicieux de réfléchir à la véracité d’utiliser GitHub pour des données qui présentent un caractère privé. Cela ne veut pas dire de ne jamais publier des répertoires privés sur GitHub, mais de ne pas oublier que malgré tous les bénéfices, GitHub reste une forge propriétaire de Microsoft.</p>
+</section>
+<section id="création-dun-dépôt-cible-sur-une-autre-forge" class="level4">
+<h4 class="anchored" data-anchor-id="création-dun-dépôt-cible-sur-une-autre-forge">1.2 Création d’un dépôt cible sur une autre forge</h4>
+<p>La seconde étape est de créer un second dépôt cible sur une autre forge. Comme cité précédemment, nous allons utiliser une forge <a href="https://forge.ird.fr/" class="external" target="_blank">GitLab hébergé par l’IRD</a>, auquel les personnels de l’UMR peuvent avoir accès. Vous trouverez dans la figure 2 ci-dessous un exemple de configuration.</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../ressources/git/miroir_github_gitlab/images/02_create_new_repository_gitlabird.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 2 : Configuration du dépôt cible GitLab</figcaption>
+</figure>
+</div>
+</div>
+<p>Vous noterez, en opposition à notre configuration de notre dépôt source GitHub, que notre dépôt est ici publié en “private”. Cela se justifie afin de minimiser les “interactions” que les utilisateurs peuvent avoir sur ce dépôt. Vous allez voir par la suite que nous allons automatiser le flux de données entre notre dépôt source (GitHub) et notre dépôt cible (GitLab de l’IRD) et au final vous n’allez pas interagir directement sur le dépôt cible, comme l’on va le faire sur notre dépôt source au cours de sa vie. Encore pire, le flux de données que nous allons créer va être un flux unidirectionnel vers notre dépôt source, des modifications directes sur ce dépôt ne seront surement pas sauvegardées, risqueraient de provoquer des troubles dans l’automatisation et seraient même contraires à la logique de la procédure.</p>
+</section>
+</section>
+<section id="connexion-entre-les-deux-forges" class="level3">
+<h3 class="anchored" data-anchor-id="connexion-entre-les-deux-forges">2. Connexion entre les deux forges</h3>
+<p>Maintenant que nous avons créé les deux dépôts, il va falloir établir une connexion entre eux. Il y a plusieurs manières de faire, mais ce que nous allons utiliser ici s’appelle la création d’un jeton d’accès, ou “token”. Certains d’entre vous ont déjà dû effectuer cette action, notamment si vous avez fait une connexion entre un git et Rstudio. Nous n’allons pas rentrer dans les détails de la création d’un jeton d’accès et si besoin une procédure plus détaillée pourra être réalisée Juste pour résumer, nous allons créer un jeton d’accès depuis la forge du dépôt cible, que nous allons renseigner ensuite au niveau du dépôt source.</p>
+<section id="création-dun-jeton-daccès-sur-le-dépôt-cible" class="level4">
+<h4 class="anchored" data-anchor-id="création-dun-jeton-daccès-sur-le-dépôt-cible">2.1 Création d’un jeton d’accès sur le dépôt cible</h4>
+<p>Pour effectuer cela, il suffit de se placer au niveau de la racine de notre dépôt cible (ici celui que nous avons appelé “my_gitlabird_repository”). Dans le menu à gauche vous devriez voir une section “Settings” et une sous-section “Access tokens”. Cela devrait sous amener sur l’onglet de la figure 3.</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../ressources/git/miroir_github_gitlab/images/03_access_tokens.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 3 : Onglet “Access tokens”</figcaption>
+</figure>
+</div>
+</div>
+<p>Pour créer un nouveau jeton d’accès, il suffit de cliquer sur l’onglet “Add new token”. Dans la nouvelle fenêtre, vous trouverez plusieurs onglets à renseigner :</p>
+<ul>
+<li>“Token name”, le nom du jeton d’accès. Idéalement le nom doit être assez explicite et vous permettre de comprendre à quoi il sert. La plupart d’entre nous n’auront pas plus d’un jeton d’accès par dépôt, mais il est possible d’en ajouter plusieurs et dans ce cas il faut pouvoir les identifier.</li>
+<li>“Expiration date”, il s’agit de la date d’expiration du jeton d’accès. D’un point de vue sécuritaire, il peut être dangereux de créer un jeton qui ne possède pas de date d’expiration (si on clique sur la croix à droite de la date). Au-delà de la simplicité de faire cela (on n’a plus à s’occuper de notre connexion), créer une connexion via un jeton d’accès va créer une “faille” potentielle dans la sécurité de votre dépôt qui pourra servir de point d’entrée à de potentielles attaques malveillantes. Il ne faut pas devenir paranoïaque, mais l’idée est plus d’avoir une réflexion sur la durée de vie de votre jeton. Mon projet est-il un projet à court terme ? Y a-t-il une échéance future qui est susceptible de modifier la pertinence de ce jeton (par exemple modification de l’intégrité du dépôt source) ? concrètement vais-je penser à supprimer mon jeton d’accès si je n’en ai plus besoin. Libre à vous de fixer vos propres règles. Ici par exemple nous avons identifié un jeton qui sera valide jusqu’au 01/05/2025.</li>
+<li>“Select a role”. Dans le cas de l’utilisation d’un jeton d’accès personnel pour effectuer des actions de miroir depuis GitHub vers GitLab, nous n’avons pas besoin de nous concentrer directement sur les rôles, car les “scopes” de la section suivante sont ce qui détermine les permissions du jeton. Cependant, le rôle associé à un jeton d’accès personnel peut influencer certaines permissions d’accès à des projets ou des groupes. Si l’on veut être rigoureux, le plus judicieux est de choisir un rôle comme “Developer”. Un développeur va être une entité qui peut pousser du code, créer des branches, faire des “pull requests” et gérer les dépôts (ce que nous voulons faire ici).</li>
+<li>“Selected scopes”. Cette dernière section celle qui va définir les permissions et concrètement à quoi l’on peut avoir accès grâce à notre jeton. Pour faire un miroir, nous avons besoin de 3 droits spécifiques :
+<ul>
+<li>“api” : permets d’effectuer toutes les actions de l’API, y compris la gestion des dépôts, des projets, etc.</li>
+<li>“write_repository” : permets de pousser dans les dépôts GitLab (nécessaire pour le miroir).</li>
+<li>“read_repository” : permets de lire les dépôts GitLab (si nécessaire pour la configuration ou la vérification).</li>
+</ul></li>
+</ul>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../ressources/git/miroir_github_gitlab/images/04_configuration_access_tokens.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 4 : Configuration du jeton d’accés</figcaption>
+</figure>
+</div>
+</div>
+<p>Valider votre configuration via le bouton “Create project access token” en bas.</p>
+<p>La prochaine page qui s’affiche devrait vous indiquer la validation de la création de votre jeton d’accès, mais aussi vous présenter sa valeur. Vous pouvez l’afficher en cliquant sur bouton en forme d’œil. Juste en dessous de votre jeton, vous remarquerez un message vous indiquant que ce jeton ne sera dévoilé uniquement maintenant et il ne sera plus possible par la suite de la visualiser (dans un souci de sécurité). L’idée est de le copier (cliquez que le bouton situé à droite de celui en forme d’œil), de le stocker quelque part (par exemple dans un gestionnaire de mots de passe) car nous allons devoir le renseigner dans notre a source GitHub.</p>
+</section>
+<section id="renseignement-de-notre-jeton-daccès-sur-le-dépôt-source" class="level4">
+<h4 class="anchored" data-anchor-id="renseignement-de-notre-jeton-daccès-sur-le-dépôt-source">2.2 Renseignement de notre jeton d’accès sur le dépôt source</h4>
+<p>Maintenant que nous avons notre jeton d’accès pour notre dépôt cible, il va falloir le renseigner au niveau de notre dépôt source. Pour cela, il faut se rendre sur la page de notre dépôt source (dans l’exemple, le dépôt GitHub que nous avons appelé “my_github_repository”), de cliquer sur l’onglet “Settings”, la section “Secrets and variables” et la sous-section “Actions”. Dans la nouvelle page qui s’affiche, cliquez sur le bouton “New respository secret” situé dans la partie “Repository secrets”. Il vous suffit ensuite de renseigner un nom pour ce secret (comme précédent il doit être parlant pour l’utilisateur) et de coller la valeur de votre jeton dans la partie “Secret” (figure 5).</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../ressources/git/miroir_github_gitlab/images/05_new_repository_secret.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 5 : Configuration d’un secret associé à un dépôt GitHub</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="création-du-processus-de-miroir-et-automatisation" class="level3">
+<h3 class="anchored" data-anchor-id="création-du-processus-de-miroir-et-automatisation">3. Création du processus de miroir et automatisation</h3>
+<section id="création-du-script-github-action" class="level4">
+<h4 class="anchored" data-anchor-id="création-du-script-github-action">3.1 Création du script “GitHub action”</h4>
+<p>Nos deux dépôts étant connectés, nous pouvons maintenant commencer à travailler sur la création du processus de miroir ainsi que son automatisation. Pour faire cela, nous allons créer une “GitHub action”. Nous en avons parlé précédemment, mais ce type de processus va nous permettre d’exécuter des processus en arrière-plan et surtout d’automatiser le lancement de ces derniers.</p>
+<p>Concrètement pour cela, nous devons nous rendre à la racine de notre dépôt source GitHub et de créer un dossier “.github” ainsi qu’un sous dossier “workflows”. À l’intérieur de ce dernier dossier, nous allons copier le code ci-dessous dans un éditeur de code source (type <a href="https://notepad-plus-plus.org/downloads/" class="external" target="_blank">Notepad</a> ou encore <a href="https://code.visualstudio.com/download" class="external" target="_blank">Visual Studio Code</a>).</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> GitHub to GitLab IRD mirror with release assets</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="st">'**'</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">tags</span><span class="kw">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="st">'**'</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pull_request</span><span class="kw">:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="st">'**'</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">delete</span><span class="kw">:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="st">'**'</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">tags</span><span class="kw">:</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="st">'**'</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">release</span><span class="kw">:</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">types</span><span class="kw">:</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> created</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> published</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> edited</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> deleted</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">mirror</span><span class="kw">:</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Clone repository as bare</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>          git clone --bare &lt;github_repository_source_url&gt;.git my-github-repository.git</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Git</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>          git config --global user.name "GitHub Actions"</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>          git config --global user.email "github-actions@users.noreply.github.com"</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Add forge remote</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>          cd my-github-repository.git</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>          git remote add mirror https://oauth2:${{ secrets.&lt;secret_token_name&gt; }}@&lt;git_repository_target_url&gt;.git</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Push to forge</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>          cd my-github-repository.git</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>          git push --mirror mirror</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">download-release-assets</span><span class="kw">:</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">needs</span><span class="kw">:</span><span class="at"> mirror</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Git (Authentication)</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">          run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>            git config --global user.name "GitHub Actions"</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>            git config --global user.email "github-actions@users.noreply.github.com"</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Fetch release(s) from GitHub</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">id</span><span class="kw">:</span><span class="at"> fetch_releases</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">          run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>            RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>              "https://api.github.com/repos/&lt;github_repository_source_url_api&gt;/releases")</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="at">          </span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>            RELEASE_IDS_NAMES=$(echo "$RESPONSE" | jq -r '.[] | "\(.id) \(.name)"')</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>            if [ -z "$RELEASE_IDS_NAMES" ]; then</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>              echo "No release found. No action required."</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>              echo "SKIP_NEXT_STEP=true" &gt;&gt; $GITHUB_ENV</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>              exit 0</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>            fi</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>            NUM_RELEASES=$(echo "$RELEASE_IDS_NAMES" | wc -l)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>            echo "Number of releases found: $NUM_RELEASES"</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>            echo "NUM_RELEASES=$NUM_RELEASES" &gt;&gt; $GITHUB_ENV</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>            RELEASE_IDS=""</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>            RELEASE_NAMES=""</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>            while IFS= read -r line; do</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>              RELEASE_ID=$(echo "$line" | awk '{print $1}')</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>              RELEASE_NAME=$(echo "$line" | awk '{print $2}')</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>              RELEASE_IDS="$RELEASE_IDS$RELEASE_ID,"</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>              RELEASE_NAMES="$RELEASE_NAMES$RELEASE_NAME,"</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>            done &lt;&lt;&lt; "$RELEASE_IDS_NAMES"</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>            RELEASE_IDS=${RELEASE_IDS%,}</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>            RELEASE_NAMES=${RELEASE_NAMES%,}</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>            echo "RELEASE_IDS=$RELEASE_IDS" &gt;&gt; $GITHUB_ENV</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>            echo "RELEASE_NAMES=$RELEASE_NAMES" &gt;&gt; $GITHUB_ENV</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Download release(s) asset(s) from GitHub</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">id</span><span class="kw">:</span><span class="at"> download_assets</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">if</span><span class="kw">:</span><span class="at"> ${{ env.SKIP_NEXT_STEP != 'true' }}</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="fu">          run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>            ASSETS_FOUND=false</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>            NUM_RELEASES=${{ env.NUM_RELEASES }}</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>            RELEASE_IDS=${{ env.RELEASE_IDS }}</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>            RELEASE_NAMES=${{ env.RELEASE_NAMES }}</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>            IFS=',' read -ra RELEASE_IDS_ARRAY &lt;&lt;&lt; "$RELEASE_IDS"</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>            IFS=',' read -ra RELEASE_NAMES_ARRAY &lt;&lt;&lt; "$RELEASE_NAMES"</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>            for num_release in $(seq 0 $((NUM_RELEASES - 1))); do</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>              RELEASE_ID="${RELEASE_IDS_ARRAY[$num_release]}"</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>              RELEASE_NAME="${RELEASE_NAMES_ARRAY[$num_release]}"</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>              echo "Processing release ID: $RELEASE_ID with Name: $RELEASE_NAME"</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>              ASSETS=$(curl -s \</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>                -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>                "https://api.github.com/repos/&lt;github_repository_source_url_api&gt;/releases/$RELEASE_ID/assets" \</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>                | jq -r '.[].browser_download_url')</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>              if [ -z "$ASSETS" ]; then</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>                echo "No assets found for release $RELEASE_ID ($RELEASE_NAME). Skipping download step."</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>                continue</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>              else</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>                ASSETS_FOUND=true</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>                mkdir -p "release-assets/$RELEASE_ID"_"$RELEASE_NAME"</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>                cd "release-assets/$RELEASE_ID"_"$RELEASE_NAME"</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="at">        </span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>                for URL in $ASSETS; do</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>                  echo "Downloading $URL"</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>                  curl -L -o "$(basename "$URL")" -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$URL"</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>                done</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="at">        </span></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>                cd -</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>              fi</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>            done</span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>            if [ "$ASSETS_FOUND" = false ]; then</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>              echo "No assets found for any release. Exiting."</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>              echo "SKIP_NEXT_STEP=true" &gt;&gt; $GITHUB_ENV</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>              exit 0</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>            fi</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Push asset(s) to mirror repository</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">id</span><span class="kw">:</span><span class="at"> push_mirror</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">if</span><span class="kw">:</span><span class="at"> ${{ env.SKIP_NEXT_STEP != 'true' }}</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">          run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>            git clone https://oauth2:${{ secrets.&lt;secret_token_name&gt; }}@&lt;git_repository_target_url&gt;.git</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>            cd test_miroir_github</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>            if [ -d "release-assets" ]; then</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>              echo "Removing existing release-assets directory from the mirror repository."</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>              rm -rf release-assets</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>            fi</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>            echo "Copying local release-assets directory to the mirror repository."</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>            cp -r "../release-assets" .</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>            git add .</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>            git commit -m "Add release assets from GitHub releases"</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>            BRANCH_NAME=$(git symbolic-ref --short HEAD)</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>            git push origin "$BRANCH_NAME"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dans ce script il sera nécessaire d’adapter certaines variables en fonction de votre environnement :</p>
+<ul>
+<li>&lt;github_repository_source_url&gt; pour l’adresse URL de votre répertoire source GitHub. Pour l’exemple ici on aura la valeur “https://github.com/umr-marbec/my_github_repository” (sans les guillemets, idem pour toutes les variables suivantes).</li>
+<li>&lt;secret_token_name&gt; qui va renseigner le nom du secret que nous avons identifié au niveau du dépôt source GitHub (lien section 2.2). Ici nous utiliserons “TOKEN_MY_GITLABIRD_REPOSITORY”. Attention, si vous remarquez dans la figure 5, le nom de mon secret était en minuscule. Par défaut, GitHub passe tous les caractères en majuscule.</li>
+<li>&lt;git_repository_target_url&gt; pour l’adresse ULR de votre dépôt cible, sans la valeur “https://” en début de chaine. Par exemple ici pour la forge de l’IRD on utilisera la valeur “forge.ird.fr/marbec/private/depetris-mathieu/my_gitlabird_repository”.</li>
+<li>&lt;github_repository_source_url_api&gt; pour l’adresse URD du répertoire source GitHub, mais en version “light” (sans “https://github.com/”). Pour notre exemple la valeur sera “umr-marbec/my_github_repository”.</li>
+</ul>
+<p>Une fois que vous avez correctement remplacé ces variables, il vous suffit d’enregistrer le fichier au format YAML (au besoin l’extension à renseigner est .yml). Pour notre exemple ici, mon fichier s’appellera mirror_github_to_irdgitlab.yml et il sera placé comme indiqué précédemment dans le répertoire “workflows” que nous créer sur le dépôt cible GitHub.</p>
+</section>
+<section id="configuration-de-la-branche-principale-du-dépôt-cible" class="level4">
+<h4 class="anchored" data-anchor-id="configuration-de-la-branche-principale-du-dépôt-cible">3.2 Configuration de la branche principale du dépôt cible</h4>
+<p>À ce stage de la procédure, votre “GitHub action” devrais être fonctionnelle. Cependant si elle se lance (par exemple en faisant une modification, comme un “push”, sur notre dépôt source GitHub) vous devriez avoir une erreur comme celle illustrée sur la figure 6.</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../ressources/git/miroir_github_gitlab/images/06_error_branch_protected.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 6 : Erreur en lien avec une branche protégée</figcaption>
+</figure>
+</div>
+</div>
+<p>Rapidement cette erreur vous indique que la branche de notre dépôt cible est protégée et ne permet pas à notre processus de procéder à une synchronisation. Pour résoudre ce problème, il suffit de se rendre sur le dépôt cible, comme précédemment se aller sur l’onglet “Settings”, section “Repository” et sous-section “Protected branches” (figure 7).</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../ressources/git/miroir_github_gitlab/images/07_unprotected_branch.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 7 : Page “Protected branches”</figcaption>
+</figure>
+</div>
+</div>
+<p>De manière générale, les branches par défaut des gits sont souvent protégées. Cela permet à la majorité des utilisateurs d’appliquer automatique des mesures se sécurité qui permettent d’éviter d’opérer par mégarde des actes pouvant toucher à l’intégrité du dépôt. Dans notre cas, nous savons ce que nous voulons faire et nous avons besoin de lever ces protections afin de pouvoir effectuer notre miroir. Pour cela il suffit de cliquer sur le bouton rouge “Unprotect” sur votre branche par défaut (à ce stade vous ne devriez en avoir qu’une) et de l’action dans le popup qui s’affiche.</p>
+</section>
+</section>
+<section id="petit-mot-de-la-fin" class="level3">
+<h3 class="anchored" data-anchor-id="petit-mot-de-la-fin">4. Petit mot de la fin</h3>
+<p>Félicitations, si vous êtes arrivé à ce point, vous devriez avoir un miroir fonctionnel entre vos deux dépôts, qui lance son processus associé à chaque modification sur le dépôt source.</p>
+<p>Quelques petits conseils pour la suite :</p>
+<ul>
+<li>n’hésitez pas à faire des retours sur cette procédure, surtout si vous avez des suggestions d’améliorations. Par exemple, le test de cette procédure sur plusieurs systèmes d’exploitation ou encore avec des spécifications différentes de celles cadrées ici (comme le test sur un dépôt source privée) seraient des retours très enrichissants.</li>
+<li>lors des tests ad hoc, nous avons noté certains ratés dans les processus de miroir. Concrètement vos actions “ordinaires” liées à l’intégration de codes, la création de branches ou la majorité des actions basiques n’ont montré aucune défaillance. Par contre quand vous allez commencer à effectuer des “realeases”, ajouter des “assets” à ces dernières, jouer un peu avec les limites en supprimant ces dernières, les “tags” associés …. il est arrivé que le miroir ne se déclenche pas. Normalement la chose est rapidement compensée par le prochain miroir sur un “commit” par exemple, mais n’hésitez pas à faire remonter des défaillances afin que nous puissions améliorer la procédure.</li>
+</ul>
+
+
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
