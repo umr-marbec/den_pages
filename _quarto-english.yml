@@ -46,6 +46,8 @@ website:
         contents:
           - text: "R package sparck"
             href: pages/packages_logiciels/r_package_sparck.qmd
+          - text: "Ichthyop software"
+            href: pages/packages_logiciels/ichthyop.qmd
       - text: "Training"
         href: pages/formations/index_formations.qmd
       - text: "Global support"

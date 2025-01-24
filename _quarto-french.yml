@@ -46,6 +46,8 @@ website:
         contents:
           - text: "Package R sparck"
             href: pages/packages_logiciels/r_package_sparck.qmd
+          - text: "Logiciel Ichthyop"
+            href: pages/packages_logiciels/ichthyop.qmd
       - text: "Formations"
         href: pages/formations/index_formations.qmd
       - text: "Support global"
