@@ -20,7 +20,7 @@ MARBEC-GPU fournit deux principaux gestionnaires d'environnements Python : [pyth
 
 Il existe cinq environnements préexistants (soulignés en rouge sur l'image ci-dessous) disponibles sur MARBEC-GPU :
 
-![Environnements préexistants](../../../ressources/images/marbec_gpu/python/launcher_p_env.jpg)
+![Environnements préexistants](../../../ressources/marbec_gpu/python/images/launcher_p_env.jpg)
 Vous pouvez les lister et les localiser avec la commande : `jupyter kernelspec list`. Pour ajouter un package vous pouvez simplement ouvrir un notebook de l'environnement souhaité et installer le package avec `!pip install package_name`. Attention le package sera installé dans `~/.local/lib/python3.10/site-packages` et est lié au cinq environnments (ce qui peut provoquer des conflits). Il ne sera pas supprimé à la fermeture de la session.
 
 Pour utliser le bon environnment lors de la soumission de votre job ([étape 4](execution.qmd)), vous pouvez éxectuer la commande `!sbatch launch.sh` depuis le notebook de l'environnement souhaité/modifié. Ou sinon préciser le chemin de l'environnement dans le script bash `launch.sh` comme suit : 
@@ -73,7 +73,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ```
 Un aperçu de dossier de travail à l'issu de cette étape : 
 
-![venv](../../../ressources/images/marbec_gpu/python/venv.jpg)
+![venv](../../../ressources/marbec_gpu/python/images/venv.jpg)
 :::
 
 ::: {.content-visible when-profile="english"}
@@ -91,7 +91,7 @@ MARBEC-GPU provides two main Python environment managers: [python-venv](https://
 
 There are five pre-existing environments (highlighted in red in the image below) available on MARBEC-GPU: 
 
-![Pre-existing Environments](../../../ressources/images/marbec_gpu/python/launcher_p_env.jpg) 
+![Pre-existing Environments](../../../ressources/marbec_gpu/python/images/launcher_p_env.jpg) 
 
 You can list and locate them with the command: `jupyter kernelspec list`. To add a package, you can simply open a notebook of the desired environment and install the package with `!pip install package_name`. Note that the package will be installed in `~/.local/lib/python3.10/site-packages` and is linked to all five environments (which can cause conflicts). Packages added this way are not removed when the session is closed.
 
@@ -140,7 +140,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 A preview of the working directory after this step:
 
-![venv](../../../ressources/images/marbec_gpu/python/venv.jpg)
+![venv](../../../ressources/marbec_gpu/python/images/venv.jpg)
 
 
 

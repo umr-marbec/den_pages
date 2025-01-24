@@ -10,7 +10,7 @@ date: "2025-01-13"
 # Soumission Slurmm
 
 A l'issu des 3 étapes précédentes, le dossier de travail devrait contenir les fichiers suivants : `launch.sh`, `main.py` et optionnellment `my_venv` si avez créé un environnement `python-venv` :
-![final_screen](../../../ressources/images/marbec_gpu/python/final_screen.jpg)
+![final_screen](../../../ressources/marbec_gpu/python/images/final_screen.jpg)
 La dernière étape consiste à soumettre votre script `launch.sh` créé à la partie précédente. Pour cela vous devez utiliser la commande `sbatch` ([voir documentation](https://slurm.schedmd.com/sbatch.html)) :  
 
 > `sbatch launch.sh` 
@@ -58,7 +58,7 @@ Mémoire GPU allouée : 0.24 GB
 # Slurmm Submission
 
 After the previous 3 steps, the working directory should contain the following files: `launch.sh`, `main.py`, and optionally `my_venv` if you created a python-venv environment:
-![final_screen](../../../ressources/images/marbec_gpu/python/final_screen.jpg)
+![final_screen](../../../ressources/marbec_gpu/python/images/final_screen.jpg)
 The final step is to submit your `launch.sh` script created in the previous section. To do this, you need to use the `sbatch` command ([see documentation](https://slurm.schedmd.com/sbatch.html)):
 
 > `sbatch launch.sh`

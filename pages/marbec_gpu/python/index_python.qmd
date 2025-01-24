@@ -22,7 +22,7 @@ mkdir mon_projet_python  # créer un dossier pour le projet
 
 Sinon il est possible d'utliser l'interface Jupyter pour créer un dossier de travail avec l'icone encadrée en rouge ci-dessous :
 
-![Créer un dossier de travail](../../../ressources/images/marbec_gpu/python/create_folder.jpg)
+![Créer un dossier de travail](../../../ressources/marbec_gpu/python/images/create_folder.jpg)
 
 Placez vous ensuite dans ce dossier ( ```cd mon_projet_python/``` ).
 
@@ -61,7 +61,7 @@ mkdir my_python_project  # create a folder for the project
 
 Otherwise you can use the Jupyter interface to create a working directory with the icon framed in red below:
 
-![Create a working directory](../../../ressources/images/marbec_gpu/python/create_folder.jpg)
+![Create a working directory](../../../ressources/marbec_gpu/python/images/create_folder.jpg)
 
 Then move to this directory ( ```cd my_python_project/``` ).
 
