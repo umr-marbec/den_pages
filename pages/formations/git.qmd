@@ -12,7 +12,7 @@ The sources of the Git training are available on [GitHub](https://github.com/umr
 
 ::: {.content-visible when-profile="french"}
 
-# Atelier Gitt
+# Atelier Git
 
 Le code source de la formation Git est accessible sur [GitHub](https://github.com/umr-marbec/git-training). La formation est accessible ci-dessous (voir aussi sur https://github.com/umr-marbec/git-training)
 
