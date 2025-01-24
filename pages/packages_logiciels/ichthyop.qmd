@@ -8,7 +8,7 @@ format:
 
 # Ichthyop software
 
-<a href="ichthyop.org" rel="nofollow" target="_blank">
+<a href="https://ichthyop.org" rel="nofollow" target="_blank">
 <img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="sparck website" style="max-width: 20%;">
 </a>
 
@@ -32,7 +32,7 @@ The Ichthyop software and its associted ressources are  available on [GitHub](ht
 
 # Logiciel Ichthyop
 
-<a href="ichthyop.org" rel="nofollow" target="_blank">
+<a href="https://ichthyop.org" rel="nofollow" target="_blank">
 <img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="sparck website" style="max-width: 20%;">
 </a>
 

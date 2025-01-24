@@ -1,0 +1,53 @@
+---
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="english"}
+
+# Osmose model
+
+<a href="https://osmose-model.org" rel="nofollow" target="_blank">
+<img src="https://raw.githubusercontent.com/osmose-model/osmose-logos/refs/heads/master/2logo_osmose_sanstexte_cmyk_vectoriel.svg" align="right" height="130" alt="sparck website" style="max-width: 20%;">
+</a>
+
+[![DOI](https://zenodo.org/badge/48296200.svg)](https://zenodo.org/badge/latestdoi/48296200)
+[![Latest Release](https://img.shields.io/github/release/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/releases)
+[![R Build Status](https://github.com/osmose-model/osmose-private/workflows/r-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions)
+[![Java Build Status](https://github.com/osmose-model/osmose-private/workflows/java-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions)
+[![GitHub issues](https://img.shields.io/github/issues/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/issues)
+
+## Object-oriented Simulator of Marine Ecosystems
+
+OSMOSE is a multispecies and Individual-based model (IBM) which focuses on fish species. This model assumes opportunistic predation based on spatial co-occurrence and size adequacy between a predator and its prey (size-based opportunistic predation). It represents fish individuals grouped into schools, which are characterized by their size, weight, age, taxonomy and geographical location (2D model), and which undergo major processes of fish life cycle (growth, explicit predation, natural and starvation mortalities, reproduction and migration) and fishing exploitation.
+
+The model needs basic biological parameters that are often available for a wide range of species, and which can be found in FishBase for instance, and fish spatial distribution data. This package provides tools to build a model and run simulations using the OSMOSE model.
+
+The model is available on [GitHub](https://github.com/osmose-model/osmose)
+
+:::
+
+::: {.content-visible when-profile="french"}
+
+# Modèle Osmose
+
+<a href="https://osmose-model.org" rel="nofollow" target="_blank">
+<img src="https://raw.githubusercontent.com/osmose-model/osmose-logos/refs/heads/master/2logo_osmose_sanstexte_cmyk_vectoriel.svg" align="right" height="130" alt="sparck website" style="max-width: 20%;">
+</a>
+
+[![DOI](https://zenodo.org/badge/48296200.svg)](https://zenodo.org/badge/latestdoi/48296200)
+[![Latest Release](https://img.shields.io/github/release/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/releases)
+[![R Build Status](https://github.com/osmose-model/osmose-private/workflows/r-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions)
+[![Java Build Status](https://github.com/osmose-model/osmose-private/workflows/java-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions)
+[![GitHub issues](https://img.shields.io/github/issues/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/issues)
+
+## Simulateur Orienté Objet des Ecosystèmes Marins
+
+OSMOSE est un modèle multi-espèces et basé sur l'individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l'adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l'exploitation par la pêche.
+
+Le modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d'espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.
+
+Le modèle est disponible sur [GitHub](https://github.com/osmose-model/osmose)
+
+:::

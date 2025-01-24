@@ -48,6 +48,8 @@ website:
             href: pages/packages_logiciels/r_package_sparck.qmd
           - text: "Logiciel Ichthyop"
             href: pages/packages_logiciels/ichthyop.qmd
+          - text: "Modèle Osmose"
+            href: pages/packages_logiciels/osmose.qmd
       - text: "Formations"
         href: pages/formations/index_formations.qmd
         contents:
