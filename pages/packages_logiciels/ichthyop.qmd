@@ -8,7 +8,7 @@ format:
 # Ichthyop software
 
 <a href="https://ichthyop.org" rel="nofollow" target="_blank">
-<img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="ichthyoposmose website" style="max-width: 20%;">
+<img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="ichthyop website" style="max-width: 20%;">
 </a>
 
 ![License](https://img.shields.io/github/license/ichthyop/ichthyop){.external target="_blank"}

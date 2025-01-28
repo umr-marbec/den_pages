@@ -13,8 +13,8 @@ format:
 
 [![DOI](https://zenodo.org/badge/48296200.svg)](https://zenodo.org/badge/latestdoi/48296200){.external target="_blank"}
 [![Latest Release](https://img.shields.io/github/release/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/releases){.external target="_blank"}
-[![R Build Status](https://github.com/osmose-model/osmose-private/workflows/r-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions){.external target="_blank"}
-[![Java Build Status](https://github.com/osmose-model/osmose-private/workflows/java-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions){.external target="_blank"}
+[![R Build Status](https://github.com/osmose-model/osmose/workflows/r-build/badge.svg)](https://github.com/osmose-model/osmose/actions){.external target="_blank"}
+[![Java Build Status](https://github.com/osmose-model/osmose/workflows/java-build/badge.svg)](https://github.com/osmose-model/osmose/actions){.external target="_blank"}
 [![GitHub issues](https://img.shields.io/github/issues/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/issues){.external target="_blank"}
 
 ## Object-oriented Simulator of Marine Ecosystems
@@ -35,8 +35,8 @@ The model is available on [GitHub](https://github.com/osmose-model/osmose){.exte
 
 [![DOI](https://zenodo.org/badge/48296200.svg)](https://zenodo.org/badge/latestdoi/48296200){.external target="_blank"}
 [![Latest Release](https://img.shields.io/github/release/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/releases){.external target="_blank"}
-[![R Build Status](https://github.com/osmose-model/osmose-private/workflows/r-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions){.external target="_blank"}
-[![Java Build Status](https://github.com/osmose-model/osmose-private/workflows/java-build/badge.svg)](https://github.com/osmose-model/osmose-private/actions){.external target="_blank"}
+[![R Build Status](https://github.com/osmose-model/osmose/workflows/r-build/badge.svg)](https://github.com/osmose-model/osmose/actions){.external target="_blank"}
+[![Java Build Status](https://github.com/osmose-model/osmose/workflows/java-build/badge.svg)](https://github.com/osmose-model/osmose/actions){.external target="_blank"}
 [![GitHub issues](https://img.shields.io/github/issues/osmose-model/osmose.svg)](https://github.com/osmose-model/osmose/issues){.external target="_blank"}
 
 ## Simulateur Orienté Objet des Écosystèmes Marins
