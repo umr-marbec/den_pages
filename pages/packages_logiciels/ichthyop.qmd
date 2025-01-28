@@ -5,18 +5,17 @@ format:
 ---
 
 ::: {.content-visible when-profile="english"}
-
 # Ichthyop software
 
 <a href="https://ichthyop.org" rel="nofollow" target="_blank">
-<img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="sparck website" style="max-width: 20%;">
+<img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="ichthyoposmose website" style="max-width: 20%;">
 </a>
 
-![License](https://img.shields.io/github/license/ichthyop/ichthyop)
-[![DOI](https://zenodo.org/badge/286681664.svg)](https://zenodo.org/badge/latestdoi/286681664)
-[![Latest Release](https://img.shields.io/github/release/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/releases)
-[![Java Build Status](https://github.com/ichthyop/ichthyop/workflows/java-build/badge.svg)](https://github.com/ichthyop/ichthyop/actions)
-[![GitHub issues](https://img.shields.io/github/issues/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/issues)
+![License](https://img.shields.io/github/license/ichthyop/ichthyop){.external target="_blank"}
+[![DOI](https://zenodo.org/badge/286681664.svg)](https://zenodo.org/badge/latestdoi/286681664){.external target="_blank"}
+[![Latest Release](https://img.shields.io/github/release/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/releases){.external target="_blank"}
+[![Java Build Status](https://github.com/ichthyop/ichthyop/workflows/java-build/badge.svg)](https://github.com/ichthyop/ichthyop/actions){.external target="_blank"}
+[![GitHub issues](https://img.shields.io/github/issues/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/issues){.external target="_blank"}
 
 ## Lagrangian tool for simulating ichthyoplankton dynamics
 
@@ -24,23 +23,21 @@ Ichthyop is a free Java tool designed to study the effects of physical and biolo
 
 It incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).
 
-The Ichthyop software and its associted ressources are  available on [GitHub](https://github.com/ichthyop/).
-
+The Ichthyop software and its associted ressources are  available on [GitHub](https://github.com/ichthyop/){.external target="_blank"}.
 :::
 
 ::: {.content-visible when-profile="french"}
-
 # Logiciel Ichthyop
 
 <a href="https://ichthyop.org" rel="nofollow" target="_blank">
-<img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="sparck website" style="max-width: 20%;">
+<img src="https://raw.githubusercontent.com/ichthyop/ichthyop-logos/refs/heads/master/logo_ichthyop%2Bsimple_cmyk_vector_Edited.svg" align="right" height="130" alt="ichthyop website" style="max-width: 20%;">
 </a>
 
-![License](https://img.shields.io/github/license/ichthyop/ichthyop)
-[![DOI](https://zenodo.org/badge/286681664.svg)](https://zenodo.org/badge/latestdoi/286681664)
-[![Latest Release](https://img.shields.io/github/release/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/releases)
-[![Java Build Status](https://github.com/ichthyop/ichthyop/workflows/java-build/badge.svg)](https://github.com/ichthyop/ichthyop/actions)
-[![GitHub issues](https://img.shields.io/github/issues/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/issues)
+![License](https://img.shields.io/github/license/ichthyop/ichthyop){.external target="_blank"}
+[![DOI](https://zenodo.org/badge/286681664.svg)](https://zenodo.org/badge/latestdoi/286681664){.external target="_blank"}
+[![Latest Release](https://img.shields.io/github/release/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/releases){.external target="_blank"}
+[![Java Build Status](https://github.com/ichthyop/ichthyop/workflows/java-build/badge.svg)](https://github.com/ichthyop/ichthyop/actions){.external target="_blank"}
+[![GitHub issues](https://img.shields.io/github/issues/ichthyop/ichthyop.svg)](https://github.com/ichthyop/ichthyop/issues){.external target="_blank"}
 
 ## Outil Lagrangien pour la simulation de la dynamique de l'ichthyoplancton
 
@@ -48,6 +45,5 @@ Ichthyop est un outil Java gratuit conçu pour étudier les effets des facteurs 
 
 Il intègre les processus les plus importants impliqués dans les premiers stades de la vie des poissons : le frai, le mouvement, la croissance, la mortalité et le recrutement. L'outil utilise en entrée des séries temporelles de champs de vitesse, de température et de salinité archivées à partir des modèles océaniques ROMS, MARS, NEMO ou SYMPHONIE (sous forme de fichiers ou d'OpenDAP).
 
-Le logiciel Ichthyop et ses ressources associées sont disponibles sur [GitHub](https://github.com/ichthyop/).
-
+Le logiciel Ichthyop et ses ressources associées sont disponibles sur [GitHub](https://github.com/ichthyop/){.external target="_blank"}.
 :::

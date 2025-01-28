@@ -41,6 +41,8 @@ website:
         contents:
           - text: "Miroir depuis Github vers un dépôt git"
             href: pages/git/miroir_github_gitlab.qmd
+      - text: "Serveurs"
+        href: pages/serveurs/index_serveurs.qmd
       - section: "Packages et logiciels"
         href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
