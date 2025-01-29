@@ -1,0 +1,25 @@
+---
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="english"}
+# Git training
+
+The sources of the Git training are available on [GitHub](https://github.com/umr-marbec/git-training){.external target=“_blank”}. The training is accessible below.
+
+```{=html}
+<iframe width="780" height="500" src="https://umr-marbec.github.io/git-training/" title="Git training"></iframe>
+```
+:::
+
+::: {.content-visible when-profile="french"}
+# Atelier Git
+
+Le code source de la formation Git est accessible sur [GitHub](https://github.com/umr-marbec/git-training){.external target=“_blank”}. La formation est accessible ci-dessous.
+
+```{=html}
+<iframe width="780" height="500" src="https://umr-marbec.github.io/git-training/" title="Git training"></iframe>
+```
+:::

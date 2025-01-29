@@ -11,6 +11,13 @@ format:
 <img src="https://github.com/umr-marbec/sparck/raw/main/man/figures/logo.png" align="right" height="130" alt="sparck website" style="max-width: 100%;">
 </a>
 
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/sparck)](https://CRAN.R-project.org/package=sparck)
+[![Codecov test
+coverage](https://codecov.io/gh/umr-marbec/sparck/graph/badge.svg)](https://app.codecov.io/gh/umr-marbec/sparck)
+
 ## "Support Package for Analysis, Research, Collaboration and Knowledge"
 
 Le package [sparck](https://github.com/umr-marbec/sparck){.external target="_blank"} est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d'appuyer le travail des personnes de l'UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l'analyse de données ou encore la configuration de l'environnement de travail. Loin de l'idée d'aborder de manière exhaustive l'ensemble des thématiques ou sujets, sa vocation est vraiment d'apporter un standard en termes de développement afin d'améliorer la transversalité des actions et améliorer les liens associés.
@@ -24,6 +31,13 @@ En lien notamment avec la section ["Je veux contribuer !"](../contribution.qmd){
 <a href="https://umr-marbec.github.io/sparck/" rel="nofollow" target="_blank">
 <img src="https://github.com/umr-marbec/sparck/raw/main/man/figures/logo.png" align="right" height="130" alt="sparck website" style="max-width: 100%;">
 </a>
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/sparck)](https://CRAN.R-project.org/package=sparck)
+[![Codecov test
+coverage](https://codecov.io/gh/umr-marbec/sparck/graph/badge.svg)](https://app.codecov.io/gh/umr-marbec/sparck)
 
 ## Support Package for Analysis, Research, Collaboration and Knowledge
 
