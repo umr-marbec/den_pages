@@ -55,8 +55,10 @@ website:
       - text: "Formations"
         href: pages/formations/index_formations.qmd
         contents:
-           - text: "Formation Git"
-             href : pages/formations/git.qmd
+          - text: "Formation Git"
+            href : pages/formations/git.qmd
+          - text: "Formation Tidyverse"
+            href : pages/formations/tidyverse.qmd
       - text: "Support global"
         href: pages/support/index_support.qmd
 
