@@ -10,6 +10,8 @@ format:
 Le code source de la formation tidyverse est accessible sur le [dépot GitHub](https://github.com/umr-marbec/tidyverse-training){.external target=“_blank”}. La présentation associé est disponible à [l'adresse suivante](https://umr-marbec.github.io/tidyverse-training/){.external target=“_blank”}.
 
 Une prochaine session devrait avoir lieu courant 2025 et des précisions seront communiquées ultérieurement.
+
+![](../../ressources/formations/tidyverse/image_intro.png){fig-align="center" width="60%"}
 :::
 
 ::: {.content-visible when-profile="english"}
@@ -18,4 +20,6 @@ Une prochaine session devrait avoir lieu courant 2025 et des précisions seront 
 The source code for the tidyverse training course is available on the [GitHub repository](https://github.com/umr-marbec/tidyverse-training){.external target=“_blank”}. The associated presentation is available at [the following address](https://umr-marbec.github.io/tidyverse-training/){.external target=“_blank”}.
 
 A further session is planned for 2025, with further details to follow.
+
+![](../../ressources/formations/tidyverse/image_intro.png){fig-align="center" width="60%"}
 :::
