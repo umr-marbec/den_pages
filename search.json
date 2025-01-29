@@ -29,6 +29,122 @@
     ]
   },
   {
+    "objectID": "pages/git/index_git.html",
+    "href": "pages/git/index_git.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "section": "",
+    "text": "Vous trouverez dans cette section tous les ressources en lien avec l’utilisation des systèmes de controle de version. Au niveau de l’UMR plusieurs forges sont utilisées, à savoir :\n\nGitHub MARBEC\nGitLab IRD\nGitLab Ifremer\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Liens utils",
+      "Système de contrôle de version"
+    ]
+  },
+  {
+    "objectID": "pages/support/index_support.html",
+    "href": "pages/support/index_support.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "section": "",
+    "text": "Cette section est dédiée aux procédures et processus permettant d’apporter un support global aux personnelles de l’UMR. Cela va aussi bien de l’aide à la configuration de certains logiciels (comme les clients lourds de messagerie) ou encore des processus plus généraux comme la mise en place de solution de sauvegarde quotidienne ou encore par exemple des suggestions pour la gestion des mots de passe.\n\n\n\n Back to top",
+    "crumbs": [
+      "Liens utils",
+      "Support global"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/osmose.html",
+    "href": "pages/packages_logiciels/osmose.html",
+    "title": "Modèle Osmose",
+    "section": "",
+    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Modèle Osmose"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
+    "href": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
+    "title": "Modèle Osmose",
+    "section": "",
+    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Modèle Osmose"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
+    "href": "pages/packages_logiciels/index_packages_logiciels.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "section": "",
+    "text": "Vous trouverez dans cette section tous les packages, logiciels ou de manière générale les ressources informatiques developés ou utilisés par les personnels et partenaires associés de l’UMR MARBEC.\n\n\n\n Back to top",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/ichthyop.html",
+    "href": "pages/packages_logiciels/ichthyop.html",
+    "title": "Logiciel Ichthyop",
+    "section": "",
+    "text": "Ichthyop est un outil Java gratuit conçu pour étudier les effets des facteurs physiques et biologiques sur la dynamique de l’ichtyoplancton.\nIl intègre les processus les plus importants impliqués dans les premiers stades de la vie des poissons : le frai, le mouvement, la croissance, la mortalité et le recrutement. L’outil utilise en entrée des séries temporelles de champs de vitesse, de température et de salinité archivées à partir des modèles océaniques ROMS, MARS, NEMO ou SYMPHONIE (sous forme de fichiers ou d’OpenDAP).\nLe logiciel Ichthyop et ses ressources associées sont disponibles sur GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Logiciel Ichthyop"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/ichthyop.html#outil-lagrangien-pour-la-simulation-de-la-dynamique-de-lichthyoplancton",
+    "href": "pages/packages_logiciels/ichthyop.html#outil-lagrangien-pour-la-simulation-de-la-dynamique-de-lichthyoplancton",
+    "title": "Logiciel Ichthyop",
+    "section": "",
+    "text": "Ichthyop est un outil Java gratuit conçu pour étudier les effets des facteurs physiques et biologiques sur la dynamique de l’ichtyoplancton.\nIl intègre les processus les plus importants impliqués dans les premiers stades de la vie des poissons : le frai, le mouvement, la croissance, la mortalité et le recrutement. L’outil utilise en entrée des séries temporelles de champs de vitesse, de température et de salinité archivées à partir des modèles océaniques ROMS, MARS, NEMO ou SYMPHONIE (sous forme de fichiers ou d’OpenDAP).\nLe logiciel Ichthyop et ses ressources associées sont disponibles sur GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Logiciel Ichthyop"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html",
+    "href": "pages/packages_logiciels/r_package_sparck.html",
+    "title": "Package R sparck",
+    "section": "",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Package R sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "title": "Package R sparck",
+    "section": "",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Package R sparck"
+    ]
+  },
+  {
+    "objectID": "pages/contribution.html",
+    "href": "pages/contribution.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "section": "",
+    "text": "Vous faites partir de l’UMR, ou non, et vous avez des bouts de codes, documentations techniques ou n’importe quelles ressources informatiques que vous aimeriez tester, standardiser ou même mutualiser ? Vous avez une idée et vous demandez si le processus associé n’a pas déjà été développé par quelqu’un ? Vous êtes au bon endroit !\nCe site, et par addition les ressources associées, sont le fruit de nombreuses heures de travail et de réflexions communes sur des sujets qui au final sont souvent transervaux entre les personnes. Son but est vraiment de centraliser et standardiser au maximum ce qui a été fait et son succès ne dépend que de la synergie que nous mettons en œuvre pour créer du contenu. Par ailleurs, ces ressources ne sont que la partie émergée de l’iceberg qui favorise les relations et les liens que nous pouvons créer entre nous sur nos travaux.\nSi vous voulez contribuer d’une manière ou d’une autre, la clé est vraiment de ne pas se décourager par la tache globale qui peut faire peur, mais vraiment de commencer par un premier pas. Vous constaterez rapidement que derrière un problème ou un obstacle, vous trouverez ici une communauté riche et bienveillante qui saura vous aider, toujours avec un objectif de mutualisation et d’optimisation des ressources informatiques.\nDerrière la multitude de types de contenu que nous pouvons partagé entre nous, qui va d’une documentation en markdown jusqu’a des packages ou des logiciels développés par la communauté, l’idée est d’établir entre nous certains standards permettant de garantir l’intégrité et l’interopérabilité des contenus et ressources disponibles. Ces standards peuvent être vus comme des règles, mais en aucun cas ils ne doivent être assimilés à des freins à votre implication. Par exemple si certains points sont bloquants (par exemple la traduction d’une procédure dans une autre langue ou la méconnaissance de l’utilisation des forges telles que les git), tournés vers la communauté et vous trouverez tout l’aide dont vous avez besoin.\nDe manière générale voici quelques lignes directrices à prendre en compte avant de publier des ressources :\n\nles ressources de ce site sont dédiées à être utilisé par tous le personnel de l’UMR, mais potentiellement les partenaires associés. Par défaut le contenu doit être publié en français, mais aussi en anglais afin de garantir l’accessibilité au “maximum”. Certains contenus, comme les formations, peuvent s’abroger de règles si cela est pertinent. Encore une fois ne vous laissez pas bloqué par la barrière de la langue, vous trouverez forcément quelqu’un de notre communauté qui peut vous aider pour traduire.\nsuivante le type de contenu que vous voulez publiez, le mieux est parfois de ce tourner vers des personnes-ressources ou référentes qui pourront vous apporter des solutions ou des propositions pour vous guider dans la mutualisation de vos ressources. La liste de ces personnes clés sera mise à disposition sous peu et en attendant si vous ne savez pas vers qui vous tourner vous pouvez envoyer un mail aux administrateurs du DEN.\ntoujours dans un but de mutualisation et globalement d’harmonie des templates seront proposés pour les différents types de ressources. En attendant, n’hésitez pas à échanger avec les personnes de la communauté pour essayer de trouver, autant que possible, une structure commune.\nmême si l’utilisation des ressources informatique au sein de l’UMR doit vraiment être vu de manière transversale et sans “frontières” associées, la mutualisation et l’accessibilité de ces derniers est vraiment en lien avec le Dispositif d’Ecologie Numérique, ou DEN. Cette entité, transversale au niveau de l’UMR à comme objectifs la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique. Vous rapprocher de ce dispositif et des sous-entités qui le composent peut être judicieux et vous apporter un support non négligeable au sein de vos activités.\nde par sa nature, ce site est voué à évoluer en lien avec les besoins. N’hésitez pas à faire des suggestions d’améliorations, proposer de nouvelles sections ou même une organisation différente. Au final cela ne pourra être que bénéfique à la communauté.\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Liens utils",
+      "Je veux contribuer !"
+    ]
+  },
+  {
     "objectID": "pages/git/miroir_github_gitlab.html",
     "href": "pages/git/miroir_github_gitlab.html",
     "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
@@ -89,119 +205,15 @@
     ]
   },
   {
-    "objectID": "pages/contribution.html",
-    "href": "pages/contribution.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "objectID": "pages/formations/tidyverse.html",
+    "href": "pages/formations/tidyverse.html",
+    "title": "Formation tidyverse",
     "section": "",
-    "text": "Vous faites partir de l’UMR, ou non, et vous avez des bouts de codes, documentations techniques ou n’importe quelles ressources informatiques que vous aimeriez tester, standardiser ou même mutualiser ? Vous avez une idée et vous demandez si le processus associé n’a pas déjà été développé par quelqu’un ? Vous êtes au bon endroit !\nCe site, et par addition les ressources associées, sont le fruit de nombreuses heures de travail et de réflexions communes sur des sujets qui au final sont souvent transervaux entre les personnes. Son but est vraiment de centraliser et standardiser au maximum ce qui a été fait et son succès ne dépend que de la synergie que nous mettons en œuvre pour créer du contenu. Par ailleurs, ces ressources ne sont que la partie émergée de l’iceberg qui favorise les relations et les liens que nous pouvons créer entre nous sur nos travaux.\nSi vous voulez contribuer d’une manière ou d’une autre, la clé est vraiment de ne pas se décourager par la tache globale qui peut faire peur, mais vraiment de commencer par un premier pas. Vous constaterez rapidement que derrière un problème ou un obstacle, vous trouverez ici une communauté riche et bienveillante qui saura vous aider, toujours avec un objectif de mutualisation et d’optimisation des ressources informatiques.\nDerrière la multitude de types de contenu que nous pouvons partagé entre nous, qui va d’une documentation en markdown jusqu’a des packages ou des logiciels développés par la communauté, l’idée est d’établir entre nous certains standards permettant de garantir l’intégrité et l’interopérabilité des contenus et ressources disponibles. Ces standards peuvent être vus comme des règles, mais en aucun cas ils ne doivent être assimilés à des freins à votre implication. Par exemple si certains points sont bloquants (par exemple la traduction d’une procédure dans une autre langue ou la méconnaissance de l’utilisation des forges telles que les git), tournés vers la communauté et vous trouverez tout l’aide dont vous avez besoin.\nDe manière générale voici quelques lignes directrices à prendre en compte avant de publier des ressources :\n\nles ressources de ce site sont dédiées à être utilisé par tous le personnel de l’UMR, mais potentiellement les partenaires associés. Par défaut le contenu doit être publié en français, mais aussi en anglais afin de garantir l’accessibilité au “maximum”. Certains contenus, comme les formations, peuvent s’abroger de règles si cela est pertinent. Encore une fois ne vous laissez pas bloqué par la barrière de la langue, vous trouverez forcément quelqu’un de notre communauté qui peut vous aider pour traduire.\nsuivante le type de contenu que vous voulez publiez, le mieux est parfois de ce tourner vers des personnes-ressources ou référentes qui pourront vous apporter des solutions ou des propositions pour vous guider dans la mutualisation de vos ressources. La liste de ces personnes clés sera mise à disposition sous peu et en attendant si vous ne savez pas vers qui vous tourner vous pouvez envoyer un mail aux administrateurs du DEN.\ntoujours dans un but de mutualisation et globalement d’harmonie des templates seront proposés pour les différents types de ressources. En attendant, n’hésitez pas à échanger avec les personnes de la communauté pour essayer de trouver, autant que possible, une structure commune.\nmême si l’utilisation des ressources informatique au sein de l’UMR doit vraiment être vu de manière transversale et sans “frontières” associées, la mutualisation et l’accessibilité de ces derniers est vraiment en lien avec le Dispositif d’Ecologie Numérique, ou DEN. Cette entité, transversale au niveau de l’UMR à comme objectifs la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique. Vous rapprocher de ce dispositif et des sous-entités qui le composent peut être judicieux et vous apporter un support non négligeable au sein de vos activités.\nde par sa nature, ce site est voué à évoluer en lien avec les besoins. N’hésitez pas à faire des suggestions d’améliorations, proposer de nouvelles sections ou même une organisation différente. Au final cela ne pourra être que bénéfique à la communauté.\n\n\n\n\n\n Back to top",
+    "text": "Formation tidyverse\nLe code source de la formation tidyverse est accessible sur le dépot GitHub. La présentation associé est disponible à l’adresse suivante.\nUne prochaine session devrait avoir lieu courant 2025 et des précisions seront communiquées ultérieurement.\n\n\n\n\n Back to top",
     "crumbs": [
       "Liens utils",
-      "Je veux contribuer !"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html",
-    "href": "pages/packages_logiciels/r_package_sparck.html",
-    "title": "Package R sparck",
-    "section": "",
-    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Package R sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
-    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
-    "title": "Package R sparck",
-    "section": "",
-    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Package R sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/ichthyop.html",
-    "href": "pages/packages_logiciels/ichthyop.html",
-    "title": "Logiciel Ichthyop",
-    "section": "",
-    "text": "Ichthyop est un outil Java gratuit conçu pour étudier les effets des facteurs physiques et biologiques sur la dynamique de l’ichtyoplancton.\nIl intègre les processus les plus importants impliqués dans les premiers stades de la vie des poissons : le frai, le mouvement, la croissance, la mortalité et le recrutement. L’outil utilise en entrée des séries temporelles de champs de vitesse, de température et de salinité archivées à partir des modèles océaniques ROMS, MARS, NEMO ou SYMPHONIE (sous forme de fichiers ou d’OpenDAP).\nLe logiciel Ichthyop et ses ressources associées sont disponibles sur GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Logiciel Ichthyop"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/ichthyop.html#outil-lagrangien-pour-la-simulation-de-la-dynamique-de-lichthyoplancton",
-    "href": "pages/packages_logiciels/ichthyop.html#outil-lagrangien-pour-la-simulation-de-la-dynamique-de-lichthyoplancton",
-    "title": "Logiciel Ichthyop",
-    "section": "",
-    "text": "Ichthyop est un outil Java gratuit conçu pour étudier les effets des facteurs physiques et biologiques sur la dynamique de l’ichtyoplancton.\nIl intègre les processus les plus importants impliqués dans les premiers stades de la vie des poissons : le frai, le mouvement, la croissance, la mortalité et le recrutement. L’outil utilise en entrée des séries temporelles de champs de vitesse, de température et de salinité archivées à partir des modèles océaniques ROMS, MARS, NEMO ou SYMPHONIE (sous forme de fichiers ou d’OpenDAP).\nLe logiciel Ichthyop et ses ressources associées sont disponibles sur GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Logiciel Ichthyop"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
-    "href": "pages/packages_logiciels/index_packages_logiciels.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
-    "section": "",
-    "text": "Vous trouverez dans cette section tous les packages, logiciels ou de manière générale les ressources informatiques developés ou utilisés par les personnels et partenaires associés de l’UMR MARBEC.\n\n\n\n Back to top",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/osmose.html",
-    "href": "pages/packages_logiciels/osmose.html",
-    "title": "Modèle Osmose",
-    "section": "",
-    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Modèle Osmose"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
-    "href": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
-    "title": "Modèle Osmose",
-    "section": "",
-    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Modèle Osmose"
-    ]
-  },
-  {
-    "objectID": "pages/support/index_support.html",
-    "href": "pages/support/index_support.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
-    "section": "",
-    "text": "Cette section est dédiée aux procédures et processus permettant d’apporter un support global aux personnelles de l’UMR. Cela va aussi bien de l’aide à la configuration de certains logiciels (comme les clients lourds de messagerie) ou encore des processus plus généraux comme la mise en place de solution de sauvegarde quotidienne ou encore par exemple des suggestions pour la gestion des mots de passe.\n\n\n\n Back to top",
-    "crumbs": [
-      "Liens utils",
-      "Support global"
-    ]
-  },
-  {
-    "objectID": "pages/git/index_git.html",
-    "href": "pages/git/index_git.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
-    "section": "",
-    "text": "Vous trouverez dans cette section tous les ressources en lien avec l’utilisation des systèmes de controle de version. Au niveau de l’UMR plusieurs forges sont utilisées, à savoir :\n\nGitHub MARBEC\nGitLab IRD\nGitLab Ifremer\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Liens utils",
-      "Système de contrôle de version"
+      "Formations",
+      "Formation Tidyverse"
     ]
   },
   {

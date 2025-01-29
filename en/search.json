@@ -29,6 +29,122 @@
     ]
   },
   {
+    "objectID": "pages/git/index_git.html",
+    "href": "pages/git/index_git.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "In this section you will find all the resources related to the use of version control systems. Several forges are used at UMR:\n\nGitHub MARBEC\nGitLab IRD\nGitLab Ifremer\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Version Control System"
+    ]
+  },
+  {
+    "objectID": "pages/support/index_support.html",
+    "href": "pages/support/index_support.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "This section is dedicated to procedures and processes for providing global support to UMR. These include support in configuring for several software (such as email clients), as well as more general processes such as setting up a daily backup solution or suggestions for password management.\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Global support"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/osmose.html",
+    "href": "pages/packages_logiciels/osmose.html",
+    "title": "Osmose model",
+    "section": "",
+    "text": "OSMOSE is a multispecies and Individual-based model (IBM) which focuses on fish species. This model assumes opportunistic predation based on spatial co-occurrence and size adequacy between a predator and its prey (size-based opportunistic predation). It represents fish individuals grouped into schools, which are characterized by their size, weight, age, taxonomy and geographical location (2D model), and which undergo major processes of fish life cycle (growth, explicit predation, natural and starvation mortalities, reproduction and migration) and fishing exploitation.\nThe model needs basic biological parameters that are often available for a wide range of species, and which can be found in FishBase for instance, and fish spatial distribution data. This package provides tools to build a model and run simulations using the OSMOSE model.\nThe model is available on GitHub.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "Osmose model"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/osmose.html#object-oriented-simulator-of-marine-ecosystems",
+    "href": "pages/packages_logiciels/osmose.html#object-oriented-simulator-of-marine-ecosystems",
+    "title": "Osmose model",
+    "section": "",
+    "text": "OSMOSE is a multispecies and Individual-based model (IBM) which focuses on fish species. This model assumes opportunistic predation based on spatial co-occurrence and size adequacy between a predator and its prey (size-based opportunistic predation). It represents fish individuals grouped into schools, which are characterized by their size, weight, age, taxonomy and geographical location (2D model), and which undergo major processes of fish life cycle (growth, explicit predation, natural and starvation mortalities, reproduction and migration) and fishing exploitation.\nThe model needs basic biological parameters that are often available for a wide range of species, and which can be found in FishBase for instance, and fish spatial distribution data. This package provides tools to build a model and run simulations using the OSMOSE model.\nThe model is available on GitHub.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "Osmose model"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
+    "href": "pages/packages_logiciels/index_packages_logiciels.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "In this section you’ll find all the packages, software and general informatics resources resources developed or used by UMR MARBEC and associated partners.\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Packages and software"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/ichthyop.html",
+    "href": "pages/packages_logiciels/ichthyop.html",
+    "title": "Ichthyop software",
+    "section": "",
+    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "Ichthyop software"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
+    "href": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
+    "title": "Ichthyop software",
+    "section": "",
+    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "Ichthyop software"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html",
+    "href": "pages/packages_logiciels/r_package_sparck.html",
+    "title": "R package sparck",
+    "section": "",
+    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "R package sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
+    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
+    "title": "R package sparck",
+    "section": "",
+    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "R package sparck"
+    ]
+  },
+  {
+    "objectID": "pages/contribution.html",
+    "href": "pages/contribution.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "Do you belong to the UMR, or not, and have some pieces of code, technical documentation or any other informatics resources that you’d like to test, standardize or even share? Do you have an idea and wonder whether the process has already been developed by someone else? Then you’ve come to the right place!\nThis site, and by extension the associated resources, are the result of several hours’ work and joint reflection on subjects which, in the final analysis, are often transverse between people. Its aim is to centralize and standardize as much as possible what has been done, and its success depends entirely on the synergy we bring to creating content. In fact, these resources are just the tip of the iceberg in terms of the relationships and links we can forge with each other on our work.\nIf you’d like to contribute in some way, the key is not to be discouraged by the size of the task, which can be frightening, but to start by taking the first step. You’ll quickly realize that behind any problem or obstacle, you’ll find a rich and friendly community that’ll be able to help you, always with the aim of sharing and optimizing informatics resources.\nBehind the many different types of content we can share with each other, from markdown documentation to packages or software developed by the community, the idea is to establish standards between us that guarantee the integrity and interoperability of the content and resources available. These standards can be seen as rules, but in no way should they be assimilated to barriers to your involvement. For example, if you’re stuck on specific points (such as translating a procedure into another language or not knowing how to use forges such as git), turn to the community and you’ll find all the help you need.\nIn general, here are a few guidelines to be considered before publishing resources:\n\nthe resources on this site are intended to be used by all UMR, but also potentially by associated partners. By default, content must be published in French, but also in English to ensure maximum accessibility. Some content, such as training courses, may be exempted from these rules if this is relevant. Once again, don’t let the language barrier stop you - you’re guaranteed to find someone in our community who can help you translate.\ndepending on the type of content you want to publish, it’s sometimes best to turn to resource persons or referents who can provide you with solutions or proposals to guide you in sharing your resources. In the meantime, if you don’t know who to turn to, you can send an e-mail to DEN administrators.\ntemplates will be proposed for the different types of resources, with a view to sharing and overall harmony. In the meantime, don’t hesitate to get in touch with other members of the community to try and find a common structure wherever possible.\neven if the use of informatics resources within the UMR is really to be seen in a transversal way and without associated “borders”, the mutualization and accessibility of the resources is really in connection with the Digital Ecology Device, or DEN. This entity, which is transversal to the UMR, aims to set up, coordinate and pool technical resources, as well as exchange methodologies and new approaches in support of the digital aspects of scientific research. Getting closer to this organization and its sub-entities could be a wise move, and provide you with significant support for your activities.\nBy its very essence, this site is designed to evolve as needs change. Don’t hesitate to suggest improvements, new sections or even a different organization. In the end, this will only benefit the community.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "I want to contribute!"
+    ]
+  },
+  {
     "objectID": "pages/git/miroir_github_gitlab.html",
     "href": "pages/git/miroir_github_gitlab.html",
     "title": "Digital Ecology Scheme (DEN) Resources and Materials",
@@ -89,119 +205,15 @@
     ]
   },
   {
-    "objectID": "pages/contribution.html",
-    "href": "pages/contribution.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "objectID": "pages/formations/tidyverse.html",
+    "href": "pages/formations/tidyverse.html",
+    "title": "Tidyverse training",
     "section": "",
-    "text": "Do you belong to the UMR, or not, and have some pieces of code, technical documentation or any other informatics resources that you’d like to test, standardize or even share? Do you have an idea and wonder whether the process has already been developed by someone else? Then you’ve come to the right place!\nThis site, and by extension the associated resources, are the result of several hours’ work and joint reflection on subjects which, in the final analysis, are often transverse between people. Its aim is to centralize and standardize as much as possible what has been done, and its success depends entirely on the synergy we bring to creating content. In fact, these resources are just the tip of the iceberg in terms of the relationships and links we can forge with each other on our work.\nIf you’d like to contribute in some way, the key is not to be discouraged by the size of the task, which can be frightening, but to start by taking the first step. You’ll quickly realize that behind any problem or obstacle, you’ll find a rich and friendly community that’ll be able to help you, always with the aim of sharing and optimizing informatics resources.\nBehind the many different types of content we can share with each other, from markdown documentation to packages or software developed by the community, the idea is to establish standards between us that guarantee the integrity and interoperability of the content and resources available. These standards can be seen as rules, but in no way should they be assimilated to barriers to your involvement. For example, if you’re stuck on specific points (such as translating a procedure into another language or not knowing how to use forges such as git), turn to the community and you’ll find all the help you need.\nIn general, here are a few guidelines to be considered before publishing resources:\n\nthe resources on this site are intended to be used by all UMR, but also potentially by associated partners. By default, content must be published in French, but also in English to ensure maximum accessibility. Some content, such as training courses, may be exempted from these rules if this is relevant. Once again, don’t let the language barrier stop you - you’re guaranteed to find someone in our community who can help you translate.\ndepending on the type of content you want to publish, it’s sometimes best to turn to resource persons or referents who can provide you with solutions or proposals to guide you in sharing your resources. In the meantime, if you don’t know who to turn to, you can send an e-mail to DEN administrators.\ntemplates will be proposed for the different types of resources, with a view to sharing and overall harmony. In the meantime, don’t hesitate to get in touch with other members of the community to try and find a common structure wherever possible.\neven if the use of informatics resources within the UMR is really to be seen in a transversal way and without associated “borders”, the mutualization and accessibility of the resources is really in connection with the Digital Ecology Device, or DEN. This entity, which is transversal to the UMR, aims to set up, coordinate and pool technical resources, as well as exchange methodologies and new approaches in support of the digital aspects of scientific research. Getting closer to this organization and its sub-entities could be a wise move, and provide you with significant support for your activities.\nBy its very essence, this site is designed to evolve as needs change. Don’t hesitate to suggest improvements, new sections or even a different organization. In the end, this will only benefit the community.\n\n\n\n\n Back to top",
+    "text": "Tidyverse training\nThe source code for the tidyverse training course is available on the GitHub repository. The associated presentation is available at the following address.\nA further session is planned for 2025, with further details to follow.\n\n\n\n\n Back to top",
     "crumbs": [
       "Useful links",
-      "I want to contribute!"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html",
-    "href": "pages/packages_logiciels/r_package_sparck.html",
-    "title": "R package sparck",
-    "section": "",
-    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "R package sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
-    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
-    "title": "R package sparck",
-    "section": "",
-    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "R package sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/ichthyop.html",
-    "href": "pages/packages_logiciels/ichthyop.html",
-    "title": "Ichthyop software",
-    "section": "",
-    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "Ichthyop software"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
-    "href": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
-    "title": "Ichthyop software",
-    "section": "",
-    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "Ichthyop software"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
-    "href": "pages/packages_logiciels/index_packages_logiciels.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "In this section you’ll find all the packages, software and general informatics resources resources developed or used by UMR MARBEC and associated partners.\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Packages and software"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/osmose.html",
-    "href": "pages/packages_logiciels/osmose.html",
-    "title": "Osmose model",
-    "section": "",
-    "text": "OSMOSE is a multispecies and Individual-based model (IBM) which focuses on fish species. This model assumes opportunistic predation based on spatial co-occurrence and size adequacy between a predator and its prey (size-based opportunistic predation). It represents fish individuals grouped into schools, which are characterized by their size, weight, age, taxonomy and geographical location (2D model), and which undergo major processes of fish life cycle (growth, explicit predation, natural and starvation mortalities, reproduction and migration) and fishing exploitation.\nThe model needs basic biological parameters that are often available for a wide range of species, and which can be found in FishBase for instance, and fish spatial distribution data. This package provides tools to build a model and run simulations using the OSMOSE model.\nThe model is available on GitHub.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "Osmose model"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/osmose.html#object-oriented-simulator-of-marine-ecosystems",
-    "href": "pages/packages_logiciels/osmose.html#object-oriented-simulator-of-marine-ecosystems",
-    "title": "Osmose model",
-    "section": "",
-    "text": "OSMOSE is a multispecies and Individual-based model (IBM) which focuses on fish species. This model assumes opportunistic predation based on spatial co-occurrence and size adequacy between a predator and its prey (size-based opportunistic predation). It represents fish individuals grouped into schools, which are characterized by their size, weight, age, taxonomy and geographical location (2D model), and which undergo major processes of fish life cycle (growth, explicit predation, natural and starvation mortalities, reproduction and migration) and fishing exploitation.\nThe model needs basic biological parameters that are often available for a wide range of species, and which can be found in FishBase for instance, and fish spatial distribution data. This package provides tools to build a model and run simulations using the OSMOSE model.\nThe model is available on GitHub.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "Osmose model"
-    ]
-  },
-  {
-    "objectID": "pages/support/index_support.html",
-    "href": "pages/support/index_support.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "This section is dedicated to procedures and processes for providing global support to UMR. These include support in configuring for several software (such as email clients), as well as more general processes such as setting up a daily backup solution or suggestions for password management.\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Global support"
-    ]
-  },
-  {
-    "objectID": "pages/git/index_git.html",
-    "href": "pages/git/index_git.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "In this section you will find all the resources related to the use of version control systems. Several forges are used at UMR:\n\nGitHub MARBEC\nGitLab IRD\nGitLab Ifremer\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Version Control System"
+      "Training",
+      "Tidyverse training "
     ]
   },
   {
@@ -213,7 +225,7 @@
     "crumbs": [
       "Useful links",
       "Training",
-      "Git Training"
+      "Git training"
     ]
   },
   {
