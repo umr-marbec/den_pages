@@ -40,7 +40,7 @@ website:
         href: pages/git/index_git.qmd
         contents:
           - text: "Mirroring from Github to a Git Repository"
-            href: pages/git/miroir_github_gitlab.qmd
+            href: pages/git/miroir_github_git.qmd
       - text: "Servers"
         href: pages/serveurs/index_serveurs.qmd
       - section: "Packages and software"

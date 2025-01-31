@@ -1,6 +1,6 @@
 ---
 author: Mathieu Depetris [mathieu.depetris@cnrs.fr](mailto:mathieu.depetris@cnrs.fr)
-date-modified: 2025/01/24
+date-modified: 2025/01/31
 format:
   html:
     css: ../../styles.css
@@ -118,9 +118,13 @@ Maintenant que nous avons notre jeton d'accès pour notre dépôt cible, il va f
 
 ### 3. Création du processus de miroir et automatisation
 
-#### 3.1 Création du script "GitHub action"
+#### 3.1 Création du script "GitHub Action"
 
-Nos deux dépôts étant connectés, nous pouvons maintenant commencer à travailler sur la création du processus de miroir ainsi que son automatisation. Pour faire cela, nous allons créer une "GitHub action". Nous en avons parlé précédemment, mais ce type de processus va nous permettre d'exécuter des processus en arrière-plan et surtout d'automatiser le lancement de ces derniers. 
+Nos deux dépôts étant connectés, nous pouvons maintenant commencer à travailler sur la création du processus de miroir ainsi que son automatisation. Pour faire cela, nous allons créer une "GitHub action". Nous en avons parlé précédemment, mais ce type de processus va nous permettre d'exécuter des processus en arrière-plan et surtout d'automatiser le lancement de ces derniers.
+
+Pour faire cela, nous avons deux possibilités, (1) créer et adapter manuellement notre fichier yaml associé à la "GitHub Action" ou (2) utiliser une fonction du package [sparck](../packages_logiciels/r_package_sparck.qmd){.external target="_blank"} qui va nous simplifier les étapes de création. 
+
+##### 3.1.1 Création et adaptation manuelle de la "GitHub Action"
 
 Concrètement pour cela, nous devons nous rendre à la racine de notre dépôt source GitHub et de créer un dossier ".github" ainsi qu'un sous dossier "workflows". À l'intérieur de ce dernier dossier, nous allons copier le code ci-dessous dans un éditeur de code source (type [Notepad](https://notepad-plus-plus.org/downloads/){.external target="_blank"} ou encore [Visual Studio Code](https://code.visualstudio.com/download){.external target="_blank"}). 
 
@@ -289,6 +293,31 @@ Dans ce script il sera nécessaire d'adapter certaines variables en fonction de 
 
 Une fois que vous avez correctement remplacé ces variables, il vous suffit d'enregistrer le fichier au format YAML (au besoin l'extension à renseigner est .yml). Pour notre exemple ici, mon fichier s'appellera mirror_github_to_irdgitlab.yml et il sera placé comme indiqué précédemment dans le répertoire "workflows" que nous créer sur le dépôt cible GitHub.
 
+##### 3.1.2 Utilisation de la fonction add_github_action() du package sparck
+
+Si vous préférez utiliser une approche simplifiée, vous pouvez utiliser comme cité précédemment le package R [sparck](../packages_logiciels/r_package_sparck.qmd){.external target="_blank"} et plus précisément la fonction associée [add_github_action()](https://umr-marbec.github.io/sparck/reference/add_github_action.html){.external target="_blank"}.
+
+Pour cela, il faut commencer par l'installer sous R via la commande suivante :
+
+```{.r}
+# Vous allez avoir besoin du package devtools pour récupérer le package sparck qui se trouve un dépôt GitHub
+# Si besoin utilisez install.packages("devtools")
+devtools::install_github("https://github.com/umr-marbec/sparck")
+```
+
+Pour la suite, il faut définir le répertoire de travail de R comme étant celui de votre dépôt. Si vous utilisez un dépôt pour des codes en lien avec R, il est possible que vous ayez un fichier .Rproj dans ce dernier qui vous permet de lancer une session R directement dans le dépôt.
+
+La dernière étape est de lancer la fonction add_github_action() avec les paramètres de configurations en lien avec votre environnement. Si nous reprenons notre exemple pour cette procédure, la ligne de commande sera la suivante :
+
+```{.r}
+add_github_action(github_action_name = "mirror_github_git",
+                  arguments = c("github_repository_source_url" = "https://github.com/umr-marbec/my_github_repository",
+                                "secret_token_name" = "TOKEN_MY_GITLABIRD_REPOSITORY",
+                                "git_repository_target_url" = "https://forge.ird.fr/marbec/private/depetris-mathieu/my_gitlabird_repository"))
+```
+
+En comparaison d'une modification manuelle de notre "GitHub Action" (étape en 3.1.1), vous constaterez que les variables à renseigner sont beaucoup plus "simple" et que la fonction s'occupe automatiquement du formatage et de la création du dossier ".github" et sous-dossier "workflows" dans votre répertoire de travail (vous devez pour cela avoir les droits associés pour modifier votre système de fichiers).
+
 #### 3.2 Configuration de la branche principale du dépôt cible
 
 À ce stage de la procédure, votre "GitHub action" devrais être fonctionnelle. Cependant si elle se lance (par exemple en faisant une modification, comme un "push", sur notre dépôt source GitHub) vous devriez avoir une erreur comme celle illustrée sur la figure 6. 
@@ -427,7 +456,11 @@ Now that we have our access token for our target repository, we'll need to fill 
 
 #### 3.1 Creating the GitHub action script
 
-With our two repositories connected, we can now start work on creating the mirroring process and automating it. To do this, we're going to create a GitHub action. We've talked about this before, but this type of process will enable us to run processes in the background and, above all, to automate their launch. 
+With our two repositories connected, we can now start work on creating the mirroring process and automating it. To do this, we're going to create a GitHub action. We've talked about this before, but this type of process will enable us to run processes in the background and, above all, to automate their launch.
+
+To do this, we have two options: (1) manually create and adapt our yaml file associated with the “GitHub Action” or (2) use a function in the package [sparck](../packages_logiciels/r_package_sparck.qmd){.external target=“_blank”} which will simplify the creation process.  
+
+##### 3.1.1 Creating and manually adapting the GitHub Action
 
 To do this, we need to go to the root of our GitHub source repository and create a “.github” folder and a “workflows” subfolder. Inside the latter folder, we'll copy the code below into a source code editor (such as [Notepad](https://notepad-plus-plus.org/downloads/){.external target=“_blank”} or [Visual Studio Code](https://code.visualstudio.com/download){.external target=“_blank”}).
 
@@ -595,6 +628,32 @@ In this script, you'll need to adapt certain variables to suit your environment:
 - \<github_repository_source_url_api\> for the URD address of the GitHub source directory, but in a “light” version (without “https://github.com/”). For our example, the value will be “umr-marbec/my_github_repository”.
 
 Once you've correctly replaced these variables, all you have to do is save the file in YAML format (use the .yml extension to save it). For our example here, my file will be called mirror_github_to_irdgitlab.yml and it will be placed as indicated above in the “workflows” directory we're creating on the target GitHub repository.
+
+##### 3.1.2 Using the add_github_action() function in the sparck R package
+
+If you prefer a simplified approach, you can use the R package [sparck](../packages_logiciels/r_package_sparck.qmd){.external target=“_blank”} and the associated function [add_github_action()](https://umr-marbec.github.io/sparck/reference/add_github_action.html){.external target=“_blank”}.
+
+To do this, start by installing it under R with the following command:
+
+```{.r}
+# You'll need the devtools package to download the sparck package from his GitHub repository.
+# If necessary, use install.packages(“devtools”)
+devtools::install_github("https://github.com/umr-marbec/sparck")
+library(sparck)
+```
+
+Next, you need to define the R working directory as your repository. If you're using your repository for R-related code, you may have an .Rproj file in it that allows you to launch an R session directly in the repository.
+
+The last step is to call the add_github_action() function with the configuration parameters for your environment. If we take our example for this procedure, the command line will be as follows:
+
+```{.r}
+add_github_action(github_action_name = "mirror_github_git",
+                  arguments = c("github_repository_source_url" = "https://github.com/umr-marbec/my_github_repository",
+                                "secret_token_name" = "TOKEN_MY_GITLABIRD_REPOSITORY",
+                                "git_repository_target_url" = "https://forge.ird.fr/marbec/private/depetris-mathieu/my_gitlabird_repository"))
+```
+
+Compared with a manual modification of our “GitHub Action” (step in 3.1.1), you'll notice that the variables to be filled in are much “simpler” and that the function automatically takes care of formatting and creating the “.github” folder and “workflows” subfolder in your working directory (you'll need to have the associated rights to modify your file system).
 
 #### 3.2 Configuring the main branch of the target repository
 

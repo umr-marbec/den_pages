@@ -11,12 +11,12 @@ format:
 <img src="https://github.com/umr-marbec/sparck/raw/main/man/figures/logo.png" align="right" height="130" alt="sparck website" style="max-width: 100%;">
 </a>
 
+[![License](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://github.com/umr-marbec/sparck)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/sparck)](https://CRAN.R-project.org/package=sparck)
-[![Codecov test
-coverage](https://codecov.io/gh/umr-marbec/sparck/graph/badge.svg)](https://app.codecov.io/gh/umr-marbec/sparck)
+[![R-CMD-check](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml)
+[![Issues](https://img.shields.io/github/issues/umr-marbec/sparck/sparck.svg)](https://github.com/umr-marbec/sparck/issues)
+[![Test-coverage](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml)
 
 ## "Support Package for Analysis, Research, Collaboration and Knowledge"
 
@@ -32,12 +32,12 @@ En lien notamment avec la section ["Je veux contribuer !"](../contribution.qmd){
 <img src="https://github.com/umr-marbec/sparck/raw/main/man/figures/logo.png" align="right" height="130" alt="sparck website" style="max-width: 100%;">
 </a>
 
+[![License](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://github.com/umr-marbec/sparck)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/sparck)](https://CRAN.R-project.org/package=sparck)
-[![Codecov test
-coverage](https://codecov.io/gh/umr-marbec/sparck/graph/badge.svg)](https://app.codecov.io/gh/umr-marbec/sparck)
+[![R-CMD-check](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml)
+[![Issues](https://img.shields.io/github/issues/umr-marbec/sparck/sparck.svg)](https://github.com/umr-marbec/sparck/issues)
+[![Test-coverage](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml)
 
 ## Support Package for Analysis, Research, Collaboration and Knowledge
 
