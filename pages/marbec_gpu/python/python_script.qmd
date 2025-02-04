@@ -13,7 +13,7 @@ Pour ce tutoriel, nous allons simplement vérifier si Pytorch accède au GPU. Po
 Voici le contenu du fichier `main.py` :
 
 
-```python
+```{.python}
 import torch
 import torchvision.models as models
 import os

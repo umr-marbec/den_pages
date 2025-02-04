@@ -8,7 +8,7 @@ date: "2025-01-13"
 
 
 ::: {.content-visible when-profile="french"}
-# Documenation Marbec-GPU
+# Documentation Marbec-GPU
 
 Bienvenue dans la documentation du cluster Marbec-GPU. Ce document fournit un aperçu du cluster, de ses capacités et des guides disponibles pour apprendre à bien l'utiliser.
 
@@ -19,20 +19,20 @@ Le cluster Marbec-GPU est conçu pour fournir des ressources informatiques de ha
 ## Caractéristiques
 
 - Ressources
-    - 2 [NVIDIA A40](https://www.nvidia.com/fr-fr/data-center/a40/) GPus
+    - 2 [NVIDIA A40](https://www.nvidia.com/fr-fr/data-center/a40/) GPUs
     - 2 [Intel Xeon Platinum 8380](https://www.intel.com/content/www/us/en/products/sku/212287/intel-xeon-platinum-8380-processor-60m-cache-2-30-ghz/specifications.html) CPUs, 2x40 cores, 2x80 threads
     - 1,48 To de RAM
     - Interconnexions MARBEC-DATA
 
-## Pour commencer
+## Inscription
 
-Pour commencer à utiliser le cluster Marbec-GPU, vous devrez rejoindre le groupe Marbec-DEN. Contactez les Administrateurs pour plus de détails : [Administrateurs DEN](mailto:marbec-den-admin@listes.ird.fr)
+Pour commencer à utiliser le cluster Marbec-GPU, vous devrez rejoindre le groupe Marbec-DEN. Contactez les Administrateurs pour plus de détails : [Contacts administrateurs DEN](mailto:marbec-den-admin@listes.ird.fr)
 
 ## Documentation
 
 Pour des instructions détaillées sur l'utilisation du cluster Marbec-GPU, veuillez vous référer aux sections suivantes :
 
-- [Guide d'initiation](init_marbec_gpu.qmd)
+- [Guide d'initiation](init_marbec_gpu.qmd) (disponible bientôt)
 - [Travaux Python](python/index_python.qmd)
 
 
@@ -75,21 +75,21 @@ The Marbec-GPU cluster is designed to provide high-performance computing resourc
 ## Features
 
 - Ressources
-    - 2 [NVIDIA A40](https://www.nvidia.com/fr-fr/data-center/a40/) GPus
+    - 2 [NVIDIA A40](https://www.nvidia.com/fr-fr/data-center/a40/) GPUs
     - 2 [Intel Xeon Platinum 8380](https://www.intel.com/content/www/us/en/products/sku/212287/intel-xeon-platinum-8380-processor-60m-cache-2-30-ghz/specifications.html) CPUs, 2x40 cores, 2x80 threads
     - 1,48 To de RAM
     - MARBEC-DATA Interconnections
 
 
-## Getting Started
+## Registration
 
-To start using the Marbec-GPU cluster, you will need to join the Marbec-DEN group. Contact the Administrators for more details : [DEN administrators](mailto:marbec-den-admin@listes.ird.fr).
+To start using the Marbec-GPU cluster, you will need to join the Marbec-DEN group. Contact the Administrators for more details : [ Contact DEN administrators](mailto:marbec-den-admin@listes.ird.fr).
 
 ## Documentation
 
 For detailed instructions on how to use the Marbec-GPU cluster, please refer to the following sections:
 
-- [Initiation Guide](init_marbec_gpu.qmd)
+- [Initiation Guide](init_marbec_gpu.qmd) (coming soon)
 - [Python Works](python/index_python.qmd)
 
 

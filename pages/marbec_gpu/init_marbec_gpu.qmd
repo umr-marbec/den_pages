@@ -9,19 +9,17 @@ date: "2025-01-13"
 ::: {.content-visible when-profile="french"}
 # Initiation au cluster de calcul Marbec-GPU
 
-## Créer une session
+Une video de présentation du cluster sera bientôt disponible.
 
 
-## Description de l'interface
+
 :::
 
 ::: {.content-visible when-profile="english"}
 
 # Initiation to Marbec-GPU Cluster
 
-## Create a Session
+A presentation video of the cluster will be available soon.
 
-
-## Interface description
 
 :::

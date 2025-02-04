@@ -9,8 +9,6 @@ date: "2025-01-13"
 ::: {.content-visible when-profile="french"}
 # Projet Python 
 
-Avant de commencer, je vous recommande fortement de vous assurer que votre projet Python fonctionne localement (sur votre ordinateur personnel). Cela signifie configurer votre environnement Python et déboguer votre script localement. Une fois que tout fonctionne avec succès sur votre PC (même en utilisant seulement 1% de l'ensemble de données si vous rencontrez des contraintes de calcul), vous pouvez ensuite déployer votre projet sur MARBEC-GPU.
-
 Tout au long de ce tutoriel, vous trouverez tout ce dont vous avez besoin pour lancer un projet Python, ainsi que des conseils et des ressources supplémentaires qui vous seront utiles pour d'autres tâches sur MARBEC-GPU.
 
 Commencez par créer un dossier de travail dans lequel les direffents fichiers seront créés. En commande bash cela donnerait :
@@ -43,12 +41,14 @@ Il y a **quatre étapes principales** pour soumettre avec succès un travail pou
    - Utilisez la commande `sbatch` ([voir documentation](https://slurm.schedmd.com/sbatch.html)) pour soumettre votre travail.
 
 
+# Conseils
+
+Avant toutes choses, assurez-vous que votre projet Python fonctionne localement (sur votre ordinateur personnel). Cela signifie configurer votre environnement Python et déboguer votre script localement. Une fois que tout fonctionne avec succès sur votre PC (même en utilisant seulement 1% de l'ensemble de données si vous rencontrez des contraintes de calcul), vous pouvez ensuite déployer votre projet sur MARBEC-GPU.
+
 :::
 
 ::: {.content-visible when-profile="english"}
 # Python Project
-
-Before proceeding, I strongly recommend ensuring that your Python project works locally (on your personal computer). This means setting up your Python environment and debugging your script locally. Once everything runs successfully on your PC (even using only 1% of the dataset if you face computational constraints), you can then deploy your project on MARBEC-GPU.
 
 Throughout this tutorial, you will find everything you need to launch a Python project, along with additional tips and resources that will be helpful for other MARBEC-GPU tasks. 
 
@@ -79,4 +79,10 @@ There are **four main steps** to successfully submit a job for a Python project:
 
 4. [**Execute the Bash Script**](execution.qmd)
    
+
+
+# Tips
+
+Before anything else, make sure
+ that your Python project works locally (on your personal computer). This means setting up your Python environment and debugging your script locally. Once everything runs successfully on your PC (even using only 1% of the dataset if you face computational constraints), you can then deploy your project on MARBEC-GPU.
 :::
