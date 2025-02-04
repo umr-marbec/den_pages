@@ -40,14 +40,25 @@ website:
         href: pages/git/index_git.qmd
         contents:
           - text: "Miroir depuis Github vers un dépôt git"
-            href: pages/git/miroir_github_gitlab.qmd
+            href: pages/git/miroir_github_git.qmd
+      - text: "Serveurs"
+        href: pages/serveurs/index_serveurs.qmd
       - section: "Packages et logiciels"
         href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
           - text: "Package R sparck"
             href: pages/packages_logiciels/r_package_sparck.qmd
+          - text: "Logiciel Ichthyop"
+            href: pages/packages_logiciels/ichthyop.qmd
+          - text: "Modèle Osmose"
+            href: pages/packages_logiciels/osmose.qmd
       - text: "Formations"
         href: pages/formations/index_formations.qmd
+        contents:
+          - text: "Formation Git"
+            href : pages/formations/git.qmd
+          - text: "Formation Tidyverse"
+            href : pages/formations/tidyverse.qmd
       - section: "Marbec GPU"
         href: pages/marbec_gpu/index_marbec_gpu.qmd
         contents:

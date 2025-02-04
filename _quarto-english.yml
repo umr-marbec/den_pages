@@ -40,14 +40,25 @@ website:
         href: pages/git/index_git.qmd
         contents:
           - text: "Mirroring from Github to a Git Repository"
-            href: pages/git/miroir_github_gitlab.qmd
+            href: pages/git/miroir_github_git.qmd
+      - text: "Servers"
+        href: pages/serveurs/index_serveurs.qmd
       - section: "Packages and software"
         href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
           - text: "R package sparck"
             href: pages/packages_logiciels/r_package_sparck.qmd
+          - text: "Ichthyop software"
+            href: pages/packages_logiciels/ichthyop.qmd
+          - text: "Osmose model"
+            href: pages/packages_logiciels/osmose.qmd
       - text: "Training"
         href: pages/formations/index_formations.qmd
+        contents:
+          - text: "Git training"
+            href : pages/formations/git.qmd
+          - text: "Tidyverse training "
+            href : pages/formations/tidyverse.qmd
       - section: "Marbec GPU"
         href: pages/marbec_gpu/index_marbec_gpu.qmd
         contents:
@@ -64,6 +75,7 @@ website:
                 href: pages/marbec_gpu/python/slurm_sub.qmd
               - text: "Execution"
                 href: pages/marbec_gpu/python/execution.qmd
+        
       - text: "Global support"
         href: pages/support/index_support.qmd
 
