@@ -41,8 +41,25 @@ website:
         contents:
           - text: "Miroir depuis Github vers un dépôt git"
             href: pages/git/miroir_github_git.qmd
-      - text: "Serveurs"
+      - section: "Serveurs"
         href: pages/serveurs/index_serveurs.qmd
+        contents:
+          - section: "Marbec GPU"
+            href: pages/serveurs/marbec_gpu/index_marbec_gpu.qmd
+            contents:
+              - text: "Initiation"
+                href: pages/serveurs/marbec_gpu/init_marbec_gpu.qmd
+              - section: "Python"
+                href: pages/serveurs/marbec_gpu/python/index_python.qmd
+                contents:
+                  - text: "Gestion des Environments"
+                    href: pages/serveurs/marbec_gpu/python/env_management.qmd
+                  - text: "Python Script"
+                    href: pages/serveurs/marbec_gpu/python/python_script.qmd
+                  - text: "Soumission Slurmm "
+                    href: pages/serveurs/marbec_gpu/python/slurm_sub.qmd
+                  - text: "Execution"
+                    href: pages/serveurs/marbec_gpu/python/execution.qmd
       - section: "Packages et logiciels"
         href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
@@ -59,22 +76,6 @@ website:
             href : pages/formations/git.qmd
           - text: "Formation Tidyverse"
             href : pages/formations/tidyverse.qmd
-      - section: "Marbec GPU"
-        href: pages/marbec_gpu/index_marbec_gpu.qmd
-        contents:
-          - text: "Initiation"
-            href: pages/marbec_gpu/init_marbec_gpu.qmd
-          - section: "Python"
-            href: pages/marbec_gpu/python/index_python.qmd
-            contents:
-              - text: "Gestion des Environments"
-                href: pages/marbec_gpu/python/env_management.qmd
-              - text: "Python Script"
-                href: pages/marbec_gpu/python/python_script.qmd
-              - text: "Soumission Slurmm "
-                href: pages/marbec_gpu/python/slurm_sub.qmd
-              - text: "Execution"
-                href: pages/marbec_gpu/python/execution.qmd
       - text: "Support global"
         href: pages/support/index_support.qmd
 

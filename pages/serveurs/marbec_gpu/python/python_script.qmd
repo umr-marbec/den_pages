@@ -1,7 +1,7 @@
 ---
 format:
   html:
-    css: ../../../styles.css
+    css: ../../../../styles.css
 author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
 date: "2025-01-13"
 ---
@@ -13,7 +13,7 @@ Pour ce tutoriel, nous allons simplement vérifier si Pytorch accède au GPU. Po
 Voici le contenu du fichier `main.py` :
 
 
-```{.python}
+```python
 import torch
 import torchvision.models as models
 import os
