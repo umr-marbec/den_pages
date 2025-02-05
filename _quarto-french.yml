@@ -41,25 +41,25 @@ website:
         contents:
           - text: "Miroir depuis Github vers un dépôt git"
             href: pages/git/miroir_github_git.qmd
-      - section: "Serveurs"
+      - text: "Serveurs"
         href: pages/serveurs/index_serveurs.qmd
         contents:
+          - section: "Marbec DATA"
+            href: pages/serveurs/marbec_data/index_marbec_data.qmd
+            contents: 
+              - text: "Introduction"
+                href: pages/serveurs/marbec_data/intro_marbec_data.qmd
+              - text: "Gestion des Fichiers"
+                href: pages/serveurs/marbec_data/manage_files.qmd
           - section: "Marbec GPU"
             href: pages/serveurs/marbec_gpu/index_marbec_gpu.qmd
             contents:
               - text: "Initiation"
-                href: pages/serveurs/marbec_gpu/init_marbec_gpu.qmd
-              - section: "Python"
-                href: pages/serveurs/marbec_gpu/python/index_python.qmd
-                contents:
-                  - text: "Gestion des Environments"
-                    href: pages/serveurs/marbec_gpu/python/env_management.qmd
-                  - text: "Python Script"
-                    href: pages/serveurs/marbec_gpu/python/python_script.qmd
-                  - text: "Soumission Slurmm "
-                    href: pages/serveurs/marbec_gpu/python/slurm_sub.qmd
-                  - text: "Execution"
-                    href: pages/serveurs/marbec_gpu/python/execution.qmd
+                href: pages/serveurs/marbec_gpu/intro_marbec_gpu.qmd
+              - text: "Introduction à SLURM"
+                href: pages/serveurs/marbec_gpu/slurm_intro.qmd
+              - text: "Exemple Basique : R/Python"
+                href: pages/serveurs/marbec_gpu/basic_example.qmd
       - section: "Packages et logiciels"
         href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
