@@ -1,0 +1,13 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+
+:::
+
+::: {.content-visible when-profile="english"}
+
+:::

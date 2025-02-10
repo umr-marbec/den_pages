@@ -1,0 +1,18 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-02-10"
+---
+
+::: {.content-visible when-profile="french"}
+
+# Soumettre un Job via SLURM
+
+Exécuter du code par un soumission SLURM permet une grande liberté 
+:::
+
+::: {.content-visible when-profile="english"}
+
+:::

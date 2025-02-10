@@ -1,13 +1,13 @@
 ---
 format:
   html:
-    css: ../../styles.css
+    css: ../../../styles.css
 ---
 
 ::: {.content-visible when-profile="french"}
-Vous trouverez dans cette section tous les ressources en lien avec l'utilisation des serveurs et processus associés de l'UMR.  
+
 :::
 
 ::: {.content-visible when-profile="english"}
-In this section you will find all the resources related to the use of UMR servers and associated processes. 
+
 :::
