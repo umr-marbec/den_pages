@@ -7,25 +7,15 @@
     "text": "Welcome!\nThe aim of this site is to centralize and provide easy access to informatics resources, procedures and other support for the work of personnel and associates of the UMR MARBEC. This structuring is based in particular on the Dispositif d’Ecologie Numérique, or DEN, which is a transversal entity associated with the UMR. Its missions are to set up, coordinate and share technical resources, and to exchange methodologies and new approaches in support of the digital aspects of scientific research.\nThere’s also an Issues section where you can, for example, report a problem in the site’s source code, or suggest an improvement or new content. These “GitHub Issues” are really to be seen as objects closely linked to a “to-do list” items, and are focused on tasks to be accomplished (for example, throught the creation of a branch dedicated to the subject).\nIn addition, you’ll find a discussion forum to exchange ideas on common topics or issues. Discussions are intended for conversations that need to be transparent and accessible, but do not need to be followed up on a project and are not code-related, unlike “GitHub Issues”.\nFor your information, UMR also has a Rocket chat server accessible through the following URL https://tchat.ird.fr/home. It is possible to access the workspace directly from the URL or by installing a heavy client (=software) on your computer and adding the URL in the “add workspace” section.\nFurthermore, to facilitate access and use by many as possible, you’ll find this website and related resources in French (by default) but also in English (use the button on the left of the search bar to switch language).\nFeel free to visit the “I want to contribute!” section if you have resources to contribute to those available, or even more generally if you want to contribute to the provision of common resources.\nIf you have any specific requirements, please contact the DEN representatives at marbec-den-admin@listes.ird.fr.\nFor your information, this site was generated using the Quarto publishing system.\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages/serveurs/index_serveurs.html",
-    "href": "pages/serveurs/index_serveurs.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "objectID": "pages/formations/tidyverse.html",
+    "href": "pages/formations/tidyverse.html",
+    "title": "Tidyverse training",
     "section": "",
-    "text": "In this section you will find all the resources related to the use of UMR servers and associated processes.\n\n\n\n Back to top",
+    "text": "Tidyverse training\nThe source code for the tidyverse training course is available on the GitHub repository. The associated presentation is available at the following address.\nA further session is planned for 2025, with further details to follow.\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Useful links",
-      "Servers"
-    ]
-  },
-  {
-    "objectID": "pages/formations/index_formations.html",
-    "href": "pages/formations/index_formations.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "This section is dedicated to referencing the training courses and associated materials made available to UMR and its partners. Due to the specific nature of the training programs, the associated materials may not be available in several languages. In addition, by following this link to be defined you will find a list of the training courses organized by the UMR and, above all, the dates on which they will take place.\nFor your information, most of the following subsections link to Git repositories where you can find training resources. If you have any questions relating to these, it’s best to use the services provided by the repository (the Issues section, for example) or, alternatively, to contact the associated contact person(s) directly.\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Training"
+      "Training",
+      "Tidyverse training "
     ]
   },
   {
@@ -89,15 +79,11 @@
     ]
   },
   {
-    "objectID": "pages/support/index_support.html",
-    "href": "pages/support/index_support.html",
+    "objectID": "pages/liens.html",
+    "href": "pages/liens.html",
     "title": "Digital Ecology Scheme (DEN) Resources and Materials",
     "section": "",
-    "text": "This section is dedicated to procedures and processes for providing global support to UMR. These include support in configuring for several software (such as email clients), as well as more general processes such as setting up a daily backup solution or suggestions for password management.\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Global support"
-    ]
+    "text": "UMR MARBEC\nGitHub repository issues\nGitHub repository discussion forum\nUMR rocket chat server URL\nDEN admin ressource contact\n\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/packages_logiciels/osmose.html",
@@ -121,6 +107,52 @@
       "Useful links",
       "Packages and software",
       "Osmose model"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html",
+    "href": "pages/packages_logiciels/r_package_sparck.html",
+    "title": "R package sparck",
+    "section": "",
+    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "R package sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
+    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
+    "title": "R package sparck",
+    "section": "",
+    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "R package sparck"
+    ]
+  },
+  {
+    "objectID": "pages/support/index_support.html",
+    "href": "pages/support/index_support.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "This section is dedicated to procedures and processes for providing global support to UMR. These include support in configuring for several software (such as email clients), as well as more general processes such as setting up a daily backup solution or suggestions for password management.\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Global support"
+    ]
+  },
+  {
+    "objectID": "pages/contribution.html",
+    "href": "pages/contribution.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "Do you belong to the UMR, or not, and have some pieces of code, technical documentation or any other informatics resources that you’d like to test, standardize or even share? Do you have an idea and wonder whether the process has already been developed by someone else? Then you’ve come to the right place!\nThis site, and by extension the associated resources, are the result of several hours’ work and joint reflection on subjects which, in the final analysis, are often transverse between people. Its aim is to centralize and standardize as much as possible what has been done, and its success depends entirely on the synergy we bring to creating content. In fact, these resources are just the tip of the iceberg in terms of the relationships and links we can forge with each other on our work.\nIf you’d like to contribute in some way, the key is not to be discouraged by the size of the task, which can be frightening, but to start by taking the first step. You’ll quickly realize that behind any problem or obstacle, you’ll find a rich and friendly community that’ll be able to help you, always with the aim of sharing and optimizing informatics resources.\nBehind the many different types of content we can share with each other, from markdown documentation to packages or software developed by the community, the idea is to establish standards between us that guarantee the integrity and interoperability of the content and resources available. These standards can be seen as rules, but in no way should they be assimilated to barriers to your involvement. For example, if you’re stuck on specific points (such as translating a procedure into another language or not knowing how to use forges such as git), turn to the community and you’ll find all the help you need.\nIn general, here are a few guidelines to be considered before publishing resources:\n\nthe resources on this site are intended to be used by all UMR, but also potentially by associated partners. By default, content must be published in French, but also in English to ensure maximum accessibility. Some content, such as training courses, may be exempted from these rules if this is relevant. Once again, don’t let the language barrier stop you - you’re guaranteed to find someone in our community who can help you translate.\ndepending on the type of content you want to publish, it’s sometimes best to turn to resource persons or referents who can provide you with solutions or proposals to guide you in sharing your resources. In the meantime, if you don’t know who to turn to, you can send an e-mail to DEN administrators.\ntemplates will be proposed for the different types of resources, with a view to sharing and overall harmony. In the meantime, don’t hesitate to get in touch with other members of the community to try and find a common structure wherever possible.\neven if the use of informatics resources within the UMR is really to be seen in a transversal way and without associated “borders”, the mutualization and accessibility of the resources is really in connection with the Digital Ecology Device, or DEN. This entity, which is transversal to the UMR, aims to set up, coordinate and pool technical resources, as well as exchange methodologies and new approaches in support of the digital aspects of scientific research. Getting closer to this organization and its sub-entities could be a wise move, and provide you with significant support for your activities.\nBy its very essence, this site is designed to evolve as needs change. Don’t hesitate to suggest improvements, new sections or even a different organization. In the end, this will only benefit the community.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "I want to contribute!"
     ]
   },
   {
@@ -159,38 +191,14 @@
     ]
   },
   {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html",
-    "href": "pages/packages_logiciels/r_package_sparck.html",
-    "title": "R package sparck",
-    "section": "",
-    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "R package sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
-    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
-    "title": "R package sparck",
-    "section": "",
-    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "R package sparck"
-    ]
-  },
-  {
-    "objectID": "pages/contribution.html",
-    "href": "pages/contribution.html",
+    "objectID": "pages/serveurs/index_serveurs.html",
+    "href": "pages/serveurs/index_serveurs.html",
     "title": "Digital Ecology Scheme (DEN) Resources and Materials",
     "section": "",
-    "text": "Do you belong to the UMR, or not, and have some pieces of code, technical documentation or any other informatics resources that you’d like to test, standardize or even share? Do you have an idea and wonder whether the process has already been developed by someone else? Then you’ve come to the right place!\nThis site, and by extension the associated resources, are the result of several hours’ work and joint reflection on subjects which, in the final analysis, are often transverse between people. Its aim is to centralize and standardize as much as possible what has been done, and its success depends entirely on the synergy we bring to creating content. In fact, these resources are just the tip of the iceberg in terms of the relationships and links we can forge with each other on our work.\nIf you’d like to contribute in some way, the key is not to be discouraged by the size of the task, which can be frightening, but to start by taking the first step. You’ll quickly realize that behind any problem or obstacle, you’ll find a rich and friendly community that’ll be able to help you, always with the aim of sharing and optimizing informatics resources.\nBehind the many different types of content we can share with each other, from markdown documentation to packages or software developed by the community, the idea is to establish standards between us that guarantee the integrity and interoperability of the content and resources available. These standards can be seen as rules, but in no way should they be assimilated to barriers to your involvement. For example, if you’re stuck on specific points (such as translating a procedure into another language or not knowing how to use forges such as git), turn to the community and you’ll find all the help you need.\nIn general, here are a few guidelines to be considered before publishing resources:\n\nthe resources on this site are intended to be used by all UMR, but also potentially by associated partners. By default, content must be published in French, but also in English to ensure maximum accessibility. Some content, such as training courses, may be exempted from these rules if this is relevant. Once again, don’t let the language barrier stop you - you’re guaranteed to find someone in our community who can help you translate.\ndepending on the type of content you want to publish, it’s sometimes best to turn to resource persons or referents who can provide you with solutions or proposals to guide you in sharing your resources. In the meantime, if you don’t know who to turn to, you can send an e-mail to DEN administrators.\ntemplates will be proposed for the different types of resources, with a view to sharing and overall harmony. In the meantime, don’t hesitate to get in touch with other members of the community to try and find a common structure wherever possible.\neven if the use of informatics resources within the UMR is really to be seen in a transversal way and without associated “borders”, the mutualization and accessibility of the resources is really in connection with the Digital Ecology Device, or DEN. This entity, which is transversal to the UMR, aims to set up, coordinate and pool technical resources, as well as exchange methodologies and new approaches in support of the digital aspects of scientific research. Getting closer to this organization and its sub-entities could be a wise move, and provide you with significant support for your activities.\nBy its very essence, this site is designed to evolve as needs change. Don’t hesitate to suggest improvements, new sections or even a different organization. In the end, this will only benefit the community.\n\n\n\n\n Back to top",
+    "text": "In this section you will find all the resources related to the use of UMR servers and associated processes.\n\n\n\n Back to top",
     "crumbs": [
       "Useful links",
-      "I want to contribute!"
+      "Servers"
     ]
   },
   {
@@ -205,15 +213,14 @@
     ]
   },
   {
-    "objectID": "pages/formations/tidyverse.html",
-    "href": "pages/formations/tidyverse.html",
-    "title": "Tidyverse training",
+    "objectID": "pages/formations/index_formations.html",
+    "href": "pages/formations/index_formations.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
     "section": "",
-    "text": "Tidyverse training\nThe source code for the tidyverse training course is available on the GitHub repository. The associated presentation is available at the following address.\nA further session is planned for 2025, with further details to follow.\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "This section is dedicated to referencing the training courses and associated materials made available to UMR and its partners. Due to the specific nature of the training programs, the associated materials may not be available in several languages. In addition, by following this link to be defined you will find a list of the training courses organized by the UMR and, above all, the dates on which they will take place.\nFor your information, most of the following subsections link to Git repositories where you can find training resources. If you have any questions relating to these, it’s best to use the services provided by the repository (the Issues section, for example) or, alternatively, to contact the associated contact person(s) directly.\n\n\n\n Back to top",
     "crumbs": [
       "Useful links",
-      "Training",
-      "Tidyverse training "
+      "Training"
     ]
   },
   {
@@ -227,12 +234,5 @@
       "Training",
       "Git training"
     ]
-  },
-  {
-    "objectID": "pages/liens.html",
-    "href": "pages/liens.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "UMR MARBEC\nGitHub repository issues\nGitHub repository discussion forum\nUMR rocket chat server URL\nDEN admin ressource contact\n\n\n\n\n Back to top"
   }
 ]

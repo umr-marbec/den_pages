@@ -2,30 +2,20 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Bienvenu !",
+    "title": "Bienvenue !",
     "section": "",
-    "text": "Bienvenu !\nL’objectif de ce site est de centraliser et mettre facilement à disposition des ressources informatiques, procédures et autres supports permettant d’appuyer de manière globale les travaux des personnelles et personnes associées de l’UMR MARBEC. Cette structuration s’appuie notamment sur Dispositif d’Ecologie Numérique, ou DEN, qui est une structure transversale associée à l’UMR. Ces missions sont la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique.\nVous disposez aussi d’une section Issues vous permettant par exemple de faire remonter un problème dans le code source du site ou encore proposer une amélioration ou du contenu. Ces “GitHub Issues” sont vraiment à voir comme des objets s’apparentent davantage à des éléments « à faire » et sont axées sur les tâches à accomplir (par exemple via la création de branche dédié au sujet).\nDe plus, vous trouverez un forum de discussion afin d’échanger sur des sujets ou des problématiques communes. Les discussions sont destinées aux conversations qui doivent être transparentes et accessibles, mais qui n’ont pas besoin d’être suivies sur un projet et qui ne sont pas liées au code, contrairement aux “GitHub Issues”.\nPour information, l’UMR dispose aussi d’un serveur Rocket chat accessible via l’URL suivante https://tchat.ird.fr/home. Il est possible d’accéder à l’espace de travail directement depuis l’URL ou en installant un client lourd (=logiciel) sur votre ordinateur et en ajoutant l’URL dans la section “add workspace”.\nPar ailleurs, afin de faciliter l’accès et l’utilisation par le plus grand nombre, vous trouverez ce site et les ressources associées en français (par défaut) mais aussi en anglais (utilisez le bouton à gauche de barre de recherche pour changer de langue).\nN’hésitez pas visiter aussi la section “Je veux contribuer !” si vous disposez de ressources susceptibles d’alimenter celles disponibles via ce site ou même de manière générale si vous voulez contribuer à la mise a disposition de ressources communes.\nEn cas de besoin spécifique, vous pouvez contacter les représentant(e)s et référent(e)s du DEN à l’adresse suivante : marbec-den-admin@listes.ird.fr\nPour information, ce site a été généré via le système de publication Quarto.\n\n\n\n\n Back to top"
+    "text": "Bienvenue !\nL’objectif de ce site est de centraliser et mettre facilement à disposition des ressources informatiques, procédures et autres supports permettant d’appuyer de manière globale les travaux des personnelles et personnes associées de l’UMR MARBEC. Cette structuration s’appuie notamment sur Dispositif d’Ecologie Numérique, ou DEN, qui est une structure transversale associée à l’UMR. Ces missions sont la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique.\nVous disposez aussi d’une section Issues vous permettant par exemple de faire remonter un problème dans le code source du site ou encore proposer une amélioration ou du contenu. Ces “GitHub Issues” sont vraiment à voir comme des objets s’apparentent davantage à des éléments « à faire » et sont axées sur les tâches à accomplir (par exemple via la création de branche dédié au sujet).\nDe plus, vous trouverez un forum de discussion afin d’échanger sur des sujets ou des problématiques communes. Les discussions sont destinées aux conversations qui doivent être transparentes et accessibles, mais qui n’ont pas besoin d’être suivies sur un projet et qui ne sont pas liées au code, contrairement aux “GitHub Issues”.\nPour information, l’UMR dispose aussi d’un serveur Rocket chat accessible via l’URL suivante https://tchat.ird.fr/home. Il est possible d’accéder à l’espace de travail directement depuis l’URL ou en installant un client lourd (=logiciel) sur votre ordinateur et en ajoutant l’URL dans la section “add workspace”.\nPar ailleurs, afin de faciliter l’accès et l’utilisation par le plus grand nombre, vous trouverez ce site et les ressources associées en français (par défaut) mais aussi en anglais (utilisez le bouton à gauche de barre de recherche pour changer de langue).\nN’hésitez pas visiter aussi la section “Je veux contribuer !” si vous disposez de ressources susceptibles d’alimenter celles disponibles via ce site ou même de manière générale si vous voulez contribuer à la mise a disposition de ressources communes.\nEn cas de besoin spécifique, vous pouvez contacter les représentant(e)s et référent(e)s du DEN à l’adresse suivante : marbec-den-admin@listes.ird.fr\nPour information, ce site a été généré via le système de publication Quarto.\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages/serveurs/index_serveurs.html",
-    "href": "pages/serveurs/index_serveurs.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "objectID": "pages/formations/tidyverse.html",
+    "href": "pages/formations/tidyverse.html",
+    "title": "Formation tidyverse",
     "section": "",
-    "text": "Vous trouverez dans cette section tous les ressources en lien avec l’utilisation des serveurs et processus associés de l’UMR.\n\n\n\n Back to top",
+    "text": "Formation tidyverse\nLe code source de la formation tidyverse est accessible sur le dépot GitHub. La présentation associée est disponible à l’adresse suivante.\nUne prochaine session devrait avoir lieu courant 2025 et des précisions seront communiquées ultérieurement.\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Liens utils",
-      "Serveurs"
-    ]
-  },
-  {
-    "objectID": "pages/formations/index_formations.html",
-    "href": "pages/formations/index_formations.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
-    "section": "",
-    "text": "Cette section est dédié à référencer les formations et supports associés mis à disposition de l’UMR et de ses partenaires. En lien avec le caractère spécifique des formations, il est possible que les supports associés ne soient pas disponibles en plusieurs langues. Par ailleurs en suivante ce lien à définir vous trouverez une liste des formations dispensée par l’UMR et surtout les prochaines dates de réalisation.\nPour information, la plupart des sous-sections suivantes renvoi vers des dépôts Git ou sont stockées sur les ressources des formations. Si vous avez des questions en rapport avec ces dernières, le mieux est d’utiliser les services mis à disposition du dépôt (la section “Issues” par exemple) ou à défaut de contacter directement la ou les personnes-ressources associées.\n\n\n\n Back to top",
-    "crumbs": [
-      "Liens utils",
-      "Formations"
+      "Formations",
+      "Formation Tidyverse"
     ]
   },
   {
@@ -89,15 +79,11 @@
     ]
   },
   {
-    "objectID": "pages/support/index_support.html",
-    "href": "pages/support/index_support.html",
+    "objectID": "pages/liens.html",
+    "href": "pages/liens.html",
     "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
     "section": "",
-    "text": "Cette section est dédiée aux procédures et processus permettant d’apporter un support global aux personnelles de l’UMR. Cela va aussi bien de l’aide à la configuration de certains logiciels (comme les clients lourds de messagerie) ou encore des processus plus généraux comme la mise en place de solution de sauvegarde quotidienne ou encore par exemple des suggestions pour la gestion des mots de passe.\n\n\n\n Back to top",
-    "crumbs": [
-      "Liens utils",
-      "Support global"
-    ]
+    "text": "UMR MARBEC\n“Issues” du dépôt GitHub\nForum de discussion du dépôt GitHub\nULR du serveur rocket chat de l’UMR\nContact reférent(e)s du DEN\n\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/packages_logiciels/osmose.html",
@@ -121,6 +107,52 @@
       "Liens utils",
       "Packages et logiciels",
       "Modèle Osmose"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html",
+    "href": "pages/packages_logiciels/r_package_sparck.html",
+    "title": "Package R sparck",
+    "section": "",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Package R sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "title": "Package R sparck",
+    "section": "",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
+    "crumbs": [
+      "Liens utils",
+      "Packages et logiciels",
+      "Package R sparck"
+    ]
+  },
+  {
+    "objectID": "pages/support/index_support.html",
+    "href": "pages/support/index_support.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "section": "",
+    "text": "Cette section est dédiée aux procédures et processus permettant d’apporter un support global aux personnelles de l’UMR. Cela va aussi bien de l’aide à la configuration de certains logiciels (comme les clients lourds de messagerie) ou encore des processus plus généraux comme la mise en place de solution de sauvegarde quotidienne ou encore par exemple des suggestions pour la gestion des mots de passe.\n\n\n\n Back to top",
+    "crumbs": [
+      "Liens utils",
+      "Support global"
+    ]
+  },
+  {
+    "objectID": "pages/contribution.html",
+    "href": "pages/contribution.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "section": "",
+    "text": "Vous faites partir de l’UMR, ou non, et vous avez des bouts de codes, documentations techniques ou n’importe quelles ressources informatiques que vous aimeriez tester, standardiser ou même mutualiser ? Vous avez une idée et vous demandez si le processus associé n’a pas déjà été développé par quelqu’un ? Vous êtes au bon endroit !\nCe site, et par addition les ressources associées, sont le fruit de nombreuses heures de travail et de réflexions communes sur des sujets qui au final sont souvent transervaux entre les personnes. Son but est vraiment de centraliser et standardiser au maximum ce qui a été fait et son succès ne dépend que de la synergie que nous mettons en œuvre pour créer du contenu. Par ailleurs, ces ressources ne sont que la partie émergée de l’iceberg qui favorise les relations et les liens que nous pouvons créer entre nous sur nos travaux.\nSi vous voulez contribuer d’une manière ou d’une autre, la clé est vraiment de ne pas se décourager par la tache globale qui peut faire peur, mais vraiment de commencer par un premier pas. Vous constaterez rapidement que derrière un problème ou un obstacle, vous trouverez ici une communauté riche et bienveillante qui saura vous aider, toujours avec un objectif de mutualisation et d’optimisation des ressources informatiques.\nDerrière la multitude de types de contenu que nous pouvons partagé entre nous, qui va d’une documentation en markdown jusqu’a des packages ou des logiciels développés par la communauté, l’idée est d’établir entre nous certains standards permettant de garantir l’intégrité et l’interopérabilité des contenus et ressources disponibles. Ces standards peuvent être vus comme des règles, mais en aucun cas ils ne doivent être assimilés à des freins à votre implication. Par exemple si certains points sont bloquants (par exemple la traduction d’une procédure dans une autre langue ou la méconnaissance de l’utilisation des forges telles que les git), tournés vers la communauté et vous trouverez tout l’aide dont vous avez besoin.\nDe manière générale voici quelques lignes directrices à prendre en compte avant de publier des ressources :\n\nles ressources de ce site sont dédiées à être utilisé par tous le personnel de l’UMR, mais potentiellement les partenaires associés. Par défaut le contenu doit être publié en français, mais aussi en anglais afin de garantir l’accessibilité au “maximum”. Certains contenus, comme les formations, peuvent s’abroger de règles si cela est pertinent. Encore une fois ne vous laissez pas bloqué par la barrière de la langue, vous trouverez forcément quelqu’un de notre communauté qui peut vous aider pour traduire.\nsuivante le type de contenu que vous voulez publiez, le mieux est parfois de ce tourner vers des personnes-ressources ou référentes qui pourront vous apporter des solutions ou des propositions pour vous guider dans la mutualisation de vos ressources. La liste de ces personnes clés sera mise à disposition sous peu et en attendant si vous ne savez pas vers qui vous tourner vous pouvez envoyer un mail aux administrateurs du DEN.\ntoujours dans un but de mutualisation et globalement d’harmonie des templates seront proposés pour les différents types de ressources. En attendant, n’hésitez pas à échanger avec les personnes de la communauté pour essayer de trouver, autant que possible, une structure commune.\nmême si l’utilisation des ressources informatique au sein de l’UMR doit vraiment être vu de manière transversale et sans “frontières” associées, la mutualisation et l’accessibilité de ces derniers est vraiment en lien avec le Dispositif d’Ecologie Numérique, ou DEN. Cette entité, transversale au niveau de l’UMR à comme objectifs la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique. Vous rapprocher de ce dispositif et des sous-entités qui le composent peut être judicieux et vous apporter un support non négligeable au sein de vos activités.\nde par sa nature, ce site est voué à évoluer en lien avec les besoins. N’hésitez pas à faire des suggestions d’améliorations, proposer de nouvelles sections ou même une organisation différente. Au final cela ne pourra être que bénéfique à la communauté.\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Liens utils",
+      "Je veux contribuer !"
     ]
   },
   {
@@ -159,38 +191,14 @@
     ]
   },
   {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html",
-    "href": "pages/packages_logiciels/r_package_sparck.html",
-    "title": "Package R sparck",
-    "section": "",
-    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Package R sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
-    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
-    "title": "Package R sparck",
-    "section": "",
-    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
-    "crumbs": [
-      "Liens utils",
-      "Packages et logiciels",
-      "Package R sparck"
-    ]
-  },
-  {
-    "objectID": "pages/contribution.html",
-    "href": "pages/contribution.html",
+    "objectID": "pages/serveurs/index_serveurs.html",
+    "href": "pages/serveurs/index_serveurs.html",
     "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
     "section": "",
-    "text": "Vous faites partir de l’UMR, ou non, et vous avez des bouts de codes, documentations techniques ou n’importe quelles ressources informatiques que vous aimeriez tester, standardiser ou même mutualiser ? Vous avez une idée et vous demandez si le processus associé n’a pas déjà été développé par quelqu’un ? Vous êtes au bon endroit !\nCe site, et par addition les ressources associées, sont le fruit de nombreuses heures de travail et de réflexions communes sur des sujets qui au final sont souvent transervaux entre les personnes. Son but est vraiment de centraliser et standardiser au maximum ce qui a été fait et son succès ne dépend que de la synergie que nous mettons en œuvre pour créer du contenu. Par ailleurs, ces ressources ne sont que la partie émergée de l’iceberg qui favorise les relations et les liens que nous pouvons créer entre nous sur nos travaux.\nSi vous voulez contribuer d’une manière ou d’une autre, la clé est vraiment de ne pas se décourager par la tache globale qui peut faire peur, mais vraiment de commencer par un premier pas. Vous constaterez rapidement que derrière un problème ou un obstacle, vous trouverez ici une communauté riche et bienveillante qui saura vous aider, toujours avec un objectif de mutualisation et d’optimisation des ressources informatiques.\nDerrière la multitude de types de contenu que nous pouvons partagé entre nous, qui va d’une documentation en markdown jusqu’a des packages ou des logiciels développés par la communauté, l’idée est d’établir entre nous certains standards permettant de garantir l’intégrité et l’interopérabilité des contenus et ressources disponibles. Ces standards peuvent être vus comme des règles, mais en aucun cas ils ne doivent être assimilés à des freins à votre implication. Par exemple si certains points sont bloquants (par exemple la traduction d’une procédure dans une autre langue ou la méconnaissance de l’utilisation des forges telles que les git), tournés vers la communauté et vous trouverez tout l’aide dont vous avez besoin.\nDe manière générale voici quelques lignes directrices à prendre en compte avant de publier des ressources :\n\nles ressources de ce site sont dédiées à être utilisé par tous le personnel de l’UMR, mais potentiellement les partenaires associés. Par défaut le contenu doit être publié en français, mais aussi en anglais afin de garantir l’accessibilité au “maximum”. Certains contenus, comme les formations, peuvent s’abroger de règles si cela est pertinent. Encore une fois ne vous laissez pas bloqué par la barrière de la langue, vous trouverez forcément quelqu’un de notre communauté qui peut vous aider pour traduire.\nsuivante le type de contenu que vous voulez publiez, le mieux est parfois de ce tourner vers des personnes-ressources ou référentes qui pourront vous apporter des solutions ou des propositions pour vous guider dans la mutualisation de vos ressources. La liste de ces personnes clés sera mise à disposition sous peu et en attendant si vous ne savez pas vers qui vous tourner vous pouvez envoyer un mail aux administrateurs du DEN.\ntoujours dans un but de mutualisation et globalement d’harmonie des templates seront proposés pour les différents types de ressources. En attendant, n’hésitez pas à échanger avec les personnes de la communauté pour essayer de trouver, autant que possible, une structure commune.\nmême si l’utilisation des ressources informatique au sein de l’UMR doit vraiment être vu de manière transversale et sans “frontières” associées, la mutualisation et l’accessibilité de ces derniers est vraiment en lien avec le Dispositif d’Ecologie Numérique, ou DEN. Cette entité, transversale au niveau de l’UMR à comme objectifs la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique. Vous rapprocher de ce dispositif et des sous-entités qui le composent peut être judicieux et vous apporter un support non négligeable au sein de vos activités.\nde par sa nature, ce site est voué à évoluer en lien avec les besoins. N’hésitez pas à faire des suggestions d’améliorations, proposer de nouvelles sections ou même une organisation différente. Au final cela ne pourra être que bénéfique à la communauté.\n\n\n\n\n\n Back to top",
+    "text": "Vous trouverez dans cette section tous les ressources en lien avec l’utilisation des serveurs et processus associés de l’UMR.\n\n\n\n Back to top",
     "crumbs": [
       "Liens utils",
-      "Je veux contribuer !"
+      "Serveurs"
     ]
   },
   {
@@ -205,15 +213,14 @@
     ]
   },
   {
-    "objectID": "pages/formations/tidyverse.html",
-    "href": "pages/formations/tidyverse.html",
-    "title": "Formation tidyverse",
+    "objectID": "pages/formations/index_formations.html",
+    "href": "pages/formations/index_formations.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
     "section": "",
-    "text": "Formation tidyverse\nLe code source de la formation tidyverse est accessible sur le dépot GitHub. La présentation associée est disponible à l’adresse suivante.\nUne prochaine session devrait avoir lieu courant 2025 et des précisions seront communiquées ultérieurement.\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "Cette section est dédié à référencer les formations et supports associés mis à disposition de l’UMR et de ses partenaires. En lien avec le caractère spécifique des formations, il est possible que les supports associés ne soient pas disponibles en plusieurs langues. Par ailleurs en suivante ce lien à définir vous trouverez une liste des formations dispensée par l’UMR et surtout les prochaines dates de réalisation.\nPour information, la plupart des sous-sections suivantes renvoi vers des dépôts Git ou sont stockées sur les ressources des formations. Si vous avez des questions en rapport avec ces dernières, le mieux est d’utiliser les services mis à disposition du dépôt (la section “Issues” par exemple) ou à défaut de contacter directement la ou les personnes-ressources associées.\n\n\n\n Back to top",
     "crumbs": [
       "Liens utils",
-      "Formations",
-      "Formation Tidyverse"
+      "Formations"
     ]
   },
   {
@@ -227,12 +234,5 @@
       "Formations",
       "Formation Git"
     ]
-  },
-  {
-    "objectID": "pages/liens.html",
-    "href": "pages/liens.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
-    "section": "",
-    "text": "UMR MARBEC\n“Issues” du dépôt GitHub\nForum de discussion du dépôt GitHub\nULR du serveur rocket chat de l’UMR\nContact reférent(e)s du DEN\n\n\n\n\n Back to top"
   }
 ]
