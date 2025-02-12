@@ -17,12 +17,10 @@ website:
         href: pages/liens.qmd
       - text: "Help"
         menu:
-          - text: "Report a Bug"
-            href: https://github.com/umr-marbec/den_pages/issues
           - text: "Ask a Question"
             href: https://github.com/umr-marbec/den_pages/discussions
     right:
-      - text: "French"
+      - text: "Fr"
         href: ../
     tools:
       - icon: github
@@ -34,15 +32,20 @@ website:
   sidebar:
     style: "docked"
     contents:
-      - text: "I want to contribute!"
-        href: pages/contribution.qmd
+      - text: "Servers"
+        href: pages/serveurs/index_serveurs.qmd
+      - text: "Training"
+        href: pages/formations/index_formations.qmd
+        contents:
+          - text: "Git training"
+            href : pages/formations/git.qmd
+          - text: "Tidyverse training "
+            href : pages/formations/tidyverse.qmd
       - section: "Version Control System"
         href: pages/git/index_git.qmd
         contents:
           - text: "Mirroring from Github to a Git Repository"
             href: pages/git/miroir_github_git.qmd
-      - text: "Servers"
-        href: pages/serveurs/index_serveurs.qmd
       - section: "Packages and software"
         href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
@@ -52,14 +55,9 @@ website:
             href: pages/packages_logiciels/ichthyop.qmd
           - text: "Osmose model"
             href: pages/packages_logiciels/osmose.qmd
-      - text: "Training"
-        href: pages/formations/index_formations.qmd
-        contents:
-          - text: "Git training"
-            href : pages/formations/git.qmd
-          - text: "Tidyverse training "
-            href : pages/formations/tidyverse.qmd
       - text: "Global support"
         href: pages/support/index_support.qmd
+      - text: "I want to contribute!"
+        href: pages/contribution.qmd
 
 lang: en-US

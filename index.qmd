@@ -5,7 +5,7 @@ format:
 ---
 
 ::: {.content-visible when-profile="french"}
-# Bienvenu !
+# Bienvenue !
 
 L'objectif de ce site est de centraliser et mettre facilement à disposition des ressources informatiques, procédures et autres supports permettant d'appuyer de manière globale les travaux des personnelles et personnes associées de l'[UMR MARBEC](https://umr-marbec.fr/nous-connaitre/presentation-de-lumr/){.external target="_blank"}. Cette structuration s'appuie notamment sur Dispositif d’Ecologie Numérique, ou [DEN](https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/){.external target="_blank"}, qui est une structure transversale associée à l'UMR. Ces missions sont la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique.
 
