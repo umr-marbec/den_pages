@@ -2,12 +2,36 @@
 format:
   html:
     css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-02-13"
 ---
 
 ::: {.content-visible when-profile="french"}
+Le DEN Marbec propose deux serveurs, un serveur de calcul **MARBEC-GPU** et un serveur de stockage **MARBEC-DATA**. Une documentation collaborative est en cours de rédaction pour vous permettre de vous familiariser avec ces serveurs. Vous pouvez dès maintenant consulter les pages de présentation de ces serveurs et quelques basiques tutoriels pour vous aider à démarrer :
+
+- [MARBEC-GPU Intro](marbec_gpu/index_marbec_gpu.qmd)
+- [Tutoriels MARBEC-GPU](marbec_gpu/index_marbec_gpu.qmd#documentation)
+- [MARBEC-DATA Intro](marbec_data/index_marbec_data.qmd)
+- [Gestion des données sur MARBEC-DATA](marbec_data/manage_files.qmd)
+
+
+Tout utilisateur voulant contribuer à la documentation ou faire des retours est le bienvenu : [comment contribuer](../contribution.qmd).
+
+Bonne utilisation !
 
 :::
 
 ::: {.content-visible when-profile="english"}
+
+The DEN Marbec offers two servers, a **MARBEC-GPU** computing server and a **MARBEC-DATA** storage server. A collaborative documentation is being written to help you get familiar with these servers. You can consult the presentation pages of these servers and some basic tutorials to help you get started:
+
+- [MARBEC-GPU Intro](marbec_gpu/index_marbec_gpu.qmd)
+- [MARBEC-GPU Tutorials](marbec_gpu/index_marbec_gpu.qmd#documentation)
+- [MARBEC-DATA Intro](marbec_data/index_marbec_data.qmd)
+- [Managing files on MARBEC-DATA](marbec_data/manage_files.qmd)
+
+Any user willing to contribute to the documentation or give feedback is welcome: [how to contribute](../contribution.qmd).
+
+Enjoy!
 
 :::

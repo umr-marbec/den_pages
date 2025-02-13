@@ -2,12 +2,21 @@
 format:
   html:
     css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-01-13"
 ---
 
 ::: {.content-visible when-profile="french"}
+# Initiation au cluster de calcul Marbec-GPU
+
+Une video de présentation du cluster sera bientôt disponible.
 
 :::
 
 ::: {.content-visible when-profile="english"}
+
+# Initiation to Marbec-GPU Cluster
+
+A presentation video of the cluster will be available soon.
 
 :::

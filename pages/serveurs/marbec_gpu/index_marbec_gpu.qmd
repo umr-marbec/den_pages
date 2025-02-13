@@ -2,12 +2,124 @@
 format:
   html:
     css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-02-13"
 ---
 
+
 ::: {.content-visible when-profile="french"}
+# Documentation Marbec-GPU
+
+Bienvenue dans la documentation du cluster Marbec-GPU. Ce document fournit un aperçu du cluster, de ses capacités et des guides disponibles pour apprendre à bien l'utiliser.
+
+Le cluster Marbec-GPU est conçu pour fournir des ressources informatiques de hautes performances pour l'exécution de code, Python et R notamment. Il est basé sur le noyau Linux-Ubuntu et dispose d'une interface Jupyter pour faciliter son utilisation. Plusieurs outils y sont installés, notamment Python, R, Git, Conda, CUDA et RStudio.
+
+## Caractéristiques
+
+- Ressources
+    - 2 [NVIDIA A40](https://www.nvidia.com/fr-fr/data-center/a40/) GPUs
+    - 2 [Intel Xeon Platinum 8380](https://www.intel.com/content/www/us/en/products/sku/212287/intel-xeon-platinum-8380-processor-60m-cache-2-30-ghz/specifications.html) CPUs, 2x40 cores, 2x80 threads
+    - 1,48 To de RAM
+    - Interconnexions MARBEC-DATA
+
+## Inscription
+
+Pour commencer à utiliser le cluster Marbec-GPU, vous devrez rejoindre le groupe Marbec-DEN. Contactez les Administrateurs pour plus de détails : [Contacts administrateurs DEN](mailto:marbec-den-admin@listes.ird.fr)
+
+## Documentation
+
+Pour des instructions détaillées sur l'utilisation du cluster Marbec-GPU, veuillez vous référer aux sections suivantes :
+
+- [Guide d'initiation](intro_marbec_gpu.qmd) (arrive bientôt)
+- [Guide des Commandes Linux utiles](basic_command.qmd) (english only) 
+- [Exécution d'un Script Basique R/Python](basic_example.qmd) (via SLURM) 
+- [Exécution R](run_r_script.qmd) (english only) 
+
+
+## Support
+
+Si vous rencontrez des problèmes ou avez des questions, veillez intéragir avec le RocketChatIRD.
+
+## FAQ
+
+- De quelles ressources ai-je besoin d'allouer?
+
+Bonne question ! Cela dépend de vos données d'entrée (taille et type), de votre modèle (stochastique, statistique, réseau de neurones, etc.), de votre tâche mais surtout des packages utilisés. Par exmple, certains packages ne permettent pas de faire les calculs sur GPU, d'autres ne peuvent pas paralléliser sur plusieurs CPU. Renseigner vous donc sur les packages pour ne pas allouer des ressources qui ne seront pas utlisées et adaptez vos script en conséquent. Quelques exemples d'allocation : **Entraînement Pytorch YOLO** : `--mem=64G`, `--c=16` et `--gres=gpu:1` ; **Exécution HSMC (TensorFlow)** : `--mem=64GB`, `--cpus-per-task=30` et `--gpus-per-node=1`
+
+- Mon script est-il compatible GPU ?
+
+Non, pas directement. Cependant, certaines bibliothèques sont compatibles GPU. Si votre framework ou script n'utilise pas spécifiquement le GPU, votre code NE tirera PAS parti du matériel GPU. Principaux exemples de bibliothèques compatibles GPU : PyTorch, TensorFlow, Keras, Theano, Caffe, etc.
+
+- Comment annuler un job soumis ?
+
+Utilisez la commande `scancel JOBID`, où `JOBID` est l'identifiant du job que vous souhaitez annuler. Vous pouvez trouver l'identifiant du job dans la sortie de la commande `sbatch` lorsque vous soumettez un job, ou en utilisant la commande `squeue` comme mentionné dans la question précédente, pour plus de details [documentation SLURM scancel](https://slurm.schedmd.com/scancel.html).
+
+- Comment accéder à la file d'attente des jobs ?
+
+Utilisez la commande suivante : `squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID`. Cette commande affiche une liste détaillée des jobs en attente, y compris le nom du job (par exemple, `spawner-jupyterhub` dessigne une "session-job"; sinon, le nom spécifié dans l'argument `#SBATCH --job-name`), le nom d'utilisateur, le temps d'exécution, le nom du noeud (eg., `gres:gpu:1` pour une allocation GPU, `gres:gpu:0` pour une allocation CPU), l'état du job (par exemple, `PENDING` pour les jobs en attente de démarrage en raison de la disponibilité des ressources ou de la planification, ou `RUNNING` pour les jobs en cours d'exécution) et JOBID (un identifiant unique pour chaque job), se référer à la [documentation SLURM squeue](https://slurm.schedmd.com/squeue.html) pour plus de détails.
+
+- Comment soumettre plusieurs jobs sans bloquer les autres utilisateurs ?
+
+Toute la communauté MarbecGPU vous remercie pour votre démarche coopérative et amicale. Vous pouvez utiliser le paramètre `#SBATCH --dependency=afterany:JOBID`, où `JOBID` est l'identifiant du job que vous souhaitez attendre (par exemple, 4391). Vous pouvez trouver l'identifiant du job dans la sortie de la commande `sbatch` lorsque vous soumettez un job, ou en utilisant la commande `squeue` comme mentionné dans la question précédente. Selon la [documentation SLURM sbatch](https://slurm.schedmd.com/sbatch.html) ce paramètre garantit que le démarrage de votre job est différé jusqu'à ce que la dépendance spécifiée soit satisfaite. Pour des dépendances basées sur des fichiers ou des cas plus complexes, vous pouvez explorer d'autres mécanismes pour retarder ou séquencer l'exécution de votre job selon vos besoins.
 
 :::
 
 ::: {.content-visible when-profile="english"}
+# Marbec-GPU Documentation
+Welcome to the Marbec-GPU cluster documentation. This document provides an overview of the cluster, its capabilities, and how to get started with using it.
+
+The Marbec-GPU cluster is designed to provide high-performance computing resources for code execution, such as those using Python and R. It is built on the Linux-Ubuntu kernel and features a Jupyter interface for ease of use. Several common tools are installed, including Python, R, Git, Conda, CUDA, and RStudio.
+
+## Features
+
+- Ressources
+    - 2 [NVIDIA A40](https://www.nvidia.com/fr-fr/data-center/a40/) GPUs
+    - 2 [Intel Xeon Platinum 8380](https://www.intel.com/content/www/us/en/products/sku/212287/intel-xeon-platinum-8380-processor-60m-cache-2-30-ghz/specifications.html) CPUs, 2x40 cores, 2x80 threads
+    - 1,48 To de RAM
+    - MARBEC-DATA Interconnections
+
+
+## Registration
+
+To start using the Marbec-GPU cluster, you will need to join the Marbec-DEN group. Contact the Administrators for more details : [ Contact DEN administrators](mailto:marbec-den-admin@listes.ird.fr).
+
+## Documentation
+
+For detailed instructions on how to use the Marbec-GPU cluster, please refer to the following sections:
+
+- [Initiation Guide](intro_marbec_gpu.qmd) (comming soon) 
+- [Useful Linux Commands Guide](basic_command.qmd)
+- [Basic Script Execution](basic_example.qmd) (via SLURM)
+- [R Script Execution](run_r_script.qmd)
+
+
+
+
+
+## Support
+
+If you encounter any issues or have questions interact with the RocketChatIRD.
+
+## FAQ
+
+- **What resources do I need to allocate?**
+
+Good question! It depends on your input data (size and type), your model (stochastic, statistical, neural network, etc.), your task, but most importantly, the packages you are using. For example, some packages do not support GPU computations, while others cannot parallelize across multiple CPUs. Make sure to research the packages you're using to avoid allocating resources that won't be utilized, and adapt your scripts accordingly. Here are some examples of resource allocation: **Training Pytorch YOLO**: `--mem=64G`, `--c=16`, and `--gres=gpu:1`; **Running HSMC (TensorFlow)**: `--mem=64GB`, `--cpus-per-task=30`, and `--gpus-per-node=1`.
+
+- Does my script is GPU-capable ? 
+
+No, not directly. However, some libraries are GPU-capable. If your framework or script does not specifically use the GPU, your code will NOT utilize GPU hardware.   Main examples of GPU-capable libraries: PyTorch, TensorFlow, Keras, Theano, Caffe, etc.
+
+- How to cancel a submitted job ?
+
+Use the command `scancel JOBID`, where `JOBID` is the job ID of the job you want to cancel. You can find the job ID in the output of the sbatch command when you submit a job, or by using the `squeue` command as mentioned in the previous question, for more details [SLURM scancel documentation](https://slurm.schedmd.com/scancel.html).
+
+- How access job queue ? 
+
+Use the following command : `squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID`. This command displays a detailed list of jobs in the queue, including the job name (e.g., `spawner-jupyterhub` for a "job-session"; otherwise, the name specified in the `#SBATCH --job-name` argument), username, running time, node name (eg., `gres:gpu:1` for a GPU allocation, `gres:gpu:0` for a CPU allocation), job state (e.g., `PENDING` for jobs waiting to start due to resource availability or scheduling, or `RUNNING` for jobs currently being executed) and JOBID (a unique identifier for each job), refer to the [SLURM squeue documentation](https://slurm.schedmd.com/squeue.html) for more details.
+
+- How to submit multiple jobs without blocking other users ?
+
+Thank you from the entire MarbecGPU Community for using resources in a cooperative and friendly manner. You can use `#SBATCH --dependency=afterany:JOBID` parameter, where `JOBID` is the job ID of the job you want to wait for (e.g., 4391). You can find the job ID in the output of the sbatch command when you submit a job, or by using the `squeue` command as mentioned in the previous question. According to the [SLURM sbatch documentation](https://slurm.schedmd.com/sbatch.html) this parameter ensures that the start of your job is deferred until the specified dependency is satisfied. For file-based dependencies or more complex cases, you can explore other mechanisms to further delay or sequence your job execution as needed.
 
 :::

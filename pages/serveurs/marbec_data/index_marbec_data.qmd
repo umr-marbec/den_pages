@@ -1,13 +1,122 @@
 ---
+date: 2024-10-21
 format:
   html:
     css: ../../../styles.css
+author: "[Luis LAU-MEDRANO](mailto:luis.lau-medrano@ird.fr)"
 ---
 
 ::: {.content-visible when-profile="french"}
 
+# Introduction à `marbec-data`
+
+`marbec-data` est un **NFS**. Un NFS est un protocole réseau qui permet à plusieurs appareils connectés à un réseau de partager des fichiers et des répertoires. Cela permet aux chercheurs de stocker leurs données d’entrée, leurs codes et leurs résultats, tout en bénéficiant d’une sauvegarde centralisée et de la possibilité d’accéder à leurs fichiers depuis n’importe quelle machine connectée au cluster.  
+
+Pour simplifier, et en reprenant l’analogie avec votre PC actuel, `marbec-data` prend la place du stockage (c’est-à-dire du disque dur) dans le HPC.  
+
+D’un autre côté, un **cluster de calcul** est essentiellement un ensemble d’éléments informatiques interconnectés qui fonctionnent de manière coordonnée pour exécuter des processus de calcul complexes. Dans l’analogie avec votre PC, `marbec-gpu` correspond à votre processeur principal (CPU), à votre processeur graphique (GPU), à la mémoire RAM générale et à la mémoire vidéo. Bien sûr, ces simplifications laissent de côté certains détails importants que nous expliquerons plus en profondeur au fur et à mesure des besoins.  
+
+
+## Comment accéder à `marbec-data` ?  
+
+Cela dépend de ce que nous devons faire. Si nous voulons simplement jeter un coup d'œil rapide aux fichiers et vérifier certains aspects de notre compte, il suffit d’ouvrir une fenêtre de navigateur et de se rendre à l’adresse suivante : <https://marbec-data.ird.fr/>.  
+
+Une interface de connexion apparaîtra, où nous devrons entrer nos identifiants (fournis par les administrateurs de `marbec-gpu`).  
+
+![](../../../ressources/marbec_data/intro/clipboard-380148957.png)  
+
+Une fois connectés, nous verrons une sorte de bureau avec quelques icônes permettant d’accéder à nos répertoires partagés et à la documentation générale sur l’utilisation de la plateforme.  
+
+![](../../../ressources/marbec_data/intro/clipboard-3953217027.png)  
+
+
+
+## Comment changer notre mot de passe dans `marbec-data` ?  
+
+Commencez par cliquer sur l’icône des options utilisateur (celle qui ressemble à une petite personne) en haut à droite du bureau, puis sélectionnez l’option **Personnel**.  
+
+![](../../../ressources/marbec_data/intro/clipboard-1332799177.png)  
+
+Une petite fenêtre s’ouvrira. Dans l’onglet affiché par défaut (**Compte**), vous aurez accès à l’option **Changer le mot de passe**.  
+
+Dans l’onglet **Préférences d’affichage**, vous pourrez également modifier certains paramètres, comme la langue de l’interface ou l’image et les couleurs du bureau.  
+
+![](../../../ressources/marbec_data/intro/clipboard-222437051.png)  
+
+
+
+## Vérifier l’espace disponible dans `marbec-data`  
+
+Depuis la même fenêtre **Personnel** mentionnée précédemment, dans l’onglet **Quota**, vous pourrez vérifier la limite de stockage qui vous est attribuée ainsi que l’espace utilisé dans chacun des dossiers associés à votre utilisateur.  
+
+Cela vous permet d’avoir une vue graphique simple de l’espace restant disponible.  
+
+Si vous avez besoin de plus d’espace, vous pouvez en faire la demande par e-mail auprès des administrateurs de `marbec-data`.  
+
+![](../../../ressources/marbec_data/intro/clipboard-2171152553.png)  
+
+::: callout-important  
+Si, au cours de l’exécution d’un processus, la limite de quota allouée est atteinte, le système bloquera toute tentative d’enregistrement de fichiers, ce qui entraînera soit l’arrêt inopiné du processus, soit des erreurs liées aux problèmes d’écriture sur le disque.  
+:::  
+
+
+
+## Comment gérer les fichiers dans `marbec-data` ou entre `marbec-data` et notre PC ?  
+
+Nous avons un [article](manage_files.qmd) où nous développons ce point plus en détail.  
+
+::: callout-important  
+Il est très important de définir des mots de passe robustes (composés de lettres, chiffres, symboles et majuscules/minuscules) et, de préférence, d’utiliser des mots de passe différents pour `marbec-data` et `marbec-gpu`.  
+
+Par ailleurs, l’environnement JupyterLab permet d’utiliser les raccourcis classiques comme `Ctrl+C`-`Ctrl+V` (ou `Cmd+C`-`Cmd+V` sous macOS) pour copier-coller des chaînes de caractères. Il est donc possible de les utiliser lors du changement de mot de passe avec la commande `passwd`.  
+:::  
+
 :::
 
 ::: {.content-visible when-profile="english"}
+
+# Introduction to `marbec-data`
+
+
+`marbec-data` is a **NFS**. A NFS is a network protocol that allows multiple devices connected to a network to share files and directories. This allows researchers to store input data, codes and results, but with the advantage of having a centralized backup and the ability to access their files from any machine connected to the cluster. In very simple words and going back to the analogy with your current PC, `marbec-data` takes the place of the storage (i.e. the hard disk) in the HPC. On the other hand, a **compute cluster** is, in essence, a set of interconnected computational elements working in a coordinated manner to execute complex computational processes. Within the analogy of your current PC, `marbec-gpu` equates to: your main processor (CPU), your graphics processor (GPU), general RAM and video RAM. Of course, with these simplifications we are leaving out some important details that we will explain in depth as we need to.
+
+## How to access marbec-data?
+
+This will depend on what we need to do. If we just want to take a quick look at the files and review aspects of our account, we just open a browser window and go to the address <https://marbec-data.ird.fr/>. This will open a login interface where we just need to enter our credentials (provided by the `marbec-gpu` administrators).
+
+![](../../../ressources/marbec_data/intro/clipboard-380148957.png)
+
+Once inside, we will see a sort of desktop where we will see a couple of icons to access our shared directories and general documentation on the use of the platform.
+
+![](../../../ressources/marbec_data/intro/clipboard-3953217027.png)
+
+## ¿How to change our password in `marbec-data`?
+
+We will start by clicking on the user options icon (the one that looks like a little person) at the top right of the desktop and selecting the **Personal** option.
+
+![](../../../ressources/marbec_data/intro/clipboard-1332799177.png)
+
+A small window will open where in the first tab shown (**Account**), we will have access to **Change password** option. Likewise, in the **Display Preferences** tab, we will be able to change aspects such as the interface language or the desktop image and colors. 
+
+![](../../../ressources/marbec_data/intro/clipboard-222437051.png)
+
+## Check our available space in `marbec-data`.
+
+From the same **Personal** window seen in the previous section, in the **Quota** tab we will be able to verify the storage limit assigned to our user and what has been used so far in each of the folders associated to our user. This is a simple and graphic way to visualize the available space we have left. If at any time we need more space, just request it by e-mail to the `marbec-data` administrators.
+
+![](../../../ressources/marbec_data/intro/clipboard-2171152553.png)
+
+::: callout-important
+If at any time during the execution of a process the allocated quota limit is reached, the system will block any attempt to save files and this will result in the unplanned termination of the process or errors related to disk write problems.
+:::
+
+## How to manage files inside `marbec-data` or between `marbec-data` and our PC?
+
+We have a [post](manage_files.qmd) where we develop this point in more detail.
+
+
+::: callout-important
+It is very important to define strong passwords (alphanumeric with symbols and uppercase-case) and preferably different passwords for the login in `marbec-data` and `marbec-gpu`. On the other hand, the JupyterLab environment DOES allow the use of classic shortcuts like `Ctrl+C`-`Ctrl+V` (or `Cmd+C`-`Cmd+V` in MacOS) to copy-paste character strings, so it is possible to use them during the password change process with the `passwd` command.
+:::
 
 :::
