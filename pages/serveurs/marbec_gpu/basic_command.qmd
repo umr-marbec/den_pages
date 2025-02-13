@@ -1,0 +1,111 @@
+---
+date: 2024-10-24
+description: ENGLISH ONLY
+format:
+  html:
+    css: ../../../styles.css
+author: "[Luis LAU-MEDRANO](mailto:luis.lau-medrano@ird.fr)"
+---
+
+# Main commands in `marbec-gpu` Terminal
+
+The first thing to keep in mind is that `marbec-gpu` has Ubuntu installed, so the commands listed below will be the same as the ones used in that OS. This article will show a description of the main usage modes for each command, but if you have any additional requirements, you can always search in forums like [Stackoverflow](https://stackoverflow.com/) or check the help for each command, which consists of placing the command name followed by `--help`. For example, if I want to know the help for the `ls` command, just run `ls --help` in the Terminal.
+
+::: {.callout-note title="Upper and lower case"}
+As in R or Python, the use of upper or lower case when indicating an option does matter. For example, `ls -D` is not equivalent to `ls -d`, so be carefull.
+:::
+
+### Browsing within folders
+
+* Command: `cd`
+* Usage: `cd path/folder`
+
+To indicate a previous position (folder), you will use the *statement* `..` as follows: `../path/folder1` (this indicates that there is a folder called `path` from the folder where you are, and that that has a folder called `folder1` as well).
+
+### Create a folder
+
+* Command: `mkdir`
+* Usage: `mkdir path/folder`
+
+### Get the content of a folder as a list
+
+* Command: `ls`
+* Usage: `ls path/folder/`
+
+Main options:
+
+* `--all` (o `-a`): Displays all files and subfolders, including those protected (hidden) by the system.
+
+### Generate a list of files/folders and display the size of each item
+
+* Command: `du`
+* Usage: `du path/to/file.csv` o `du path/to/folder`
+
+Main options:
+
+* `--human-readable` (o `-h`): changes the units dynamically to avoid displaying all Kb. This is especially useful when you have large objects (subfolders or files).
+
+* `--summary` (o `-s`): displays a summary table, i.e. it only includes the subfolders and files present at the first search level. This is useful when we just want to take a quick look and avoid displaying a complete listing of ALL internal subfolders. 
+
+If I want to get a list of all the files and folders inside a folder with their respective sizes (the three options are equivalent):
+
+```bash
+du ruta/de/folder/* --human-readable --summarize
+du ruta/de/folder/* -h -s
+du ruta/de/folder/* -hs
+```
+
+### Copy-paste
+
+For this, the simplest way is through the `cp` command and making use of the navigation commands cited in this post (e.g. `..` to indicate a previous folder). The basic syntax is the following: `cp path/origin /path/destination`, but there are different possible cases:
+
+* Copy a file into the same folder, but with a different name (create duplicate): `cp file1.csv file1-dup.csv`.
+
+* Copy a file to another folder: `cp path/file1.csv path/destination`.
+
+* Copy more than one file to another folder: `cp path/file1.csv path/file2.csv folder/destination` 
+
+* Copy a folder to another folder: `cp path/folder1 path/folder2 --recursive` or `cp path/folder1 path/folder2 -r`.
+
+:::{.callout-note}
+By default, `cp` will overwrite any file with the same name. To avoid this, it is possible to add the `-n` option as follows: `cp path/from/file1.csv path/destination -n`.
+:::
+
+### Cut-paste (and also rename)
+
+It will be very similar to the above, but through the `mv` command:
+
+* Rename a file (within the same folder): `mv file1.csv file2.csv`
+
+* Move a file to another folder: `mv path/file1.csv path/to/destination`
+
+* Move one file to another folder: `mv path/file1.csv path/file2.csv path/destination`
+
+* Move one folder to another folder: `mv path/old/folder path/new/folder`
+
+
+### Delete
+
+For this, we will use the `rm` command as follows:
+
+* Delete a file: `rm path/to/file.csv` 
+
+* Delete a folder (and all its contents): `rm path/to/folder -r`
+
+:::{.callout-caution title="No turning back"}
+While inside Terminal it is always possible to cancel a command using the shortcut `Ctrl+C` (or `Cmd+C` on MacOS), once the `rm` command completes its work, **there is no way to revert the deletion** or recover it from a recycle garbage can, so be very careful when using it.
+:::
+
+### Display current processes
+
+* Command: `top`
+
+When you run it, it will show in interactive mode in Terminal the processes that are running, as well as the resources used by each of them (basically like a Task Manager). To exit this interactive mode, just press the `q` key.
+
+### Stop a process
+
+If we want to force the closing or the cancellation of a process already started, we can use the shortcut `Ctrl+C` (or `Cmd+C` in MacOS). It is important to keep in mind that forcing the closing of a process that had in progress the handling of files or folders (creation, copy, etc.) can leave the generated files unusable.
+
+### Viewing a plain text file
+
+By default, there are two tools available from Terminal: `vi` and `nano`. The syntax for their execution is as simple as `vi path/file1.txt` or `nano path/file1.txt`, where `file1.txt` can be any plain text file (e.g. an R or Python script). The navigation shortcuts within each of these environments are different, but documentation is abundant on the Internet. Choose the one you like best.
