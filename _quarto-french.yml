@@ -17,12 +17,10 @@ website:
         href: pages/liens.qmd
       - text: "Aide"
         menu:
-          - text: "Signaler un bug"
-            href: https://github.com/umr-marbec/den_pages/issues
           - text: "Poser une question"
             href: https://github.com/umr-marbec/den_pages/discussions
     right:
-      - text: "Anglais"
+      - text: "En"
         href: en
     tools:
       - icon: github
@@ -34,13 +32,6 @@ website:
   sidebar:
     style: "docked"
     contents:
-      - text: "Je veux contribuer !"
-        href: pages/contribution.qmd
-      - section: "Système de contrôle de version"
-        href: pages/git/index_git.qmd
-        contents:
-          - text: "Miroir depuis Github vers un dépôt git"
-            href: pages/git/miroir_github_git.qmd
       - text: "Serveurs"
         href: pages/serveurs/index_serveurs.qmd
         contents:
@@ -60,6 +51,18 @@ website:
                 href: pages/serveurs/marbec_gpu/slurm_intro.qmd
               - text: "Exemple Basique : R/Python"
                 href: pages/serveurs/marbec_gpu/basic_example.qmd
+      - text: "Formations"
+        href: pages/formations/index_formations.qmd
+        contents:
+          - text: "Formation Git"
+            href : pages/formations/git.qmd
+          - text: "Formation Tidyverse"
+            href : pages/formations/tidyverse.qmd
+      - section: "Système de contrôle de version"
+        href: pages/git/index_git.qmd
+        contents:
+          - text: "Miroir depuis Github vers un dépôt git"
+            href: pages/git/miroir_github_git.qmd
       - section: "Packages et logiciels"
         href: pages/packages_logiciels/index_packages_logiciels.qmd
         contents:
@@ -69,14 +72,9 @@ website:
             href: pages/packages_logiciels/ichthyop.qmd
           - text: "Modèle Osmose"
             href: pages/packages_logiciels/osmose.qmd
-      - text: "Formations"
-        href: pages/formations/index_formations.qmd
-        contents:
-          - text: "Formation Git"
-            href : pages/formations/git.qmd
-          - text: "Formation Tidyverse"
-            href : pages/formations/tidyverse.qmd
       - text: "Support global"
         href: pages/support/index_support.qmd
+      - text: "Je veux contribuer !"
+        href: pages/contribution.qmd
 
 lan: fr

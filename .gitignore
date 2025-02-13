@@ -51,3 +51,4 @@ rsconnect/
 # Quarto ignoring output
 /.quarto/
 /_site/
+README.html
