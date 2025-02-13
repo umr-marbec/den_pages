@@ -37,9 +37,7 @@ website:
         contents:
           - section: "Marbec DATA"
             href: pages/serveurs/marbec_data/index_marbec_data.qmd
-            contents: 
-              - text: "Introduction"
-                href: pages/serveurs/marbec_data/intro_marbec_data.qmd
+            contents:
               - text: "Manage Files"
                 href: pages/serveurs/marbec_data/manage_files.qmd
           - section: "Marbec GPU"
@@ -47,10 +45,12 @@ website:
             contents:
               - text: "Initiation"
                 href: pages/serveurs/marbec_gpu/intro_marbec_gpu.qmd
-              - text: "SLURM Introduction"
-                href: pages/serveurs/marbec_gpu/slurm_intro.qmd
-              - text: "Basic R/Python example"
+              - text: "Useful Commands Guide"
+                href: pages/serveurs/marbec_gpu/basic_command.qmd
+              - text: "SLURM Submission : Basic R/Python example"
                 href: pages/serveurs/marbec_gpu/basic_example.qmd
+              - text: "R Scripts Running"
+                href: pages/serveurs/marbec_gpu/run_r_script.qmd
       - text: "Training"
         href: pages/formations/index_formations.qmd
         contents:
