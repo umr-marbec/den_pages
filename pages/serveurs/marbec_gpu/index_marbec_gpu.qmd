@@ -38,7 +38,7 @@ Pour des instructions détaillées sur l'utilisation du cluster Marbec-GPU, veui
 
 ## Support
 
-Si vous rencontrez des problèmes ou avez des questions, veillez intéragir avec le RocketChatIRD.
+Si vous rencontrez des problèmes ou avez des questions, veillez intéragir avec le [RocketChatIRD.](https://go.rocket.chat/invite?host=tchat.ird.fr&path=invite%2Fm2mJ5W)
 
 ## FAQ
 
