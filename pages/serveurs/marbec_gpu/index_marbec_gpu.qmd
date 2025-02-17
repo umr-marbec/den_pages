@@ -98,7 +98,7 @@ For detailed instructions on how to use the Marbec-GPU cluster, please refer to 
 
 ## Support
 
-If you encounter any issues or have questions interact with the RocketChatIRD.
+If you encounter any issues or have questions interact with the [RocketChatIRD.](https://go.rocket.chat/invite?host=tchat.ird.fr&path=invite%2Fm2mJ5W)
 
 ## FAQ
 
