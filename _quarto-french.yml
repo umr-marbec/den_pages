@@ -13,7 +13,7 @@ website:
     show-item-context: tree
   navbar:
     left:
-      - text: "Liens utils"
+      - text: "Liens utiles"
         href: pages/liens.qmd
       - text: "Aide"
         menu:
