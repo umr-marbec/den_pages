@@ -1,0 +1,83 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Claudia Restrepo-Ortiz](mailto:claudia.restrepo-ortiz@ird.fr)"
+date: 2025-02-27
+---
+
+::: {.content-visible when-profile="french"}
+
+# 🚀 Accéder aux dossiers de MARBEC-DATA dans JupyterHub
+
+Le serveur **MARBEC-DATA** est dédié au stockage des données et est connecté au serveur **MARBEC-GPU**, qui sert pour les calculs.  
+Les dossiers stockés dans MARBEC-DATA **sont toujours accessibles en ligne de commande** 
+
+🔍 Vous pouvez voir les dossiers disponibles en tapant :
+```bash
+ls /marbec-data/
+```
+ou naviguer directement vers un dossier spécifique :
+
+```bash
+cd /marbec-data/<your_folder>
+```
+
+Cependant, ces dossiers **n'apparaissent pas directement dans l’arborescence des fichiers**.
+
+Pour les voir dans l’explorateur de fichiers de Jupyter, il faut créer un **lien symbolique**. 
+
+## 📌 Créer un lien symbolique:
+
+1. Ouvrir un terminal dans JupyterHub.
+2. Se positionner dans l’endroit où vous voulez voir apparaître le dossier :
+
+```bash
+cd /home/your_username/
+```
+3. Créer le lien symbolique, le nom de votre dossier dans MARBEC-DATA :
+```bash
+ln -s /marbec-data/<your_folder>
+```
+4. Actualiser l’interface de Jupyter pour voir le dossier apparaître.
+
+:::
+
+::: {.content-visible when-profile="english"}
+
+# 🚀 Accessing MARBEC-DATA Folders in JupyterHub
+
+The **MARBEC-DATA** server is dedicated to data storage and is connected to the **MARBEC-GPU** server, which is used for computations.  
+The folders stored in MARBEC-DATA **are always accessible via the command line**.
+
+🔍 You can view the available folders by typing:
+```bash
+ls /marbec-data/
+```
+or navigate directly to a specific folder:
+
+```bash
+cd /marbec-data/<your_folder>
+```
+
+However, these folders **do not appear directly in the file tree.**
+
+To view them in the Jupyter file explorer, you need to create a **symbolic link.**
+
+## 📌 Creating a Symbolic Link:
+
+1. Open a terminal in JupyterHub.
+2. Navigate to the location where you want the folder to appear:
+
+```bash
+cd /home/your_username/
+```
+3. Create the symbolic link with the name of your folder in MARBEC-DATA:
+```bash
+ln -s /marbec-data/<your_folder>
+```
+4. Refresh the Jupyter interface to see the folder appear.
+
+
+:::
+
