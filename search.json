@@ -222,14 +222,26 @@
     "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html",
     "title": "🚀 Accéder aux dossiers de MARBEC-DATA dans JupyterHub",
     "section": "",
-    "text": "Le serveur MARBEC-DATA est dédié au stockage des données et est connecté au serveur MARBEC-GPU, qui sert pour les calculs.\nLes dossiers stockés dans MARBEC-DATA sont toujours accessibles en ligne de commande\n🔍 Vous pouvez voir les dossiers disponibles en tapant :\nls /marbec-data/\nou naviguer directement vers un dossier spécifique :\ncd /marbec-data/&lt;your_folder&gt;\nCependant, ces dossiers n’apparaissent pas directement dans l’arborescence des fichiers.\nPour les voir dans l’explorateur de fichiers de Jupyter, il faut créer un lien symbolique.\n\n\n\nOuvrir un terminal dans JupyterHub.\nSe positionner dans l’endroit où vous voulez voir apparaître le dossier :\n\ncd /home/your_username/\n\nCréer le lien symbolique, le nom de votre dossier dans MARBEC-DATA :\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nActualiser l’interface de Jupyter pour voir le dossier apparaître."
+    "text": "Le serveur MARBEC-DATA est dédié au stockage des données et est connecté au serveur MARBEC-GPU, qui sert pour les calculs.\nLes dossiers stockés dans MARBEC-DATA sont toujours accessibles en ligne de commande\n🔍 Vous pouvez voir les dossiers disponibles en tapant :\nls /marbec-data/\nou naviguer directement vers un dossier spécifique :\ncd /marbec-data/&lt;your_folder&gt;\nCependant, ces dossiers n’apparaissent pas directement dans l’arborescence des fichiers.\nPour les voir dans l’explorateur de fichiers de Jupyter, il faut créer un lien symbolique.\n\n\n\nOuvrir un terminal dans JupyterHub.\nSe positionner dans l’endroit où vous voulez voir apparaître le dossier :\n\ncd /home/your_username/\n\nCréer le lien symbolique, le nom de votre dossier dans MARBEC-DATA :\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nActualiser l’interface de Jupyter pour voir le dossier apparaître.",
+    "crumbs": [
+      "Liens utiles",
+      "Serveurs",
+      "Marbec GPU",
+      "Accéder aux dossiers de MARBEC-DATA"
+    ]
   },
   {
     "objectID": "pages/serveurs/marbec_gpu/marbec-data_folders.html#créer-un-lien-symbolique",
     "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html#créer-un-lien-symbolique",
     "title": "🚀 Accéder aux dossiers de MARBEC-DATA dans JupyterHub",
     "section": "",
-    "text": "Ouvrir un terminal dans JupyterHub.\nSe positionner dans l’endroit où vous voulez voir apparaître le dossier :\n\ncd /home/your_username/\n\nCréer le lien symbolique, le nom de votre dossier dans MARBEC-DATA :\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nActualiser l’interface de Jupyter pour voir le dossier apparaître."
+    "text": "Ouvrir un terminal dans JupyterHub.\nSe positionner dans l’endroit où vous voulez voir apparaître le dossier :\n\ncd /home/your_username/\n\nCréer le lien symbolique, le nom de votre dossier dans MARBEC-DATA :\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nActualiser l’interface de Jupyter pour voir le dossier apparaître.",
+    "crumbs": [
+      "Liens utiles",
+      "Serveurs",
+      "Marbec GPU",
+      "Accéder aux dossiers de MARBEC-DATA"
+    ]
   },
   {
     "objectID": "pages/formations/git.html",
