@@ -75,7 +75,7 @@ website:
           - text: "Osmose model"
             href: pages/packages_logiciels/osmose.qmd
       - text: "Schedule"
-        href: pages/support/calendrier.qmd
+        href: pages/calendrier.qmd
       - text: "Global support"
         href: pages/support/index_support.qmd
       - text: "I want to contribute!"
