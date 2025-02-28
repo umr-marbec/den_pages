@@ -7,7 +7,7 @@ format:
 # Calendrier
 
 <div class="calendar-container">
-  <iframe src="https://drive.ird.fr/apps/calendar/embed/ZBpNdNbz6KS85H95" width="80%" height="80%" frameborder="0"></iframe>
+  <iframe src="https://drive.ird.fr/apps/calendar/p/ZBpNdNbz6KS85H95" width="80%" height="80%" frameborder="0"></iframe>
 </div>
 
 <style>
@@ -59,7 +59,7 @@ format:
 # Schedule
 
 <div class="calendar-container">
-  <iframe src="https://drive.ird.fr/apps/calendar/embed/ZBpNdNbz6KS85H95" width="80%" height="80%" frameborder="0"></iframe>
+  <iframe src="https://drive.ird.fr/apps/calendar/p/ZBpNdNbz6KS85H95" width="80%" height="80%" frameborder="0"></iframe>
 </div>
 
 <style>
