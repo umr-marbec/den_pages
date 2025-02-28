@@ -47,6 +47,8 @@ website:
                 href: pages/serveurs/marbec_gpu/intro_marbec_gpu.qmd
               - text: "Guide des Commandes Utiles"
                 href: pages/serveurs/marbec_gpu/basic_command.qmd
+              - text: "Accéder aux dossiers de MARBEC-DATA"
+                href: pages/serveurs/marbec_gpu/marbec-data_folders.qmd
               - text: "Soumission SLURM  : Exemple R/Python Basique"
                 href: pages/serveurs/marbec_gpu/basic_example.qmd
               - text: "R Scripts Running"
@@ -72,6 +74,8 @@ website:
             href: pages/packages_logiciels/ichthyop.qmd
           - text: "Modèle Osmose"
             href: pages/packages_logiciels/osmose.qmd
+      - text: "Calendrier"
+        href: pages/support/calendrier.qmd
       - text: "Support global"
         href: pages/support/index_support.qmd
       - text: "Je veux contribuer !"
