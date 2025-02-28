@@ -70,7 +70,11 @@
     "href": "pages/calendrier/calendrier.html",
     "title": "Schedule",
     "section": "",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Schedule"
+    ]
   },
   {
     "objectID": "pages/serveurs/marbec_data/index_marbec_data.html",
