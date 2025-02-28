@@ -222,14 +222,26 @@
     "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html",
     "title": "🚀 Accessing MARBEC-DATA Folders in JupyterHub",
     "section": "",
-    "text": "The MARBEC-DATA server is dedicated to data storage and is connected to the MARBEC-GPU server, which is used for computations.\nThe folders stored in MARBEC-DATA are always accessible via the command line.\n🔍 You can view the available folders by typing:\nls /marbec-data/\nor navigate directly to a specific folder:\ncd /marbec-data/&lt;your_folder&gt;\nHowever, these folders do not appear directly in the file tree.\nTo view them in the Jupyter file explorer, you need to create a symbolic link.\n\n\n\nOpen a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear."
+    "text": "The MARBEC-DATA server is dedicated to data storage and is connected to the MARBEC-GPU server, which is used for computations.\nThe folders stored in MARBEC-DATA are always accessible via the command line.\n🔍 You can view the available folders by typing:\nls /marbec-data/\nor navigate directly to a specific folder:\ncd /marbec-data/&lt;your_folder&gt;\nHowever, these folders do not appear directly in the file tree.\nTo view them in the Jupyter file explorer, you need to create a symbolic link.\n\n\n\nOpen a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Accessing MARBEC-DATA Folders"
+    ]
   },
   {
     "objectID": "pages/serveurs/marbec_gpu/marbec-data_folders.html#creating-a-symbolic-link",
     "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html#creating-a-symbolic-link",
     "title": "🚀 Accessing MARBEC-DATA Folders in JupyterHub",
     "section": "",
-    "text": "Open a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear."
+    "text": "Open a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Accessing MARBEC-DATA Folders"
+    ]
   },
   {
     "objectID": "pages/formations/git.html",
