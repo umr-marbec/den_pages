@@ -59,7 +59,7 @@ Voici un exemple minimal de script bash :
 
 #SBATCH --job-name=my_job         # Job name
 #SBATCH --output=job_%j.out`      # Standard output and error log
-#SBATCH --gres=gpu:0             # Number of GPUs (optional)
+#SBATCH --gres=gpu:1             # Number of GPUs (Supprimer la ligne si aucun GPU n’est requis.)
 #SBATCH --mem=4G                  # Memory allocation (4 GB)
 #SBATCH -c 1                      # Number of CPU cores
 
