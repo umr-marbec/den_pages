@@ -1,0 +1,283 @@
+---
+author: Mathieu Depetris [mathieu.depetris@cnrs.fr](mailto:mathieu.depetris@cnrs.fr)
+date-modified: 2025/04/25
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+## L'autentification d'accés, un element fondamental dans la gestion de la sécurité d'un système d'information
+
+L'autentification des utilistateurs, allant des simples utilisateurs aux administrateurs, joue un rôle important dans la gestion de la sécurité d'un système d'information. Dans la pratique, l'accés à de nombreux services numériques repose sur l'utilisation de mots de passe, qui reste un des moyens le plus simple et le moins coûteux à déployer pour controler un accés et eventuellement prouver son identité. Cependant, le gestion de ces mots de passe ou la définition de ces dernier peu devenir laborieux et peut même présenter des failles dans le système. A titre d'exemple, une étude de Verizon de 2021 estime que 81 % des notifications de violations de données mondiales seraient liées à une problématique de mots de passe. Pire encore, en France environ 60 % des notifications reçues par la [CNIL](https://www.cnil.fr/fr){.external target="_blank"} depuis le début de l’année 2021 sont liées à du piratage et un grand nombre aurait pu être évité par le respect de bonnes pratiques en matière de mots de passe.
+
+L'objectif de cette ressource n'est pas d'enoncer et rentrer en détails dans les recommendations à suivre afin d'élaborer la "meilleur" des mesures d'authentification, mais plutôt de vous donner une solution clé en main permettent de mettre en place gestionnaire de mots de passe et surtout de vous sensibiliser à son utilisation.
+
+De manière derivé, nous aborderons succintement certaines stratégies de bonnes pratiques en matière d'autentification, mais si vous voulez en savoir plus, il est vivement conseillé de se tourner vers les ressources de l'ANSSI et la CNIL à ce sujet. Vous trouverez par exemple ci-dessous deux ressources accessibles en terme de contenu et facilement appréndable, notamment vis-à-vis des applications associés :
+
+- [ANSSI, Recommandations relatives à l'authentification multifacteur et aux mots de passe](https://cyber.gouv.fr/publications/recommandations-relatives-lauthentification-multifacteur-et-aux-mots-de-passe){.external target="_blank"},
+- [CNIL, Mots de passe : une nouvelle recommandation pour maîtriser sa sécurité](https://www.cnil.fr/fr/mots-de-passe-une-nouvelle-recommandation-pour-maitriser-sa-securite){.external target="_blank"}.
+
+## Un gestionnaire de mots de passe, c'est quoi ? Pourquoi est-ce utile ?
+
+Un gestionnaire de mots de passe, encore appellé coffre-fort de mots de passe est un stockage virtuel des identifiants de connexion, ou toutes les informations sont chiffrées. En plus du stockage pure, ces solutions permettent souvent de remplir automatiquement les identifiants des sites internets ou encore de synchroniser les informations sur plusieurs appareils en même temps, par exemple entre deux ordinateurs et encore avec des smartphones. Par ailleurs, le création des mots de passe est souvent facilité, via une organisation en groupe et sous-groupes, ou encore par la génération des mots de passe afin qu'ils se plie aux recommendations et bonnes pratiques associés. En pratique, cela prend souvent la forme d'un mot de passe, dit mot de passe "maître", robuste et memorisé par un humain, qui permet de déverrouiler l'intégralité de la base des mots de passe (et donc leur accés aux ressources associés). Une alternative à ce système consiste par exemple à utiliser un fichier bureautique protégé par un mot de passe. Cette solution n'est bien sur pas à priviligier car elle n'appoirtent pas du tout le même niveau de protection qu'un coffre-fort de mots de passe conçu à cette fin. Pour finir, l'utilisation d'un gestionnaire de mots de passe est l'un des recommendations préconisé par l'ANSSI (n°31) concernant ["l'authentification multifacteur et mots de passe"](https://cyber.gouv.fr/sites/default/files/2021/10/anssi-guide-authentification_multifacteur_et_mots_de_passe.pdf){.external target="_blank"}.
+
+Dans ce monde de logiciel de coffre-fort numérique nous allons trouver des solutions payantes, comme par exemple [NordPass](https://nordpass.com/fr/){.external target="_blank"} ou encore [Bitwarden](https://bitwarden.com/fr-fr/){.external target="_blank"}, mais il existe une très bonne solution libre et open source, [KeePass](https://keepass.info/){.external target="_blank"}, qui à l'avantage d'être certifié par l'[ANSSI](https://cyber.gouv.fr/produits-certifies/keepass-version-210-portable){.external target="_blank"} dans sa version 2.10 portable.
+
+Dans notre proposition ci-dessous, nous utiliserons un petit frère de KeePass, nommé [KeePassXC](https://keepassxc.org/){.external target="_blank"}, qui est basé sur l'architecture de KeePass, mais avec l'ajout de la composante multi-platform. Plus concrétement, il n'y a rien de fondamentalement incorrect dans l'utilisation de KeePass, cependant, il est développé en C# et nécessite donc la plate-forme .NET de Microsoft alors que KeePassXC est développé en C++ et fonctionne nativement sous Linux, macOS et Windows, ce qui permet de bénéficier de la meilleure intégration possible.
+
+Pour conclure cette partie et surtout pour approfondir le choix de certains utilisateurs plus avancés en terme d'utilisation :
+
+- KeePassXC ne supporte par les plugins de KeePass. Ce n'est pas forcement une mauvaise chose, car les plugins peuvent être dangereux et KeePassXC fournit déjà de nombreuses fonctionnalités qui nécessitent des plugins tiers dans KeePass, de sorte que pour la plupart des choses, vous ne devriez jamais en avoir besoin.
+- Petit bonus, même si c'est a la sécurité qui est importante, l'interface de KeePassXC présente une belle interface et est plus agréable à utiliser sur KeePass.
+- KeePassXC est disponible nativement en français
+- Si vous desirez vous faire votre propre idée, le fichier de base de données de KeePass est parfaitement compatible avec KeePassXC (et vis et versa). Vous pouvez donc passer d'une système à l'autre en conservant vos informations.
+
+## Installation et configuration de KeePassXC
+
+### Prérequis et cadre de la procédure
+
+Pour cette procédure nous aurons les objectifs suivant :
+
+- installer et configurer correctement KeePassXC
+- rapide tour d'horizon de l'utilisation du logiciel
+- installer et configurer une extension permettant d'associer notre gestionnaire de mots de passe à mon navigateur pour une remplissage semi-automatique des mots de passe des sites internets
+- mise en place d'une sychronisation entre deux ordinateurs et un smartphone android
+
+En cas de besoin vous trouverez aussi une documentation (en anglais) très bien fournis sur le [lien](https://keepassxc.org/docs/KeePassXC_GettingStarted){.external target="_blank"} suivant.
+
+| Système d'exploitation | Procédure fonctionnelle | Édition et version |
+|---|---|---|
+| Windows | Oui | 11 Professionnel, version 24H2 |
+| Mac | Non testée | |
+| Linux | Non testée | |
+: Tableau 1 : État des tests de la procédure.
+
+### Téléchargement et installation de KeePassXC
+
+#### Sous Microsoft Windows
+
+Rendez-vous sur la page de telechargement du site officiel via le [lien](https://keepassxc.org/download/#windows){.external target="_blank"} suivant et telecharger l'archive msi. Suivre les etapes d'installation courantes en veillant avoir lancer l'installation en mode administrateur (au besoin, clique droit sur l'executable et cliquer sur "Exectuer en tant qu'administrateur"). Si vous avez bien effectuer la manipulation vous devriez avoir une fenetre comme sur la figure 1. Vous pouvez cocher la case "Create a shortcut on the desktop" qui aura comme conséquence de vous placer un raccourci de lancement sur votre bureau.
+
+<div style="text-align: center;">
+  ![Figure 1 : Assistant d'installation Windows](../../ressources/support/gestionnaire_mots_de_passe/images/01_windows_install_wizard.png){width=60%}
+</div>
+
+Si le chemin d'intallation par défaut pointe vers quelque chose comme "C:\\Users\\nom_utilisateur" c'est que vous n'avez pas lancé l'installation avec les droits administateurs.
+
+#### Sous Linux
+
+Il vous suffit de telecharger AppImage of KeepPassXC for linux througth the official [link](https://keepassxc.org/download/#linux){.external target="_blank"} et de l'installer sur votre système. 
+
+#### Sous macOS
+
+Pour les systèmes macOS, telecharger l'image dmg à partir du lien [officiel](https://keepassxc.org/download/#macos){.external target="_blank"} et installer le logiciel dans vos applications. 
+
+#### Configuration intiale et création de votre base de mots de passe
+
+Maintenant que l'application est corrrectement installé sur votre système, vous devriez tomber sur une fenetre d'accueil comme sur le figure 2.
+
+<div style="text-align: center;">
+  ![Figure 2 : Accueil application](../../ressources/support/gestionnaire_mots_de_passe/images/02_home_application.png){width=60%}
+</div>
+
+Par défaut, la langue de l'application est reglé sur celle du sytème. En lien avec ma configuration actuelle les prochains captures d'écran seront donc en français.
+
+Maintenant, nous allons créer notre fichier de base de données qui contiendras tous nos mots de passe. Pour cela il suffit de cliquer sur l'onglet "Créer une base de données". La fenètre suivante vous invite à données un nom à cette base. Cette base de données va prendre l'apparence d'un fichier .kdbx qui sera stocké sur notre disque dur. Pour eviter tout incident de compatibilité, privilégiée un nom dans caractère spécicaux (pas d'accent ou d'espace). Ici pour l'exemple ma base s'appelera "bdd_test_keepassxc" (figure 3).
+
+<div style="text-align: center;">
+  ![Figure 3 : Création de la base de données](../../ressources/support/gestionnaire_mots_de_passe/images/03_bdd_creation.png){width=60%}
+</div>
+
+Pas besoin de modifier les "Paramètres de chiffrement" sauf si voulez les personnalisées en fonctions de vos exigences. La fenètre suivante "Identifiants de la base de données" vous permet de définir le mot de passe "maître" qui va protéger votre base de données (et donc tout son contenu). Pour résumer :
+
+- si vous ne devez retenir qu'un seul mot de passe c'est celui la !
+- il est considéré comme celui qui débloque tous les autres, il doit donc être compliqué et respecter un minimum de regles de securité. Sans rentrer trop dans les détails de ces regles, vous pouvez cliquer sur l'icone du carré avec 3 points afin d'ouvrir un utilitaire d'aide à la génération (figure 4).
+- ce mot de passe est très important et sa perte, en regle général, entrenera l'impossibilité d'ouvrir la base et donc d'accéder à vos mots de passe (par défaut par de processus de récupération de mots de passe).
+- vous avez un onglet en dessous pour "Ajouter une autre protection". Les options disponibles ne seront pas abordé ici mais sachez que vous pouvez ajouter des options de securité et d'accés, comme par exemple un fichier clé ou encore des questions-réponse.
+
+<div style="text-align: center;">
+  ![Figure 4 : Définition des identifiants pour accéder à la base de données](../../ressources/support/gestionnaire_mots_de_passe/images/04_password_definition.png){width=60%}
+</div>
+
+La dernière étape vous demande ou vous desirez sauvegardé votre base de données et quel nom vous souaitez lui donner. Dans mon exemple, ma base de données sera sauvegardé dans une fichier bdd_test_keepassxc.kdbx.
+
+Avant de se lancer dans la création de mes premiers mots de passe, fait un tour au niveau des paramètres de l'application. Pour cela il suffit de cliquer sur la roue cranté, ou alors de cliquer sur l'ongler "Outils" puis sur "Paramètres" (figure 5).
+
+<div style="text-align: center;">
+  ![Figure 5 : Accés aux paramtères de l'application](../../ressources/support/gestionnaire_mots_de_passe/images/05_racine_bdd.png){width=60%}
+</div>
+
+Libre à vous de modifier ces paramètres suivant vos préférences, mais je vous conseille au minimum les paramètres suivants afin d'améliorer votre interface et vos interactions.
+
+Dans l'onglet "Général", section "Démarrage" (figure 6) : 
+
+- cochez si cela n'est pas déja fait "Lancer automatiquement KeePassXC au démarrage du sytème. A chaque lancement de votre système, la logiciel se lancerra automatiquement et vous demandera votre mot de passe "maître" pour dévérouiller votre base de données,
+- cochez l'onglet "Réduire la fenêtre après déverrouillage de la base de données". Si on couple votre utiliation avec l'option précédente, la devérouillage de votre base de données n'implique pas que vous ayiez besoin toute de suite de d'utiliser un mot de passe. Par conséquent pas besoin que l'application reste en avant sur votre bureau. 
+
+<div style="text-align: center;">
+  ![Figure 6 : Onglet "Général", section "Démarrage"](../../ressources/support/gestionnaire_mots_de_passe/images/06_general_demarrage.png){width=60%}
+</div>
+
+Dans l'onglet "Général", section "Gestion des entrées" (figure 7) :
+
+- cochez "Copier les données en double-cliquant sur le champ de l'entrée affichée"
+- cochez "Réduire lors de l'ouverture d'une URL"
+
+<div style="text-align: center;">
+  ![Figure 7 : Onglet "Général", section "Gestion des entrées"](../../ressources/support/gestionnaire_mots_de_passe/images/07_general_gestion_entrees.png){width=60%}
+</div>
+
+Dans l'onglet "Général", section "Interface utilisateur" (figure 8) :
+
+- cochez "Réduire au lieu de fermer l'appli"
+- cochez "Afficher une icône dans la zone de notification"
+- cochez "Cacher la fenêtre dans la zone de notification une fois minimisée"
+
+<div style="text-align: center;">
+  ![Figure 8 : Onglet "Général", section "Interface utilisateur"](../../ressources/support/gestionnaire_mots_de_passe/images/08_general_interface_utilisateur.png){width=60%}
+</div>
+
+Avec ces paramètres, quand vous fermer ou minimiser la fenetre de l'application, cette dernière viens de placer dans votre zone de notification (elle peut être dans la zone caché la première fois, figure 9) au lieu de fermer définitivement l'application (pour faire cela il faut cliquer sur l'onglet "Base de données", puis "Fermer" tout en bas). Quand votre application est dans cette zone, il vous suffit de double cliquer dessus pour l'ouvrir. 
+
+<div style="text-align: center;">
+  ![Figure 9 : Application dans le zone de notification"](../../ressources/support/gestionnaire_mots_de_passe/images/09_zone_notification.png)
+</div>
+
+### Tour d'horizon de l'application
+
+#### Interface de l'application
+
+L'interface de votre base de données est divisé en 4 parties (figure 10).
+
+<div style="text-align: center;">
+  ![Figure 10 : Interface principale de la base de données"](../../ressources/support/gestionnaire_mots_de_passe/images/10_vue_global.png){width=70%}
+</div>
+
+La première partie regroupe la liste de vos mots de passe. Vous pouvez les organiser en groupe et meme sous-groupe (ici par défaut un groupe nommé "Racine" a été crée) et vous pouvez même changer les icones des elements.
+
+La seconde partie regroupe la liste des entrées présente dans vos groupes et de manière générale dans votre base de données. Comme précédent vous pouvez modifier la visualisation de ces dernières, notamment en modifiant les icones associées.
+
+La troisème partie, contient des raccourcis vers groupes dynamiques ou tags que vous avez crée. Ces dernières ressources sont des paramètres que vous pouvez associées à des entrées et/ou groupes et qui permettent d'avoir des accés simplifié, un peu comme des raccourcis. Un détail interessant est que cette partie regroupe aussi des onglets permettant de diagnostiquer l'état de certains de vos mots de passe, notamment en faisant des recherches sur les mots de passe expirés ou encore de faible niveau de sécurité (par exemple si votre mot de passe est très court en terme de nombre de caractères).
+
+La dernière partie, est l'onglet de prévisualisation, qui vous permet de vous un résumé par exemple du contenu des entrées.
+
+Concernant la barre d'outils elle se divise en 5 parties (figure 11).
+
+<div style="text-align: center;">
+  ![Figure 11 : Interface de la barre d"outils](../../ressources/support/gestionnaire_mots_de_passe/images/11_barre_outils.png)
+</div>
+
+La partie 1 comporte des onglets pour ouvrir une base de données, sauvegarder la base active ou encore la verrouiller.
+
+La partie 2 permet de créer des entrées ou les modifiers (ajout et/ou suppression).
+
+La partie 3 permet d'utiliser des raccourcis pour copier certains elements des entrées selectionnées. 
+
+La partie 4 permet d'avoir accés aux paramètres et rapports en lien avec la base de données, mais aussi au générateur de mots de passe.
+
+La dernière partie permet d'avoir accés à une barre de recherche.
+
+#### Création d'une entrée
+
+Pour créer une nouvelle entrée, il suffit de cliquer sur l'icone + dans section 2 de la barre d'outils. Par défaut nous etions dans le groupe "Racine", par conséquent cette entrée sera localisé dans ce groupe. Ici, nous allons faire une exemple avec des identifiants de mon compte CNRS. Ici le minimum à renseigner pour créer une entrée est le "Titre", le "Nom d'utilisateur" et le "mot de passe" (Figure 12). On laisse vide pour le moment le champ "URL" que nous utiliserons plus tard pour la remplissage automatique des champs via le navigateur. Notez que vous avez beaucoup d'autres options, comme exemple le menu "Icône" sur le coté ou encore le champ "Notes" qui vous permet d'ajouter des commentaires ou indications à votre entrée. Par ailleurs vous constatez que par défaut le mot de passe est masqué. Cela est très pratique car l'utilisation de ces mots de passe par la suite, ne nécessite pas d'avoir la visibilité de ce dernier (utils notamment si vous sommes dans des lieux publiques).
+
+<div style="text-align: center;">
+  ![Figure 12 : Création d'une entrée](../../ressources/support/gestionnaire_mots_de_passe/images/12_exemple_entree.png){width=70%}
+</div>
+
+Une fois l'action validé, on retrouve bien l'entrée dans notre base de données (figure 13). Pour améliorer la lisbilité de mon interface, j'ai même changer le nom du groupe "Racine" par "cnrs".
+
+<div style="text-align: center;">
+  ![Figure 13 : Interface avec entrée](../../ressources/support/gestionnaire_mots_de_passe/images/13_vue_global_add.png){width=70%}
+</div>
+
+Maintenant si je veux copier une partie de mon entrée, par exemple le nom d'utilisateur ou encore le mot de passe, il me suffit d'utiliser les boutons de la section 3 de la barre d'outils. Il est a note que dans le cas de la copie d'une mot de passe (le bouton avec la clé), vous disposez d'une temps limité pour utiliser ce dernier avec qu'il soit supprimé de votre "mémoire pour copie" (= presse-papiers, figure 14). Vous pouvez configurer ce temps dans le menu "Paramètres", au niveau de l'onglet "Sécurité", section "Délais d'attente" et l'option "Effacer le presse-papiers après".
+
+<div style="text-align: center;">
+  ![Figure 14 : Temps presse-papiers](../../ressources/support/gestionnaire_mots_de_passe/images/14_temps_presse_papiers.png)
+</div>
+
+### Intégration aux navigateurs
+
+L'une des options les plus pratiques et l'intégration de votre coffre-fort à votre navigateur. Plus concrétement, cela veut dire que vous allez pouvoir effectuer des remplissages semi-automatiques des noms d'utilisateur et des mots de passe quand vous allez vous rendre sur les sites internets associés.
+
+KeePassXC propose des intégrations avec les navigateurs suivants :
+
+- [Sur base Chrome, Chromium, Vivaldi et Brave](https://chromewebstore.google.com/detail/keepassxc-browser/oboonakemofpalcgghocfoadofidjkkk){.external target="_blank"},
+- [Sur base Mozilla Firefox et Tor-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/){.external target="_blank"},
+- [Sur base Microsoft Egde](https://microsoftedge.microsoft.com/addons/detail/keepassxcbrowser/pdffhmdngciaglkoonimfcmckehcpafo){.external target="_blank"}.
+
+La première chose à faire est d'activer l'option d'association dans les paramètres de KeePassXC. Pour cela il suffit de vous rendre dans les paramètres au niveau de l'onglet "Intégration aux navigateurs" (figure 15). 
+
+<div style="text-align: center;">
+  ![Figure 15 : Intégration aux navigateurs](../../ressources/support/gestionnaire_mots_de_passe/images/15_integration_navigateurs.png){width=70%}
+</div>
+
+Pour mon cas d'exemple, je vais faire un test avec le navigateur Egde, mais le principe reste le même pour les autres et vous pouvez même en associer plusieurs à la fois. 
+
+La seconde étape est d'installer l'extension sur le navigateur. Cliquez sur les liens juste toujours au niveau de l'onglet "Intégration aux navigateurs". Vous devriez être redirigé vers un page d'installation (toujours ici avec l'exemple de Microsoft Egde, figure 16).
+
+<div style="text-align: center;">
+  ![Figure 16 : Installation extension navigateur](../../ressources/support/gestionnaire_mots_de_passe/images/16_installation_extension_navigateur.png){width=70%}
+</div>
+
+Après l'installation, redémarrez votre navigateur et vous devriez avoir l'extension sous cette forme (figure 17, la base de données KeePassXC doit être déverrouillée). 
+
+<div style="text-align: center;">
+  ![Figure 17 : Configuration extension navigateur](../../ressources/support/gestionnaire_mots_de_passe/images/17_connection_navigateur.png){width=70%}
+</div>
+
+Maintenant cliquez sur le bouton "Connecter" puis sur la fenètre de votre base de données indiquez un nom à la demande d'association de clé (figure 18). 
+
+<div style="text-align: center;">
+  ![Figure 18 : Association clé extension navigateur](../../ressources/support/gestionnaire_mots_de_passe/images/18_association_cle.png){width=70%}
+</div>
+
+Votre extension devrais maintenant être correctement configuré (figure 19).
+
+<div style="text-align: center;">
+  ![Figure 19 : Configuration extension navigateur complete](../../ressources/support/gestionnaire_mots_de_passe/images/19_connection_navigateur_ok.png){width=70%}
+</div>
+
+Pour la suite, nous allons tester le remplissage semi-automatique sur l'entrée que j'ai créer précédent en lien avec mes identifiants CNRS. Pour cela je me rends sur une page de connexion du CNRS (figure 20).
+
+<div style="text-align: center;">
+  ![Figure 20 : Page de connection CNRS](../../ressources/support/gestionnaire_mots_de_passe/images/20_page_connection_cnrs.png){width=70%}
+</div>
+
+Ici je vais copier l'URL de cette page afin de la renseigner au niveau de mon entrée de ma base de données. Vous remarquerez que déja l'extension à detecté la possibilité d'ajouter des champs en lien avec une entrée de ma base de données (via l'onglet grisé de l'extension). Par ailleurs pour l'URL, pas besoin de copier l'intégralité de cette dernière, il suffit de s'arrêter après le .fr. Vous pouvez appliquer cette règle pour les autres URL à savoir que cela permet de génériser la détection du remplissage automatique et qu'il y a quand même de rare cas ou cela ne fonctionne pas. Dans notre cas, on va juste utiliser l'URL "https://janus.cnrs.fr/" que nous allons ajouter dans le champ "URL" de notre entrée précédent créer (figure 21).
+
+<div style="text-align: center;">
+  ![Figure 21 : Ajout URL au niveau de notre entrée](../../ressources/support/gestionnaire_mots_de_passe/images/21_ajout_url.png){width=70%}
+</div>
+
+Maintenant, actualiser la page de votre navigateur (en étant sur la page de connexion du CNRS) ou cliquez sur l'icone de l'extension dans le navigateur, puis cliquez sur "Redétecter les champs d'identification". Vous devriez avoir la fenètre suivante de KeePassXC qui s'affiche (figure 22). 
+
+<div style="text-align: center;">
+  ![Figure 22 : Acceptation de l'association de l'URL ](../../ressources/support/gestionnaire_mots_de_passe/images/22_fenetre_association_url.png){width=90%}
+</div>
+
+Il vous suffit maintenant de cocher les cases "Mémoriser" et "Permettre les éléments sélectionnés". Maintenant à chaque fois que vous arriverez sur une page portant en début d'URL "https://janus.cnrs.fr/", KeePassXC vous proposera en remplissage semi-automatique des champs, en lien avec ce que vous avez renseigné dans votre base de données (figure 23).
+
+<div style="text-align: center;">
+  ![Figure 23 : Remplissage automatique ](../../ressources/support/gestionnaire_mots_de_passe/images/23_remplissage_automatique.png){width=70%}
+</div>
+
+Une dernière petite astuce, plutôt que de cliquer sur l'icone d'extension ou sur le champ afin de selectionner l'entrée correspondante dans le base de données, vous pouvez utiliser des fonctions de raccourci clavier. Vous les trouverez dans l'onglet paramètre de l'extension du navigateur (en cliquant sur la route cranté verte, figure 24), onglet "Général", section "Raccourcis-clavier". Ils sont configurables et par exemple dans mon exemple par défaut (sous Windows) il faut utiliser Alt + Maj + U pour saisir le nom d’utilisateur et le mot de passe. 
+
+<div style="text-align: center;">
+  ![Figure 24 : Paramètres extension navigateur ](../../ressources/support/gestionnaire_mots_de_passe/images/24_parametres_extension_navigateur.png){width=90%}
+</div>
+
+### Sychronisation entre plusieurs appareils
+
+#### Sychronisation entre deux ordinateurs
+
+#### Sychronisation avec un téléphone android
+
+:::
+
+::: {.content-visible when-profile="english"}
+
+:::
