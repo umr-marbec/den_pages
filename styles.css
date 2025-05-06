@@ -2,4 +2,16 @@
 p {
     text-align: justify;
   }
-  
+/* class image resized center */
+.resized-img {
+  display: block;
+  margin: auto;
+}
+/* class legend center */
+.figcaption-center {
+  font-style: italic;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #555;
+}

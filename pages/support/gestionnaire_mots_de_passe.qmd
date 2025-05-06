@@ -1,37 +1,37 @@
 ---
 author: Mathieu Depetris [mathieu.depetris@cnrs.fr](mailto:mathieu.depetris@cnrs.fr)
-date-modified: 2025/04/25
+date-modified: 2025/05/06
 format:
   html:
     css: ../../styles.css
 ---
 
 ::: {.content-visible when-profile="french"}
-## L'autentification d'accés, un element fondamental dans la gestion de la sécurité d'un système d'information
+## L'authentification d'accès, un élément fondamental dans la gestion de la sécurité d'un système d'information
 
-L'autentification des utilistateurs, allant des simples utilisateurs aux administrateurs, joue un rôle important dans la gestion de la sécurité d'un système d'information. Dans la pratique, l'accés à de nombreux services numériques repose sur l'utilisation de mots de passe, qui reste un des moyens le plus simple et le moins coûteux à déployer pour controler un accés et eventuellement prouver son identité. Cependant, le gestion de ces mots de passe ou la définition de ces dernier peu devenir laborieux et peut même présenter des failles dans le système. A titre d'exemple, une étude de Verizon de 2021 estime que 81 % des notifications de violations de données mondiales seraient liées à une problématique de mots de passe. Pire encore, en France environ 60 % des notifications reçues par la [CNIL](https://www.cnil.fr/fr){.external target="_blank"} depuis le début de l’année 2021 sont liées à du piratage et un grand nombre aurait pu être évité par le respect de bonnes pratiques en matière de mots de passe.
+L'authentification des utilisateurs, allant des simples utilisateurs aux administrateurs, joue un rôle important dans la gestion de la sécurité d'un système d'information. Dans la pratique, l'accès à de nombreux services numériques repose sur l'utilisation de mots de passe, qui reste un des moyens le plus simples et le moins coûteux à déployer pour contrôler un accès et éventuellement prouver son identité. Cependant, la gestion de ces mots de passe ou la définition de ces derniers peut devenir laborieuse et peut même présenter des failles dans le système. À titre d'exemple, une étude de Verizon de 2021 estime que 81 % des notifications de violations de données mondiales seraient liées à une problématique de mots de passe. Pire encore, en France environ 60 % des notifications reçues par là [CNIL](https://www.cnil.fr/fr){.external target="_blank"} depuis le début de l’année 2021 sont liées à du piratage et un grand nombre aurait pu être évité par le respect de bonnes pratiques en matière de mots de passe.
 
-L'objectif de cette ressource n'est pas d'enoncer et rentrer en détails dans les recommendations à suivre afin d'élaborer la "meilleur" des mesures d'authentification, mais plutôt de vous donner une solution clé en main permettent de mettre en place gestionnaire de mots de passe et surtout de vous sensibiliser à son utilisation.
+L'objectif de cette ressource n'est pas d'énoncer et rentrer en détail dans les recommandations à suivre afin d'élaborer la "meilleur" des mesures d'authentification, mais plutôt de vous donner une solution clé en main permettent de mettre en place gestionnaire de mots de passe et surtout de vous sensibiliser à son utilisation.
 
-De manière derivé, nous aborderons succintement certaines stratégies de bonnes pratiques en matière d'autentification, mais si vous voulez en savoir plus, il est vivement conseillé de se tourner vers les ressources de l'ANSSI et la CNIL à ce sujet. Vous trouverez par exemple ci-dessous deux ressources accessibles en terme de contenu et facilement appréndable, notamment vis-à-vis des applications associés :
+De manière dérivée, nous aborderons succinctement certaines stratégies de bonnes pratiques en matière d'authentification, mais si vous voulez en savoir plus, il est vivement conseillé de se tourner vers les ressources de l'ANSSI et la CNIL à ce sujet. Vous trouverez par exemple ci-dessous deux ressources accessibles en termes de contenu et facilement appréhendables, notamment vis-à-vis des applications associées :
 
 - [ANSSI, Recommandations relatives à l'authentification multifacteur et aux mots de passe](https://cyber.gouv.fr/publications/recommandations-relatives-lauthentification-multifacteur-et-aux-mots-de-passe){.external target="_blank"},
 - [CNIL, Mots de passe : une nouvelle recommandation pour maîtriser sa sécurité](https://www.cnil.fr/fr/mots-de-passe-une-nouvelle-recommandation-pour-maitriser-sa-securite){.external target="_blank"}.
 
 ## Un gestionnaire de mots de passe, c'est quoi ? Pourquoi est-ce utile ?
 
-Un gestionnaire de mots de passe, encore appellé coffre-fort de mots de passe est un stockage virtuel des identifiants de connexion, ou toutes les informations sont chiffrées. En plus du stockage pure, ces solutions permettent souvent de remplir automatiquement les identifiants des sites internets ou encore de synchroniser les informations sur plusieurs appareils en même temps, par exemple entre deux ordinateurs et encore avec des smartphones. Par ailleurs, le création des mots de passe est souvent facilité, via une organisation en groupe et sous-groupes, ou encore par la génération des mots de passe afin qu'ils se plie aux recommendations et bonnes pratiques associés. En pratique, cela prend souvent la forme d'un mot de passe, dit mot de passe "maître", robuste et memorisé par un humain, qui permet de déverrouiler l'intégralité de la base des mots de passe (et donc leur accés aux ressources associés). Une alternative à ce système consiste par exemple à utiliser un fichier bureautique protégé par un mot de passe. Cette solution n'est bien sur pas à priviligier car elle n'appoirtent pas du tout le même niveau de protection qu'un coffre-fort de mots de passe conçu à cette fin. Pour finir, l'utilisation d'un gestionnaire de mots de passe est l'un des recommendations préconisé par l'ANSSI (n°31) concernant ["l'authentification multifacteur et mots de passe"](https://cyber.gouv.fr/sites/default/files/2021/10/anssi-guide-authentification_multifacteur_et_mots_de_passe.pdf){.external target="_blank"}.
+Un gestionnaire de mots de passe, encore appelé coffre-fort de mots de passe est un stockage virtuel des identifiants de connexion, ou toutes les informations sont chiffrés. En plus du stockage pur, ces solutions permettent souvent de remplir automatiquement les identifiants des sites internet ou encore de synchroniser les informations sur plusieurs appareils en même temps, par exemple entre deux ordinateurs et encore avec des smartphones. Par ailleurs, la création des mots de passe est souvent facilitée, via une organisation en groupe et sous-groupes, ou encore par la génération des mots de passe afin qu'ils se plient aux recommandations et bonnes pratiques associées. En pratique, cela prend souvent la forme d'un mot de passe, dit mot de passe "maître", robuste et mémorisé par un humain, qui permet de déverrouiller l'intégralité de la base des mots de passe (et donc leur accès aux ressources associé). Une alternative à ce système consiste par exemple à utiliser un fichier bureautique protégé par un mot de passe. Cette solution n'est bien sûr pas à privilégier, car elles n'apportent pas du tout le même niveau de protection qu'un coffre-fort de mots de passe conçu à cette fin. Pour finir, l'utilisation d'un gestionnaire de mots de passe est l'une des recommandations préconisées par l'ANSSI (n°31) concernant ["l'authentification multifacteur et mots de passe"](https://cyber.gouv.fr/sites/default/files/2021/10/anssi-guide-authentification_multifacteur_et_mots_de_passe.pdf){.external target="_blank"}.
 
-Dans ce monde de logiciel de coffre-fort numérique nous allons trouver des solutions payantes, comme par exemple [NordPass](https://nordpass.com/fr/){.external target="_blank"} ou encore [Bitwarden](https://bitwarden.com/fr-fr/){.external target="_blank"}, mais il existe une très bonne solution libre et open source, [KeePass](https://keepass.info/){.external target="_blank"}, qui à l'avantage d'être certifié par l'[ANSSI](https://cyber.gouv.fr/produits-certifies/keepass-version-210-portable){.external target="_blank"} dans sa version 2.10 portable.
+Dans ce monde de logiciel de coffre-fort numérique nous allons trouver des solutions payantes, comme par exemple [NordPass](https://nordpass.com/fr/){.external target="_blank"} ou encore [Bitwarden](https://bitwarden.com/fr-fr/){.external target="_blank"}, mais il existe une très bonne solution libre et open source [KeePass](https://keepass.info/){.external target="_blank"}, qui à l'avantage d'être certifié par l'[ANSSI](https://cyber.gouv.fr/produits-certifies/keepass-version-210-portable){.external target="_blank"} dans sa version 2.10 portable.
 
-Dans notre proposition ci-dessous, nous utiliserons un petit frère de KeePass, nommé [KeePassXC](https://keepassxc.org/){.external target="_blank"}, qui est basé sur l'architecture de KeePass, mais avec l'ajout de la composante multi-platform. Plus concrétement, il n'y a rien de fondamentalement incorrect dans l'utilisation de KeePass, cependant, il est développé en C# et nécessite donc la plate-forme .NET de Microsoft alors que KeePassXC est développé en C++ et fonctionne nativement sous Linux, macOS et Windows, ce qui permet de bénéficier de la meilleure intégration possible.
+Dans notre proposition ci-dessous, nous utiliserons un petit frère de KeePass, nommé [KeePassXC](https://keepassxc.org/){.external target="_blank"}, qui est basé sur l'architecture de KeePass, mais avec l'ajout de la composante multi-plate-forme. Plus concrètement, il n'y a rien de fondamentalement incorrect dans l'utilisation de KeePass, cependant, il est développé en C# et nécessite donc la plate-forme .NET de Microsoft alors que KeePassXC est développé en C++ et fonctionne nativement sous Linux, macOS et Windows, ce qui permet de bénéficier de la meilleure intégration possible.
 
-Pour conclure cette partie et surtout pour approfondir le choix de certains utilisateurs plus avancés en terme d'utilisation :
+Pour conclure cette partie et surtout pour approfondir le choix de certains utilisateurs plus avancés en termes d'utilisation :
 
-- KeePassXC ne supporte par les plugins de KeePass. Ce n'est pas forcement une mauvaise chose, car les plugins peuvent être dangereux et KeePassXC fournit déjà de nombreuses fonctionnalités qui nécessitent des plugins tiers dans KeePass, de sorte que pour la plupart des choses, vous ne devriez jamais en avoir besoin.
-- Petit bonus, même si c'est a la sécurité qui est importante, l'interface de KeePassXC présente une belle interface et est plus agréable à utiliser sur KeePass.
+- KeePassXC ne supporte pas les plugins de KeePass. Ce n'est pas forcément une mauvaise chose, car les plugins peuvent être dangereux et KeePassXC fournit déjà de nombreuses fonctionnalités qui nécessitent des plugins tiers dans KeePass, de sorte que pour la plupart des choses, vous ne devriez jamais en avoir besoin.
+- Petit bonus, même si c'est à la sécurité qui est importante, l'interface de KeePassXC présente une belle interface et est plus agréable à utiliser sur KeePass.
 - KeePassXC est disponible nativement en français
-- Si vous desirez vous faire votre propre idée, le fichier de base de données de KeePass est parfaitement compatible avec KeePassXC (et vis et versa). Vous pouvez donc passer d'une système à l'autre en conservant vos informations.
+- Si vous désirez vous faire votre propre idée, le fichier de base de données de KeePass est parfaitement compatible avec KeePassXC (et vis et versa). Vous pouvez donc passer d'un système à l'autre en conservant vos informations.
 
 ## 1 - Installation et configuration de KeePassXC
 
@@ -41,11 +41,11 @@ Pour cette procédure nous aurons les objectifs suivant :
 
 - installer et configurer correctement KeePassXC
 - rapide tour d'horizon de l'utilisation du logiciel
-- installer et configurer une extension permettant d'associer notre gestionnaire de mots de passe à mon navigateur pour une remplissage semi-automatique des mots de passe des sites internets
-- mise en place d'une sychronisation entre deux ordinateurs et un smartphone android
-- installation d'une application android KeePass
+- installer et configurer une extension permettant d'associer notre gestionnaire de mots de passe à mon navigateur pour une remplissage semi-automatique des mots de passe des sites internet
+- mise en place d'une synchronisation entre deux ordinateurs et un smartphone Android
+- installation d'une application Android KeePass
 
-En cas de besoin vous trouverez aussi une documentation (en anglais) très bien fournis sur le [lien](https://keepassxc.org/docs/KeePassXC_GettingStarted){.external target="_blank"} suivant.
+En cas de besoin vous trouverez aussi une documentation (en anglais) très bien fournie sur le [lien](https://keepassxc.org/docs/KeePassXC_GettingStarted){.external target="_blank"} suivant.
 
 | Système d'exploitation | Procédure fonctionnelle | Édition et version |
 |---|---|---|
@@ -60,150 +60,164 @@ En cas de besoin vous trouverez aussi une documentation (en anglais) très bien 
 
 #### 1.2.1 - Sous Microsoft Windows
 
-Rendez-vous sur la page de telechargement du site officiel via le [lien](https://keepassxc.org/download/#windows){.external target="_blank"} suivant et telecharger l'archive msi. Suivre les etapes d'installation courantes en veillant avoir lancer l'installation en mode administrateur (au besoin, clique droit sur l'executable et cliquer sur "Exectuer en tant qu'administrateur"). Si vous avez bien effectuer la manipulation vous devriez avoir une fenetre comme sur la figure 1. Vous pouvez cocher la case "Create a shortcut on the desktop" qui aura comme conséquence de vous placer un raccourci de lancement sur votre bureau.
+Rendez-vous sur la page de téléchargement du site officiel via le [lien](https://keepassxc.org/download/#windows){.external target="_blank"} suivant et téléchargez l'archive msi. Suivre les étapes d'installation courantes en veillant à avoir lancé l'installation en mode administrateur (au besoin, clique droit sur l'exécutable et cliquez sur "Exectuer en tant qu'administrateur"). Si vous avez bien effectué la manipulation, vous devriez avoir une fenêtre comme sur la <a href="#figure1">figure 1</a>. Vous pouvez cocher la case "Create a shortcut on the desktop" qui aura comme conséquence de vous placer un raccourci de lancement sur votre bureau.
 
-<div style="text-align: center;">
-  ![Figure 1 : Assistant d'installation Windows](../../ressources/support/gestionnaire_mots_de_passe/images/01_windows_install_wizard.png){width=60%}
-</div>
+<figure id="figure1">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/01_windows_install_wizard.png" class="resized-img" width="50%" alt="Figure 1 : Assistant d'installation Windows">
+    <figcaption class="figcaption-center">Figure 1 : Assistant d'installation Windows</figcaption>
+</figure>
 
-Si le chemin d'intallation par défaut pointe vers quelque chose comme "C:\\Users\\nom_utilisateur" c'est que vous n'avez pas lancé l'installation avec les droits administateurs.
+Si le chemin d'installation par défaut pointe vers quelque chose comme "C:\\Users\\nom_utilisateur" c'est que vous n'avez pas lancé l'installation avec les droits administateur.
 
 #### 1.2.2 - Sous Linux
 
-Il vous suffit de telecharger AppImage of KeepPassXC for linux througth the official [link](https://keepassxc.org/download/#linux){.external target="_blank"} et de l'installer sur votre système. 
+Il vous suffit de télécharger l'AppImage de KeepPassXC pour linux à partir du [lien officiel](https://keepassxc.org/download/#linux){.external target="_blank"} et de l'installer sur votre système. 
 
 #### 1.2.3 - Sous macOS
 
-Pour les systèmes macOS, telecharger l'image dmg à partir du lien [officiel](https://keepassxc.org/download/#macos){.external target="_blank"} et installer le logiciel dans vos applications. 
+Pour les systèmes macOS, télécharger l'image dmg à partir du lien [officiel](https://keepassxc.org/download/#macos){.external target="_blank"} et installer le logiciel dans vos applications. 
 
-#### 1.2.4 - Configuration intiale et création de votre base de mots de passe
+#### 1.2.4 - Configuration initiale et création de votre base de mots de passe
 
-Maintenant que l'application est corrrectement installé sur votre système, vous devriez tomber sur une fenetre d'accueil comme sur le figure 2.
+Maintenant que l'application est correctement installée sur votre système, vous devriez tomber sur une fenêtre d'accueil comme sur la <a href="#figure2">figure 2</a>.
 
-<div style="text-align: center;">
-  ![Figure 2 : Accueil application](../../ressources/support/gestionnaire_mots_de_passe/images/02_home_application.png){width=60%}
-</div>
+<figure id="figure2">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/02_home_application.png" class="resized-img" width="60%" alt="Figure 2 : Accueil application">
+    <figcaption class="figcaption-center">Figure 2 : Accueil application</figcaption>
+</figure>
 
-Par défaut, la langue de l'application est reglé sur celle du sytème. En lien avec ma configuration actuelle les prochains captures d'écran seront donc en français.
+Par défaut, la langue de l'application est réglée sur celle du système. En lien avec ma configuration actuelle, les prochaines captures d'écran seront donc en français.
 
-Maintenant, nous allons créer notre fichier de base de données qui contiendras tous nos mots de passe. Pour cela il suffit de cliquer sur l'onglet "Créer une base de données". La fenètre suivante vous invite à données un nom à cette base. Cette base de données va prendre l'apparence d'un fichier .kdbx qui sera stocké sur notre disque dur. Pour eviter tout incident de compatibilité, privilégiée un nom dans caractère spécicaux (pas d'accent ou d'espace). Ici pour l'exemple ma base s'appelera "bdd_test_keepassxc" (figure 3).
+Maintenant, nous allons créer notre fichier de base de données qui contiendra tous nos mots de passe. Pour cela il suffit de cliquer sur l'onglet "Créer une base de données". La fenêtre suivante vous invite à donner un nom à cette base. Cette base de données va prendre l'apparence d'un fichier .kdbx qui sera stocké sur notre disque dur. Pour éviter tout incident de compatibilité, privilégier un nom dans le caractère spécial (pas d'accent ou d'espace). Ici pour l'exemple ma base s'appellera "bdd_test_keepassxc" (<a href="#figure3">figure 3</a>).
 
-<div style="text-align: center;">
-  ![Figure 3 : Création de la base de données](../../ressources/support/gestionnaire_mots_de_passe/images/03_bdd_creation.png){width=60%}
-</div>
+<figure id="figure3">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/03_bdd_creation.png" class="resized-img" width="60%" alt="Figure 3 : Création de la base de données">
+    <figcaption class="figcaption-center">Figure 3 : Création de la base de données</figcaption>
+</figure>
 
-Pas besoin de modifier les "Paramètres de chiffrement" sauf si voulez les personnalisées en fonctions de vos exigences. La fenètre suivante "Identifiants de la base de données" vous permet de définir le mot de passe "maître" qui va protéger votre base de données (et donc tout son contenu). Pour résumer :
+Pas besoin de modifier les "Paramètres de chiffrement" sauf si voulez les personnalisées en fonctions de vos exigences. La fenêtre suivante "Identifiants de la base de données" vous permet de définir le mot de passe "maître" qui va protéger votre base de données (et donc tout son contenu). Pour résumer :
 
-- si vous ne devez retenir qu'un seul mot de passe c'est celui la !
-- il est considéré comme celui qui débloque tous les autres, il doit donc être compliqué et respecter un minimum de regles de securité. Sans rentrer trop dans les détails de ces regles, vous pouvez cliquer sur l'icone du carré avec 3 points afin d'ouvrir un utilitaire d'aide à la génération (figure 4).
-- ce mot de passe est très important et sa perte, en regle général, entrenera l'impossibilité d'ouvrir la base et donc d'accéder à vos mots de passe (par défaut par de processus de récupération de mots de passe).
-- vous avez un onglet en dessous pour "Ajouter une autre protection". Les options disponibles ne seront pas abordé ici mais sachez que vous pouvez ajouter des options de securité et d'accés, comme par exemple un fichier clé ou encore des questions-réponse.
+- si vous ne devez retenir qu'un seul mot de passe, c'est celui-là !
+- il est considéré comme celui qui débloque tous les autres, il doit donc être compliqué et respecter un minimum de règles de sécurité. Sans rentrer trop dans les détails de ces règles, vous pouvez cliquer sur l'icône du carré avec 3 points afin d'ouvrir un utilitaire d'aide à la génération (<a href="#figure4">figure 4</a>).
+- ce mot de passe est très important et sa perte, en règle générale, entrainera l'impossibilité d'ouvrir la base et donc d'accéder à vos mots de passe (par défaut par de processus de récupération de mots de passe).
+- vous avez un onglet en dessous pour "Ajouter une autre protection". Les options disponibles ne seront pas abordées ici, mais sachez que vous pouvez ajouter des options de sécurité et d'accès, comme par exemple un fichier clé ou encore des questions-réponses.
 
-<div style="text-align: center;">
-  ![Figure 4 : Définition des identifiants pour accéder à la base de données](../../ressources/support/gestionnaire_mots_de_passe/images/04_password_definition.png){width=60%}
-</div>
+<figure id="figure4">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/04_password_definition.png" class="resized-img" width="60%" alt="Figure 4 : Définition des identifiants pour accéder à la base de données">
+    <figcaption class="figcaption-center">Figure 4 : Définition des identifiants pour accéder à la base de données</figcaption>
+</figure>
 
 La dernière étape vous demande où vous désirez sauvegarder votre base de données et quel nom vous souhaitez lui donner. Dans mon exemple, ma base de données sera sauvegardée dans un fichier bdd_test_keepassxc.kdbx. Par ailleurs, si vous souhaitez synchroniser votre base de données entre plusieurs appareils (voir la section 4, par exemple pour une synchronisation entre un ordinateur et un smartphone), le mieux est de placer ce fichier dans un dossier. À titre d'exemple ici, mon fichier .kdbx sera stocké dans un fichier nommé "keepass".
 
-Avant de se lancer dans la création de mes premiers mots de passe, fait un tour au niveau des paramètres de l'application. Pour cela il suffit de cliquer sur la roue cranté, ou alors de cliquer sur l'ongler "Outils" puis sur "Paramètres" (figure 5).
+Avant de se lancer dans la création de mes premiers mots de passe, faites un tour au niveau des paramètres de l'application. Pour cela il suffit de cliquer sur la roue crantée, ou alors de cliquer sur l'onglet "Outils" puis sur "Paramètres" (<a href="#figure5">figure 5</a>).
 
-<div style="text-align: center;">
-  ![Figure 5 : Accés aux paramtères de l'application](../../ressources/support/gestionnaire_mots_de_passe/images/05_racine_bdd.png){width=60%}
-</div>
+<figure id="figure5">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/05_racine_bdd.png" class="resized-img" width="60%" alt="Figure 5 : Accès aux paramètres de l'application">
+    <figcaption class="figcaption-center">Figure 5 : Accès aux paramètres de l'application</figcaption>
+</figure>
 
 Libre à vous de modifier ces paramètres suivant vos préférences, mais je vous conseille au minimum les paramètres suivants afin d'améliorer votre interface et vos interactions.
 
-Dans l'onglet "Général", section "Démarrage" (figure 6) : 
+Dans l'onglet "Général", section "Démarrage" (<a href="#figure6">figure 6</a>) : 
 
-- cochez si cela n'est pas déja fait "Lancer automatiquement KeePassXC au démarrage du sytème. A chaque lancement de votre système, la logiciel se lancerra automatiquement et vous demandera votre mot de passe "maître" pour dévérouiller votre base de données,
-- cochez l'onglet "Réduire la fenêtre après déverrouillage de la base de données". Si on couple votre utiliation avec l'option précédente, la devérouillage de votre base de données n'implique pas que vous ayiez besoin toute de suite de d'utiliser un mot de passe. Par conséquent pas besoin que l'application reste en avant sur votre bureau. 
+- cochez si cela n'est pas déjà fait "Lancer automatiquement KeePassXC au démarrage du système. À chaque lancement de votre système, le logiciel se lancera automatiquement et vous demandera votre mot de passe "maître" pour déverrouiller votre base de données,
+- cochez l'onglet "Réduire la fenêtre après déverrouillage de la base de données". Si on couple votre utilisation avec l'option précédente, le déverrouillage de votre base de données n'implique pas que vous ayez besoin toute de suite d'utiliser un mot de passe. Par conséquent pas besoin que l'application reste en avant sur votre bureau.
 
-<div style="text-align: center;">
-  ![Figure 6 : Onglet "Général", section "Démarrage"](../../ressources/support/gestionnaire_mots_de_passe/images/06_general_demarrage.png){width=60%}
-</div>
+<figure id="figure6">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/06_general_demarrage.png" class="resized-img" width="60%" alt="Figure 6 : Onglet 'Général', section 'Démarrage'">
+    <figcaption class="figcaption-center">Figure 6 : Onglet 'Général', section 'Démarrage'</figcaption>
+</figure>
 
-Dans l'onglet "Général", section "Gestion des entrées" (figure 7) :
+Dans l'onglet "Général", section "Gestion des entrées" (<a href="#figure7">figure 7</a>) :
 
 - cochez "Copier les données en double-cliquant sur le champ de l'entrée affichée"
 - cochez "Réduire lors de l'ouverture d'une URL"
 
-<div style="text-align: center;">
-  ![Figure 7 : Onglet "Général", section "Gestion des entrées"](../../ressources/support/gestionnaire_mots_de_passe/images/07_general_gestion_entrees.png){width=60%}
-</div>
+<figure id="figure7">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/07_general_gestion_entrees.png" class="resized-img" width="60%" alt="Figure 7 : Onglet 'Général', section 'Gestion des entrées'">
+    <figcaption class="figcaption-center">Figure 7 : Onglet 'Général', section 'Gestion des entrées'</figcaption>
+</figure>
 
-Dans l'onglet "Général", section "Interface utilisateur" (figure 8) :
+Dans l'onglet "Général", section "Interface utilisateur" (<a href="#figure8">figure 8</a>) :
 
 - cochez "Réduire au lieu de fermer l'appli"
 - cochez "Afficher une icône dans la zone de notification"
 - cochez "Cacher la fenêtre dans la zone de notification une fois minimisée"
 
-<div style="text-align: center;">
-  ![Figure 8 : Onglet "Général", section "Interface utilisateur"](../../ressources/support/gestionnaire_mots_de_passe/images/08_general_interface_utilisateur.png){width=60%}
-</div>
+<figure id="figure8">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/08_general_interface_utilisateur.png" class="resized-img" width="60%" alt="Figure 8 : Onglet 'Général', section 'Interface utilisateur'">
+    <figcaption class="figcaption-center">Figure 8 : Onglet 'Général', section 'Interface utilisateur'</figcaption>
+</figure>
 
-Avec ces paramètres, quand vous fermer ou minimiser la fenetre de l'application, cette dernière viens de placer dans votre zone de notification (elle peut être dans la zone caché la première fois, figure 9) au lieu de fermer définitivement l'application (pour faire cela il faut cliquer sur l'onglet "Base de données", puis "Fermer" tout en bas). Quand votre application est dans cette zone, il vous suffit de double cliquer dessus pour l'ouvrir. 
+Avec ces paramètres, quand vous fermez ou minimisez la fenêtre de l'application, cette dernière vient de placer dans votre zone de notification (elle peut être dans la zone cachée la première fois, <a href="#figure9">figure 9</a>) au lieu de fermer définitivement l'application (pour faire cela, il faut cliquer sur l'onglet "Base de données", puis "Fermer" tout en bas). Quand votre application est dans cette zone, il vous suffit de double cliquer dessus pour l'ouvrir. 
 
-<div style="text-align: center;">
-  ![Figure 9 : Application dans le zone de notification"](../../ressources/support/gestionnaire_mots_de_passe/images/09_zone_notification.png)
-</div>
+<figure id="figure9">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/09_zone_notification.png" class="resized-img" alt="Figure 9 : Application dans la zone de notification">
+    <figcaption class="figcaption-center">Figure 9 : Application dans la zone de notification</figcaption>
+</figure>
 
 ## 2 - Tour d'horizon de l'application
 
 ### 2.1 - Interface de l'application
 
-L'interface de votre base de données est divisé en 4 parties (figure 10).
+L'interface de votre base de données est divisée en 4 parties (<a href="#figure10">figure 10</a>).
 
-<div style="text-align: center;">
-  ![Figure 10 : Interface principale de la base de données"](../../ressources/support/gestionnaire_mots_de_passe/images/10_vue_global.png){width=70%}
-</div>
+<figure id="figure10">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/10_vue_global.png" class="resized-img" width="70%" alt="Figure 10 : Interface principale de la base de données">
+    <figcaption class="figcaption-center">Figure 10 : Interface principale de la base de données</figcaption>
+</figure>
 
-La première partie regroupe la liste de vos mots de passe. Vous pouvez les organiser en groupe et meme sous-groupe (ici par défaut un groupe nommé "Racine" a été crée) et vous pouvez même changer les icones des elements.
+La première partie regroupe la liste de vos mots de passe. Vous pouvez les organiser en groupe et même sous-groupe (ici par défaut un groupe nommé "Racine" a été créé) et vous pouvez même changer les icônes des éléments.
 
-La seconde partie regroupe la liste des entrées présente dans vos groupes et de manière générale dans votre base de données. Comme précédent vous pouvez modifier la visualisation de ces dernières, notamment en modifiant les icones associées.
+La seconde partie regroupe la liste des entrées présente dans vos groupes et de manière générale dans votre base de données. Comme précédent vous pouvez modifier la visualisation de ces dernières, notamment en modifiant les icônes associées.
 
-La troisème partie, contient des raccourcis vers groupes dynamiques ou tags que vous avez crée. Ces dernières ressources sont des paramètres que vous pouvez associées à des entrées et/ou groupes et qui permettent d'avoir des accés simplifié, un peu comme des raccourcis. Un détail interessant est que cette partie regroupe aussi des onglets permettant de diagnostiquer l'état de certains de vos mots de passe, notamment en faisant des recherches sur les mots de passe expirés ou encore de faible niveau de sécurité (par exemple si votre mot de passe est très court en terme de nombre de caractères).
+La troisième partie contient des raccourcis vers groupes dynamiques ou tags que vous avez créés. Ces dernières ressources sont des paramètres que vous pouvez associer à des entrées et/ou groupes et qui permettent d'avoir des accès simplifiés, un peu comme des raccourcis. Un détail intéressant est que cette partie regroupe aussi des onglets permettant de diagnostiquer l'état de certains de vos mots de passe, notamment en faisant des recherches sur les mots de passe expirés ou encore de faibles niveaux de sécurité (par exemple si votre mot de passe est très court en termes de nombre de caractères).
 
-La dernière partie, est l'onglet de prévisualisation, qui vous permet de vous un résumé par exemple du contenu des entrées.
+La dernière partie est l'onglet de prévisualisation, qui vous permet de vous un résumé par exemple du contenu des entrées.
 
-Concernant la barre d'outils elle se divise en 5 parties (figure 11).
+Concernant la barre d'outils, elle se divise en 5 parties (<a href="#figure11">figure 11</a>).
 
-<div style="text-align: center;">
-  ![Figure 11 : Interface de la barre d"outils](../../ressources/support/gestionnaire_mots_de_passe/images/11_barre_outils.png)
-</div>
+<figure id="figure11">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/11_barre_outils.png" class="resized-img" width="70%" alt="Figure 11 : Interface de la barre d'outils">
+    <figcaption class="figcaption-center">Figure 11 : Interface de la barre d'outils</figcaption>
+</figure>
 
 La partie 1 comporte des onglets pour ouvrir une base de données, sauvegarder la base active ou encore la verrouiller.
 
-La partie 2 permet de créer des entrées ou les modifiers (ajout et/ou suppression).
+La partie 2 permet de créer des entrées ou les modifier (ajout et/ou suppression).
 
-La partie 3 permet d'utiliser des raccourcis pour copier certains elements des entrées selectionnées. 
+La partie 3 permet d'utiliser des raccourcis pour copier certains éléments des entrées sélectionnées. 
 
-La partie 4 permet d'avoir accés aux paramètres et rapports en lien avec la base de données, mais aussi au générateur de mots de passe.
+La partie 4 permet d'avoir accès aux paramètres et rapports en lien avec la base de données, mais aussi au générateur de mots de passe.
 
-La dernière partie permet d'avoir accés à une barre de recherche.
+La dernière partie permet d'avoir accès à une barre de recherche.
 
 ### 2.2 - Création d'une entrée
 
-Pour créer une nouvelle entrée, il suffit de cliquer sur l'icone + dans section 2 de la barre d'outils. Par défaut nous etions dans le groupe "Racine", par conséquent cette entrée sera localisé dans ce groupe. Ici, nous allons faire une exemple avec des identifiants de mon compte CNRS. Ici le minimum à renseigner pour créer une entrée est le "Titre", le "Nom d'utilisateur" et le "mot de passe" (Figure 12). On laisse vide pour le moment le champ "URL" que nous utiliserons plus tard pour la remplissage automatique des champs via le navigateur. Notez que vous avez beaucoup d'autres options, comme exemple le menu "Icône" sur le coté ou encore le champ "Notes" qui vous permet d'ajouter des commentaires ou indications à votre entrée. Par ailleurs vous constatez que par défaut le mot de passe est masqué. Cela est très pratique car l'utilisation de ces mots de passe par la suite, ne nécessite pas d'avoir la visibilité de ce dernier (utils notamment si vous sommes dans des lieux publiques).
+Pour créer une nouvelle entrée, il suffit de cliquer sur l'icône + dans la section 2 de la barre d'outils. Par défaut nous étions dans le groupe "Racine", par conséquent cette entrée sera localisée dans ce groupe. Ici, nous allons faire un exemple avec des identifiants de mon compte CNRS. Ici le minimum à renseigner pour créer une entrée est le "Titre", le "Nom d'utilisateur" et le "mot de passe" (<a href="#figure12">figure 12</a>). On laisse vide pour le moment le champ "URL" que nous utiliserons plus tard pour le remplissage automatique des champs via le navigateur. Notez que vous avez beaucoup d'autres options, comme par exemple le menu "Icône" sur le côté ou encore le champ "Notes" qui vous permet d'ajouter des commentaires ou indications à votre entrée. Par ailleurs vous constatez que par défaut le mot de passe est masqué. Cela est très pratique, car l'utilisation de ces mots de passe par la suite, ne nécessite pas d'avoir la visibilité de ce dernier (utile notamment si vous sommes dans des lieux publics).
 
-<div style="text-align: center;">
-  ![Figure 12 : Création d'une entrée](../../ressources/support/gestionnaire_mots_de_passe/images/12_exemple_entree.png){width=70%}
-</div>
+<figure id="figure12">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/12_exemple_entree.png" class="resized-img" width="70%" alt="Figure 12 : Création d'une entrée">
+    <figcaption class="figcaption-center">Figure 12 : Création d'une entrée</figcaption>
+</figure>
 
-Une fois l'action validé, on retrouve bien l'entrée dans notre base de données (figure 13). Pour améliorer la lisbilité de mon interface, j'ai même changer le nom du groupe "Racine" par "cnrs".
+Une fois l'action validée, on retrouve bien l'entrée dans notre base de données (<a href="#figure13">figure 13</a>). Pour améliorer la lisibilité de mon interface, j'ai même changé le nom du groupe "Racine" par "cnrs".
 
-<div style="text-align: center;">
-  ![Figure 13 : Interface avec entrée](../../ressources/support/gestionnaire_mots_de_passe/images/13_vue_global_add.png){width=70%}
-</div>
+<figure id="figure13">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/13_vue_global_add.png" class="resized-img" width="70%" alt="Figure 13 : Interface avec entrée">
+    <figcaption class="figcaption-center">Figure 13 : Interface avec entrée</figcaption>
+</figure>
 
-Maintenant si je veux copier une partie de mon entrée, par exemple le nom d'utilisateur ou encore le mot de passe, il me suffit d'utiliser les boutons de la section 3 de la barre d'outils. Il est a note que dans le cas de la copie d'une mot de passe (le bouton avec la clé), vous disposez d'une temps limité pour utiliser ce dernier avec qu'il soit supprimé de votre "mémoire pour copie" (= presse-papiers, figure 14). Vous pouvez configurer ce temps dans le menu "Paramètres", au niveau de l'onglet "Sécurité", section "Délais d'attente" et l'option "Effacer le presse-papiers après".
+Maintenant si je veux copier une partie de mon entrée, par exemple le nom d'utilisateur ou encore le mot de passe, il me suffit d'utiliser les boutons de la section 3 de la barre d'outils. Il est a noté que dans le cas de la copie d'un mot de passe (le bouton avec la clé), vous disposez d'un temps limité pour utiliser ce dernier avec qu'il soit supprimé de votre "mémoire pour copie" (= presse-papiers, <a href="#figure14">figure 14</a>). Vous pouvez configurer ce temps dans le menu "Paramètres", au niveau de l'onglet "Sécurité", section "Délais d'attente" et l'option "Effacer le presse-papiers après".
 
-<div style="text-align: center;">
-  ![Figure 14 : Temps presse-papiers](../../ressources/support/gestionnaire_mots_de_passe/images/14_temps_presse_papiers.png)
-</div>
+<figure id="figure14">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/14_temps_presse_papiers.png" class="resized-img" alt="Figure 14 : Temps presse-papiers">
+    <figcaption class="figcaption-center">Figure 14 : Temps presse-papiers</figcaption>
+</figure>
 
 ## 3 - Intégration aux navigateurs
 
-L'une des options les plus pratiques et l'intégration de votre coffre-fort à votre navigateur. Plus concrétement, cela veut dire que vous allez pouvoir effectuer des remplissages semi-automatiques des noms d'utilisateur et des mots de passe quand vous allez vous rendre sur les sites internets associés.
+L'une des options les plus pratiques et l'intégration de votre coffre-fort à votre navigateur. Plus concrètement, cela veut dire que vous allez pouvoir effectuer des remplissages semi-automatiques des noms d'utilisateur et des mots de passe quand vous allez vous rendre sur les sites internet associés.
 
 KeePassXC propose des intégrations avec les navigateurs suivants :
 
@@ -211,67 +225,77 @@ KeePassXC propose des intégrations avec les navigateurs suivants :
 - [Sur base Mozilla Firefox et Tor-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/){.external target="_blank"},
 - [Sur base Microsoft Egde](https://microsoftedge.microsoft.com/addons/detail/keepassxcbrowser/pdffhmdngciaglkoonimfcmckehcpafo){.external target="_blank"}.
 
-La première chose à faire est d'activer l'option d'association dans les paramètres de KeePassXC. Pour cela il suffit de vous rendre dans les paramètres au niveau de l'onglet "Intégration aux navigateurs" (figure 15). 
+La première chose à faire est d'activer l'option d'association dans les paramètres de KeePassXC. Pour cela il suffit de vous rendre dans les paramètres au niveau de l'onglet "Intégration aux navigateurs" (<a href="#figure15">figure 15</a>). 
 
-<div style="text-align: center;">
-  ![Figure 15 : Intégration aux navigateurs](../../ressources/support/gestionnaire_mots_de_passe/images/15_integration_navigateurs.png){width=70%}
-</div>
+<figure id="figure15">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/15_integration_navigateurs.png" class="resized-img" width="70%" alt="Figure 15 : Intégration aux navigateurs">
+    <figcaption class="figcaption-center">Figure 15 : Intégration aux navigateurs</figcaption>
+</figure>
 
 Pour mon cas d'exemple, je vais faire un test avec le navigateur Egde, mais le principe reste le même pour les autres et vous pouvez même en associer plusieurs à la fois. 
 
-La seconde étape est d'installer l'extension sur le navigateur. Cliquez sur les liens juste toujours au niveau de l'onglet "Intégration aux navigateurs". Vous devriez être redirigé vers un page d'installation (toujours ici avec l'exemple de Microsoft Egde, figure 16).
+La seconde étape est d'installer l'extension sur le navigateur. Cliquez sur les liens juste toujours au niveau de l'onglet "Intégration aux navigateurs". Vous devriez être redirigé vers un page d'installation (toujours ici avec l'exemple de Microsoft Egde, <a href="#figure16">figure 16</a>).
 
-<div style="text-align: center;">
-  ![Figure 16 : Installation extension navigateur](../../ressources/support/gestionnaire_mots_de_passe/images/16_installation_extension_navigateur.png){width=70%}
-</div>
+<figure id="figure16">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/16_installation_extension_navigateur.png" class="resized-img" width="70%" alt="Figure 16 : Installation extension navigateur">
+    <figcaption class="figcaption-center">Figure 16 : Installation extension navigateur</figcaption>
+</figure>
 
-Après l'installation, redémarrez votre navigateur et vous devriez avoir l'extension sous cette forme (figure 17, la base de données KeePassXC doit être déverrouillée). 
+Après l'installation, redémarrez votre navigateur et vous devriez avoir l'extension sous cette forme (<a href="#figure17">figure 17</a>, la base de données KeePassXC doit être déverrouillée). 
 
-<div style="text-align: center;">
-  ![Figure 17 : Configuration extension navigateur](../../ressources/support/gestionnaire_mots_de_passe/images/17_connection_navigateur.png){width=70%}
-</div>
+<figure id="figure17">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/17_connection_navigateur.png" class="resized-img" width="70%" alt="Figure 17 : Configuration extension navigateur">
+    <figcaption class="figcaption-center">Figure 17 : Configuration extension navigateur</figcaption>
+</figure>
 
-Maintenant cliquez sur le bouton "Connecter" puis sur la fenètre de votre base de données indiquez un nom à la demande d'association de clé (figure 18). 
+Maintenant cliquer sur le bouton "Connecter" puis sur la fenêtre de votre base de données indiquez un nom à la demande d'association de clé (<a href="#figure18">figure 18</a>).
 
-<div style="text-align: center;">
-  ![Figure 18 : Association clé extension navigateur](../../ressources/support/gestionnaire_mots_de_passe/images/18_association_cle.png){width=70%}
-</div>
+<figure id="figure18">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/18_association_cle.png" class="resized-img" width="70%" alt="Figure 18 : Association clé extension navigateur">
+    <figcaption class="figcaption-center">Figure 18 : Association clé extension navigateur</figcaption>
+</figure>
 
-Votre extension devrais maintenant être correctement configuré (figure 19).
+Votre extension devrait maintenant être correctement configurée (<a href="#figure19">figure 19</a>).
 
-<div style="text-align: center;">
-  ![Figure 19 : Configuration extension navigateur complete](../../ressources/support/gestionnaire_mots_de_passe/images/19_connection_navigateur_ok.png){width=70%}
-</div>
+<figure id="figure19">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/19_connection_navigateur_ok.png" class="resized-img" width="70%" alt="Figure 19 : Configuration extension navigateur complete">
+    <figcaption class="figcaption-center">Figure 19 : Configuration extension navigateur complete</figcaption>
+</figure>
 
-Pour la suite, nous allons tester le remplissage semi-automatique sur l'entrée que j'ai créer précédent en lien avec mes identifiants CNRS. Pour cela je me rends sur une page de connexion du CNRS (figure 20).
+Pour la suite, nous allons tester le remplissage semi-automatique sur l'entrée que j'ai créée précédent en lien avec mes identifiants CNRS. Pour cela je me rends sur une page de connexion du CNRS (<a href="#figure20">figure 20</a>).
 
-<div style="text-align: center;">
-  ![Figure 20 : Page de connection CNRS](../../ressources/support/gestionnaire_mots_de_passe/images/20_page_connection_cnrs.png){width=70%}
-</div>
+<figure id="figure20">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/20_page_connection_cnrs.png" class="resized-img" width="70%" alt="Figure 20 : Page de connexion CNRS">
+    <figcaption class="figcaption-center">Figure 20 : Page de connexion CNRS</figcaption>
+</figure>
 
-Ici je vais copier l'URL de cette page afin de la renseigner au niveau de mon entrée de ma base de données. Vous remarquerez que déja l'extension à detecté la possibilité d'ajouter des champs en lien avec une entrée de ma base de données (via l'onglet grisé de l'extension). Par ailleurs pour l'URL, pas besoin de copier l'intégralité de cette dernière, il suffit de s'arrêter après le .fr. Vous pouvez appliquer cette règle pour les autres URL à savoir que cela permet de génériser la détection du remplissage automatique et qu'il y a quand même de rare cas ou cela ne fonctionne pas. Dans notre cas, on va juste utiliser l'URL "https://janus.cnrs.fr/" que nous allons ajouter dans le champ "URL" de notre entrée précédent créer (figure 21).
+Ici je vais copier l'URL de cette page afin de la renseigner au niveau de mon entrée de ma base de données. Vous remarquerez que déjà l'extension à détecter la possibilité d'ajouter des champs en lien avec une entrée de ma base de données (via l'onglet grisé de l'extension). Par ailleurs, pour l'URL, pas besoin de copier l'intégralité de cette dernière, il suffit de s'arrêter après le .fr. Vous pouvez appliquer cette règle pour les autres URL à savoir que cela permet de généraliser la détection du remplissage automatique et qu'il y a quand même de rares cas où cela ne fonctionne pas. Dans notre cas, on va juste utiliser l'URL "https://janus.cnrs.fr/" que nous allons ajouter dans le champ "URL" de notre entrée précédente créée (<a href="#figure21">figure 21</a>).
 
-<div style="text-align: center;">
-  ![Figure 21 : Ajout URL au niveau de notre entrée](../../ressources/support/gestionnaire_mots_de_passe/images/21_ajout_url.png){width=70%}
-</div>
+<figure id="figure21">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/21_ajout_url.png" class="resized-img" width="70%" alt="Figure 21 : Ajout URL au niveau de notre entrée">
+    <figcaption class="figcaption-center">Figure 21 : Ajout URL au niveau de notre entrée</figcaption>
+</figure>
 
-Maintenant, actualiser la page de votre navigateur (en étant sur la page de connexion du CNRS) ou cliquez sur l'icone de l'extension dans le navigateur, puis cliquez sur "Redétecter les champs d'identification". Vous devriez avoir la fenètre suivante de KeePassXC qui s'affiche (figure 22). 
+Maintenant, actualisez la page de votre navigateur (en étant sur la page de connexion du CNRS) ou cliquez sur l'icône de l'extension dans le navigateur, puis cliquez sur "Redétecter les champs d'identification". Vous devriez avoir la fenêtre suivante de KeePassXC qui s'affiche (<a href="#figure22">figure 22</a>). 
 
-<div style="text-align: center;">
-  ![Figure 22 : Acceptation de l'association de l'URL ](../../ressources/support/gestionnaire_mots_de_passe/images/22_fenetre_association_url.png){width=90%}
-</div>
+<figure id="figure22">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/22_fenetre_association_url.png" class="resized-img" width="70%" alt="Figure 22 : Acceptation de l'association de l'URL">
+    <figcaption class="figcaption-center">Figure 22 : Acceptation de l'association de l'URL</figcaption>
+</figure>
 
-Il vous suffit maintenant de cocher les cases "Mémoriser" et "Permettre les éléments sélectionnés". Maintenant à chaque fois que vous arriverez sur une page portant en début d'URL "https://janus.cnrs.fr/", KeePassXC vous proposera en remplissage semi-automatique des champs, en lien avec ce que vous avez renseigné dans votre base de données (figure 23).
+Il vous suffit maintenant de cocher les cases "Mémoriser" et "Permettre les éléments sélectionnés". Maintenant à chaque fois que vous arriverez sur une page portant en début d'URL "https://janus.cnrs.fr/", KeePassXC vous proposera en remplissage semi-automatique des champs, en lien avec ce que vous avez renseigné dans votre base de données (<a href="#figure23">figure 23</a>).
 
-<div style="text-align: center;">
-  ![Figure 23 : Remplissage automatique ](../../ressources/support/gestionnaire_mots_de_passe/images/23_remplissage_automatique.png){width=70%}
-</div>
+<figure id="figure23">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/23_remplissage_automatique.png" class="resized-img" width="70%" alt="Figure 23 : Remplissage automatique">
+    <figcaption class="figcaption-center">Figure 23 : Remplissage automatique</figcaption>
+</figure>
 
-Une dernière petite astuce, plutôt que de cliquer sur l'icone d'extension ou sur le champ afin de selectionner l'entrée correspondante dans le base de données, vous pouvez utiliser des fonctions de raccourci clavier. Vous les trouverez dans l'onglet paramètre de l'extension du navigateur (en cliquant sur la route cranté verte, figure 24), onglet "Général", section "Raccourcis-clavier". Ils sont configurables et par exemple dans mon exemple par défaut (sous Windows) il faut utiliser Alt + Maj + U pour saisir le nom d’utilisateur et le mot de passe. 
+Une dernière petite astuce, plutôt que de cliquer sur l'icône d'extension ou sur le champ afin de sélectionner l'entrée correspondante dans la base de données, vous pouvez utiliser des fonctions de raccourci clavier. Vous les trouverez dans l'onglet paramètre de l'extension du navigateur (en cliquant sur la route crantée verte, <a href="#figure24">figure 24</a>), onglet "Général", section "Raccourcis-clavier". Ils sont configurables et par exemple dans mon exemple par défaut (sous Windows) il faut utiliser Alt + Maj + U pour saisir le nom d’utilisateur et le mot de passe. 
 
-<div style="text-align: center;">
-  ![Figure 24 : Paramètres extension navigateur ](../../ressources/support/gestionnaire_mots_de_passe/images/24_parametres_extension_navigateur.png){width=90%}
-</div>
+<figure id="figure24">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/24_parametres_extension_navigateur.png" class="resized-img" width="70%" alt="Figure 24 : Paramètres extension navigateur">
+    <figcaption class="figcaption-center">Figure 24 : Paramètres extension navigateur</figcaption>
+</figure>
 
 ## 4 - Sychronisation entre plusieurs appareils
 
@@ -286,265 +310,311 @@ Par ailleurs, vous constaterez que les exemples ci-dessous ont été réalisés 
 
 ### 4.1 - Le logiciel Syncthing
 
-La première étape est d'intaller un logiciel sur nos appareils qui va nous permettre d'effectuer nos sychronisations. Pour cela nous utiliserons [Syncthing](https://syncthing.net/){.external target="_blank"} qui est un logiciel libre et gratuit qui synchronise les fichiers entre appareils en temps réel, sans serveur central. Il est privé, sécurisé, crypté et facile à utiliser.
+La première étape est d'installer un logiciel sur nos appareils qui vont nous permettre d'effectuer nos synchronisations. Pour cela nous utiliserons [Syncthing](https://syncthing.net/){.external target="_blank"} qui est un logiciel libre et gratuit qui synchronise les fichiers entre appareils en temps réel, sans serveur central. Il est privé, sécurisé, crypté et facile à utiliser.
+
+Point important, comme cité précédemment, ce logiciel ne fonctionne pas via un serveur central. Concrètement cela veut dire que lors des processus de synchronisation il est nécessaire que les appareils soient connectés en même temps. Dans le cas de deux ordinateurs, cette condition peut être compliquée à remplir, surtout si on utilise l'un sur notre lieu de travail et le second à la maison pour le télétravail. C'est pourquoi, dans notre configuration c'est notre téléphone sera l'équivalent de notre "serveur central" car dernier aura "plus de change" d'être connecté en même temps que les ordinateurs.
 
 Sur le site officiel de l'application, rendez-vous dans la section ["Downloads"](https://syncthing.net/downloads/){.external target="_blank"}. Vous constaterez que vous disposez de plusieurs distributions en fonction de votre système d'exploitation.
 
 ### 4.2 - Installation et configuration du client Syncthing sous Windows
 
-Nous allons commencer par l'installer sur notre ordinateur en selectionnant l'intégration "Syncthing Windows Setup" qui permet de l'installer sous Windows. Pour faire simple rendez-vous sur ce [lien](https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases/latest/){.external target="_blank"} et telecharger l'executable .exe (figure 25, actuellement la dernière version est la 1.29.0).
+Nous allons commencer par l'installer sur notre ordinateur en sélectionnant l'intégration "Syncthing Windows Setup" qui permet de l'installer sous Windows. Pour faire simple rendez-vous sur ce [lien](https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases/latest/){.external target="_blank"} et téléchargez l'exécutable .exe (<a href="#figure25">figure 25</a>, actuellement la dernière version est la 1.29.0).
 
-<div style="text-align: center;">
-  ![Figure 25 : Dernière version de "Syncthing Windows Setup" ](../../ressources/support/gestionnaire_mots_de_passe/images/25_last_release_syncthing_windows_setup.png){width=90%}
-</div>
+<figure id="figure25">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/25_last_release_syncthing_windows_setup.png" class="resized-img" width="70%" alt="Figure 25 : Dernière version de 'Syncthing Windows Setup'">
+    <figcaption class="figcaption-center">Figure 25 : Dernière version de 'Syncthing Windows Setup'</figcaption>
+</figure>
 
-Lors de l'installation, effectué si possible avec les droits adminsitrateurs, suivez la configuration suivante :
+Lors de l'installation, effectuée si possible avec les droits administrateur, suivez la configuration suivante :
 
-- lorsque que la fenètre "Select Destination Location" apparait, changer le chemin d'accés par un chemin plus "simple" comme par exemple "C:\\Syncthing" (figure 26),
-<div style="text-align: center;">
-  ![Figure 26 : Dossier d'installation ](../../ressources/support/gestionnaire_mots_de_passe/images/26_dossier_installation.png){width=60%}
-</div>
-- au niveau de la fenètre "Select Additional Tasks", cochez la case "Create desktop shortcut for Syncthing configuration page" en plus des cases déja cochées (figure 27),
-<div style="text-align: center;">
-  ![Figure 27 : Fenetre taches additionnelles ](../../ressources/support/gestionnaire_mots_de_passe/images/27_taches_additionnelles.png){width=60%}
-</div>
-- cliquez sur oui quand on vous demande de créer une régle pour le parefeu (figure 28),
-<div style="text-align: center;">
-  ![Figure 28 : Regle parefeu ](../../ressources/support/gestionnaire_mots_de_passe/images/28_creation_pare_feu_regle.png){width=60%}
-</div>
-- pour finir cochez la case "Open Syncthing configuration page" (figure 29).
-<div style="text-align: center;">
-  ![Figure 29 : Last stand ](../../ressources/support/gestionnaire_mots_de_passe/images/29_ouverture.png){width=60%}
-</div>
+- lorsque que la fenêtre "Select Destination Location" apparait, changer le chemin d'accès par un chemin plus "simple" comme par exemple "C:\\Syncthing" (<a href="#figure26">figure 26</a>),
 
-Une fois le logiciel installé, vous devriez voir la fenêtre principale de l'application (figure 30). Vous pouvez y accéder via votre navigateur à l'adresse suivante 127.0.0.1:8384 (si vous n'avez pas touché à ces paramètres lors de l'installation) ou en cliquant sur le raccourci "Syncthing Configuration Page" qui c'est ajouté sur votre bureau. Sur cette première page, il est possible que l'application vous conseille d'ajouter un nom d'utilisateur et un mot de passe afin d'accéder à l'interface. D'un point sécuritaire c'est un plus, mais dans un souci d'accessibilité et en partant du principe que votre ordinateur est verrouillé par un mot de passe et que vous ne quittez pas votre poste dans le verrouiller, nous n'allons pas configurer d'accès authentifié. 
+<figure id="figure26">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/26_dossier_installation.png" class="resized-img" width="60%" alt="Figure 26 : Dossier d'installation">
+    <figcaption class="figcaption-center">Figure 26 : Dossier d'installation</figcaption>
+</figure>
 
-<div style="text-align: center;">
-  ![Figure 30 : Syncthing global page ](../../ressources/support/gestionnaire_mots_de_passe/images/30_syncthing_windows.png){width=90%}
-</div>
+- au niveau de la fenêtre "Select Additional Tasks", cochez la case "Create desktop shortcut for Syncthing configuration page" en plus des cases déjà cochées (<a href="#figure27">figure 27</a>),
 
-Maintenant que notre logiciel est installé, la prochaine étape est d'ajouter un dossier de partage qui contiendra notre base de données KeePassXC. Pour effectuer cela, il suffit de cliquer sur le bouton "Ajouter un partage" disponible sur l'écran d'accueil. Sur l'écran de configuration (figure 31), nous allons lui donner un nom (il peut être différent entre les appareils), ainsi qu'un identifiant de partage (il doit être IDENTIQUE entre les appareils) et pour fini le chemin d'accès du partage, qui sera ici l'emplacement du dossier ou est stocké ma base de données. 
+<figure id="figure27">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/27_taches_additionnelles.png" class="resized-img" width="50%" alt="Figure 27 : Fenêtre taches additionnelles">
+    <figcaption class="figcaption-center">Figure 27 : Fenêtre taches additionnelles</figcaption>
+</figure>
 
-<div style="text-align: center;">
-  ![Figure 31 : Configuration d'un dossier de partage ](../../ressources/support/gestionnaire_mots_de_passe/images/31_ajout_partage.png){width=70%}
-</div>
+- cliquez sur oui quand on vous demande de créer une règle pour le pare-feu (<a href="#figure28">figure 28</a>),
+
+<figure id="figure28">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/28_creation_pare_feu_regle.png" class="resized-img" width="50%" alt="Figure 28 : Regle pare-feu">
+    <figcaption class="figcaption-center">Figure 28 : Regle pare-feu</figcaption>
+</figure>
+
+- pour finir, cochez la case "Open Syncthing configuration page" (<a href="#figure29">figure 29</a>).
+
+<figure id="figure29">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/29_ouverture.png" class="resized-img" width="50%" alt="Figure 29 : Last stand">
+    <figcaption class="figcaption-center">Figure 29 : Last stand</figcaption>
+</figure>
+
+Une fois le logiciel installé, vous devriez voir la fenêtre principale de l'application (<a href="#figure30">figure 30</a>). Vous pouvez y accéder via votre navigateur à l'adresse suivante 127.0.0.1:8384 (si vous n'avez pas touché à ces paramètres lors de l'installation) ou en cliquant sur le raccourci "Syncthing Configuration Page" qui c'est ajouté sur votre bureau. Sur cette première page, il est possible que l'application vous conseille d'ajouter un nom d'utilisateur et un mot de passe afin d'accéder à l'interface. D'un point sécuritaire c'est un plus, mais dans un souci d'accessibilité et en partant du principe que votre ordinateur est verrouillé par un mot de passe et que vous ne quittez pas votre poste dans le verrouiller, nous n'allons pas configurer d'accès authentifié. 
+
+<figure id="figure30">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/30_syncthing_windows.png" class="resized-img" width="60%" alt="Figure 30 : Syncthing page globale">
+    <figcaption class="figcaption-center">Figure 30 : Syncthing page globale</figcaption>
+</figure>
+
+Maintenant que notre logiciel est installé, la prochaine étape est d'ajouter un dossier de partage qui contiendra notre base de données KeePassXC. Pour effectuer cela, il suffit de cliquer sur le bouton "Ajouter un partage" disponible sur l'écran d'accueil. Sur l'écran de configuration (<a href="#figure31">figure 31</a>), nous allons lui donner un nom (il peut être différent entre les appareils), ainsi qu'un identifiant de partage (il doit être IDENTIQUE entre les appareils) et pour fini le chemin d'accès du partage, qui sera ici l'emplacement du dossier ou est stocké ma base de données. 
+
+<figure id="figure31">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/31_ajout_partage.png" class="resized-img" width="70%" alt="Figure 31 : Configuration d'un dossier de partage">
+    <figcaption class="figcaption-center">Figure 31 : Configuration d'un dossier de partage</figcaption>
+</figure>
 
 ### 4.3 - Installation et configuration du client Syncthing sous Android
 
-Pour configurer Syncthing sous notre smartphone android, nous allons récupérer l'application directement depuis le store. Veillez à bien récupéré le bon qui s'appelle ["Syncthing-Fork"](https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid&hl=en-US){.external target="_blank"}.
+Pour configurer Syncthing sous notre smartphone Android, nous allons récupérer l'application directement depuis le store. Veillez à bien récupéré le bon qui s'appelle ["Syncthing-Fork"](https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid&hl=en-US){.external target="_blank"}.
 
-Lors du lancement de l'application vous devez autoriser l'application à accéder à plusieurs elements de votre téléphone :
+Lors du lancement de l'application, vous devez autoriser l'application à accéder à plusieurs éléments de votre téléphone :
 
-- l'accés au stockage, qui va lui permettre d'avoir un accés à votre base de données stocké en local sur votre téléphone (figure 32)
+- l'accès au stockage, qui va lui permettre d'avoir un accès à votre base de données stocké en local sur votre téléphone (<a href="#figure32">figure 32</a>)
 
-<div style="text-align: center;">
-  ![Figure 32 : Autorisation accés stockage téléphone ](../../ressources/support/gestionnaire_mots_de_passe/images/32_permission_stockage.png){width=20%}
-</div>
+<figure id="figure32">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/32_permission_stockage.png" class="resized-img" width="30%" alt="Figure 32 : Autorisation accès stockage téléphone">
+    <figcaption class="figcaption-center">Figure 32 : Autorisation accès stockage téléphone</figcaption>
+</figure>
 
-- concernant l'optimisation de la batterie, il est conseillé d'arreter l'optimisation de la batterie (figure 33). Ici nous avons besoin que notre télépone ne ferme pas automatiquement l'application, par exemple si elle reste ouverte plus longtemps qu'une application "basique". Il est a note quand même que théoriquement, la désactivation de l'optimisation de la batterie pourrait avoir des récupércutions sur l'autonomie de cette dernier. Il faut bien sur prendre cela on considèration via d'autres variables, comme les espacements entre les synchronisations ou le type de connexion (via données mobiles ou wifi par exemple) mais pour le moment via mon exemple d'utilisation exigent (sychroniation toujours fonctionnelle via les données mobiles), l'impact selon moi n'est pas signification sur l'autonomie de ma batterie.
+- concernant l'optimisation de la batterie, il est conseillé d'arrêter l'optimisation de la batterie (<a href="#figure33">figure 33</a>). Ici nous avons besoin que notre téléphone ne ferme pas automatiquement l'application, par exemple si elle reste ouverte plus longtemps qu'une application "basique". Il est à note quand même que théoriquement, la désactivation de l'optimisation de la batterie pourrait avoir des récupércutions sur l'autonomie de cette dernière. Il faut bien sûr prendre cela on considération via d'autres variables, comme les espacements entre les synchronisations ou le type de connexion (via données mobiles ou wifi par exemple) mais pour le moment via mon exemple d'utilisation exigent (synchronisation toujours fonctionnelle via les données mobiles), l'impact selon moi n'est pas une signification sur l'autonomie de ma batterie.
 
-<div style="text-align: center;">
-  ![Figure 33 : Autorisation arrêt optimisation batterie ](../../ressources/support/gestionnaire_mots_de_passe/images/33_permission_batterie.png){width=30%}
-</div>
+<figure id="figure33">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/33_permission_batterie.png" class="resized-img" width="30%" alt="Figure 33 : Autorisation arrêt optimisation batterie">
+    <figcaption class="figcaption-center">Figure 33 : Autorisation arrêt optimisation batterie</figcaption>
+</figure>
 
-- pour les permissions de localisation il est aussi conseillé de l'accorder (figure 34). Comme indiqué dans les commentaires, la localisation va servir uniquement pour la selection des réseaux wifi, si vous desirez effectuer des sychronisations uniquement sur des réseaux wifi prédéfini (celui de votre domicile par exemple).
+- pour les permissions de localisation, il est aussi conseillé de l'accorder (<a href="#figure34">figure 34</a>). Comme indiqué dans les commentaires, la localisation va servir uniquement pour la sélection des réseaux wifi, si vous désirez effectuer des synchronisations uniquement sur des réseaux wifi prédéfinis (celui de votre domicile par exemple).
 
-<div style="text-align: center;">
-  ![Figure 34 : Autorisation localisation ](../../ressources/support/gestionnaire_mots_de_passe/images/34_permission_localisation.png){width=30%}
-</div>
+<figure id="figure34">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/34_permission_localisation.png" class="resized-img" width="30%" alt="Figure 34 : Autorisation localisation">
+    <figcaption class="figcaption-center">Figure 34 : Autorisation localisation</figcaption>
+</figure>
 
-- pour finir, autorisé aussi les notifications de l'application (figure 35) afin que cette dernière puisse vous informer des détails des sychronisations.
+- pour finir, autoriser aussi les notifications de l'application (<a href="#figure35">figure 35</a>) afin que cette dernière puisse vous informer des détails des synchronisations.
 
-<div style="text-align: center;">
-  ![Figure 35 : Autorisation notifications ](../../ressources/support/gestionnaire_mots_de_passe/images/35_permission_notifications.png){width=30%}
-</div>
+<figure id="figure35">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/35_permission_notifications.png" class="resized-img" width="30%" alt="Figure 35 : Autorisation notifications">
+    <figcaption class="figcaption-center">Figure 35 : Autorisation notifications</figcaption>
+</figure>
 
-Maintenant que l'application est correctement installé, par défaut les conditions d'execution des sychronisations est reglé pour se faire uniquement en wifi. Pour mon utilisation personnelle et afin de tester directement mes processus de sychronisation, j'ai choisi d'activier l'exectuer des sychronisations depuis les données mobiles (via 4G ou 5G par exemple). Libre a vous de faire cela aussi (avec aussi en mémoire l'impact que cela peut avoir sur le batterie mais surtout sur votre forfait mobile) mais dans tous les cas je laisse décoché "Ecécuter en itinérance" afin que la sychronisation ne se fasse pas quand je suis pas exemple à l'étranger ou les données mobiles peuvent être décompté de manière très importante dans mon forfait (le logiciel passera en veille à ce moment la). Pour configurer cela il vous suffit de vous rendre dans l'onglet "Paramètres" via les 3 barres eu haut à gauche, de cliquer sur "Conditions d'exécution" (figure 36), puis de cocher/décocher les cases correspondantes (figure 37).
+Maintenant que l'application est correctement installée, par défaut les conditions d'exécution des synchronisations sont réglées pour se faire uniquement en wifi. Pour mon utilisation personnelle et afin de tester directement mes processus de synchronisation, j'ai choisi d'activer l'exécuteur des synchronisations depuis les données mobiles (via 4G ou 5G par exemple). Libre a vous de faire cela aussi (avec aussi en mémoire l'impact que cela peut avoir sur la batterie, mais surtout sur votre forfait mobile), mais dans tous les cas je laisse décoché "Ecécuter en itinérance" afin que la synchronisation ne se fasse pas quand je suis pas exemple à l'étranger ou les données mobiles peuvent être décomptées de manière très importante dans mon forfait (le logiciel passera en veille à ce moment-là). Pour configurer cela il vous suffit de vous rendre dans l'onglet "Paramètres" via les 3 barres eu haut à gauche, de cliquer sur "Conditions d'exécution" (<a href="#figure36">figure 36</a>), puis de cocher/décocher les cases correspondantes (<a href="#figure37">figure 37</a>).
 
 :::: {.columns}
 ::: {.column width="50%"}
-<div style="text-align: center;">
-![Figure 36 : Paramètres sychronisation](../../ressources/support/gestionnaire_mots_de_passe/images/36_parametres_sychronisation.png){width=50%}
-</div>
+<figure id="figure36">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/36_parametres_sychronisation.png" class="resized-img" width="50%" alt="Figure 36 : Paramètres synchronisation">
+    <figcaption class="figcaption-center">Figure 36 : Paramètres synchronisation</figcaption>
+</figure>
 :::
 ::: {.column width="50%"}
-<div style="text-align: center;">
-![Figure 37 : Autorisation données mobiles](../../ressources/support/gestionnaire_mots_de_passe/images/37_application_donnees_mobiles.png){width=55%}
-</div>
+<figure id="figure37">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/37_application_donnees_mobiles.png" class="resized-img" width="55%" alt="Figure 37 : Autorisation données mobiles">
+    <figcaption class="figcaption-center">Figure 37 : Autorisation données mobiles</figcaption>
+</figure>
 :::
 ::::
 
-Toujours dans les paramètres de l'application, il serait judicieux de cocher dans la section "Comportement" la case "Démarrage automatique" (Figure 38) afin que cette dernière lancement automatique les processus de sychronisation dés que le téléphone s'allume.
+Toujours dans les paramètres de l'application, il serait judicieux de cocher dans la section "Comportement" la case "Démarrage automatique" (<a href="#figure38">figure 38</a>) afin que ce dernier lancement automatique dans les processus de synchronisation dès que le téléphone s'allume.
 
-<div style="text-align: center;">
-![Figure 38 : Démarrage automatique de l'application](../../ressources/support/gestionnaire_mots_de_passe/images/38_demarrage_automatique.png){width=30%}
-</div>
+<figure id="figure38">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/38_demarrage_automatique.png" class="resized-img" width="25%" alt="Figure 38 : Démarrage automatique de l'application">
+    <figcaption class="figcaption-center">Figure 38 : Démarrage automatique de l'application</figcaption>
+</figure>
 
 ### 4.4 - Appariement d'un ordinateur avec un téléphone Android
 
-L'application correctement installé et configuré sur notre ordinateur et notre téléphone, il nous reste maintenant à apparairer nos appareils. Pour cela, le plus simple est de passer par des QR codes d'identification. Sur votre ordinateur ou nous avons configuré Syncthing (section 4.2), ouvret la fenêtre de configuration (adresse 127.0.0.1:8384 par défaut ou raccourci “Syncthing Configuration Page” sur le bureau) et cliquez sur l'onglet "Actions" puis sur "Afficher mon ID" (figure 39).
+L'application correctement installée et configurée sur notre ordinateur et notre téléphone, il nous reste maintenant à appareiller nos appareils. Pour cela, le plus simple est de passer par des QR codes d'identification. Sur votre ordinateur ou nous avons configuré Syncthing (section 4.2), ouvrir la fenêtre de configuration (adresse 127.0.0.1:8384 par défaut ou raccourci “Syncthing Configuration Page” sur le bureau) et cliquez sur l'onglet "Actions" puis sur "Afficher mon ID" (<a href="#figure39">figure 39</a>).
 
-<div style="text-align: center;">
-![Figure 39 : Affichage QR code](../../ressources/support/gestionnaire_mots_de_passe/images/39_affichage_qrcode.png){width=90%}
-</div>
+<figure id="figure39">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/39_affichage_qrcode.png" class="resized-img" width="80%" alt="Figure 39 : Affichage QR code">
+    <figcaption class="figcaption-center">Figure 39 : Affichage QR code</figcaption>
+</figure>
 
-Retourner sur l'application Syncthing sur votre téléphone, cliquez sur l'onglet "APPAREILS" puis sur le bouton en haut a droite avec un + pour ajouter un nouvelle appareil. Dans la nouvelle fenêtre, cliquez que l'icone de QR code en haut à droite, et acceptez que l'application accéde à votre appareil photo (figure 40). 
+Retourner sur l'application Syncthing sur votre téléphone, cliquez sur l'onglet "APPAREILS" puis sur le bouton en haut à droite avec un + pour ajouter un nouvel appareil. Dans la nouvelle fenêtre, cliquez que l'icône de QR code en haut à droite, et acceptez que l'application accède à votre appareil photo (<a href="#figure40">figure 40</a>). 
 
-<div style="text-align: center;">
-![Figure 40 : Autorisation accés appareil photo](../../ressources/support/gestionnaire_mots_de_passe/images/40_scan_qrcode.png){width=30%}
-</div>
+<figure id="figure40">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/40_scan_qrcode.png" class="resized-img" width="25%" alt="Figure 40 : Autorisation accès appareil photo">
+    <figcaption class="figcaption-center">Figure 40 : Autorisation accès appareil photo</figcaption>
+</figure>
 
-Donner un nom a cette appareil (ici j'ai choisis "pc_cnrs") et cocher la case "Initiateur". 
-<div style="text-align: center;">
-![Figure 41 : Ajout ordinateur](../../ressources/support/gestionnaire_mots_de_passe/images/41_ajout_pc.png){width=30%}
-</div>
+Donner un nom à cet appareil (ici j'ai choisi "pc_cnrs") et cocher la case "Initiateur" (<a href="#figure41">figure 41</a>). 
 
-Maintenant vous devriez voir une demande d'ajout sur la page de configuration de votre ordinateur (figure 42). 
+<figure id="figure41">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/41_ajout_pc.png" class="resized-img" width="25%" alt="Figure 41 : Ajout ordinateur">
+    <figcaption class="figcaption-center">Figure 41 : Ajout ordinateur</figcaption>
+</figure>
 
-<div style="text-align: center;">
-![Figure 42 : Demande ajout ordinateur](../../ressources/support/gestionnaire_mots_de_passe/images/42_ajout_telepone.png){width=80%}
-</div>
+Maintenant vous devriez voir une demande d'ajout sur la page de configuration de votre ordinateur (<a href="#figure42">figure 42</a>). 
 
-Accepté la en cliquant sur "Ajouter l'appareil". Dans l'onglet "Général" donnez lui un nom convivial (pour mon exemple ce sera "portable_android_mat", figure 43).
+<figure id="figure42">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/42_ajout_telepone.png" class="resized-img" width="70%" alt="Figure 42 : Demande ajout ordinateur">
+    <figcaption class="figcaption-center">Figure 42 : Demande ajout ordinateur</figcaption>
+</figure>
 
-<div style="text-align: center;">
-![Figure 43 : Demande ajout téléphone](../../ressources/support/gestionnaire_mots_de_passe/images/43_configuration_telephone.png){width=80%}
-</div>
+Accepté là en cliquant sur "Ajouter l'appareil". Dans l'onglet "Général" donnez-lui un nom convivial (pour mon exemple ce sera "portable_android_mat", <a href="#figure43">figure 43</a>).
 
-Cliquer ensuite sur l'onglet "Partages" et coché la case correspondant au dossier partager que nous avons crée précédement (Figure 44).
+<figure id="figure43">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/43_configuration_telephone.png" class="resized-img" width="70%" alt="Figure 43 : Demande ajout téléphone">
+    <figcaption class="figcaption-center">Figure 43 : Demande ajout téléphone</figcaption>
+</figure>
 
-<div style="text-align: center;">
-![Figure 44 : Demande ajout téléphone](../../ressources/support/gestionnaire_mots_de_passe/images/44_autorisation_keepass_folder.png){width=80%}
-</div>
+Cliquer ensuite sur l'onglet "Partages" et cocher la case correspondant au dossier partager que nous avons créé précédemment (<a href="#figure44">figure 44</a>).
 
-Maintenant, il nous reste à créer de la même manière que sur notre ordinateur (section 4.2) un dossier partagé contenant notre base de données sur notre téléphone. Pour cela, retour sur notre téléphone, onglet "PARTAGES", création d'un nouveau partage via le bouton + en haut à droite, et configurer les paramètres. A savoir que :
+<figure id="figure44">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/44_autorisation_keepass_folder.png" class="resized-img" width="70%" alt="Figure 44 : Autorisation partage téléphone">
+    <figcaption class="figcaption-center">Figure 44 : Autorisation partage téléphone</figcaption>
+</figure>
 
-- comme précédement, vous pouvez le lui donner le nom que vous voulez (ici ce sera "KeePass"),
+Maintenant, il nous reste à créer de la même manière que sur notre ordinateur (section 4.2) un dossier partagé contenant notre base de données sur notre téléphone. Pour cela, retour sur notre téléphone, onglet "PARTAGES", création d'un nouveau partage via le bouton + en haut à droite, et configurer les paramètres. À savoir que :
+
+- comme précédemment, vous pouvez le lui donner le nom que vous voulez (ici ce sera "KeePass"),
 - idem vous devez indiquer le même identifiant que celui de votre dossier partagé sur votre ordinateur. Dans mon cas c'est "keepass", 
-- vous devez renseigner un emplacement sur votre téléphone ou sera stocké votre base de données. Pour cela cliquez sur le petite roue crantée. Pour mon exemple et ma configuration personnelle je serais dans le dossier "/storage/emulated/0/DCIM/KeePass" (j'ai créer le dossier "KeePass" avec le petit + en haut à droite),
-- j'ai activié le partage avec l'appareil "pc_cnrs" qui est le pc que j'ai appareillé précédement.
-- on valide à la fin avec l'icone en haut à droite.
+- vous devez renseigner un emplacement sur votre téléphone ou sera stocké votre base de données. Pour cela, cliquez sur la petite roue crantée. Pour mon exemple et ma configuration personnelle, je serais dans le dossier "/storage/emulated/0/DCIM/KeePass" (j'ai créé le dossier "KeePass" avec le petit + en haut à droite),
+- j'ai activé le partage avec l'appareil "pc_cnrs" qui est le pc que j'ai appareillé précédemment.
+- on valide à la fin avec l'icône en haut à droite.
 
-Pour information, vous devriez avoir une configuration du type de la figure 45.
+Pour information, vous devriez avoir une configuration du type de la <a href="#figure45">figure 45</a>.
 
-<div style="text-align: center;">
-![Figure 45 : Création partage sur téléphone](../../ressources/support/gestionnaire_mots_de_passe/images/45_parametre_partage_telephone.png){width=30%}
-</div>
+<figure id="figure45">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/45_parametre_partage_telephone.png" class="resized-img" width="25%" alt="Figure 45 : Création partage sur téléphone">
+    <figcaption class="figcaption-center">Figure 45 : Création partage sur téléphone</figcaption>
+</figure>
 
-Félicitation, vous appariement et la synchronisation entre vos dossiers devrait être fonctionnel (figure 46 et 47).
+Félicitation, vous appariement et la synchronisation entre vos dossiers devrait être fonctionnel (<a href="#figure46">figure 46</a> et <a href="#figure47">figure 47</a>).
 
 :::: {.columns}
 ::: {.column width="50%"}
-<div style="text-align: center;">
-![Figure 46 : Sychronisation sur android](../../ressources/support/gestionnaire_mots_de_passe/images/46_sync_android.png){width=50%}
-</div>
+<figure id="figure46">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/46_sync_android.png" class="resized-img" width="50%" alt="Figure 46 : Sychronisation sur Android">
+    <figcaption class="figcaption-center">Figure 46 : Sychronisation sur Android</figcaption>
+</figure>
 :::
 ::: {.column width="50%"}
-<div style="text-align: center;">
-![Figure 47 : Sychronisation sur ordinateur](../../ressources/support/gestionnaire_mots_de_passe/images/47_sync_pc.png){width=100%}
-</div>
+<figure id="figure47">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/47_sync_pc.png" class="resized-img" width="100%" alt="Figure 47 : Sychronisation sur ordinateur">
+    <figcaption class="figcaption-center">Figure 47 : Sychronisation sur ordinateur</figcaption>
+</figure>
 :::
 ::::
 
 ### 4.5 - Appariement de deux ordinateurs
 
-Cette section est un bonus, mais peut être utile par exemple si vous voulez sychroniser votre base de données avec deux ordinateurs, l'un present sur votre lieux de travail et le second présent à votre domicile, pour le télétravail.
+Cette section est un bonus, mais peut être utile par exemple si vous voulez synchroniser votre base de données avec deux ordinateurs, l'un présent sur votre lieu de travail et le second présent à votre domicile, pour le télétravail.
 
-Maintenant que vous avez sychroniser un ordinateur et un téléphone portable cette étape sera un jeu d'enfant :
+Maintenant que vous avez synchronisé un ordinateur et un téléphone portable, cette étape sera un jeu d'enfant :
 
-- effectué l'installation et la configuration du client Synchting sous Windows sur votre second ordinateur (section 4.2). N'oubliez pas que l'identifiant du partage doit être identifique à celui effectuer sur l'autre ordinateur et par association votre téléphone portable (dans mon exemple ce sera "keepass"),
-- reitéré l'étape de la section 4.5 avec le second ordinateur.
+- effectué l'installation et la configuration du client Synchting sous Windows sur votre second ordinateur (section 4.2). N'oubliez pas que l'identifiant du partage doit être identique à celui effectué sur l'autre ordinateur et par association avec votre téléphone portable (dans mon exemple ce sera "keepass"),
+- réitérer l'étape de la section 4.5 avec le second ordinateur.
 
-A l'issus de cette manipulation vous devriez voir votre second appareils à coté du premier (figure 48).
+À l'issue de cette manipulation, vous devriez voir votre second appareil à côté du premier (<a href="#figure48">figure 48</a>).
 
-<div style="text-align: center;">
-![Figure 48 : Sychronisation second ordinateur](../../ressources/support/gestionnaire_mots_de_passe/images/48_sychronisation_second_pc.png){width=30%}
-</div>
+<figure id="figure48">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/48_sychronisation_second_pc.png" class="resized-img" width="30%" alt="Figure 48 : Sychronisation second ordinateur">
+    <figcaption class="figcaption-center">Figure 48 : Sychronisation second ordinateur</figcaption>
+</figure>
 
 ## 5 - Installation de l'application KeePass sur Android
 
-Premièrement féliciation d'être arrivé jusqu'ici, vous avez fait le plus dur. Dans cette dernière partie, nous allons installer une application android sur notre téléphone qui va nous permettre d'accéder à notre base de données sur ce dernier, mais aussi nous faciliter le remplissage des mots de passe sur les sites internets (même principe que dans la section 3 pour notre ordinateur).
+Premièrement, félicitations d'être arrivé jusqu'ici, vous avez fait le plus dur. Dans cette dernière partie, nous allons installer une application Android sur notre téléphone qui va nous permettre d'accéder à notre base de données sur ce dernier, mais aussi nous faciliter le remplissage des mots de passe sur les sites internet (même principe que dans la section 3 pour notre ordinateur).
 
-Concrétement, vous allez avoir le choix entre :
+Concrètement, vous allez avoir le choix entre :
 
 - [KeePassDX](https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free){.external target="_blank"} et [KeePass2Android](https://play.google.com/store/apps/details?id=keepass2android.keepass2android){.external target="_blank"} pour Android,
 - [Strongbox](https://apps.apple.com/us/app/strongbox-password-manager/id897283731){.external target="_blank"} and [KeePassium](https://apps.apple.com/us/app/keepassium-keepass-passwords/id1435127111){.external target="_blank"} pour iOS.
 
-Dans notre exemple, je vais utiliser KeePassDX qui a selon moi l'avantage d'avoir une interface légérement plus agréable que KeePass2Android.
+Dans notre exemple, je vais utiliser KeePassDX qui a selon moi l'avantage d'avoir une interface légèrement plus agréable que KeePass2Android.
 
 ### 5.1 - Installation et configuration de l'application KeePassDX
 
-Une fois que vous avez insallé l'application KeePassDX sur votre téléphone Android, vous devriez avoir cette première fénétre (figure 49).
+Une fois que vous avez installé l'application KeePassDX sur votre téléphone Android, vous devriez avoir cette première fenêtre (<a href="#figure49">figure 49</a>).
 
-<div style="text-align: center;">
-![Figure 49 : KeePassDX](../../ressources/support/gestionnaire_mots_de_passe/images/49_keepassdx_main.png){width=30%}
-</div>
+<figure id="figure49">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/49_keepassdx_main.png" class="resized-img" width="30%" alt="Figure 49 : KeePassDX">
+    <figcaption class="figcaption-center">Figure 49 : KeePassDX</figcaption>
+</figure>
 
-Il vous suffit de cliquer sur l'onglet "Ouvrir un coffre-fort existant" puis de selectionner votre base de données. Dans mon exemple rappelez-vous elle se trouve dans le dossier “/storage/emulated/0/DCIM/KeePass”. Rentrez votre mots de passe (figure 50) et accepter l'autorisation de notification (figure 51 et 52).
+Il vous suffit de cliquer sur l'onglet "Ouvrir un coffre-fort existant" puis de sélectionner votre base de données. Dans mon exemple rappelez-vous, elle se trouve dans le dossier “/storage/emulated/0/DCIM/KeePass”. Rentrez votre mot de passe (<a href="#figure50">figure 50</a>) et acceptez l'autorisation de notification (<a href="#figure51">figure 51</a> et <a href="#figure52">52</a>).
 
 :::: {.columns}
 ::: {.column width="33%"}
-<div style="text-align: center;">
-![Figure 50 : Déverrouillage avec mot de passe](../../ressources/support/gestionnaire_mots_de_passe/images/50_bdd_password.png){width=90%}
-</div>
+<figure id="figure50">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/50_bdd_password.png" class="resized-img" width="90%" alt="Figure 50 : Déverrouillage avec mot de passe">
+    <figcaption class="figcaption-center">Figure 50 : Déverrouillage avec mot de passe</figcaption>
+</figure>
 :::
 ::: {.column width="33%"}
-<div style="text-align: center;">
-![Figure 51 : Autorisation notifications](../../ressources/support/gestionnaire_mots_de_passe/images/51_autorisation_notification.png){width=65%}
-</div>
+<figure id="figure51">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/51_autorisation_notification.png" class="resized-img" width="65%" alt="Figure 51 : Autorisation notifications">
+    <figcaption class="figcaption-center">Figure 51 : Autorisation notifications</figcaption>
+</figure>
 :::
 ::: {.column width="33%"}
-<div style="text-align: center;">
-![Figure 52 : Autorisation notifications bis](../../ressources/support/gestionnaire_mots_de_passe/images/52_autorisation_notification_bis.png){width=48%}
-</div>
+<figure id="figure52">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/52_autorisation_notification_bis.png" class="resized-img" width="48%" alt="Figure 52 : Autorisation notifications bis">
+    <figcaption class="figcaption-center">Figure 52 : Autorisation notifications bis</figcaption>
+</figure>
 :::
 ::::
 
-Félicitations ! Vous avez maintenant accès à votre base de données. Juste une petite mise en garde, vérifiez bien dans le volet des notifications de votre téléphone que votre base de données est bien verrouillée si vous n'en aviez plus besoin. Par défaut, elle devrait se verrouiller automatiquement lors de certaines actions (comme le verrouillage de l'écran) mais cela va dépendre de vos configurations. 
+Félicitations ! Vous avez maintenant accès à votre base de données. Juste une petite mise en garde, vérifiez bien dans le volet des notifications de votre téléphone que votre base de données est bien verrouillée si vous n'en aviez plus besoin. Par défaut, elle devrait se verrouiller automatiquement lors de certaines actions (comme le verrouillage de l'écran), mais cela va dépendre de vos configurations. 
 
 Avant de partir boire un café, il nous reste juste quelques configurations de l'application à effectuer afin notamment de simplifier nos interactions avec cette dernière.
 
-Une bonne idée est d'activer le déverrouillage biométrique de l'application ce qui nous permettra de déverrouiller cette dernière via notre empreinte par exemple, au lieu de notre mot de passe. Pour cela, rendez-vous dans les paramètres de l'application (cliquez sur les 3 barres en haut à gauche, puis sur l'onglet "Paramètres"), section "Déverrouillage de l'appareil" puis cochez les cases "Déverrouillage biométriques" et "Ouvrir automatiquement l'in.." (figure 53). Lors de la prochaine connexion à la base, votre mot de passe sera demandé encore une fois et il vous suffira de cliquer sur "Liaison avec déverouillage de l'appareil" en bas (figure 54) pour terminer l'association biométrique (figure 55). 
+Une bonne idée est d'activer le déverrouillage biométrique de l'application ce qui nous permettra de déverrouiller cette dernière via notre empreinte par exemple, au lieu de notre mot de passe. Pour cela, rendez-vous dans les paramètres de l'application (cliquez sur les 3 barres en haut à gauche, puis sur l'onglet "Paramètres"), section "Déverrouillage de l'appareil" puis cochez les cases "Déverrouillage biométrique" et "Ouvrir automatiquement l'in.." (<a href="#figure53">figure 53</a>). Lors de la prochaine connexion à la base, votre mot de passe sera demandé encore une fois et il vous suffira de cliquer sur "Liaison avec déverrouillage de l'appareil" en bas (<a href="#figure54">figure 54</a>) pour terminer l'association biométrique (<a href="#figure55">figure 55</a>). 
 
 :::: {.columns}
 ::: {.column width="33%"}
-<div style="text-align: center;">
-![Figure 53: Déverrouillage biométrique](../../ressources/support/gestionnaire_mots_de_passe/images/53_deverouillage_biometrique.png){width=90%}
-</div>
+<figure id="figure53">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/53_deverouillage_biometrique.png" class="resized-img" width="90%" alt="Figure 53: Déverrouillage biométrique">
+    <figcaption class="figcaption-center">Figure 53: Déverrouillage biométrique</figcaption>
+</figure>
 :::
 ::: {.column width="33%"}
-<div style="text-align: center;">
-![Figure 54 : Premier déverrouillage biométrique](../../ressources/support/gestionnaire_mots_de_passe/images/54_premier_deverouillage_biometrique.png){width=90%}
-</div>
+<figure id="figure54">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/54_premier_deverouillage_biometrique.png" class="resized-img" width="90%" alt="Figure 54 : Premier déverrouillage biométrique">
+    <figcaption class="figcaption-center">Figure 54 : Premier déverrouillage biométrique</figcaption>
+</figure>
 :::
 ::: {.column width="33%"}
-<div style="text-align: center;">
-![Figure 55 : Déverrouillage biométrique fonctionnel](../../ressources/support/gestionnaire_mots_de_passe/images/55_deverouillage_biometrique_ok.png){width=90%}
-</div>
+<figure id="figure55">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/55_deverouillage_biometrique_ok.png" class="resized-img" width="90%" alt="Figure 55 : Déverrouillage biométrique fonctionnel">
+    <figcaption class="figcaption-center">Figure 55 : Déverrouillage biométrique fonctionnel</figcaption>
+</figure>
 :::
 ::::
 
-La seconde option interessant est l'activation du "Magiclavier" qui va permettre d'aide grandement le remplissage automatique des champs des sites internets depuis notre téléphone. Pour l'active rendez vous encore une fois dans les paramètres, mais dans l'onglet "Remplissage de formulaire". Dans cette section, cliquez sur "Paramètres du clavier de l'appareil" selectionnez l'autorisation pour le "Magiclavier (KeePassDX)", revenez en arrière et dans la section "Paramètres Magiclavier", cocher la case "Ecran d'authentification de l.." de la sous-section "changement de clavier" (figure 56).
+La seconde option intéressante est l'activation du "Magiclavier" qui va permettre d'aide grandement le remplissage automatique des champs des sites internet depuis notre téléphone. Pour l'active, rendez-vous encore une fois dans les paramètres, mais dans l'onglet "Remplissage de formulaire". Dans cette section, cliquez sur "Paramètres du clavier de l'appareil" sélectionnez l'autorisation pour le "Magiclavier (KeePassDX)", revenez en arrière et dans la section "Paramètres Magiclavier", cocher la case "Écran d'authentification de l.." de la sous-section "changement de clavier" (<a href="#figure56">figure 56</a>).
 
-<div style="text-align: center;">
-![Figure 56 : Paramètres Magiclavier](../../ressources/support/gestionnaire_mots_de_passe/images/56_magic_clavier_seeting.png){width=30%}
-</div>
+<figure id="figure56">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/56_magic_clavier_seeting.png" class="resized-img" width="30%" alt="Figure 56 : Paramètres Magiclavier">
+    <figcaption class="figcaption-center">Figure 56 : Paramètres Magiclavier</figcaption>
+</figure>
 
-Maintenant, quand vous arriverez sur un site ou vous devez renseigner vos credentials, vous pourrez changer clavier via la bouton en bas à droite de votre clavier (figure 57), ce qui vous permettra d'avoir accés à un menu connecté à votre base de données afin de renseigner plus simple les champs demandés (figure 58).
+Maintenant, quand vous arriverez sur un site où vous devez renseigner vos credentials, vous pourrez changer de clavier via le bouton en bas à droite de votre clavier (<a href="#figure57">figure 57</a>), ce qui vous permettra d'avoir accès à un menu connecté à votre base de données afin de renseigner plus simples les champs demandés (<a href="#figure58">figure 58</a>).
 
 :::: {.columns}
 ::: {.column width="50%"}
-<div style="text-align: center;">
-![Figure 57 : Changement de clavier](../../ressources/support/gestionnaire_mots_de_passe/images/57_changement_clavier.png){width=60%}
-</div>
+<figure id="figure57">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/57_changement_clavier.png" class="resized-img" width="60%" alt="Figure 57 : Changement de clavier">
+    <figcaption class="figcaption-center">Figure 57 : Changement de clavier</figcaption>
+</figure>
 :::
 ::: {.column width="50%"}
-<div style="text-align: center;">
-![Figure 58 : Magiclavier](../../ressources/support/gestionnaire_mots_de_passe/images/58_clavier_magic.png){width=60%}
-</div>
+<figure id="figure58">
+    <img src="../../ressources/support/gestionnaire_mots_de_passe/images/58_clavier_magic.png" class="resized-img" width="60%" alt="Figure 58 : Magiclavier">
+    <figcaption class="figcaption-center">Figure 58 : Magiclavier</figcaption>
+</figure>
 :::
 ::::
+:::
 
 ::: {.content-visible when-profile="english"}
-
+Ongoing !
+Available when the French side will be validated
 :::

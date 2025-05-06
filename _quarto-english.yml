@@ -78,6 +78,9 @@ website:
         href: pages/calendrier/calendrier.qmd
       - text: "Global support"
         href: pages/support/index_support.qmd
+        contents:
+          - text: "Password manager"
+            href : pages/support/gestionnaire_mots_de_passe.qmd
       - text: "I want to contribute!"
         href: pages/contribution.qmd
 
