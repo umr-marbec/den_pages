@@ -51,8 +51,8 @@ En cas de besoin vous trouverez aussi une documentation (en anglais) très bien 
 |---|---|---|
 | Windows | Oui | 11 Professionnel, version 24H2 |
 | Mac | Non testée | |
-| Linux | Non testée | |
-| Android | Oui | Version 13 |
+| Linux | Oui | Ubuntu 24.04.2 LTS |
+| Android | Oui | Version 13 & 15 |
 | iOS | Non testée | |
 : Tableau 1 : État des tests de la procédure.
 
@@ -116,7 +116,7 @@ Avant de se lancer dans la création de mes premiers mots de passe, faites un to
     <figcaption class="figcaption-center">Figure 5 : Accès aux paramètres de l'application</figcaption>
 </figure>
 
-Libre à vous de modifier ces paramètres suivant vos préférences, mais je vous conseille au minimum les paramètres suivants afin d'améliorer votre interface et vos interactions.
+Libre à vous de modifier ces paramètres suivant vos préférences, mais je vous conseille au minimum les paramètres suivants afin d'améliorer votre interface et vos interactions. À savoir que ces options peuvent légèrement différer entre les versions (en lien avec les OSs), notamment entre Windows et Linux.
 
 Dans l'onglet "Général", section "Démarrage" (<a href="#figure6">figure 6</a>) : 
 
@@ -315,6 +315,13 @@ La première étape est d'installer un logiciel sur nos appareils qui vont nous 
 Point important, comme cité précédemment, ce logiciel ne fonctionne pas via un serveur central. Concrètement cela veut dire que lors des processus de synchronisation il est nécessaire que les appareils soient connectés en même temps. Dans le cas de deux ordinateurs, cette condition peut être compliquée à remplir, surtout si on utilise l'un sur notre lieu de travail et le second à la maison pour le télétravail. C'est pourquoi, dans notre configuration c'est notre téléphone sera l'équivalent de notre "serveur central" car dernier aura "plus de change" d'être connecté en même temps que les ordinateurs.
 
 Sur le site officiel de l'application, rendez-vous dans la section ["Downloads"](https://syncthing.net/downloads/){.external target="_blank"}. Vous constaterez que vous disposez de plusieurs distributions en fonction de votre système d'exploitation.
+
+À titre indicatif, le processus pour l'installer sur un système Linux est disponible via le lien [suivant](https://apt.syncthing.net/){.external target="_blank"}. Suivez les instructions et lancez les lignes de commandes associées. Vous devriez avoir deux raccourcis vers l'application :
+
+- "Start Syncthing" qui va vous permettre de lancer le logiciel.,
+- "Syncthing Web UI" qui va vous amener sur le page de configuration du logiciel (voir la section suivante pour plus de détail). 
+
+Pour finir concernant Linux, contrairement à Windows qui lance automatiquement Syncthing lors du démarrage de l'OS, vous allez devoir configurer ce démarrage automatique, si vous le souhaitez, sous Linux (via par exemple le l'exécution du raccourci "Start Syncthing" à chaque démarrage).
 
 ### 4.2 - Installation et configuration du client Syncthing sous Windows
 
