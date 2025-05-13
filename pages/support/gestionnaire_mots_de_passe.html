@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3eb55813b018809320f9ba6112658b24.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6a50ef05242d36b469d2822c48e8bf2a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -439,13 +439,13 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>Linux</td>
-<td>Non testée</td>
-<td></td>
+<td>Oui</td>
+<td>Ubuntu 24.04.2 LTS</td>
 </tr>
 <tr class="even">
 <td>Android</td>
 <td>Oui</td>
-<td>Version 13</td>
+<td>Version 13 &amp; 15</td>
 </tr>
 <tr class="odd">
 <td>iOS</td>
@@ -514,7 +514,7 @@ Figure 4 : Définition des identifiants pour accéder à la base de données
 Figure 5 : Accès aux paramètres de l’application
 </figcaption>
 </figure>
-<p>Libre à vous de modifier ces paramètres suivant vos préférences, mais je vous conseille au minimum les paramètres suivants afin d’améliorer votre interface et vos interactions.</p>
+<p>Libre à vous de modifier ces paramètres suivant vos préférences, mais je vous conseille au minimum les paramètres suivants afin d’améliorer votre interface et vos interactions. À savoir que ces options peuvent légèrement différer entre les versions (en lien avec les OSs), notamment entre Windows et Linux.</p>
 <p>Dans l’onglet “Général”, section “Démarrage” (<a href="#figure6">figure 6</a>) :</p>
 <ul>
 <li>cochez si cela n’est pas déjà fait “Lancer automatiquement KeePassXC au démarrage du système. À chaque lancement de votre système, le logiciel se lancera automatiquement et vous demandera votre mot de passe”maître” pour déverrouiller votre base de données,</li>
@@ -707,6 +707,12 @@ Figure 24 : Paramètres extension navigateur
 <p>La première étape est d’installer un logiciel sur nos appareils qui vont nous permettre d’effectuer nos synchronisations. Pour cela nous utiliserons <a href="https://syncthing.net/" class="external" target="_blank">Syncthing</a> qui est un logiciel libre et gratuit qui synchronise les fichiers entre appareils en temps réel, sans serveur central. Il est privé, sécurisé, crypté et facile à utiliser.</p>
 <p>Point important, comme cité précédemment, ce logiciel ne fonctionne pas via un serveur central. Concrètement cela veut dire que lors des processus de synchronisation il est nécessaire que les appareils soient connectés en même temps. Dans le cas de deux ordinateurs, cette condition peut être compliquée à remplir, surtout si on utilise l’un sur notre lieu de travail et le second à la maison pour le télétravail. C’est pourquoi, dans notre configuration c’est notre téléphone sera l’équivalent de notre “serveur central” car dernier aura “plus de change” d’être connecté en même temps que les ordinateurs.</p>
 <p>Sur le site officiel de l’application, rendez-vous dans la section <a href="https://syncthing.net/downloads/" class="external" target="_blank">“Downloads”</a>. Vous constaterez que vous disposez de plusieurs distributions en fonction de votre système d’exploitation.</p>
+<p>À titre indicatif, le processus pour l’installer sur un système Linux est disponible via le lien <a href="https://apt.syncthing.net/" class="external" target="_blank">suivant</a>. Suivez les instructions et lancez les lignes de commandes associées. Vous devriez avoir deux raccourcis vers l’application :</p>
+<ul>
+<li>“Start Syncthing” qui va vous permettre de lancer le logiciel.,</li>
+<li>“Syncthing Web UI” qui va vous amener sur le page de configuration du logiciel (voir la section suivante pour plus de détail).</li>
+</ul>
+<p>Pour finir concernant Linux, contrairement à Windows qui lance automatiquement Syncthing lors du démarrage de l’OS, vous allez devoir configurer ce démarrage automatique, si vous le souhaitez, sous Linux (via par exemple le l’exécution du raccourci “Start Syncthing” à chaque démarrage).</p>
 </section>
 <section id="installation-et-configuration-du-client-syncthing-sous-windows" class="level3">
 <h3 class="anchored" data-anchor-id="installation-et-configuration-du-client-syncthing-sous-windows">4.2 - Installation et configuration du client Syncthing sous Windows</h3>
