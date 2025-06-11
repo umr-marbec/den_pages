@@ -7,23 +7,47 @@ format:
 ::: {.content-visible when-profile="french"}
 # Formation tidyverse
 
-Le code source de la formation tidyverse est accessible sur le [dépot GitHub](https://github.com/umr-marbec/tidyverse-training){.external target=“_blank”}. La présentation associée est disponible à [l'adresse suivante](https://umr-marbec.github.io/tidyverse-training/){.external target=“_blank”}.
+::::: columns
+::: {.column width="50%"}
+Le code source de la formation tidyverse est accessible sur le [dépot GitHub](https://github.com/umr-marbec/tidyverse-training){.external target=“_blank”}.
+
+La présentation associée est disponible à [l'adresse suivante](https://umr-marbec.github.io/tidyverse-training/){.external target=“_blank”}.
 
 La dernière session a eu lieu le 3 et 4 mars 2025.
 
 Des précisions seront communiquées ultérieurement concernant les prochaines sessions.
+:::
 
-![](../../ressources/formations/tidyverse/image_intro.png){fig-align="center" width="60%"}
+:::{.column width="5%"}
+:::
+
+::: {.column width="45%"}
+![](../../ressources/formations/tidyverse/image_intro_tidyverse.png){fig-align="center"}
+:::
+:::::
+
 :::
 
 ::: {.content-visible when-profile="english"}
 # Tidyverse training
 
-The source code for the tidyverse training course is available on the [GitHub repository](https://github.com/umr-marbec/tidyverse-training){.external target=“_blank”}. The associated presentation is available at [the following address](https://umr-marbec.github.io/tidyverse-training/){.external target=“_blank”}.
+::::: columns
+::: {.column width="50%"}
+The source code for the tidyverse training course is available on the [GitHub repository](https://github.com/umr-marbec/tidyverse-training){.external target=“_blank”}.
+
+The associated presentation is available at [the following address](https://umr-marbec.github.io/tidyverse-training/){.external target=“_blank”}.
 
 The last session took place on March 3 and 4, 2025.
 
 Details of future sessions will be announced at a later date.
+:::
 
-![](../../ressources/formations/tidyverse/image_intro.png){fig-align="center" width="60%"}
+:::{.column width="5%"}
+:::
+
+::: {.column width="45%"}
+![](../../ressources/formations/tidyverse/image_intro_tidyverse.png){fig-align="center"}
+:::
+:::::
+
 :::
