@@ -1,0 +1,45 @@
+---
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+# Formation developpement de package R
+
+::::: columns
+::: {.column width="75%"}
+Le code source de la formation est accessible sur le [dépot GitHub](https://github.com/umr-marbec/r_packages_development_training){.external target=“_blank”}.
+
+La présentation associée sous la forme d'une livre est disponible à [l'adresse suivante](https://umr-marbec.github.io/r_packages_development_training/){.external target=“_blank”}.
+
+La formation est en cours de création et devra être finalisée courant 2025. 
+
+Il est prévu qu'une première session de formation soit organisée, au plus tard fin 2025.
+:::
+
+::: {.column width="25%"}
+![](../../ressources/formations/r_package_developpement/image_intro.png){fig-align="center" width="65%"}
+:::
+:::::
+
+:::
+
+::: {.content-visible when-profile="english"}
+# R package development training
+
+::::: columns
+::: {.column width="75%"}
+The training source code is available on the [GitHub repository](https://github.com/umr-marbec/r_packages_development_training){.external target=“_blank”}. The associated book presentation is available at [the following address](https://umr-marbec.github.io/r_packages_development_training/){.external target=“_blank”}.
+
+The training program is currently being set up and should be finalized during 2025. 
+
+The first training session is scheduled for late 2025 at the latest.
+:::
+
+::: {.column width="25%"}
+![](../../ressources/formations/r_package_developpement/image_intro.png){fig-align="center" width="65%"}
+:::
+:::::
+
+:::

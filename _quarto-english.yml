@@ -58,8 +58,10 @@ website:
         contents:
           - text: "Git training"
             href : pages/formations/git.qmd
-          - text: "Tidyverse training "
+          - text: "Tidyverse training"
             href : pages/formations/tidyverse.qmd
+          - text: "R package development training"
+            href : pages/formations/r_package_developpement.qmd
       - section: "Version Control System"
         href: pages/git/index_git.qmd
         contents:

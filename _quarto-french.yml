@@ -60,6 +60,8 @@ website:
             href : pages/formations/git.qmd
           - text: "Formation Tidyverse"
             href : pages/formations/tidyverse.qmd
+          - text: "Formation developpement de package R"
+            href : pages/formations/r_package_developpement.qmd
       - section: "Système de contrôle de version"
         href: pages/git/index_git.qmd
         contents:
