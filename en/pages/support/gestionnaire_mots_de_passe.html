@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6a50ef05242d36b469d2822c48e8bf2a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-3589ff336a92e331594340e58e2f2207.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -310,8 +310,38 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#access-authentication-a-key-element-in-information-system-security-management" id="toc-access-authentication-a-key-element-in-information-system-security-management" class="nav-link active" data-scroll-target="#access-authentication-a-key-element-in-information-system-security-management">Access authentication, a key element in information system security management</a></li>
+  <li><a href="#what-is-a-password-manager-why-is-it-useful" id="toc-what-is-a-password-manager-why-is-it-useful" class="nav-link" data-scroll-target="#what-is-a-password-manager-why-is-it-useful">What is a password manager? Why is it useful?</a></li>
+  <li><a href="#keepassxc-setup-and-configuration" id="toc-keepassxc-setup-and-configuration" class="nav-link" data-scroll-target="#keepassxc-setup-and-configuration">1 - KeePassXC setup and configuration</a>
+  <ul class="collapse">
+  <li><a href="#requirements-and-framework-of-the-procedure" id="toc-requirements-and-framework-of-the-procedure" class="nav-link" data-scroll-target="#requirements-and-framework-of-the-procedure">1.1 - Requirements and framework of the procedure</a></li>
+  <li><a href="#downloading-and-installing-keepassxc" id="toc-downloading-and-installing-keepassxc" class="nav-link" data-scroll-target="#downloading-and-installing-keepassxc">1.2 - Downloading and installing KeePassXC</a></li>
+  </ul></li>
+  <li><a href="#application-overview" id="toc-application-overview" class="nav-link" data-scroll-target="#application-overview">2 - Application overview</a>
+  <ul class="collapse">
+  <li><a href="#application-interface" id="toc-application-interface" class="nav-link" data-scroll-target="#application-interface">2.1 - Application interface</a></li>
+  <li><a href="#entry-creation" id="toc-entry-creation" class="nav-link" data-scroll-target="#entry-creation">2.2 - Entry creation</a></li>
+  </ul></li>
+  <li><a href="#browser-integration" id="toc-browser-integration" class="nav-link" data-scroll-target="#browser-integration">3 - Browser integration</a></li>
+  <li><a href="#multi-device-synchronization" id="toc-multi-device-synchronization" class="nav-link" data-scroll-target="#multi-device-synchronization">4 - Multi-device synchronization</a>
+  <ul class="collapse">
+  <li><a href="#syncthing-software" id="toc-syncthing-software" class="nav-link" data-scroll-target="#syncthing-software">4.1 - Syncthing software</a></li>
+  <li><a href="#installing-and-configuring-the-syncthing-client-under-windows" id="toc-installing-and-configuring-the-syncthing-client-under-windows" class="nav-link" data-scroll-target="#installing-and-configuring-the-syncthing-client-under-windows">4.2 - Installing and configuring the Syncthing client under Windows</a></li>
+  <li><a href="#installing-and-configuring-the-syncthing-client-on-android" id="toc-installing-and-configuring-the-syncthing-client-on-android" class="nav-link" data-scroll-target="#installing-and-configuring-the-syncthing-client-on-android">4.3 - Installing and configuring the Syncthing client on Android</a></li>
+  <li><a href="#pairing-a-computer-with-an-android-phone" id="toc-pairing-a-computer-with-an-android-phone" class="nav-link" data-scroll-target="#pairing-a-computer-with-an-android-phone">4.4 - Pairing a computer with an Android phone</a></li>
+  <li><a href="#pairing-two-computers" id="toc-pairing-two-computers" class="nav-link" data-scroll-target="#pairing-two-computers">4.5 - Pairing two computers</a></li>
+  </ul></li>
+  <li><a href="#installing-the-keepass-application-on-android" id="toc-installing-the-keepass-application-on-android" class="nav-link" data-scroll-target="#installing-the-keepass-application-on-android">5 - Installing the KeePass application on Android</a>
+  <ul class="collapse">
+  <li><a href="#installing-and-configuring-the-keepassdx-application" id="toc-installing-and-configuring-the-keepassdx-application" class="nav-link" data-scroll-target="#installing-and-configuring-the-keepassdx-application">5.1 - Installing and configuring the KeePassDX application</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -346,9 +376,663 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Ongoing ! Available when the French side will be validated</p>
+<section id="access-authentication-a-key-element-in-information-system-security-management" class="level2">
+<h2 class="anchored" data-anchor-id="access-authentication-a-key-element-in-information-system-security-management">Access authentication, a key element in information system security management</h2>
+<p>Authentication of users, from simple users to administrators, represents an important element in managing the security of an information system. In practice, access to many digital services depends on the use of passwords, which remain one of the simplest and least costly means of controlling access and eventually proving identity. However, managing or defining these passwords can become laborious, and can even lead to system vulnerabilities. By way of example, a Verizon study in 2021 estimates that 81% of global data breach notifications are linked to password issues. Even worse, in France around 60% of the notifications received by there <a href="https://www.cnil.fr/fr" class="external" target="“_blank”">CNIL</a> since the beginning of 2021 are related to hacking, and a large number could have been avoided by following good password practices.</p>
+<p>The aim of this document is not to go into detail on the recommendations to be followed in order to develop the “best” authentication measures, but rather to provide you with a ready-to-use solution for setting up a password manager and, above all, to raise your understanding of how to use it.</p>
+<p>Furthermore, we’ll take a brief look at some best-practice authentication strategies, but if you’d like to find out more, it’s highly advisable to turn to the ANSSI and CNIL resources on the subject. Below, for example, you’ll find two resources that are accessible in terms of content and easy to understand, particularly with regard to the associated applications:</p>
+<ul>
+<li><a href="https://cyber.gouv.fr/publications/recommandations-relatives-lauthentification-multifacteur-et-aux-mots-de-passe" class="external" target="_blank">ANSSI, Recommendations for multi-factor authentication and passwords</a>,</li>
+<li><a href="https://www.cnil.fr/fr/mots-de-passe-une-nouvelle-recommandation-pour-maitriser-sa-securite" class="external" target="_blank">CNIL, Passwords: a new recommendation to control security</a>.</li>
+</ul>
+</section>
+<section id="what-is-a-password-manager-why-is-it-useful" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-password-manager-why-is-it-useful">What is a password manager? Why is it useful?</h2>
+<p>A password manager, also known as a password vault, is a virtual storage facility for login credentials, where all information is encrypted. In addition to pure storage, these solutions often enable you to automatically fill in login details for websites, or synchronize information on several devices at the same time, for example between two computers or even with smartphones. In addition, password creation is often facilitated by organizing passwords into groups and sub-groups, or by generating passwords to comply with associated recommendations and best practices. In practice, this often takes the form of a strong, human-memorized “master” password, which unlocks the entire password database (and thus access to associated resources). An alternative to this system, for example, is to use a password-protected office file. This solution is of course not to be preferred, as it does not provide the same level of protection as a password safe designed for this purpose. Finally, the use of a password manager is one of the recommendations made by ANSSI (n°31) concerning <a href="https://cyber.gouv.fr/sites/default/files/2021/10/anssi-guide-authentification_multifacteur_et_mots_de_passe.pdf" class="external" target="“_blank”">“multi-factor authentication and passwords”</a>.</p>
+<p>In this world of digital safe software, we’re going to find paid-for solutions such as <a href="https://nordpass.com/fr/" class="external" target="“_blank”">NordPass</a> or <a href="https://bitwarden.com/fr-fr/" class="external" target="“_blank”">Bitwarden</a>, but there is a very good free and open source solution <a href="https://keepass.info/" class="external" target="“_blank”">KeePass</a>, which has the advantage of being certified by the <a href="https://cyber.gouv.fr/produits-certifies/keepass-version-210-portable" class="external" target="“_blank”">ANSSI</a> in its version 2.10 portable.</p>
+<p>In our proposal below, we’ll be using a little sidekick to KeePass, called <a href="https://keepassxc.org/" class="external" target="“_blank”">KeePassXC</a>, which is based on the KeePass architecture, but with the addition of the multi-platform component. More specifically, there’s nothing fundamentally wrong with using KeePass, however, it’s developed in C# and therefore requires Microsoft’s .NET platform, whereas KeePassXC is developed in C++ and runs natively on Linux, macOS and Windows, enabling the best possible integration.</p>
+<p>To conclude this section, and above all to give some of our more advanced users a deeper insight into the choice of:</p>
+<ul>
+<li>KeePassXC does not support KeePass plugins. This isn’t necessarily a bad thing, as plugins can be dangerous, and KeePassXC already provides many features that require third-party plugins in KeePass, so for most things you should never need them.</li>
+<li>As a little bonus, even though it’s security that’s important, KeePassXC’s interface looks great and is more pleasant to use than KeePass.</li>
+<li>KeePassXC is natively available in French.</li>
+<li>If you want to see for yourself, the KeePass database file is perfectly compatible with KeePassXC (and vice versa). So you can switch from one system to the other without losing your data.</li>
+</ul>
+</section>
+<section id="keepassxc-setup-and-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="keepassxc-setup-and-configuration">1 - KeePassXC setup and configuration</h2>
+<section id="requirements-and-framework-of-the-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="requirements-and-framework-of-the-procedure">1.1 - Requirements and framework of the procedure</h3>
+<p>For this procedure we will have the following objectives:</p>
+<ul>
+<li>installing and configuring KeePassXC correctly</li>
+<li>quick overview of how to use the software</li>
+<li>install and configure an extension to link our password manager to my browser for semi-automatic filling of website passwords</li>
+<li>set up synchronization between two computers and an Android smartphone</li>
+<li>installation of an Android KeePass application</li>
+</ul>
+<p>IMPORTANT: setting up one or more synchronization processes should not be considered as a backup procedure, and should never replace a dedicated backup of your database with your personal data. For example, if a problem occurs with a database on one device, synchronization with other devices will propagate the problem.</p>
+<p>If you need help, you’ll also find a comprehensive documentation package at <a href="https://keepassxc.org/docs/KeePassXC_GettingStarted" class="external" target="“_blank”">link</a>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Operating system</th>
+<th>Functional procedure</th>
+<th>Edition and version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Windows</td>
+<td>Yes</td>
+<td>11 Professional, version 24H2</td>
+</tr>
+<tr class="even">
+<td>Mac</td>
+<td>Untested</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Linux</td>
+<td>Yes</td>
+<td>Ubuntu 24.04.2 LTS</td>
+</tr>
+<tr class="even">
+<td>Android</td>
+<td>Yes</td>
+<td>Version 13 &amp; 15</td>
+</tr>
+<tr class="odd">
+<td>iOS</td>
+<td>Untested</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Table 1: Procedure test status.</p>
+</section>
+<section id="downloading-and-installing-keepassxc" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-and-installing-keepassxc">1.2 - Downloading and installing KeePassXC</h3>
+<section id="for-microsoft-windows" class="level4">
+<h4 class="anchored" data-anchor-id="for-microsoft-windows">1.2.1 - For Microsoft Windows</h4>
+<p>Go to the download page on the official website via the following <a href="https://keepassxc.org/download/#windows" class="external" target="“_blank”">link</a> and download the msi archive. Follow the usual installation steps, making sure you run the installation in administrator mode (if necessary, right-click on the executable and click on “Run as administrator”). If you’ve done this correctly, you should get a window like the one in <a href="“#figure1”">figure 1</a>. You can check the “Create a shortcut on the desktop” box, which will place a launch shortcut on your desktop.</p>
+<figure id="figure1" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/01_windows_install_wizard.png" class="resized-img figure-img" width="50%" alt="Figure 1: Windows installation wizard">
+<figcaption class="figcaption-center">
+Figure 1: Windows installation wizard
+</figcaption>
+</figure>
+<p>If the default installation path points to something like “C:\Users\nom_user”, you have not launched the installation with administrator rights.</p>
+<p>Note that for some users, the software won’t launch after installation, even if you click on the run shortcut. To remedy this, you need to install the latest Microsoft Visual C++ libraries. These can be found at <a href="https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170" class="external" target="“_blank”">next</a>.</p>
+</section>
+<section id="linux" class="level4">
+<h4 class="anchored" data-anchor-id="linux">1.2.2 - Linux</h4>
+<p>Simply download the KeepPassXC AppImage for Linux from <a href="https://keepassxc.org/download/#linux" class="external" target="“_blank”">official link</a> and install it on your system.</p>
+</section>
+<section id="for-macos-systems" class="level4">
+<h4 class="anchored" data-anchor-id="for-macos-systems">1.2.3 - For macOS systems</h4>
+<p>For macOS systems, download the dmg image from the [official] link (https://keepassxc.org/download/#macos){.external target=“_blank”} and install the software in your applications.</p>
+</section>
+<section id="initial-configuration-and-creation-of-your-password-database" class="level4">
+<h4 class="anchored" data-anchor-id="initial-configuration-and-creation-of-your-password-database">1.2.4 - Initial configuration and creation of your password database</h4>
+<p>Now that the application is correctly installed on your system, you should come across a welcome window like the <a href="“#figure2”">figure 2</a>.</p>
+<figure id="figure2" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/02_home_application.png" class="resized-img figure-img" width="60%" alt="Figure 2: Application home page">
+<figcaption class="figcaption-center">
+Figure 2: Application home page
+</figcaption>
+</figure>
+<p>By default, the application language is set to the system language. In line with my current configuration, future screenshots will be in French.</p>
+<p>Now we’re going to create our database file, which will contain all our passwords. To do this, simply click on the “Create database” tab. The next window will prompt you to give this database a name. This database will take the form of a .kdbx file stored on our hard disk. To avoid any compatibility problems, use a name with a special character (no accent or space). Here, for the example, my database will be called “bdd_test_keepassxc” (<a href="“#figure3”">figure 3</a>).</p>
+<figure id="figure3" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/03_bdd_creation.png" class="resized-img figure-img" width="60%" alt="Figure 3: Database creation">
+<figcaption class="figcaption-center">
+Figure 3: Database creation
+</figcaption>
+</figure>
+<p>No need to modify the “Encryption parameters” unless you want to customize them to suit your requirements. The next window, “Database Identifiers”, lets you define the “master” password that will protect your database (and therefore all its contents). To summarize:</p>
+<ul>
+<li>if you only have one password to remember, this is it!</li>
+<li>it’s considered the one that unlocks all the others, so it has to be complicated and comply with a minimum of safety rules. Without going into too much detail about these rules, you can click on the square icon with 3 dots to open a generation aid utility (<a href="“#figure4”">figure 4</a>).</li>
+<li>this password is very important and its loss, as a general rule, will make it impossible to open the database and thus access your passwords (by default through password recovery processes).</li>
+<li>there’s a box underneath to “Add another protection”. The available options won’t be discussed here, but you should know that you can add security and access options, such as a key file or Q&amp;A.</li>
+</ul>
+<figure id="figure4" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/04_password_definition.png" class="resized-img figure-img" width="60%" alt="Figure 4: Defining logins for database access">
+<figcaption class="figcaption-center">
+Figure 4: Defining logins for database access
+</figcaption>
+</figure>
+<p>The last step asks where you want to save your database and what name you want to give it. In my example, my database will be saved as bdd_test_keepassxc.kdbx. On the other hand, if you wish to synchronize your database between several devices (see section 4, for example, for synchronization between a computer and a smartphone), it’s best to place this file in a folder. As an example here, my .kdbx file will be stored in a file named “keepass”.</p>
+<p>Before I start creating my first passwords, take a look at the application settings. To do this, simply click on the gearwheel, or click on the “Tools” tab and then on “Settings” (<a href="“#figure5”">figure 5</a>).</p>
+<figure id="figure5" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/05_racine_bdd.png" class="resized-img figure-img" width="60%" alt="Figure 5: Access to application parameters">
+<figcaption class="figcaption-center">
+Figure 5: Access to application parameters
+</figcaption>
+</figure>
+<p>You’re free to modify these settings to suit your preferences, but I’d recommend at least the following to enhance your interface and interactions. Please note that these options may differ slightly between versions (depending on the OS), particularly between Windows and Linux.</p>
+<p>In the “General” tab, “Startup” section (<a href="#figure6">figure 6</a>) :</p>
+<ul>
+<li>if you have not already done so, check “Automatically launch KeePassXC at system startup”. Each time your system is started up, the software will launch automatically and ask you for your “master” password to unlock your database,</li>
+<li>check the “Minimize window after unlocking database” tab. Paired with the previous option, unlocking your database doesn’t require you to use a password right away. So there’s no need to keep the application front and center on your desktop.</li>
+</ul>
+<figure id="figure6" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/06_general_demarrage.png" class="resized-img figure-img" width="60%" alt="Figure 6: 'General' tab, 'Startup' section">
+<figcaption class="figcaption-center">
+Figure 6: ‘General’ tab, ‘Startup’ section
+</figcaption>
+</figure>
+<p>In the “General” tab, “Entry Management” section (<a href="#figure7">figure 7</a>) :</p>
+<ul>
+<li>check “Copy data on double clicking field in entry view”.</li>
+<li>check “Minimise when opening a URL”.</li>
+</ul>
+<figure id="figure7" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/07_general_gestion_entrees.png" class="resized-img figure-img" width="60%" alt="Figure 7 : Entry management Figure 7: 'General' tab, 'Entry management' section">
+<figcaption class="figcaption-center">
+Figure 7 : Entry management Figure 7: ‘General’ tab, ‘Entry management’ section
+</figcaption>
+</figure>
+<p>In the “General” tab, “User Interface” section (<a href="#figure8">figure 8</a>) :</p>
+<ul>
+<li>check “Minimise instead of app exit”.</li>
+<li>check “Show a system tray icon”.</li>
+<li>check “Hide window to system tray when minimized”.</li>
+</ul>
+<figure id="figure8" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/08_general_interface_utilisateur.png" class="resized-img figure-img" width="60%" alt="Figure 8: 'General' tab, 'User Interface' section">
+<figcaption class="figcaption-center">
+Figure 8: ‘General’ tab, ‘User Interface’ section
+</figcaption>
+</figure>
+<p>With these settings, when you close or minimize the application’s window, the application moves into your notification area (it can be in the hidden area the first time, <a href="#figure9">figure 9</a>) instead of closing the application permanently (to do this, click on the “Database” tab, then “Quit” at the very bottom). When your application is in this zone, simply double-click on it to open it.</p>
+<figure id="figure9" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/09_zone_notification.png" class="resized-img figure-img" alt="Figure 9: Application in the notification area">
+<figcaption class="figcaption-center">
+Figure 9: Application in the notification area
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="application-overview" class="level2">
+<h2 class="anchored" data-anchor-id="application-overview">2 - Application overview</h2>
+<section id="application-interface" class="level3">
+<h3 class="anchored" data-anchor-id="application-interface">2.1 - Application interface</h3>
+<p>Your database interface is divided into 4 parts (<a href="#figure10">figure 10</a>).</p>
+<figure id="figure10" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/10_vue_global.png" class="resized-img figure-img" width="70%" alt="Figure 10: Main database interface">
+<figcaption class="figcaption-center">
+Figure 10: Main database interface
+</figcaption>
+</figure>
+<p>The first section lists all your passwords. You can organize them into groups and even sub-groups (here, by default, a group named “Root” has been created) and you can even change the icons of the items.</p>
+<p>The second part lists the entries present in your groups and in your database in general. As before, you can modify the display of these entries, in particular by modifying the associated icons.</p>
+<p>The third section contains shortcuts to dynamic groups or tags you’ve created. These latter resources are parameters that you can associate with entries and/or groups, providing simplified access, rather like shortcuts. An interesting detail is that this section also includes tabs for diagnosing the status of some of your passwords, notably by searching for expired passwords or low levels of security (for example, if your password is very short in terms of the number of characters).</p>
+<p>The last part is the preview tab, which gives you a summary of the contents of your entries, for example.</p>
+<p>The toolbar is divided into 5 sections (<a href="#figure11">figure 11</a>).</p>
+<figure id="figure11" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/11_barre_outils.png" class="resized-img figure-img" width="70%" alt="Figure 11: Toolbar interface">
+<figcaption class="figcaption-center">
+Figure 11: Toolbar interface
+</figcaption>
+</figure>
+<p>Part 1 includes tabs for opening a database, saving the active database or locking it.</p>
+<p>Section 2 allows you to create or modify entries (add and/or delete).</p>
+<p>Section 3 allows you to use shortcuts to copy certain elements from selected entries.</p>
+<p>Section 4 provides access to database parameters and reports, as well as the password generator.</p>
+<p>The last section provides access to a search bar.</p>
+</section>
+<section id="entry-creation" class="level3">
+<h3 class="anchored" data-anchor-id="entry-creation">2.2 - Entry creation</h3>
+<p>To create a new entry, simply click on the + icon in section 2 of the toolbar. By default, we were in the “Root” group, so this entry will be located in this group. Here’s an example using my CNRS account. Here, the minimum information required to create an entry is “Title”, “User name” and “Password”.(<a href="#figure12">figure 12</a>). We’ll leave the “URL” field empty for the moment, and use it later to automatically populate fields via the browser. Note that you have many other options, such as the “Icon” menu on the side or the “Notes” field, which lets you add comments or hints to your entry. By default, the password is hidden. This is very useful, as you don’t need to be able to see the password to use it later (especially useful if you’re in public places).</p>
+<figure id="figure12" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/12_exemple_entree.png" class="resized-img figure-img" width="70%" alt="Figure 12: Entry creation">
+<figcaption class="figcaption-center">
+Figure 12: Entry creation
+</figcaption>
+</figure>
+<p>Once the action has been validated, the entry is found in our database (<a href="“#figure13”">figure 13</a>). To improve the readability of my interface, I’ve even changed the name of the “Root” group to “cnrs”.</p>
+<figure id="figure13" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/13_vue_global_add.png" class="resized-img figure-img" width="70%" alt="Figure 13: Input interface">
+<figcaption class="figcaption-center">
+Figure 13: Input interface
+</figcaption>
+</figure>
+<p>Now if I want to copy part of my entry, for example the user name or password, all I have to do is use the buttons in section 3 of the toolbar. Note that when copying a password (the button with the key), you have a limited time in which to use it before it is deleted from your “copy memory” (= clipboard), <a href="#figure14">figure 14</a>). You can configure this time in the “Settings” menu, in the “Security” tab, in the “Timeout” section and the “Clear clipboard after” option.</p>
+<figure id="figure14" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/14_temps_presse_papiers.png" class="resized-img figure-img" alt="Figure 14: Clipboard time">
+<figcaption class="figcaption-center">
+Figure 14: Clipboard time
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="browser-integration" class="level2">
+<h2 class="anchored" data-anchor-id="browser-integration">3 - Browser integration</h2>
+<p>One of the most practical options is to integrate your safe with your browser. More concretely, this means you’ll be able to fill in usernames and passwords semi-automatically when you visit related websites.</p>
+<p>KeePassXC integrates with the following browsers:</p>
+<ul>
+<li><a href="https://chromewebstore.google.com/detail/keepassxc-browser/oboonakemofpalcgghocfoadofidjkkk" class="external" target="_blank">Based on Chrome, Chromium, Vivaldi and Brave</a>,</li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/" class="external" target="_blank">Based on Mozilla Firefox and Tor-Browser</a>,</li>
+<li><a href="https://microsoftedge.microsoft.com/addons/detail/keepassxcbrowser/pdffhmdngciaglkoonimfcmckehcpafo" class="external" target="_blank">Based on Microsoft Egde</a>.</li>
+</ul>
+<p>The first thing to do is activate the association option in the KeePassXC settings. To do this, simply go to the “Browser integration” tab in the settings. (<a href="#figure15">figure 15</a>).</p>
+<figure id="figure15" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/15_integration_navigateurs.png" class="resized-img figure-img" width="70%" alt="Figure 15: Browser integration">
+<figcaption class="figcaption-center">
+Figure 15: Browser integration
+</figcaption>
+</figure>
+<p>For my example, I’m going to test with the Egde browser, but the principle remains the same for the others, and you can even combine several at once.</p>
+<p>The second step is to install the extension on your browser. Click on the links just below the “Browser integration” tab. You should be redirected to an installation page (again, here with the Microsoft Egde example, <a href="#figure16">figure 16</a>).</p>
+<figure id="figure16" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/16_installation_extension_navigateur.png" class="resized-img figure-img" width="70%" alt="Figure 16: Browser extension installation">
+<figcaption class="figcaption-center">
+Figure 16: Browser extension installation
+</figcaption>
+</figure>
+<p>After installation, restart your browser and you should have the extension in this form (<a href="“#figure17”">figure 17</a>, the KeePassXC database must be unlocked).</p>
+<figure id="figure17" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/17_connection_navigateur.png" class="resized-img figure-img" width="70%" alt="Figure 17: Browser extension configuration">
+<figcaption class="figcaption-center">
+Figure 17: Browser extension configuration
+</figcaption>
+</figure>
+<p>Now click on the “Connect” button, then on your database window specify a name for the key association request (<a href="“#figure18”">figure 18</a>).</p>
+<figure id="figure18" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/18_association_cle.png" class="resized-img figure-img" width="70%" alt="Figure 18: Browser extension key association">
+<figcaption class="figcaption-center">
+Figure 18: Browser extension key association
+</figcaption>
+</figure>
+<p>Your extension should now be correctly configured (<a href="#figure19">figure 19</a>).</p>
+<figure id="figure19" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/19_connection_navigateur_ok.png" class="resized-img figure-img" width="70%" alt="Figure 19: Complete browser extension configuration">
+<figcaption class="figcaption-center">
+Figure 19: Complete browser extension configuration
+</figcaption>
+</figure>
+<p>Next, we’re going to test semi-automatic filling on the entry I created earlier in connection with my CNRS login. To do this, I go to a CNRS login page (<a href="#figure20">figure 20</a>).</p>
+<figure id="figure20" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/20_page_connection_cnrs.png" class="resized-img figure-img" width="70%" alt="Figure 20: CNRS login page">
+<figcaption class="figcaption-center">
+Figure 20: CNRS login page
+</figcaption>
+</figure>
+<p>Here I’m going to copy the URL of this page in order to add it to my database entry. You’ll notice that the extension has already detected the possibility of adding fields linked to an entry in my database (via the extension’s greyed-out tab). What’s more, you don’t need to copy the entire URL, just stop after the .fr.You can apply this rule to other URLs, as it allows you to generalize auto-fill detection, although there are rare cases where it doesn’t work. In our case, we’ll just use the URL “https://janus.cnrs.fr/”, which we’ll add to the “URL” field of our previous entry. (<a href="#figure21">figure 21</a>).</p>
+<figure id="figure21" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/21_ajout_url.png" class="resized-img figure-img" width="70%" alt="Figure 21: Adding a URL to our entry">
+<figcaption class="figcaption-center">
+Figure 21: Adding a URL to our entry
+</figcaption>
+</figure>
+<p>Now refresh your browser page (being on the CNRS login page) or click on the extension icon in the browser, then click on “Redetect login fields”. The following KeePassXC window should appear (<a href="#figure22">figure 22</a>).</p>
+<figure id="figure22" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/22_fenetre_association_url.png" class="resized-img figure-img" width="70%" alt="Figure 22: Accepting URL association">
+<figcaption class="figcaption-center">
+Figure 22: Accepting URL association
+</figcaption>
+</figure>
+<p>All you have to do now is check the “Remember” and “Allow selected items” boxes. Now, every time you arrive on a page with “https://janus.cnrs.fr/” at the beginning of the URL, KeePassXC will suggest semi-automatically filling in fields related to what you’ve entered in your database (<a href="#figure23">figure 23</a>).</p>
+<figure id="figure23" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/23_remplissage_automatique.png" class="resized-img figure-img" width="70%" alt="Figure 23: Automatic filling">
+<figcaption class="figcaption-center">
+Figure 23: Automatic filling
+</figcaption>
+</figure>
+<p>One last little tip, rather than clicking on the extension icon or field to select the corresponding entry in the database, you can use keyboard shortcut functions. You’ll find them in the browser’s extension settings tab (by clicking on the green notched road), <a href="#figure24">figure 24</a>), “General” tab, “Keyboard shortcuts” section. These are configurable, and in my default example (under Windows) you use Alt + Shift + U to enter your username and password.</p>
+<figure id="figure24" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/24_parametres_extension_navigateur.png" class="resized-img figure-img" width="70%" alt="Figure 24: Browser extension settings">
+<figcaption class="figcaption-center">
+Figure 24: Browser extension settings
+</figcaption>
+</figure>
+</section>
+<section id="multi-device-synchronization" class="level2">
+<h2 class="anchored" data-anchor-id="multi-device-synchronization">4 - Multi-device synchronization</h2>
+<p>For this last part, we’re going to configure our database so that it can synchronize across multiple devices. This part is slightly more technical, so it’s important not to get discouraged and, to put it simply, “let go of the railing”. Don’t forget that you can always come back to me if you need help.</p>
+<p>In this example, we’re going to set up two configurations that will probably meet most of your needs:</p>
+<ul>
+<li>synchronization between a computer and a smartphone,</li>
+<li>synchronization between two computers.</li>
+</ul>
+<p>In addition, you’ll note that the examples below were created using Windows for the computers and Android for the smartphone. Where this has been identified, alternatives to other OSes will be listed, but there is no guarantee that they have been tested to the full extent of the procedure’s objective.</p>
+<section id="syncthing-software" class="level3">
+<h3 class="anchored" data-anchor-id="syncthing-software">4.1 - Syncthing software</h3>
+<p>The first step is to install software on our devices that will enable us to perform our synchronizations. To do this, we’ll be using <a href="https://syncthing.net/" class="external" target="“_blank”">Syncthing</a> which is a free, open-source program that synchronizes files between devices in real time, without the need for a central server. It’s private, secure, encrypted and easy to use.</p>
+<p>Importantly, as mentioned above, this software does not operate via a central server. In practice, this means that during synchronization processes, the devices must be connected at the same time. In the case of two computers, this condition can be complicated to meet, especially if we use one at work and the second at home for telecommuting. That’s why, in our configuration, our phone will be the equivalent of our “central server”, as it will have “more chance” of being connected at the same time as the computers.</p>
+<p>On the application’s official website, go to the <a href="https://syncthing.net/downloads/" class="external" target="“_blank”">“Downloads”</a> section. You’ll find that there are several distributions available, depending on your operating system.</p>
+<p>As a guide, the process for installing it on a Linux system can be found at <a href="https://apt.syncthing.net/" class="external" target="“_blank”">next</a>. Follow the instructions and run the associated command lines. You should have two shortcuts to the application:</p>
+<ul>
+<li>Start Syncthing” to launch the software,</li>
+<li>Syncthing Web UI” takes you to the software configuration page (see next section for details).</li>
+</ul>
+<p>Finally, unlike Windows, which automatically launches Syncthing when the OS starts up, you’ll need to configure this automatic startup on Linux (for example, by running the “Start Syncthing” shortcut at each boot).</p>
+</section>
+<section id="installing-and-configuring-the-syncthing-client-under-windows" class="level3">
+<h3 class="anchored" data-anchor-id="installing-and-configuring-the-syncthing-client-under-windows">4.2 - Installing and configuring the Syncthing client under Windows</h3>
+<p>We’re going to start by installing it on our computer, selecting the “Syncthing Windows Setup” integration which allows you to install it under Windows. To keep things simple, go to this <a href="https://github.com/Bill-Stewart/SyncthingWindowsSetup/releases/latest/" class="external" target="_blank">link</a> and download the .exe executable (<a href="“#figure25”">figure 25</a>, currently the latest version is 1.29.0).</p>
+<figure id="figure25" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/25_last_release_syncthing_windows_setup.png" class="resized-img figure-img" width="70%" alt="Figure 25: Latest version of 'Syncthing Windows Setup">
+<figcaption class="figcaption-center">
+Figure 25: Latest version of ’Syncthing Windows Setup
+</figcaption>
+</figure>
+<p>During installation, if possible with administrator rights, follow these steps:</p>
+<ul>
+<li>when the “Select Destination Location” window appears, change the path to a “simpler” one, such as “C:\Syncthing” (<a href="“#figure26”">figure 26</a>),</li>
+</ul>
+<figure id="figure26" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/26_dossier_installation.png" class="resized-img figure-img" width="60%" alt="Figure 26: Installation folder">
+<figcaption class="figcaption-center">
+Figure 26: Installation folder
+</figcaption>
+</figure>
+<ul>
+<li>in the “Select Additional Tasks” window, check the “Create desktop shortcut for Syncthing configuration page” box in addition to the boxes already checked (<a href="“#figure27”">figure 27</a>),</li>
+</ul>
+<figure id="figure27" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/27_taches_additionnelles.png" class="resized-img figure-img" width="50%" alt="Figure 27: Additional tasks window">
+<figcaption class="figcaption-center">
+Figure 27: Additional tasks window
+</figcaption>
+</figure>
+<ul>
+<li>click yes when prompted to create a firewall rule (<a href="“#figure28”">figure 28</a>),</li>
+</ul>
+<figure id="figure28" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/28_creation_pare_feu_regle.png" class="resized-img figure-img" width="50%" alt="Figure 28: Firewall rule">
+<figcaption class="figcaption-center">
+Figure 28: Firewall rule
+</figcaption>
+</figure>
+<ul>
+<li>finally, check the “Open Syncthing configuration page” box (<a href="“#figure29”">figure 29</a>).</li>
+</ul>
+<figure id="figure29" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/29_ouverture.png" class="resized-img figure-img" width="50%" alt="Figure 29 : Last stand">
+<figcaption class="figcaption-center">
+Figure 29 : Last stand
+</figcaption>
+</figure>
+<p>Once installed, you should see the main application window (<a href="“#figure30”">figure 30</a>). You can access it via your browser at 127.0.0.1:8384 (if you left these settings untouched during installation) or by clicking on the “Syncthing Configuration Page” shortcut added to your desktop. Depending on your browser, it may inform you that the page you wish to display (127.0.0.1) presents a probable security risk. You can override this warning and display the page anyway (via, for example, the “Advanced” button and something like “Continue to page”).</p>
+<p>On this first page, the application may advise you to add a username and password to access the interface. From a security point of view, this is a plus, but for the sake of accessibility and assuming that your computer is locked with a password and that you don’t leave your workstation unlocked, we won’t be configuring authenticated access.</p>
+<figure id="figure30" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/30_syncthing_windows.png" class="resized-img figure-img" width="60%" alt="Figure 30: Syncthing global page">
+<figcaption class="figcaption-center">
+Figure 30: Syncthing global page
+</figcaption>
+</figure>
+<p>Now that our software is installed, the next step is to add a share folder that will contain our KeePassXC database. To do this, simply click on the “Add a share” button on the home screen. On the configuration screen (<a href="#figure31">figure 31</a>), we’re going to give it a name (it may be different between devices), as well as a share ID (it must be IDENTICAL between devices) and finally the share path, which in this case will be the location of the folder where my database is stored.</p>
+<figure id="figure31" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/31_ajout_partage.png" class="resized-img figure-img" width="70%" alt="Figure 31: Setting up a share folder">
+<figcaption class="figcaption-center">
+Figure 31: Setting up a share folder
+</figcaption>
+</figure>
+</section>
+<section id="installing-and-configuring-the-syncthing-client-on-android" class="level3">
+<h3 class="anchored" data-anchor-id="installing-and-configuring-the-syncthing-client-on-android">4.3 - Installing and configuring the Syncthing client on Android</h3>
+<p>To configure Syncthing on our Android smartphone, we’re going to retrieve the application directly from the store. Make sure you get the right one, called <a href="https://play.google.com/store/apps/details?id=com.github.catfriend1.syncthingandroid&amp;hl=en-US" class="external" target="“_blank”">“Syncthing-Fork”</a>.</p>
+<p>When you launch the application, you must authorize it to access several elements of your phone:</p>
+<ul>
+<li>storage access, which will give it access to your database stored locally on your phone (<a href="“#figure32”">figure 32</a>)</li>
+</ul>
+<figure id="figure32" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/32_permission_stockage.png" class="resized-img figure-img" width="30%" alt="Figure 32: Phone storage access authorization">
+<figcaption class="figcaption-center">
+Figure 32: Phone storage access authorization
+</figcaption>
+</figure>
+<ul>
+<li>regarding battery optimization, it’s advisable to stop battery optimization (<a href="“#figure33”">figure 33</a>). Here we need our phone not to automatically close the application, for example if it stays open longer than a “basic” application. It should be noted, however, that theoretically, disabling battery optimization could have an impact on battery life. Of course, this will have to be taken into account via other variables, such as the spacing between synchronizations or the type of connection (via mobile data or wifi, for example) but for the moment via my demanding usage example (synchronization still functional via mobile data), the impact in my opinion is not a significance on my battery life.</li>
+</ul>
+<figure id="figure33" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/33_permission_batterie.png" class="resized-img figure-img" width="30%" alt="Figure 33: Battery optimization stop authorization">
+<figcaption class="figcaption-center">
+Figure 33: Battery optimization stop authorization
+</figcaption>
+</figure>
+<ul>
+<li>for location permissions, it is also advisable to grant them (<a href="“#figure34”">figure 34</a>). As indicated in the comments, localization will only be used for wifi network selection, if you wish to perform synchronizations only on predefined wifi networks (your home network, for example).</li>
+</ul>
+<figure id="figure34" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/34_permission_localisation.png" class="resized-img figure-img" width="30%" alt="Figure 34: Location authorization">
+<figcaption class="figcaption-center">
+Figure 34: Location authorization
+</figcaption>
+</figure>
+<ul>
+<li>finally, also enable application notifications (<a href="“#figure35”">figure 35</a>) so that the application can inform you of synchronization details.</li>
+</ul>
+<figure id="figure35" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/35_permission_notifications.png" class="resized-img figure-img" width="30%" alt="Figure 35: Authorization notifications">
+<figcaption class="figcaption-center">
+Figure 35: Authorization notifications
+</figcaption>
+</figure>
+<p>Now that the application is correctly installed, by default the conditions for executing synchronizations are set to take place over wifi only. For my personal use, and in order to test my synchronization processes directly, I chose to activate the synchronization executor from mobile data (via 4G or 5G, for example). You’re free to do that too (bearing in mind the impact it can have on battery life, but above all on your mobile plan), but in any case I leave “Run while roaming” unchecked so that synchronization doesn’t take place when I’m abroad, for example, where mobile data can be deducted significantly from my plan (the software will go into standby mode at that point). To configure this simply go to the “Settings” tab via the 3 bars at the top left, click on “Execution conditions” (<a href="“#figure36”">figure 36</a>), then check/uncheck the corresponding boxes (<a href="“#figure37”">figure 37</a>).</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<figure id="figure36" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/36_parametres_sychronisation.png" class="resized-img figure-img" width="50%" alt="Figure 36: Synchronization settings">
+<figcaption class="figcaption-center">
+Figure 36: Synchronization settings
+</figcaption>
+</figure>
+</div><div class="column" style="width:50%;">
+<figure id="figure37" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/37_application_donnees_mobiles.png" class="resized-img figure-img" width="55%" alt="Figure 37: Mobile data authorization">
+<figcaption class="figcaption-center">
+Figure 37: Mobile data authorization
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Still in the application settings, it would be a good idea to check the “Autostart” box (<a href="“#figure38”">figure 38</a>) in the “Behavior” section, so that it automatically launches the synchronization process as soon as the phone is switched on.</p>
+<figure id="figure38" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/38_demarrage_automatique.png" class="resized-img figure-img" width="25%" alt="Figure 38: Automatic application startup">
+<figcaption class="figcaption-center">
+Figure 38: Automatic application startup
+</figcaption>
+</figure>
+</section>
+<section id="pairing-a-computer-with-an-android-phone" class="level3">
+<h3 class="anchored" data-anchor-id="pairing-a-computer-with-an-android-phone">4.4 - Pairing a computer with an Android phone</h3>
+<p>L’application correctement installée et configurée sur notre ordinateur et notre téléphone, il nous reste maintenant à appareiller nos appareils. The easiest way to do this is to use QR codes for identification. On your computer where we have configured Syncthing (section 4.2), open the configuration window (default address 127.0.0.1:8384 or “Syncthing Configuration Page” shortcut on the desktop) and click on the “Actions” tab, then on “Show my ID” (<a href="“#figure39”">figure 39</a>).</p>
+<figure id="figure39" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/39_affichage_qrcode.png" class="resized-img figure-img" width="80%" alt="Figure 39: QR code display">
+<figcaption class="figcaption-center">
+Figure 39: QR code display
+</figcaption>
+</figure>
+<p>Return to the Syncthing application on your phone, click on the “DEVICES” tab and then on the top-right button with a + to add a new device. In the new window, click on the QR code icon in the top right-hand corner, and allow the application to access your camera (<a href="“#figure40”">figure 40</a>).</p>
+<figure id="figure40" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/40_scan_qrcode.png" class="resized-img figure-img" width="25%" alt="Figure 40: Camera access authorization">
+<figcaption class="figcaption-center">
+Figure 40: Camera access authorization
+</figcaption>
+</figure>
+<p>Give this device a name (here I’ve chosen “pc_cnrs”) and check the “Initiator” box (<a href="“#figure41”">figure 41</a>).</p>
+<figure id="figure41" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/41_ajout_pc.png" class="resized-img figure-img" width="25%" alt="Figure 41: Add computer">
+<figcaption class="figcaption-center">
+Figure 41: Add computer
+</figcaption>
+</figure>
+<p>Now you should see an add request on your computer’s configuration page (<a href="“#figure42”">figure 42</a>).</p>
+<figure id="figure42" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/42_ajout_telepone.png" class="resized-img figure-img" width="70%" alt="Figure 42: Add computer request">
+<figcaption class="figcaption-center">
+Figure 42: Add computer request
+</figcaption>
+</figure>
+<p>Accept it by clicking on “Add device”. In the “General” tab, give it a friendly name (for my example, it will be “portable_android_mat”, <a href="#figure43">figure 43</a>).</p>
+<figure id="figure43" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/43_configuration_telephone.png" class="resized-img figure-img" width="70%" alt="Figure 43: Request add telephone">
+<figcaption class="figcaption-center">
+Figure 43: Request add telephone
+</figcaption>
+</figure>
+<p>Then click on the “Shares” tab and check the box corresponding to the share folder we created earlier (<a href="“#figure44”">figure 44</a>).</p>
+<figure id="figure44" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/44_autorisation_keepass_folder.png" class="resized-img figure-img" width="70%" alt="Figure 44: Phone sharing authorization">
+<figcaption class="figcaption-center">
+Figure 44: Phone sharing authorization
+</figcaption>
+</figure>
+<p>Now, in the same way as on our computer (section 4.2), we need to create a shared folder containing our database on our phone. To do this, return to our phone, click on the “SHARES” tab, create a new share using the + button in the top right-hand corner, and configure the parameters. Please note :</p>
+<ul>
+<li>as before, you can give it any name you like (here it’s “KeePass”),</li>
+<li>likewise, you must enter the same identifier as your shared folder on your computer. In my case, it’s “keepass”,</li>
+<li>you need to enter a location on your phone where your database will be stored. To do this, click on the little cogwheel. For my example and personal configuration, I’ll be in the “/storage/emulated/0/DCIM/KeePass” folder (I’ve created the “KeePass” folder with the little + at top right),</li>
+<li>I’ve activated sharing with the “pc_cnrs” device, which is the pc I paired previously.</li>
+<li>then validate with the icon at top right.</li>
+</ul>
+<p>For your information, you should have a configuration like <a href="“#figure45”">figure 45</a>.</p>
+<figure id="figure45" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/45_parametre_partage_telephone.png" class="resized-img figure-img" width="25%" alt="Figure 45: Creating phone shares">
+<figcaption class="figcaption-center">
+Figure 45: Creating phone shares
+</figcaption>
+</figure>
+<p>Congratulations, you should be able to pair and synchronize your folders (<a href="“#figure46”">figure 46</a> and <a href="“#figure47”">figure 47</a>).</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<figure id="figure46" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/46_sync_android.png" class="resized-img figure-img" width="50%" alt="Figure 46: Sychronization on Android">
+<figcaption class="figcaption-center">
+Figure 46: Sychronization on Android
+</figcaption>
+</figure>
+</div><div class="column" style="width:50%;">
+<figure id="figure47" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/47_sync_pc.png" class="resized-img figure-img" width="100%" alt="Figure 47: Computer synchronization">
+<figcaption class="figcaption-center">
+Figure 47: Computer synchronization
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="pairing-two-computers" class="level3">
+<h3 class="anchored" data-anchor-id="pairing-two-computers">4.5 - Pairing two computers</h3>
+<p>This section is a bonus, but can be useful, for example, if you want to synchronize your database with two computers, one at your workplace and the second at home, for telecommuting.</p>
+<p>Now that you’ve synchronized a computer and a cell phone, this step is child’s play:</p>
+<ul>
+<li>install and configure the Synchting client under Windows on your second computer (section 4.2). Don’t forget that the share ID must be identical to the one set on the other computer and by association with your cell phone (in my example it will be “keepass”),</li>
+<li>repeat the step in section 4.5 with the second computer.</li>
+</ul>
+<p>Once you’ve done this, you should see your second device next to the first (<a href="“#figure48”">figure 48</a>).</p>
+<figure id="figure48" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/48_sychronisation_second_pc.png" class="resized-img figure-img" width="30%" alt="Figure 48: Second computer synchronization">
+<figcaption class="figcaption-center">
+Figure 48: Second computer synchronization
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="installing-the-keepass-application-on-android" class="level2">
+<h2 class="anchored" data-anchor-id="installing-the-keepass-application-on-android">5 - Installing the KeePass application on Android</h2>
+<p>First of all, congratulations on getting this far, you’ve done the hard part. In this last section, we’re going to install an Android application on our phone that will enable us to access our database on the phone, and also make it easier for us to fill in passwords on websites (same principle as in section 3 for our computer).</p>
+<p>In concrete terms, you can choose between :</p>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free" class="external" target="_blank">KeePassDX</a> et <a href="https://play.google.com/store/apps/details?id=keepass2android.keepass2android" class="external" target="_blank">KeePass2Android</a> for Android,</li>
+<li><a href="https://apps.apple.com/us/app/strongbox-password-manager/id897283731" class="external" target="_blank">Strongbox</a> and <a href="https://apps.apple.com/us/app/keepassium-keepass-passwords/id1435127111" class="external" target="_blank">KeePassium</a> for iOS.</li>
+</ul>
+<p>In our example, I’m going to use KeePassDX, which I think has the advantage of a slightly nicer interface than KeePass2Android.</p>
+<section id="installing-and-configuring-the-keepassdx-application" class="level3">
+<h3 class="anchored" data-anchor-id="installing-and-configuring-the-keepassdx-application">5.1 - Installing and configuring the KeePassDX application</h3>
+<p>Once you’ve installed the KeePassDX app on your Android phone, you should get this first window (<a href="“#figure49”">figure 49</a>).</p>
+<figure id="figure49" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/49_keepassdx_main.png" class="resized-img figure-img" width="30%" alt="Figure 49 : KeePassDX">
+<figcaption class="figcaption-center">
+Figure 49 : KeePassDX
+</figcaption>
+</figure>
+<p>Simply click on the “Open an existing safe” tab and select your database. In my example, you’ll find it in the “/storage/emulated/0/DCIM/KeePass” folder. Enter your password (<a href="#figure50">figure 50</a>) and accept the notification authorization (<a href="#figure51">figure 51</a> et <a href="#figure52">52</a>).</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<figure id="figure50" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/50_bdd_password.png" class="resized-img figure-img" width="90%" alt="Figure 50: Unlocking with password">
+<figcaption class="figcaption-center">
+Figure 50: Unlocking with password
+</figcaption>
+</figure>
+</div><div class="column" style="width:33%;">
+<figure id="figure51" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/51_autorisation_notification.png" class="resized-img figure-img" width="65%" alt="Figure 51: Authorization notifications">
+<figcaption class="figcaption-center">
+Figure 51: Authorization notifications
+</figcaption>
+</figure>
+</div><div class="column" style="width:33%;">
+<figure id="figure52" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/52_autorisation_notification_bis.png" class="resized-img figure-img" width="48%" alt="Figure 52: Authorization notifications bis">
+<figcaption class="figcaption-center">
+Figure 52: Authorization notifications bis
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Congratulations! You now have access to your database. Just a word of warning: check your phone’s notifications pane to make sure your database is locked if you no longer need it. By default, it should lock automatically on certain actions (such as locking the screen), but this will depend on your settings.</p>
+<p>Before we head off for a coffee, we’ve just got a few configurations to make to the application to simplify our interactions with it.</p>
+<p>A good idea is to enable biometric unlocking of the application, which will allow us to unlock it using our fingerprint, for example, instead of our password. To do this, go to the application settings (click on the 3 bars at the top left, then on the “Settings” tab), section “Device unlocking” then check the boxes “Biometric unlocking” and “Open in.. automatically”. (<a href="#figure53">figure 53</a>). The next time you connect to the base, you’ll be asked for your password once again, and all you have to do is click on “Link with device unlock” at the bottom (<a href="“#figure54”">figure 54</a>) to complete the biometric association (<a href="“#figure55”">figure 55</a>).</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<figure id="figure53" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/53_deverouillage_biometrique.png" class="resized-img figure-img" width="90%" alt="Figure 53: Biometric unlocking">
+<figcaption class="figcaption-center">
+Figure 53: Biometric unlocking
+</figcaption>
+</figure>
+</div><div class="column" style="width:33%;">
+<figure id="figure54" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/54_premier_deverouillage_biometrique.png" class="resized-img figure-img" width="90%" alt="Figure 54: First biometric unlocking">
+<figcaption class="figcaption-center">
+Figure 54: First biometric unlocking
+</figcaption>
+</figure>
+</div><div class="column" style="width:33%;">
+<figure id="figure55" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/55_deverouillage_biometrique_ok.png" class="resized-img figure-img" width="90%" alt="Figure 55: Functional biometric unlocking">
+<figcaption class="figcaption-center">
+Figure 55: Functional biometric unlocking
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The second interesting option is the activation of the “Magiclavier”, which will greatly assist the automatic filling of website fields from our phone. To activate it, go once again to Settings, but in the “Form filling” tab. In this section, click on “Device keyboard settings”, select the authorization for the “Magic keyboard (KeePassDX)”, go back and in the “Magic keyboard settings” section, check the “Authentication screen” box in the “Keyboard change” sub-section. (<a href="#figure56">figure 56</a>).</p>
+<figure id="figure56" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/56_magic_clavier_seeting.png" class="resized-img figure-img" width="30%" alt="Figure 56: Magiclavier settings">
+<figcaption class="figcaption-center">
+Figure 56: Magiclavier settings
+</figcaption>
+</figure>
+<p>Now, when you get to a site where you have to fill in your credentials, you can change your keyboard using the button at the bottom right of your keyboard. (<a href="#figure57">figure 57</a>), this will give you access to a menu connected to your database, making it easier to fill in the required fields. (<a href="#figure58">figure 58</a>).</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<figure id="figure57" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/57_changement_clavier.png" class="resized-img figure-img" width="60%" alt="Figure 57: Switching keyboards">
+<figcaption class="figcaption-center">
+Figure 57: Switching keyboards
+</figcaption>
+</figure>
+</div><div class="column" style="width:50%;">
+<figure id="figure58" class="figure">
+<img src="../../ressources/support/gestionnaire_mots_de_passe/images/58_clavier_magic.png" class="resized-img figure-img" width="60%" alt="Figure 58 : Magiclavier">
+<figcaption class="figcaption-center">
+Figure 58 : Magiclavier
+</figcaption>
+</figure>
+</div>
+</div>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
