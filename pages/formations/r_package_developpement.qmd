@@ -30,7 +30,9 @@ Il est prévu qu'une première session de formation soit organisée, au plus tar
 
 ::::: columns
 ::: {.column width="75%"}
-The training source code is available on the [GitHub repository](https://github.com/umr-marbec/r_packages_development_training){.external target=“_blank”}. The associated book presentation is available at [the following address](https://umr-marbec.github.io/r_packages_development_training/){.external target=“_blank”}.
+The training source code is available on the [GitHub repository](https://github.com/umr-marbec/r_packages_development_training){.external target=“_blank”}.
+
+The associated book presentation is available at [the following address](https://umr-marbec.github.io/r_packages_development_training/){.external target=“_blank”}.
 
 The training program is currently being set up and should be finalized during 2025. 
 
