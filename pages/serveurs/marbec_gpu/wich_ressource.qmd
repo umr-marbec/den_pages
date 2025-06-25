@@ -1,0 +1,80 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Auguste Verdier](mailto:auguste.verdier@umontpellier.fr)"
+date: "2025-06-25"
+---
+
+
+
+::: {.content-visible when-profile="french"}
+# Choisir les Ressources : CPUs / MEM / GPU
+
+Si vous avez suivi les guides précédents, vous avez déjà appris à soumettre un job SLURM. Maintenant, il est temps de choisir les ressources appropriées pour votre job.
+Le point est brièvement abordé dans le [FAD](index_marbec_gpu.qmd#faq_french).
+
+
+MARBEC-GPU est une ressource partagée avec une grande liberté d'utilisation (pas de quota d'heure de calcul ou nombre de jobs simultanés) et un ordonnancement simple : premier arrivé.e, premier servi.e. Il est donc primordial de correctement choisir les ressources allouées.
+
+
+**IMPORTANT** : Le temps d'exécution d'un job dépend de plusieurs facteurs, notamment la taille de vos données, des ressources utilisées mais principalement de la manière dont vous avez écrit votre code ou/et des packages utilisés. La plupart des codes ne permettent pas de paralléliser les calculs (utiliser plusieurs curs CPU en même) et encore moins de les exécuter sur GPU. Ainsi, quand bien même vous demandez 10 coeurs CPU et un GPU, il est tout à fait possible que votre job n'utilise qu'un seul coeur CPU et sans toucher au GPU. Ensuite, prendre deux fois plus de CPU ne diminue pas par deux le temps d'exécution, à vous de tester et de trouver un bon compromis entre ressources allouées et temps d'exécution.
+
+
+## Bonnes pratiques
+
+1. Se renseigner sur le code exécuté
+
+Avant d'exécuter votre job sur MARBEC-GPU, vérifiez si votre code parallélise les calculs et/ou utilise le GPU. Si vous apercevez les paramètres comme : "workers", "n_jobs", "n_cpus", "device" ou "gpu" dans la documentation, c'est un bon signe que le code peut paralléliser les calculs et/ou utiliser le GPU. Vous pouvez aussi vous rendre sur la documentation des packages utilisés (pour des packages couramment utilisés, les LLM sauront vous répondre, pour des packages ou langages niche n'hésitez pas à demander à l'auteur/autrice).  Si vous ne trouvez pas ces paramètres, il est probable que le code n'utilise pas ces ressources.
+
+2. Choisir les ressources allouées
+
+   - **CPU** : Si votre code parallélise les calculs, vous pouvez allouer plusieurs coeurs CPU. Pour des utilisations classiques en Python ou R pour du machine-learning, de l'extraction de données, etc., choisir entre 2 et 16 coeurs CPU est souvent suffisant. Pour des utilisations plus spécifiques
+   - **MEM** : Les quantité de RAM demandée dépend principalement de la taille de vos données et/ou la taille des modèles utilisés. Pour des utilisations classiques, entre 8 et 64 Go de RAM est souvent suffisant. Pour des traitements de données plus lourds, vous pouvez aller jusqu'à 256 Go de RAM.
+   - **GPU** : Si votre code utilise le GPU, vous pouvez allouer 1 GPU.
+
+3. Vérifier l'utilisation des ressources
+
+Une allocation parfaite est une allocation où **100% des ressources sont utilisées**. Lorsque votre job est terminé, il est possible de vérifier le pourcentage d'utilisation effective des ressources allouées avec la commande `reportseff --user <username>` (pour plus d'informations sur la commande faites `reportseff --help`)
+
+:::{.callout-note}
+Attention les jobs de session (nomées `pawner-jupyterhub`) apparaissent aussi dans le reportseff, vous pouvez les ignorer.
+:::
+Ensuite, ajustez en fonction de l'utilisation effective et du temps de calcul les prochaines allocations.
+
+Si malgré tout vous avez des doutes, n'hésitez pas à demander de l'aide sur le [RocketChatIRD](https://go.rocket.chat/invite?host=tchat.ird.fr&path=invite%2Fm2mJ5W).
+
+:::
+
+::: {.content-visible when-profile="english"}
+# Choosing Resources: CPUs / MEM / GPU
+
+If you have followed the previous guides, you have already learned how to submit a SLURM job. Now, it's time to choose the appropriate resources for your job.
+This point is briefly addressed in the [FAD](index_marbec_gpu.qmd#faq_english).
+
+MARBEC-GPU is a shared resource with great freedom of use (no quota on computing hours or number of simultaneous jobs) and a simple scheduling system: first come, first served. Therefore, it is crucial to choose the allocated resources correctly.
+
+**IMPORTANT**: The execution time of a job depends on several factors, including the size of your data, the resources used, but mainly on how you have written your code or the packages used. Most codes does not allow parallelization of computations (using multiple CPU cores at the same time) and even fewer support GPU execution. Thus, even if you request 10 CPU cores and a GPU, it is quite possible that your job only uses one CPU core and not use the GPU at all. Furthermore, taking twice as many CPUs does not reduce the execution time by half; it is up to you to test and find a good compromise between allocated resources and execution time.
+
+## Good Practices
+1. Learn about the executed code
+
+
+Before running your job on MARBEC-GPU, check if your code parallelizes calculations and/or uses the GPU. If you see parameters like "workers", "n_jobs", "n_cpus", "device", or "gpu" in the documentation, it's a good sign that the code can parallelize calculations and/or use the GPU. You can also refer to the documentation of the packages used (for commonly used packages, LLMs will know how to answer you; for niche packages or languages, don't hesitate to ask the author). If you don't find these parameters, it is likely that the code does not use these resources.
+
+2. Choose the allocated resources
+
+   - **CPU**: If your code parallelizes calculations, you can allocate multiple CPU cores: `#SBATCH -c`. For typical uses in Python or R for machine learning, data extraction, etc., choosing between 2 and 16 CPU cores is often sufficient. For more specific uses, you may need to adjust accordingly.
+   - **MEM**: The amount of RAM requested mainly depends on the size of your data and the size of the models used. For typical uses, between 8 and 64 GB of RAM is often sufficient. For heavier data processing tasks, you can go up to 256 GB of RAM.
+   - **GPU**: If your code uses the GPU, you can allocate 1 GPU.
+
+3. Check resource usage
+
+After your job is completed, you can check the effective percentage of resource usage with the command `reportseff --user <username>` (for more information on the command, use `reportseff --help`).
+
+:::{.callout-note}
+Be aware that session jobs (named `pawner-jupyterhub`) also appear in the reportseff, you can ignore them.
+::: 
+
+Then, adjust future allocations based on effective usage and computation time.
+:::
