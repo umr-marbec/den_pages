@@ -54,6 +54,7 @@ website:
               - text: "R Scripts Running"
                 href: pages/serveurs/marbec_gpu/run_r_script.qmd
               - text: "Choisir les Ressources : CPUs / MEM / GPU"
+                href: pages/serveurs/marbec_gpu/wich_ressource.qmd
       - text: "Formations"
         href: pages/formations/index_formations.qmd
         contents:
