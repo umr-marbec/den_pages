@@ -34,13 +34,14 @@ Pour des instructions détaillées sur l'utilisation du cluster Marbec-GPU, veui
 - [Guide des Commandes Linux utiles](basic_command.qmd) (english only) 
 - [Exécution d'un Script Basique R/Python](basic_example.qmd) (via SLURM) 
 - [Exécution R](run_r_script.qmd) (english only) 
+- [Choisir les Ressource : CPUs / MEM /  GPU](wich_ressource.qmd)
 
 
 ## Support
 
 Si vous rencontrez des problèmes ou avez des questions, veillez intéragir avec le [RocketChatIRD.](https://go.rocket.chat/invite?host=tchat.ird.fr&path=invite%2Fm2mJ5W)
 
-## FAQ
+## FAQ  {#faq_french}
 
 - De quelles ressources ai-je besoin d'allouer?
 
@@ -91,16 +92,14 @@ For detailed instructions on how to use the Marbec-GPU cluster, please refer to 
 - [Useful Linux Commands Guide](basic_command.qmd)
 - [Basic Script Execution](basic_example.qmd) (via SLURM)
 - [R Script Execution](run_r_script.qmd)
-
-
-
+- [Choosing Resources: CPUs / MEM / GPU](wich_ressource.qmd)
 
 
 ## Support
 
 If you encounter any issues or have questions interact with the [RocketChatIRD.](https://go.rocket.chat/invite?host=tchat.ird.fr&path=invite%2Fm2mJ5W)
 
-## FAQ
+## FAQ {#faq_english}
 
 - **What resources do I need to allocate?**
 
