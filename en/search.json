@@ -1,174 +1,100 @@
 [
   {
-    "objectID": "pages/formations/git.html",
-    "href": "pages/formations/git.html",
-    "title": "Git training",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
     "section": "",
-    "text": "Git training\nThe sources of the Git training are available on GitHub. The training is accessible below.\n\n\n\n\n\n Back to top",
+    "text": "Welcome!\nThe aim of this site is to centralize and provide easy access to informatics resources, procedures and other support for the work of personnel and associates of the UMR MARBEC. This structuring is based in particular on the Dispositif d’Ecologie Numérique, or DEN, which is a transversal entity associated with the UMR. Its missions are to set up, coordinate and share technical resources, and to exchange methodologies and new approaches in support of the digital aspects of scientific research.\nThere’s also an Issues section where you can, for example, report a problem in the site’s source code, or suggest an improvement or new content. These “GitHub Issues” are really to be seen as objects closely linked to a “to-do list” items, and are focused on tasks to be accomplished (for example, throught the creation of a branch dedicated to the subject).\nIn addition, you’ll find a discussion forum to exchange ideas on common topics or issues. Discussions are intended for conversations that need to be transparent and accessible, but do not need to be followed up on a project and are not code-related, unlike “GitHub Issues”.\nFor your information, UMR also has a Rocket chat server accessible through the following URL https://tchat.ird.fr/home. It is possible to access the workspace directly from the URL or by installing a heavy client (=software) on your computer and adding the URL in the “add workspace” section.\nFurthermore, to facilitate access and use by many as possible, you’ll find this website and related resources in French (by default) but also in English (use the button on the left of the search bar to switch language).\nFeel free to visit the “I want to contribute!” section if you have resources to contribute to those available, or even more generally if you want to contribute to the provision of common resources.\nIf you have any specific requirements, please contact the DEN representatives at marbec-den-admin@listes.ird.fr.\nFor your information, this site was generated using the Quarto publishing system.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "pages/packages_logiciels/ichthyop.html",
+    "href": "pages/packages_logiciels/ichthyop.html",
+    "title": "Ichthyop software",
+    "section": "",
+    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
     "crumbs": [
       "Useful links",
-      "Training",
-      "Git training"
+      "Packages and software",
+      "Ichthyop software"
     ]
   },
   {
-    "objectID": "pages/formations/tidyverse.html",
-    "href": "pages/formations/tidyverse.html",
-    "title": "Tidyverse training",
+    "objectID": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
+    "href": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
+    "title": "Ichthyop software",
     "section": "",
-    "text": "Tidyverse training\n\n\nThe source code for the tidyverse training course is available on the GitHub repository.\nThe associated presentation is available at the following address.\nThe last session took place on March 3 and 4, 2025.\nDetails of future sessions will be announced at a later date.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
     "crumbs": [
       "Useful links",
-      "Training",
-      "Tidyverse training"
+      "Packages and software",
+      "Ichthyop software"
     ]
   },
   {
-    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html",
-    "href": "pages/serveurs/marbec_gpu/run_r_script.html",
-    "title": "Running R scripts in marbec-gpu",
-    "section": "",
-    "text": "As when working with RStudio locally (i.e. on our PC), it is recommended to clearly define our working directory. This is extremely important because any process we run (either from RStudio or Terminal) will use that directory as a reference to find input files, output files or even other scripts.\nFor our case, we have created a folder called mgpu-examples/ where there is a subfolder called code/. The creation of folders in marbec-data can be done directly from the web interface (by clicking on File station and then using the Create folder button), the command mkdir, but we can also copy-paste the elements already existing in our PC into the working folder.\n\n\n\nThe following is NOT mandatory, but very useful, especially when working with RStudio and that is to create an RStudio project. To do this, we will go to File and then New Project.\n\nThen, in the window that appears, click on Existing directory, then on Browse and click on the folder that we have defined as our working directory (in our case, mgpu-examples/). Then, OK and finally click on the Create Project button. Rstudio will flicker a little bit and then will show us the same window, but inside the set project. The easiest way to check that the project has been created in the correct folder (mgpu-examples/ in our case) is to verify that right in the Console panel, to the right of the R version, appears only the path of our main folder (and not any of the subfolders, e.g. mgpu-examples/code/ or mgpu-examples/inputs/).\n\n\n\n\n\n\n\nJust before to say hello\n\n\n\nmarbec-gpu incorporates the possibility of working with RStudio (Server); however, this interface should be used ONLY to PREPARE our scripts before being executed using all the power of our server. In other words, within the RStudio environment we will be able to load not so big files and perform basic operations, but at no time should we execute a complex (heavy) process from there, but from Terminal.\n\n\n\n\n\n\n\n\nWe will start with the simplest: create a script in R and print the (very famous) “Hello world!” message.\n\nWe will start by opening an RStudio session from the JupyterLab environment (if you want to know how to get there, check the post of Introduction to marbec-gpu).\nOnce inside the RStudio environment, we will create a new script (File -&gt; New file -&gt; R script) which will contain a single line:\n\n\nprint(\"Hello world and hello marbec-gpu!\")\n\nThen, we will save that script with the name code/ex1-1.R (code/ refers to a subfolder created previously inside the working directory of our project in RStudio).\nNow comes the interesting part, inside our browser, we must go back to the Launcher tab and open a Terminal window (clicking on the corresponding icon).\nBy default, Terminal will open a session in the local folder assigned to our user. From there, we must get to the folder we have set as working directory; that is, the folder that our script will recognize as working directory (whether we have decided to use RStudio or not to create it or create a project inside it). Assuming that our working directory is the mgpu-examples/ folder, we must reach it using the cd command:\n\ncd mgpu-examples/\n\n\n\n\n\n\nHow do we know that we have arrived at the correct folder?\n\n\n\nFirst, the prompt will indicate the name of the folder in which it is located.\n\nIn addition, we can run the ls command which will show the subfolders and files inside the folder we have reached. If everything matches, then we did well.\n\n\n\n\nNext, we execute the following command in the Terminal: Rscript code/ex1-1.R and the result should be just what would be shown in a usual R session.\n\n\n\n\n\nIn this next example, we will show a script that generates and saves files in our working directory where previously, we will create two new folders (figures/ and outputs/) through the mkdir command as follows:\nmkdir figures/ outputs/\n\n\n\n\n\n\nNote\n\n\n\nWithin the Terminal environment, it is not possible to observe graphics interactively (as in RStudio), so if you want to keep any figure, you must always include the code to save it within the script you execute. Depending on the graphical environment, we can use functions such as png, bmp, jpeg, pdf (for graphics environment), or ggsave (for ggplot2 environment).\n\n\n\nNow, let’s go to RStudio to create the following script and save it in code/ex1-2.R:\n\n# Print mtcars\nprint(mtcars)\n\n# Export mtcars as a csv\nwrite.csv(x = mtcars, file = \"outputs/mtcars.csv\")\n \n# Create and save a scatterplot\npng(filename = \"figures/fig_1-1.png\")\n\nplot(x = mtcars$mpg, y = mtcars$disp, \n     xlab = \"Miles per (US) gallon\", ylab = \"Displacement (cu.in.)\")\n\ndev.off()\n\nNext, we go back to the Terminal environment and run our new script with the command Rscript code/ex1-2.R. Immediately, the mtcars table will be displayed as that is what the first line of our script commands.\n\n\n\nHowever, if we run the ls command in Terminal for the figures/ and outputs/ folders, we will see that the two files we ordered to be created inside our script appear.\n\n\n\nIf the files created are the ones we expect to collect from our analysis, we can download them through Filezilla (see the corresponding post).\n\n\n\n\n\n\n\nPreviewing figures\n\n\n\nWhile it is not possible to preview figures in Terminal or JupyterLab because they do not have an image viewer, it is possible to do so from the marbec-data web environment. However, this is a basic viewer and only available for the most common file types.\n\n\n\n\n\n\n\n\n\nWe will start by creating a script (which we will save as code/ex2-1.R) containing a simple loop that generates 20 100x100 arrays with random values and saves them in separate csv files inside the outputs/ex2-rndmats/ folder (remember to create that folder beforehand using mkdir):\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nfor(i in seq(20)){\n  # Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  # Print a message at the end of each step\n  cat(sprintf(fmt = \"Matrix %02d finished!\\n\", i))\n}\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-1.R) and we will observe that everything went well if the messages at the end of each step of the loop are displayed correctly and also if when we run the command ls on the target folder we see the files created:\n\n\n\n\n\n\n\n\nRun a small example first\n\n\n\nBeing already in a real execution, it is highly recommended always to try with a small example that allows us to corroborate that our script goes well BEFORE to pull out all the stops trying to execute the heavy process. In addition, if our script returns figures or files, executing a small corroboration script allows us to quickly check if the generated files are consistent with what we expect to obtain.\n\n\n\n\n\n\nStarting from the previous example, we will convert our script into one that executes the processes in parallel. For this we will take advantage of the tools of the packages foreach and doParallel. Note that the names of the files of this script will begin with the letters mc_ to be able to recognize them with respect to those obtained in the previous example:\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nrequire(foreach)\nrequire(doParallel)\n\n# Registering cluster\ncl &lt;- makeCluster(spec = 20)\nregisterDoParallel(cl = cl)\n\n# Run multithread process\nout &lt;- foreach(i = seq(20), .inorder = FALSE) %dopar% {\n# Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mc_mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  NULL\n}\n\n# Finish cluster\nstopCluster(cl)\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-2.R) and we will observe that everything has gone well if when executing the command ls on the target folder we see the created files:\n\n\n\n\n\n\n\n\nNote\n\n\n\nA couple of things:\n\nIn the script of the second example, foreach is assigned to an object (out) which will receive the last object generated within each step of the loop. If you only want to get files to be exported (figures, tables, NetCDF, etc.), be sure to leave a NULL in the last line of the loop. On the other hand, if you want to get an object and it is placed in that position, foreach will compile it using the list function, i.e. the final object (out) will be a list that will have as many levels as there are steps in the loop. Also, it is important to note that internally foreach runs a separate small R session so it is necessary to indicate the additional packages required through the .packages argument (see the following example).\nThe argument spec = 20 inside makeCluster refers to the amount of threads that will be used to execute the loop. Remember that one of the options when creating your server in marbec-gpu was to choose the amount of CPUs (2, 4, 8, 16, 32…)? Well, it is precisely with this argument where you will indicate that amount of logical cores. Remember that another important aspect is the RAM. At a given time each process running within each thread will have to load everything that a single simple process would need. In other words, if in a single core process, in each step of our loop we have to load 5 NetCDF files that occupy 5 GB in RAM, if we run that process in multicore and we define spec = 40, at a given moment we will have to load 5GBx40 (200 GB) in RAM simultaneously. So not only you must choose well the configuration of your server (regarding the script you plan to run), but also an approximate of what is consumed in each independent process, in order not to saturate your server. marbec-gpu is great, but it has its limits.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "R Scripts Running"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html#lets-tidy-up-a-bit",
-    "href": "pages/serveurs/marbec_gpu/run_r_script.html#lets-tidy-up-a-bit",
-    "title": "Running R scripts in marbec-gpu",
-    "section": "",
-    "text": "As when working with RStudio locally (i.e. on our PC), it is recommended to clearly define our working directory. This is extremely important because any process we run (either from RStudio or Terminal) will use that directory as a reference to find input files, output files or even other scripts.\nFor our case, we have created a folder called mgpu-examples/ where there is a subfolder called code/. The creation of folders in marbec-data can be done directly from the web interface (by clicking on File station and then using the Create folder button), the command mkdir, but we can also copy-paste the elements already existing in our PC into the working folder.\n\n\n\nThe following is NOT mandatory, but very useful, especially when working with RStudio and that is to create an RStudio project. To do this, we will go to File and then New Project.\n\nThen, in the window that appears, click on Existing directory, then on Browse and click on the folder that we have defined as our working directory (in our case, mgpu-examples/). Then, OK and finally click on the Create Project button. Rstudio will flicker a little bit and then will show us the same window, but inside the set project. The easiest way to check that the project has been created in the correct folder (mgpu-examples/ in our case) is to verify that right in the Console panel, to the right of the R version, appears only the path of our main folder (and not any of the subfolders, e.g. mgpu-examples/code/ or mgpu-examples/inputs/).\n\n\n\n\n\n\n\nJust before to say hello\n\n\n\nmarbec-gpu incorporates the possibility of working with RStudio (Server); however, this interface should be used ONLY to PREPARE our scripts before being executed using all the power of our server. In other words, within the RStudio environment we will be able to load not so big files and perform basic operations, but at no time should we execute a complex (heavy) process from there, but from Terminal.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "R Scripts Running"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html#hello-world-simple-examples",
-    "href": "pages/serveurs/marbec_gpu/run_r_script.html#hello-world-simple-examples",
-    "title": "Running R scripts in marbec-gpu",
-    "section": "",
-    "text": "We will start with the simplest: create a script in R and print the (very famous) “Hello world!” message.\n\nWe will start by opening an RStudio session from the JupyterLab environment (if you want to know how to get there, check the post of Introduction to marbec-gpu).\nOnce inside the RStudio environment, we will create a new script (File -&gt; New file -&gt; R script) which will contain a single line:\n\n\nprint(\"Hello world and hello marbec-gpu!\")\n\nThen, we will save that script with the name code/ex1-1.R (code/ refers to a subfolder created previously inside the working directory of our project in RStudio).\nNow comes the interesting part, inside our browser, we must go back to the Launcher tab and open a Terminal window (clicking on the corresponding icon).\nBy default, Terminal will open a session in the local folder assigned to our user. From there, we must get to the folder we have set as working directory; that is, the folder that our script will recognize as working directory (whether we have decided to use RStudio or not to create it or create a project inside it). Assuming that our working directory is the mgpu-examples/ folder, we must reach it using the cd command:\n\ncd mgpu-examples/\n\n\n\n\n\n\nHow do we know that we have arrived at the correct folder?\n\n\n\nFirst, the prompt will indicate the name of the folder in which it is located.\n\nIn addition, we can run the ls command which will show the subfolders and files inside the folder we have reached. If everything matches, then we did well.\n\n\n\n\nNext, we execute the following command in the Terminal: Rscript code/ex1-1.R and the result should be just what would be shown in a usual R session.\n\n\n\n\n\nIn this next example, we will show a script that generates and saves files in our working directory where previously, we will create two new folders (figures/ and outputs/) through the mkdir command as follows:\nmkdir figures/ outputs/\n\n\n\n\n\n\nNote\n\n\n\nWithin the Terminal environment, it is not possible to observe graphics interactively (as in RStudio), so if you want to keep any figure, you must always include the code to save it within the script you execute. Depending on the graphical environment, we can use functions such as png, bmp, jpeg, pdf (for graphics environment), or ggsave (for ggplot2 environment).\n\n\n\nNow, let’s go to RStudio to create the following script and save it in code/ex1-2.R:\n\n# Print mtcars\nprint(mtcars)\n\n# Export mtcars as a csv\nwrite.csv(x = mtcars, file = \"outputs/mtcars.csv\")\n \n# Create and save a scatterplot\npng(filename = \"figures/fig_1-1.png\")\n\nplot(x = mtcars$mpg, y = mtcars$disp, \n     xlab = \"Miles per (US) gallon\", ylab = \"Displacement (cu.in.)\")\n\ndev.off()\n\nNext, we go back to the Terminal environment and run our new script with the command Rscript code/ex1-2.R. Immediately, the mtcars table will be displayed as that is what the first line of our script commands.\n\n\n\nHowever, if we run the ls command in Terminal for the figures/ and outputs/ folders, we will see that the two files we ordered to be created inside our script appear.\n\n\n\nIf the files created are the ones we expect to collect from our analysis, we can download them through Filezilla (see the corresponding post).\n\n\n\n\n\n\n\nPreviewing figures\n\n\n\nWhile it is not possible to preview figures in Terminal or JupyterLab because they do not have an image viewer, it is possible to do so from the marbec-data web environment. However, this is a basic viewer and only available for the most common file types.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "R Scripts Running"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html#hello-universe-parallel-process",
-    "href": "pages/serveurs/marbec_gpu/run_r_script.html#hello-universe-parallel-process",
-    "title": "Running R scripts in marbec-gpu",
-    "section": "",
-    "text": "We will start by creating a script (which we will save as code/ex2-1.R) containing a simple loop that generates 20 100x100 arrays with random values and saves them in separate csv files inside the outputs/ex2-rndmats/ folder (remember to create that folder beforehand using mkdir):\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nfor(i in seq(20)){\n  # Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  # Print a message at the end of each step\n  cat(sprintf(fmt = \"Matrix %02d finished!\\n\", i))\n}\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-1.R) and we will observe that everything went well if the messages at the end of each step of the loop are displayed correctly and also if when we run the command ls on the target folder we see the files created:\n\n\n\n\n\n\n\n\nRun a small example first\n\n\n\nBeing already in a real execution, it is highly recommended always to try with a small example that allows us to corroborate that our script goes well BEFORE to pull out all the stops trying to execute the heavy process. In addition, if our script returns figures or files, executing a small corroboration script allows us to quickly check if the generated files are consistent with what we expect to obtain.\n\n\n\n\n\n\nStarting from the previous example, we will convert our script into one that executes the processes in parallel. For this we will take advantage of the tools of the packages foreach and doParallel. Note that the names of the files of this script will begin with the letters mc_ to be able to recognize them with respect to those obtained in the previous example:\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nrequire(foreach)\nrequire(doParallel)\n\n# Registering cluster\ncl &lt;- makeCluster(spec = 20)\nregisterDoParallel(cl = cl)\n\n# Run multithread process\nout &lt;- foreach(i = seq(20), .inorder = FALSE) %dopar% {\n# Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mc_mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  NULL\n}\n\n# Finish cluster\nstopCluster(cl)\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-2.R) and we will observe that everything has gone well if when executing the command ls on the target folder we see the created files:\n\n\n\n\n\n\n\n\nNote\n\n\n\nA couple of things:\n\nIn the script of the second example, foreach is assigned to an object (out) which will receive the last object generated within each step of the loop. If you only want to get files to be exported (figures, tables, NetCDF, etc.), be sure to leave a NULL in the last line of the loop. On the other hand, if you want to get an object and it is placed in that position, foreach will compile it using the list function, i.e. the final object (out) will be a list that will have as many levels as there are steps in the loop. Also, it is important to note that internally foreach runs a separate small R session so it is necessary to indicate the additional packages required through the .packages argument (see the following example).\nThe argument spec = 20 inside makeCluster refers to the amount of threads that will be used to execute the loop. Remember that one of the options when creating your server in marbec-gpu was to choose the amount of CPUs (2, 4, 8, 16, 32…)? Well, it is precisely with this argument where you will indicate that amount of logical cores. Remember that another important aspect is the RAM. At a given time each process running within each thread will have to load everything that a single simple process would need. In other words, if in a single core process, in each step of our loop we have to load 5 NetCDF files that occupy 5 GB in RAM, if we run that process in multicore and we define spec = 40, at a given moment we will have to load 5GBx40 (200 GB) in RAM simultaneously. So not only you must choose well the configuration of your server (regarding the script you plan to run), but also an approximate of what is consumed in each independent process, in order not to saturate your server. marbec-gpu is great, but it has its limits.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "R Scripts Running"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html",
-    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html",
-    "title": "Marbec-GPU Documentation",
-    "section": "",
-    "text": "Welcome to the Marbec-GPU cluster documentation. This document provides an overview of the cluster, its capabilities, and how to get started with using it.\nThe Marbec-GPU cluster is designed to provide high-performance computing resources for code execution, such as those using Python and R. It is built on the Linux-Ubuntu kernel and features a Jupyter interface for ease of use. Several common tools are installed, including Python, R, Git, Conda, CUDA, and RStudio.\n\n\n\nRessources\n\n2 NVIDIA A40 GPUs\n2 Intel Xeon Platinum 8380 CPUs, 2x40 cores, 2x80 threads\n1,48 To de RAM\nMARBEC-DATA Interconnections\n\n\n\n\n\nTo start using the Marbec-GPU cluster, you will need to join the Marbec-DEN group. Contact the Administrators for more details : Contact DEN administrators.\n\n\n\nFor detailed instructions on how to use the Marbec-GPU cluster, please refer to the following sections:\n\nInitiation Guide (comming soon)\nUseful Linux Commands Guide\nBasic Script Execution (via SLURM)\nR Script Execution\n\n\n\n\nIf you encounter any issues or have questions interact with the RocketChatIRD.\n\n\n\n\nWhat resources do I need to allocate?\n\nGood question! It depends on your input data (size and type), your model (stochastic, statistical, neural network, etc.), your task, but most importantly, the packages you are using. For example, some packages do not support GPU computations, while others cannot parallelize across multiple CPUs. Make sure to research the packages you’re using to avoid allocating resources that won’t be utilized, and adapt your scripts accordingly. Here are some examples of resource allocation: Training Pytorch YOLO: --mem=64G, --c=16, and --gres=gpu:1; Running HSMC (TensorFlow): --mem=64GB, --cpus-per-task=30, and --gpus-per-node=1.\n\nDoes my script is GPU-capable ?\n\nNo, not directly. However, some libraries are GPU-capable. If your framework or script does not specifically use the GPU, your code will NOT utilize GPU hardware. Main examples of GPU-capable libraries: PyTorch, TensorFlow, Keras, Theano, Caffe, etc.\n\nHow to cancel a submitted job ?\n\nUse the command scancel JOBID, where JOBID is the job ID of the job you want to cancel. You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question, for more details SLURM scancel documentation.\n\nHow access job queue ?\n\nUse the following command : squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID. This command displays a detailed list of jobs in the queue, including the job name (e.g., spawner-jupyterhub for a “job-session”; otherwise, the name specified in the #SBATCH --job-name argument), username, running time, node name (eg., gres:gpu:1 for a GPU allocation, gres:gpu:0 for a CPU allocation), job state (e.g., PENDING for jobs waiting to start due to resource availability or scheduling, or RUNNING for jobs currently being executed) and JOBID (a unique identifier for each job), refer to the SLURM squeue documentation for more details.\n\nHow to submit multiple jobs without blocking other users ?\n\nThank you from the entire MarbecGPU Community for using resources in a cooperative and friendly manner. You can use #SBATCH --dependency=afterany:JOBID parameter, where JOBID is the job ID of the job you want to wait for (e.g., 4391). You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question. According to the SLURM sbatch documentation this parameter ensures that the start of your job is deferred until the specified dependency is satisfied. For file-based dependencies or more complex cases, you can explore other mechanisms to further delay or sequence your job execution as needed.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#features",
-    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#features",
-    "title": "Marbec-GPU Documentation",
-    "section": "",
-    "text": "Ressources\n\n2 NVIDIA A40 GPUs\n2 Intel Xeon Platinum 8380 CPUs, 2x40 cores, 2x80 threads\n1,48 To de RAM\nMARBEC-DATA Interconnections",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#registration",
-    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#registration",
-    "title": "Marbec-GPU Documentation",
-    "section": "",
-    "text": "To start using the Marbec-GPU cluster, you will need to join the Marbec-DEN group. Contact the Administrators for more details : Contact DEN administrators.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#documentation-1",
-    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#documentation-1",
-    "title": "Marbec-GPU Documentation",
-    "section": "",
-    "text": "For detailed instructions on how to use the Marbec-GPU cluster, please refer to the following sections:\n\nInitiation Guide (comming soon)\nUseful Linux Commands Guide\nBasic Script Execution (via SLURM)\nR Script Execution",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#support-1",
-    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#support-1",
-    "title": "Marbec-GPU Documentation",
-    "section": "",
-    "text": "If you encounter any issues or have questions interact with the RocketChatIRD.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#faq-1",
-    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#faq-1",
-    "title": "Marbec-GPU Documentation",
-    "section": "",
-    "text": "What resources do I need to allocate?\n\nGood question! It depends on your input data (size and type), your model (stochastic, statistical, neural network, etc.), your task, but most importantly, the packages you are using. For example, some packages do not support GPU computations, while others cannot parallelize across multiple CPUs. Make sure to research the packages you’re using to avoid allocating resources that won’t be utilized, and adapt your scripts accordingly. Here are some examples of resource allocation: Training Pytorch YOLO: --mem=64G, --c=16, and --gres=gpu:1; Running HSMC (TensorFlow): --mem=64GB, --cpus-per-task=30, and --gpus-per-node=1.\n\nDoes my script is GPU-capable ?\n\nNo, not directly. However, some libraries are GPU-capable. If your framework or script does not specifically use the GPU, your code will NOT utilize GPU hardware. Main examples of GPU-capable libraries: PyTorch, TensorFlow, Keras, Theano, Caffe, etc.\n\nHow to cancel a submitted job ?\n\nUse the command scancel JOBID, where JOBID is the job ID of the job you want to cancel. You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question, for more details SLURM scancel documentation.\n\nHow access job queue ?\n\nUse the following command : squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID. This command displays a detailed list of jobs in the queue, including the job name (e.g., spawner-jupyterhub for a “job-session”; otherwise, the name specified in the #SBATCH --job-name argument), username, running time, node name (eg., gres:gpu:1 for a GPU allocation, gres:gpu:0 for a CPU allocation), job state (e.g., PENDING for jobs waiting to start due to resource availability or scheduling, or RUNNING for jobs currently being executed) and JOBID (a unique identifier for each job), refer to the SLURM squeue documentation for more details.\n\nHow to submit multiple jobs without blocking other users ?\n\nThank you from the entire MarbecGPU Community for using resources in a cooperative and friendly manner. You can use #SBATCH --dependency=afterany:JOBID parameter, where JOBID is the job ID of the job you want to wait for (e.g., 4391). You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question. According to the SLURM sbatch documentation this parameter ensures that the start of your job is deferred until the specified dependency is satisfied. For file-based dependencies or more complex cases, you can explore other mechanisms to further delay or sequence your job execution as needed.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/intro_marbec_gpu.html",
-    "href": "pages/serveurs/marbec_gpu/intro_marbec_gpu.html",
-    "title": "Initiation to Marbec-GPU Cluster",
-    "section": "",
-    "text": "Initiation to Marbec-GPU Cluster\nA presentation video of the cluster will be available soon.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "Initiation"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/index_serveurs.html",
-    "href": "pages/serveurs/index_serveurs.html",
+    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
+    "href": "pages/packages_logiciels/index_packages_logiciels.html",
     "title": "Digital Ecology Scheme (DEN) Resources and Materials",
     "section": "",
-    "text": "The DEN Marbec offers two servers, a MARBEC-GPU computing server and a MARBEC-DATA storage server. A collaborative documentation is being written to help you get familiar with these servers. You can consult the presentation pages of these servers and some basic tutorials to help you get started:\n\nMARBEC-GPU Intro\nMARBEC-GPU Tutorials\nMARBEC-DATA Intro\nManaging files on MARBEC-DATA\n\nAny user willing to contribute to the documentation or give feedback is welcome: how to contribute.\nEnjoy!\n\n\n\n Back to top",
+    "text": "In this section you’ll find all the packages, software and general informatics resources resources developed or used by UMR MARBEC and associated partners.\n\n\n\n Back to top",
     "crumbs": [
       "Useful links",
-      "Servers"
+      "Packages and software"
+    ]
+  },
+  {
+    "objectID": "pages/contribution.html",
+    "href": "pages/contribution.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "Do you belong to the UMR, or not, and have some pieces of code, technical documentation or any other informatics resources that you’d like to test, standardize or even share? Do you have an idea and wonder whether the process has already been developed by someone else? Then you’ve come to the right place!\nThis site, and by extension the associated resources, are the result of several hours’ work and joint reflection on subjects which, in the final analysis, are often transverse between people. Its aim is to centralize and standardize as much as possible what has been done, and its success depends entirely on the synergy we bring to creating content. In fact, these resources are just the tip of the iceberg in terms of the relationships and links we can forge with each other on our work.\nIf you’d like to contribute in some way, the key is not to be discouraged by the size of the task, which can be frightening, but to start by taking the first step. You’ll quickly realize that behind any problem or obstacle, you’ll find a rich and friendly community that’ll be able to help you, always with the aim of sharing and optimizing informatics resources.\nBehind the many different types of content we can share with each other, from markdown documentation to packages or software developed by the community, the idea is to establish standards between us that guarantee the integrity and interoperability of the content and resources available. These standards can be seen as rules, but in no way should they be assimilated to barriers to your involvement. For example, if you’re stuck on specific points (such as translating a procedure into another language or not knowing how to use forges such as git), turn to the community and you’ll find all the help you need.\nIn general, here are a few guidelines to be considered before publishing resources:\n\nthe resources on this site are intended to be used by all UMR, but also potentially by associated partners. By default, content must be published in French, but also in English to ensure maximum accessibility. Some content, such as training courses, may be exempted from these rules if this is relevant. Once again, don’t let the language barrier stop you - you’re guaranteed to find someone in our community who can help you translate.\ndepending on the type of content you want to publish, it’s sometimes best to turn to resource persons or referents who can provide you with solutions or proposals to guide you in sharing your resources. In the meantime, if you don’t know who to turn to, you can send an e-mail to DEN administrators.\ntemplates will be proposed for the different types of resources, with a view to sharing and overall harmony. In the meantime, don’t hesitate to get in touch with other members of the community to try and find a common structure wherever possible.\neven if the use of informatics resources within the UMR is really to be seen in a transversal way and without associated “borders”, the mutualization and accessibility of the resources is really in connection with the Digital Ecology Device, or DEN. This entity, which is transversal to the UMR, aims to set up, coordinate and pool technical resources, as well as exchange methodologies and new approaches in support of the digital aspects of scientific research. Getting closer to this organization and its sub-entities could be a wise move, and provide you with significant support for your activities.\nBy its very essence, this site is designed to evolve as needs change. Don’t hesitate to suggest improvements, new sections or even a different organization. In the end, this will only benefit the community.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "I want to contribute!"
+    ]
+  },
+  {
+    "objectID": "pages/formations/r_package_developpement.html",
+    "href": "pages/formations/r_package_developpement.html",
+    "title": "R package development training",
+    "section": "",
+    "text": "R package development training\n\n\nThe training source code is available on the GitHub repository.\nThe associated book presentation is available at the following address.\nThe training program is currently being set up and should be finalized during 2025.\nThe first training session is scheduled for late 2025 at the latest.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Training",
+      "R package development training"
+    ]
+  },
+  {
+    "objectID": "pages/formations/index_formations.html",
+    "href": "pages/formations/index_formations.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "This section is dedicated to referencing the training courses and associated materials made available to UMR and its partners. Due to the specific nature of the training programs, the associated materials may not be available in several languages. In addition, by following this link to be defined you will find a list of the training courses organized by the UMR and, above all, the dates on which they will take place.\nFor your information, most of the following subsections link to Git repositories where you can find training resources. If you have any questions relating to these, it’s best to use the services provided by the repository (the Issues section, for example) or, alternatively, to contact the associated contact person(s) directly.\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Training"
+    ]
+  },
+  {
+    "objectID": "pages/support/index_support.html",
+    "href": "pages/support/index_support.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "This section is dedicated to procedures and processes for providing global support to UMR. These include support in configuring for several software (such as email clients), as well as more general processes such as setting up a daily backup solution or suggestions for password management.\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Global support"
+    ]
+  },
+  {
+    "objectID": "pages/git/index_git.html",
+    "href": "pages/git/index_git.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "In this section you will find all the resources related to the use of version control systems. Several forges are used at UMR:\n\nGitHub MARBEC\nGitLab IRD\nGitLab Ifremer\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Version Control System"
     ]
   },
   {
@@ -232,6 +158,347 @@
     ]
   },
   {
+    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html",
+    "href": "pages/serveurs/marbec_gpu/run_r_script.html",
+    "title": "Running R scripts in marbec-gpu",
+    "section": "",
+    "text": "As when working with RStudio locally (i.e. on our PC), it is recommended to clearly define our working directory. This is extremely important because any process we run (either from RStudio or Terminal) will use that directory as a reference to find input files, output files or even other scripts.\nFor our case, we have created a folder called mgpu-examples/ where there is a subfolder called code/. The creation of folders in marbec-data can be done directly from the web interface (by clicking on File station and then using the Create folder button), the command mkdir, but we can also copy-paste the elements already existing in our PC into the working folder.\n\n\n\nThe following is NOT mandatory, but very useful, especially when working with RStudio and that is to create an RStudio project. To do this, we will go to File and then New Project.\n\nThen, in the window that appears, click on Existing directory, then on Browse and click on the folder that we have defined as our working directory (in our case, mgpu-examples/). Then, OK and finally click on the Create Project button. Rstudio will flicker a little bit and then will show us the same window, but inside the set project. The easiest way to check that the project has been created in the correct folder (mgpu-examples/ in our case) is to verify that right in the Console panel, to the right of the R version, appears only the path of our main folder (and not any of the subfolders, e.g. mgpu-examples/code/ or mgpu-examples/inputs/).\n\n\n\n\n\n\n\nJust before to say hello\n\n\n\nmarbec-gpu incorporates the possibility of working with RStudio (Server); however, this interface should be used ONLY to PREPARE our scripts before being executed using all the power of our server. In other words, within the RStudio environment we will be able to load not so big files and perform basic operations, but at no time should we execute a complex (heavy) process from there, but from Terminal.\n\n\n\n\n\n\n\n\nWe will start with the simplest: create a script in R and print the (very famous) “Hello world!” message.\n\nWe will start by opening an RStudio session from the JupyterLab environment (if you want to know how to get there, check the post of Introduction to marbec-gpu).\nOnce inside the RStudio environment, we will create a new script (File -&gt; New file -&gt; R script) which will contain a single line:\n\n\nprint(\"Hello world and hello marbec-gpu!\")\n\nThen, we will save that script with the name code/ex1-1.R (code/ refers to a subfolder created previously inside the working directory of our project in RStudio).\nNow comes the interesting part, inside our browser, we must go back to the Launcher tab and open a Terminal window (clicking on the corresponding icon).\nBy default, Terminal will open a session in the local folder assigned to our user. From there, we must get to the folder we have set as working directory; that is, the folder that our script will recognize as working directory (whether we have decided to use RStudio or not to create it or create a project inside it). Assuming that our working directory is the mgpu-examples/ folder, we must reach it using the cd command:\n\ncd mgpu-examples/\n\n\n\n\n\n\nHow do we know that we have arrived at the correct folder?\n\n\n\nFirst, the prompt will indicate the name of the folder in which it is located.\n\nIn addition, we can run the ls command which will show the subfolders and files inside the folder we have reached. If everything matches, then we did well.\n\n\n\n\nNext, we execute the following command in the Terminal: Rscript code/ex1-1.R and the result should be just what would be shown in a usual R session.\n\n\n\n\n\nIn this next example, we will show a script that generates and saves files in our working directory where previously, we will create two new folders (figures/ and outputs/) through the mkdir command as follows:\nmkdir figures/ outputs/\n\n\n\n\n\n\nNote\n\n\n\nWithin the Terminal environment, it is not possible to observe graphics interactively (as in RStudio), so if you want to keep any figure, you must always include the code to save it within the script you execute. Depending on the graphical environment, we can use functions such as png, bmp, jpeg, pdf (for graphics environment), or ggsave (for ggplot2 environment).\n\n\n\nNow, let’s go to RStudio to create the following script and save it in code/ex1-2.R:\n\n# Print mtcars\nprint(mtcars)\n\n# Export mtcars as a csv\nwrite.csv(x = mtcars, file = \"outputs/mtcars.csv\")\n \n# Create and save a scatterplot\npng(filename = \"figures/fig_1-1.png\")\n\nplot(x = mtcars$mpg, y = mtcars$disp, \n     xlab = \"Miles per (US) gallon\", ylab = \"Displacement (cu.in.)\")\n\ndev.off()\n\nNext, we go back to the Terminal environment and run our new script with the command Rscript code/ex1-2.R. Immediately, the mtcars table will be displayed as that is what the first line of our script commands.\n\n\n\nHowever, if we run the ls command in Terminal for the figures/ and outputs/ folders, we will see that the two files we ordered to be created inside our script appear.\n\n\n\nIf the files created are the ones we expect to collect from our analysis, we can download them through Filezilla (see the corresponding post).\n\n\n\n\n\n\n\nPreviewing figures\n\n\n\nWhile it is not possible to preview figures in Terminal or JupyterLab because they do not have an image viewer, it is possible to do so from the marbec-data web environment. However, this is a basic viewer and only available for the most common file types.\n\n\n\n\n\n\n\n\n\nWe will start by creating a script (which we will save as code/ex2-1.R) containing a simple loop that generates 20 100x100 arrays with random values and saves them in separate csv files inside the outputs/ex2-rndmats/ folder (remember to create that folder beforehand using mkdir):\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nfor(i in seq(20)){\n  # Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  # Print a message at the end of each step\n  cat(sprintf(fmt = \"Matrix %02d finished!\\n\", i))\n}\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-1.R) and we will observe that everything went well if the messages at the end of each step of the loop are displayed correctly and also if when we run the command ls on the target folder we see the files created:\n\n\n\n\n\n\n\n\nRun a small example first\n\n\n\nBeing already in a real execution, it is highly recommended always to try with a small example that allows us to corroborate that our script goes well BEFORE to pull out all the stops trying to execute the heavy process. In addition, if our script returns figures or files, executing a small corroboration script allows us to quickly check if the generated files are consistent with what we expect to obtain.\n\n\n\n\n\n\nStarting from the previous example, we will convert our script into one that executes the processes in parallel. For this we will take advantage of the tools of the packages foreach and doParallel. Note that the names of the files of this script will begin with the letters mc_ to be able to recognize them with respect to those obtained in the previous example:\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nrequire(foreach)\nrequire(doParallel)\n\n# Registering cluster\ncl &lt;- makeCluster(spec = 20)\nregisterDoParallel(cl = cl)\n\n# Run multithread process\nout &lt;- foreach(i = seq(20), .inorder = FALSE) %dopar% {\n# Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mc_mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  NULL\n}\n\n# Finish cluster\nstopCluster(cl)\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-2.R) and we will observe that everything has gone well if when executing the command ls on the target folder we see the created files:\n\n\n\n\n\n\n\n\nNote\n\n\n\nA couple of things:\n\nIn the script of the second example, foreach is assigned to an object (out) which will receive the last object generated within each step of the loop. If you only want to get files to be exported (figures, tables, NetCDF, etc.), be sure to leave a NULL in the last line of the loop. On the other hand, if you want to get an object and it is placed in that position, foreach will compile it using the list function, i.e. the final object (out) will be a list that will have as many levels as there are steps in the loop. Also, it is important to note that internally foreach runs a separate small R session so it is necessary to indicate the additional packages required through the .packages argument (see the following example).\nThe argument spec = 20 inside makeCluster refers to the amount of threads that will be used to execute the loop. Remember that one of the options when creating your server in marbec-gpu was to choose the amount of CPUs (2, 4, 8, 16, 32…)? Well, it is precisely with this argument where you will indicate that amount of logical cores. Remember that another important aspect is the RAM. At a given time each process running within each thread will have to load everything that a single simple process would need. In other words, if in a single core process, in each step of our loop we have to load 5 NetCDF files that occupy 5 GB in RAM, if we run that process in multicore and we define spec = 40, at a given moment we will have to load 5GBx40 (200 GB) in RAM simultaneously. So not only you must choose well the configuration of your server (regarding the script you plan to run), but also an approximate of what is consumed in each independent process, in order not to saturate your server. marbec-gpu is great, but it has its limits.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "R Scripts Running"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html#lets-tidy-up-a-bit",
+    "href": "pages/serveurs/marbec_gpu/run_r_script.html#lets-tidy-up-a-bit",
+    "title": "Running R scripts in marbec-gpu",
+    "section": "",
+    "text": "As when working with RStudio locally (i.e. on our PC), it is recommended to clearly define our working directory. This is extremely important because any process we run (either from RStudio or Terminal) will use that directory as a reference to find input files, output files or even other scripts.\nFor our case, we have created a folder called mgpu-examples/ where there is a subfolder called code/. The creation of folders in marbec-data can be done directly from the web interface (by clicking on File station and then using the Create folder button), the command mkdir, but we can also copy-paste the elements already existing in our PC into the working folder.\n\n\n\nThe following is NOT mandatory, but very useful, especially when working with RStudio and that is to create an RStudio project. To do this, we will go to File and then New Project.\n\nThen, in the window that appears, click on Existing directory, then on Browse and click on the folder that we have defined as our working directory (in our case, mgpu-examples/). Then, OK and finally click on the Create Project button. Rstudio will flicker a little bit and then will show us the same window, but inside the set project. The easiest way to check that the project has been created in the correct folder (mgpu-examples/ in our case) is to verify that right in the Console panel, to the right of the R version, appears only the path of our main folder (and not any of the subfolders, e.g. mgpu-examples/code/ or mgpu-examples/inputs/).\n\n\n\n\n\n\n\nJust before to say hello\n\n\n\nmarbec-gpu incorporates the possibility of working with RStudio (Server); however, this interface should be used ONLY to PREPARE our scripts before being executed using all the power of our server. In other words, within the RStudio environment we will be able to load not so big files and perform basic operations, but at no time should we execute a complex (heavy) process from there, but from Terminal.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "R Scripts Running"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html#hello-world-simple-examples",
+    "href": "pages/serveurs/marbec_gpu/run_r_script.html#hello-world-simple-examples",
+    "title": "Running R scripts in marbec-gpu",
+    "section": "",
+    "text": "We will start with the simplest: create a script in R and print the (very famous) “Hello world!” message.\n\nWe will start by opening an RStudio session from the JupyterLab environment (if you want to know how to get there, check the post of Introduction to marbec-gpu).\nOnce inside the RStudio environment, we will create a new script (File -&gt; New file -&gt; R script) which will contain a single line:\n\n\nprint(\"Hello world and hello marbec-gpu!\")\n\nThen, we will save that script with the name code/ex1-1.R (code/ refers to a subfolder created previously inside the working directory of our project in RStudio).\nNow comes the interesting part, inside our browser, we must go back to the Launcher tab and open a Terminal window (clicking on the corresponding icon).\nBy default, Terminal will open a session in the local folder assigned to our user. From there, we must get to the folder we have set as working directory; that is, the folder that our script will recognize as working directory (whether we have decided to use RStudio or not to create it or create a project inside it). Assuming that our working directory is the mgpu-examples/ folder, we must reach it using the cd command:\n\ncd mgpu-examples/\n\n\n\n\n\n\nHow do we know that we have arrived at the correct folder?\n\n\n\nFirst, the prompt will indicate the name of the folder in which it is located.\n\nIn addition, we can run the ls command which will show the subfolders and files inside the folder we have reached. If everything matches, then we did well.\n\n\n\n\nNext, we execute the following command in the Terminal: Rscript code/ex1-1.R and the result should be just what would be shown in a usual R session.\n\n\n\n\n\nIn this next example, we will show a script that generates and saves files in our working directory where previously, we will create two new folders (figures/ and outputs/) through the mkdir command as follows:\nmkdir figures/ outputs/\n\n\n\n\n\n\nNote\n\n\n\nWithin the Terminal environment, it is not possible to observe graphics interactively (as in RStudio), so if you want to keep any figure, you must always include the code to save it within the script you execute. Depending on the graphical environment, we can use functions such as png, bmp, jpeg, pdf (for graphics environment), or ggsave (for ggplot2 environment).\n\n\n\nNow, let’s go to RStudio to create the following script and save it in code/ex1-2.R:\n\n# Print mtcars\nprint(mtcars)\n\n# Export mtcars as a csv\nwrite.csv(x = mtcars, file = \"outputs/mtcars.csv\")\n \n# Create and save a scatterplot\npng(filename = \"figures/fig_1-1.png\")\n\nplot(x = mtcars$mpg, y = mtcars$disp, \n     xlab = \"Miles per (US) gallon\", ylab = \"Displacement (cu.in.)\")\n\ndev.off()\n\nNext, we go back to the Terminal environment and run our new script with the command Rscript code/ex1-2.R. Immediately, the mtcars table will be displayed as that is what the first line of our script commands.\n\n\n\nHowever, if we run the ls command in Terminal for the figures/ and outputs/ folders, we will see that the two files we ordered to be created inside our script appear.\n\n\n\nIf the files created are the ones we expect to collect from our analysis, we can download them through Filezilla (see the corresponding post).\n\n\n\n\n\n\n\nPreviewing figures\n\n\n\nWhile it is not possible to preview figures in Terminal or JupyterLab because they do not have an image viewer, it is possible to do so from the marbec-data web environment. However, this is a basic viewer and only available for the most common file types.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "R Scripts Running"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/run_r_script.html#hello-universe-parallel-process",
+    "href": "pages/serveurs/marbec_gpu/run_r_script.html#hello-universe-parallel-process",
+    "title": "Running R scripts in marbec-gpu",
+    "section": "",
+    "text": "We will start by creating a script (which we will save as code/ex2-1.R) containing a simple loop that generates 20 100x100 arrays with random values and saves them in separate csv files inside the outputs/ex2-rndmats/ folder (remember to create that folder beforehand using mkdir):\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nfor(i in seq(20)){\n  # Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  # Print a message at the end of each step\n  cat(sprintf(fmt = \"Matrix %02d finished!\\n\", i))\n}\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-1.R) and we will observe that everything went well if the messages at the end of each step of the loop are displayed correctly and also if when we run the command ls on the target folder we see the files created:\n\n\n\n\n\n\n\n\nRun a small example first\n\n\n\nBeing already in a real execution, it is highly recommended always to try with a small example that allows us to corroborate that our script goes well BEFORE to pull out all the stops trying to execute the heavy process. In addition, if our script returns figures or files, executing a small corroboration script allows us to quickly check if the generated files are consistent with what we expect to obtain.\n\n\n\n\n\n\nStarting from the previous example, we will convert our script into one that executes the processes in parallel. For this we will take advantage of the tools of the packages foreach and doParallel. Note that the names of the files of this script will begin with the letters mc_ to be able to recognize them with respect to those obtained in the previous example:\n\n# Setting number of rows and columns\nrow_n &lt;- 100\ncol_n &lt;- 100\n\nrequire(foreach)\nrequire(doParallel)\n\n# Registering cluster\ncl &lt;- makeCluster(spec = 20)\nregisterDoParallel(cl = cl)\n\n# Run multithread process\nout &lt;- foreach(i = seq(20), .inorder = FALSE) %dopar% {\n# Create random matrix\n  rndMat &lt;- matrix(data = runif(n = row_n*col_n), nrow = row_n, ncol = col_n)\n  \n  # Save matrix\n  write.csv(x = rndMat, \n            file = sprintf(fmt = \"outputs/ex2-rndmats/mc_mat_%02d.csv\", i), \n            row.names = FALSE)\n  \n  NULL\n}\n\n# Finish cluster\nstopCluster(cl)\n\nNow, we will run our script in Terminal (with the command Rscript code/ex2-2.R) and we will observe that everything has gone well if when executing the command ls on the target folder we see the created files:\n\n\n\n\n\n\n\n\nNote\n\n\n\nA couple of things:\n\nIn the script of the second example, foreach is assigned to an object (out) which will receive the last object generated within each step of the loop. If you only want to get files to be exported (figures, tables, NetCDF, etc.), be sure to leave a NULL in the last line of the loop. On the other hand, if you want to get an object and it is placed in that position, foreach will compile it using the list function, i.e. the final object (out) will be a list that will have as many levels as there are steps in the loop. Also, it is important to note that internally foreach runs a separate small R session so it is necessary to indicate the additional packages required through the .packages argument (see the following example).\nThe argument spec = 20 inside makeCluster refers to the amount of threads that will be used to execute the loop. Remember that one of the options when creating your server in marbec-gpu was to choose the amount of CPUs (2, 4, 8, 16, 32…)? Well, it is precisely with this argument where you will indicate that amount of logical cores. Remember that another important aspect is the RAM. At a given time each process running within each thread will have to load everything that a single simple process would need. In other words, if in a single core process, in each step of our loop we have to load 5 NetCDF files that occupy 5 GB in RAM, if we run that process in multicore and we define spec = 40, at a given moment we will have to load 5GBx40 (200 GB) in RAM simultaneously. So not only you must choose well the configuration of your server (regarding the script you plan to run), but also an approximate of what is consumed in each independent process, in order not to saturate your server. marbec-gpu is great, but it has its limits.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "R Scripts Running"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/basic_example.html",
+    "href": "pages/serveurs/marbec_gpu/basic_example.html",
+    "title": "Running a simple example on Marbec-GPU",
+    "section": "",
+    "text": "Throughout this tutorial, you will find everything you need to run a Python or R script (displaying “Hello World &lt;3”), along with additional tips and resources that will be helpful for other MARBEC-GPU tasks.\nThere are two main ways to run a program on Marbec-GPU. The first is to use a task submission script, the second is to use the session interactively. In this example, we will use the first method which is by far the most suitable and easily adaptable for more complex programs.\n\n\n\n\n\n\nNote\n\n\n\nWhen you want to run a more complex program, make sure your project works locally (on your personal computer). This means setting up your environment correctly and debugging your script locally. Once everything works successfully on your PC (even using only 1% of the dataset if you encounter computational constraints), you can then deploy your project on MARBEC-GPU.\n\n\nStart by creating a working directory in which the different files will be created. In bash command it would be :\ncd ~  # go to the home directory\nmkdir my_project  # create a folder for the project\nOtherwise you can use the Jupyter interface to create a working directory with the icon framed in red below:\n\n\n\nCreate a working directory\n\n\nThen move to this directory ( cd my_project/ ).",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "SLURM Submission : Basic R/Python example"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/basic_example.html#prepare-the-python-or-r-script",
+    "href": "pages/serveurs/marbec_gpu/basic_example.html#prepare-the-python-or-r-script",
+    "title": "Running a simple example on Marbec-GPU",
+    "section": "1. Prepare the Python or R Script",
+    "text": "1. Prepare the Python or R Script\nCreate a simple Python or R script that displays “Hello World &lt;3”. Here is an example of a script:\nprint(\"Hello World &lt;3\")\nSave this script in a file named main.py or main.R (depending on the desired language) in the working directory you created earlier.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "SLURM Submission : Basic R/Python example"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/basic_example.html#prepare-a-bash-script-with-slurm-arguments",
+    "href": "pages/serveurs/marbec_gpu/basic_example.html#prepare-a-bash-script-with-slurm-arguments",
+    "title": "Running a simple example on Marbec-GPU",
+    "section": "2. Prepare a Bash Script with SLURM Arguments",
+    "text": "2. Prepare a Bash Script with SLURM Arguments\nIn order to run the script correctly, you will need to create a bash script launch.sh taking care to mention:\n\nthe SLURM arguments, specifying which resources to allocate, the job name, the output file, etc.\nPython/R script execution.\n\nHere is a minimal example of a bash script:\n#!/bin/bash\n\n#SBATCH --job-name=my_job         # Job name\n#SBATCH --output=job_%j.out`      # Standard output and error log\n#SBATCH --gres=gpu:1             # Number of GPUs (Remove the line if no GPU is required.)\n#SBATCH --mem=4G                  # Memory allocation (4 GB)\n#SBATCH -c 1                      # Number of CPU cores\n\n# execute python file\npython main.py                    \n\n# execute R file\nRscript main.R\nIt is possible to specify other SLURM arguments. For more information on SLURM arguments, you can consult the official SLURM documentation here.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "SLURM Submission : Basic R/Python example"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/basic_example.html#execute-the-bash-script",
+    "href": "pages/serveurs/marbec_gpu/basic_example.html#execute-the-bash-script",
+    "title": "Running a simple example on Marbec-GPU",
+    "section": "3. Execute the Bash Script",
+    "text": "3. Execute the Bash Script\nAfter the previous 2 steps, the working directory should contain the following files: launch.sh and main.py/main.R:  The final step is to submit your launch.sh script created in the previous section. To do this, you need to use the sbatch command (see documentation).\nIn the terminal, run the following command:\n\nsbatch launch.sh\n\nIf the SLURM parameters (#SBATCH arg) are correctly filled in, you should see a job submission confirmation message: Submitted batch job 1234567. Otherwise, an error message will appear instead. Upon successful submission, SLURM checks the requested resources and places the job in the queue (state PENDING) until the resources become available. Once the resources are available, the job runs (state RUNNING). An output file is then created in the current directory with the name specified in the bash script (#SBATCH --output=job_%j.out). A second file containing error messages can appear if specified (#SBATCH --error=job_%j.err).\nYou can track the progress of your job with the squeue -u $USER or squeue -j 1234567 command (with 1234567 being your job number). You can also list all jobs currently running or in the queue with squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID. The STATE column in particular indicates the job’s status (PENDING RUNNING). For more details on the squeue command, you can consult the documentation.\nTo cancel a job (running or still in the queue), use the scancel 1234567 command (with 1234567 being your job number).\nThe output.log file containing the outputs of your python script is created in the current directory. You can view it with the cat output.log command or simply by double-clicking on it. It should look like this:\nHello World &lt;3",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "SLURM Submission : Basic R/Python example"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html",
+    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html",
+    "title": "Marbec-GPU Documentation",
+    "section": "",
+    "text": "Welcome to the Marbec-GPU cluster documentation. This document provides an overview of the cluster, its capabilities, and how to get started with using it.\nThe Marbec-GPU cluster is designed to provide high-performance computing resources for code execution, such as those using Python and R. It is built on the Linux-Ubuntu kernel and features a Jupyter interface for ease of use. Several common tools are installed, including Python, R, Git, Conda, CUDA, and RStudio.\n\n\n\nRessources\n\n2 NVIDIA A40 GPUs\n2 Intel Xeon Platinum 8380 CPUs, 2x40 cores, 2x80 threads\n1,48 To de RAM\nMARBEC-DATA Interconnections\n\n\n\n\n\nTo start using the Marbec-GPU cluster, you will need to join the Marbec-DEN group. Contact the Administrators for more details : Contact DEN administrators.\n\n\n\nFor detailed instructions on how to use the Marbec-GPU cluster, please refer to the following sections:\n\nInitiation Guide (comming soon)\nUseful Linux Commands Guide\nBasic Script Execution (via SLURM)\nR Script Execution\nChoosing Resources: CPUs / MEM / GPU\n\n\n\n\nIf you encounter any issues or have questions interact with the RocketChatIRD.\n\n\n\n\nWhat resources do I need to allocate?\n\nGood question! It depends on your input data (size and type), your model (stochastic, statistical, neural network, etc.), your task, but most importantly, the packages you are using. For example, some packages do not support GPU computations, while others cannot parallelize across multiple CPUs. Make sure to research the packages you’re using to avoid allocating resources that won’t be utilized, and adapt your scripts accordingly. Here are some examples of resource allocation: Training Pytorch YOLO: --mem=64G, --c=16, and --gres=gpu:1; Running HSMC (TensorFlow): --mem=64GB, --cpus-per-task=30, and --gpus-per-node=1.\n\nDoes my script is GPU-capable ?\n\nNo, not directly. However, some libraries are GPU-capable. If your framework or script does not specifically use the GPU, your code will NOT utilize GPU hardware. Main examples of GPU-capable libraries: PyTorch, TensorFlow, Keras, Theano, Caffe, etc.\n\nHow to cancel a submitted job ?\n\nUse the command scancel JOBID, where JOBID is the job ID of the job you want to cancel. You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question, for more details SLURM scancel documentation.\n\nHow access job queue ?\n\nUse the following command : squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID. This command displays a detailed list of jobs in the queue, including the job name (e.g., spawner-jupyterhub for a “job-session”; otherwise, the name specified in the #SBATCH --job-name argument), username, running time, node name (eg., gres:gpu:1 for a GPU allocation, gres:gpu:0 for a CPU allocation), job state (e.g., PENDING for jobs waiting to start due to resource availability or scheduling, or RUNNING for jobs currently being executed) and JOBID (a unique identifier for each job), refer to the SLURM squeue documentation for more details.\n\nHow to submit multiple jobs without blocking other users ?\n\nThank you from the entire MarbecGPU Community for using resources in a cooperative and friendly manner. You can use #SBATCH --dependency=afterany:JOBID parameter, where JOBID is the job ID of the job you want to wait for (e.g., 4391). You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question. According to the SLURM sbatch documentation this parameter ensures that the start of your job is deferred until the specified dependency is satisfied. For file-based dependencies or more complex cases, you can explore other mechanisms to further delay or sequence your job execution as needed.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#features",
+    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#features",
+    "title": "Marbec-GPU Documentation",
+    "section": "",
+    "text": "Ressources\n\n2 NVIDIA A40 GPUs\n2 Intel Xeon Platinum 8380 CPUs, 2x40 cores, 2x80 threads\n1,48 To de RAM\nMARBEC-DATA Interconnections",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#registration",
+    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#registration",
+    "title": "Marbec-GPU Documentation",
+    "section": "",
+    "text": "To start using the Marbec-GPU cluster, you will need to join the Marbec-DEN group. Contact the Administrators for more details : Contact DEN administrators.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#documentation-1",
+    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#documentation-1",
+    "title": "Marbec-GPU Documentation",
+    "section": "",
+    "text": "For detailed instructions on how to use the Marbec-GPU cluster, please refer to the following sections:\n\nInitiation Guide (comming soon)\nUseful Linux Commands Guide\nBasic Script Execution (via SLURM)\nR Script Execution\nChoosing Resources: CPUs / MEM / GPU",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#support-1",
+    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#support-1",
+    "title": "Marbec-GPU Documentation",
+    "section": "",
+    "text": "If you encounter any issues or have questions interact with the RocketChatIRD.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#faq_english",
+    "href": "pages/serveurs/marbec_gpu/index_marbec_gpu.html#faq_english",
+    "title": "Marbec-GPU Documentation",
+    "section": "",
+    "text": "What resources do I need to allocate?\n\nGood question! It depends on your input data (size and type), your model (stochastic, statistical, neural network, etc.), your task, but most importantly, the packages you are using. For example, some packages do not support GPU computations, while others cannot parallelize across multiple CPUs. Make sure to research the packages you’re using to avoid allocating resources that won’t be utilized, and adapt your scripts accordingly. Here are some examples of resource allocation: Training Pytorch YOLO: --mem=64G, --c=16, and --gres=gpu:1; Running HSMC (TensorFlow): --mem=64GB, --cpus-per-task=30, and --gpus-per-node=1.\n\nDoes my script is GPU-capable ?\n\nNo, not directly. However, some libraries are GPU-capable. If your framework or script does not specifically use the GPU, your code will NOT utilize GPU hardware. Main examples of GPU-capable libraries: PyTorch, TensorFlow, Keras, Theano, Caffe, etc.\n\nHow to cancel a submitted job ?\n\nUse the command scancel JOBID, where JOBID is the job ID of the job you want to cancel. You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question, for more details SLURM scancel documentation.\n\nHow access job queue ?\n\nUse the following command : squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID. This command displays a detailed list of jobs in the queue, including the job name (e.g., spawner-jupyterhub for a “job-session”; otherwise, the name specified in the #SBATCH --job-name argument), username, running time, node name (eg., gres:gpu:1 for a GPU allocation, gres:gpu:0 for a CPU allocation), job state (e.g., PENDING for jobs waiting to start due to resource availability or scheduling, or RUNNING for jobs currently being executed) and JOBID (a unique identifier for each job), refer to the SLURM squeue documentation for more details.\n\nHow to submit multiple jobs without blocking other users ?\n\nThank you from the entire MarbecGPU Community for using resources in a cooperative and friendly manner. You can use #SBATCH --dependency=afterany:JOBID parameter, where JOBID is the job ID of the job you want to wait for (e.g., 4391). You can find the job ID in the output of the sbatch command when you submit a job, or by using the squeue command as mentioned in the previous question. According to the SLURM sbatch documentation this parameter ensures that the start of your job is deferred until the specified dependency is satisfied. For file-based dependencies or more complex cases, you can explore other mechanisms to further delay or sequence your job execution as needed.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/index_serveurs.html",
+    "href": "pages/serveurs/index_serveurs.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "The DEN Marbec offers two servers, a MARBEC-GPU computing server and a MARBEC-DATA storage server. A collaborative documentation is being written to help you get familiar with these servers. You can consult the presentation pages of these servers and some basic tutorials to help you get started:\n\nMARBEC-GPU Intro\nMARBEC-GPU Tutorials\nMARBEC-DATA Intro\nManaging files on MARBEC-DATA\n\nAny user willing to contribute to the documentation or give feedback is welcome: how to contribute.\nEnjoy!\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Servers"
+    ]
+  },
+  {
+    "objectID": "pages/calendrier/calendrier.html",
+    "href": "pages/calendrier/calendrier.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/intro_marbec_gpu.html",
+    "href": "pages/serveurs/marbec_gpu/intro_marbec_gpu.html",
+    "title": "Initiation to Marbec-GPU Cluster",
+    "section": "",
+    "text": "Initiation to Marbec-GPU Cluster\nA presentation video of the cluster will be available soon.\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Initiation"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/basic_command.html",
+    "href": "pages/serveurs/marbec_gpu/basic_command.html",
+    "title": "Main commands in marbec-gpu Terminal",
+    "section": "",
+    "text": "Main commands in marbec-gpu Terminal\nThe first thing to keep in mind is that marbec-gpu has Ubuntu installed, so the commands listed below will be the same as the ones used in that OS. This article will show a description of the main usage modes for each command, but if you have any additional requirements, you can always search in forums like Stackoverflow or check the help for each command, which consists of placing the command name followed by --help. For example, if I want to know the help for the ls command, just run ls --help in the Terminal.\n\n\n\n\n\n\nUpper and lower case\n\n\n\nAs in R or Python, the use of upper or lower case when indicating an option does matter. For example, ls -D is not equivalent to ls -d, so be carefull.\n\n\n\nBrowsing within folders\n\nCommand: cd\nUsage: cd path/folder\n\nTo indicate a previous position (folder), you will use the statement .. as follows: ../path/folder1 (this indicates that there is a folder called path from the folder where you are, and that that has a folder called folder1 as well).\n\n\nCreate a folder\n\nCommand: mkdir\nUsage: mkdir path/folder\n\n\n\nGet the content of a folder as a list\n\nCommand: ls\nUsage: ls path/folder/\n\nMain options:\n\n--all (o -a): Displays all files and subfolders, including those protected (hidden) by the system.\n\n\n\nGenerate a list of files/folders and display the size of each item\n\nCommand: du\nUsage: du path/to/file.csv o du path/to/folder\n\nMain options:\n\n--human-readable (o -h): changes the units dynamically to avoid displaying all Kb. This is especially useful when you have large objects (subfolders or files).\n--summary (o -s): displays a summary table, i.e. it only includes the subfolders and files present at the first search level. This is useful when we just want to take a quick look and avoid displaying a complete listing of ALL internal subfolders.\n\nIf I want to get a list of all the files and folders inside a folder with their respective sizes (the three options are equivalent):\ndu ruta/de/folder/* --human-readable --summarize\ndu ruta/de/folder/* -h -s\ndu ruta/de/folder/* -hs\n\n\nCopy-paste\nFor this, the simplest way is through the cp command and making use of the navigation commands cited in this post (e.g. .. to indicate a previous folder). The basic syntax is the following: cp path/origin /path/destination, but there are different possible cases:\n\nCopy a file into the same folder, but with a different name (create duplicate): cp file1.csv file1-dup.csv.\nCopy a file to another folder: cp path/file1.csv path/destination.\nCopy more than one file to another folder: cp path/file1.csv path/file2.csv folder/destination\nCopy a folder to another folder: cp path/folder1 path/folder2 --recursive or cp path/folder1 path/folder2 -r.\n\n\n\n\n\n\n\nNote\n\n\n\nBy default, cp will overwrite any file with the same name. To avoid this, it is possible to add the -n option as follows: cp path/from/file1.csv path/destination -n.\n\n\n\n\nCut-paste (and also rename)\nIt will be very similar to the above, but through the mv command:\n\nRename a file (within the same folder): mv file1.csv file2.csv\nMove a file to another folder: mv path/file1.csv path/to/destination\nMove one file to another folder: mv path/file1.csv path/file2.csv path/destination\nMove one folder to another folder: mv path/old/folder path/new/folder\n\n\n\nDelete\nFor this, we will use the rm command as follows:\n\nDelete a file: rm path/to/file.csv\nDelete a folder (and all its contents): rm path/to/folder -r\n\n\n\n\n\n\n\nNo turning back\n\n\n\nWhile inside Terminal it is always possible to cancel a command using the shortcut Ctrl+C (or Cmd+C on MacOS), once the rm command completes its work, there is no way to revert the deletion or recover it from a recycle garbage can, so be very careful when using it.\n\n\n\n\nDisplay current processes\n\nCommand: top\n\nWhen you run it, it will show in interactive mode in Terminal the processes that are running, as well as the resources used by each of them (basically like a Task Manager). To exit this interactive mode, just press the q key.\n\n\nStop a process\nIf we want to force the closing or the cancellation of a process already started, we can use the shortcut Ctrl+C (or Cmd+C in MacOS). It is important to keep in mind that forcing the closing of a process that had in progress the handling of files or folders (creation, copy, etc.) can leave the generated files unusable.\n\n\nViewing a plain text file\nBy default, there are two tools available from Terminal: vi and nano. The syntax for their execution is as simple as vi path/file1.txt or nano path/file1.txt, where file1.txt can be any plain text file (e.g. an R or Python script). The navigation shortcuts within each of these environments are different, but documentation is abundant on the Internet. Choose the one you like best.\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Useful Commands Guide"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/wich_ressource.html",
+    "href": "pages/serveurs/marbec_gpu/wich_ressource.html",
+    "title": "Choosing Resources: CPUs / MEM / GPU",
+    "section": "",
+    "text": "If you have followed the previous guides, you have already learned how to submit a SLURM job. Now, it’s time to choose the appropriate resources for your job. This point is briefly addressed in the FAD.\nMARBEC-GPU is a shared resource with great freedom of use (no quota on computing hours or number of simultaneous jobs) and a simple scheduling system: first come, first served. Therefore, it is crucial to choose the allocated resources correctly.\nIMPORTANT: The execution time of a job depends on several factors, including the size of your data, the resources used, but mainly on how you have written your code or the packages used. Most codes does not allow parallelization of computations (using multiple CPU cores at the same time) and even fewer support GPU execution. Thus, even if you request 10 CPU cores and a GPU, it is quite possible that your job only uses one CPU core and not use the GPU at all. Furthermore, taking twice as many CPUs does not reduce the execution time by half; it is up to you to test and find a good compromise between allocated resources and execution time.\n\n\n\nLearn about the executed code\n\nBefore running your job on MARBEC-GPU, check if your code parallelizes calculations and/or uses the GPU. If you see parameters like “workers”, “n_jobs”, “n_cpus”, “device”, or “gpu” in the documentation, it’s a good sign that the code can parallelize calculations and/or use the GPU. You can also refer to the documentation of the packages used (for commonly used packages, LLMs will know how to answer you; for niche packages or languages, don’t hesitate to ask the author). If you don’t find these parameters, it is likely that the code does not use these resources.\n\nChoose the allocated resources\n\nCPU: If your code parallelizes calculations, you can allocate multiple CPU cores: #SBATCH -c. For typical uses in Python or R for machine learning, data extraction, etc., choosing between 2 and 16 CPU cores is often sufficient. For more specific uses, you may need to adjust accordingly.\nMEM: The amount of RAM requested mainly depends on the size of your data and the size of the models used. For typical uses, between 8 and 64 GB of RAM is often sufficient. For heavier data processing tasks, you can go up to 256 GB of RAM.\nGPU: If your code uses the GPU, you can allocate 1 GPU.\n\nCheck resource usage\n\nAfter your job is completed, you can check the effective percentage of resource usage with the command reportseff --user &lt;username&gt; (for more information on the command, use reportseff --help).\n\n\n\n\n\n\nNote\n\n\n\nBe aware that session jobs (named pawner-jupyterhub) also appear in the reportseff, you can ignore them.\n\n\nThen, adjust future allocations based on effective usage and computation time.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Choosing Resources: CPUs / MEM / GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/wich_ressource.html#good-practices",
+    "href": "pages/serveurs/marbec_gpu/wich_ressource.html#good-practices",
+    "title": "Choosing Resources: CPUs / MEM / GPU",
+    "section": "",
+    "text": "Learn about the executed code\n\nBefore running your job on MARBEC-GPU, check if your code parallelizes calculations and/or uses the GPU. If you see parameters like “workers”, “n_jobs”, “n_cpus”, “device”, or “gpu” in the documentation, it’s a good sign that the code can parallelize calculations and/or use the GPU. You can also refer to the documentation of the packages used (for commonly used packages, LLMs will know how to answer you; for niche packages or languages, don’t hesitate to ask the author). If you don’t find these parameters, it is likely that the code does not use these resources.\n\nChoose the allocated resources\n\nCPU: If your code parallelizes calculations, you can allocate multiple CPU cores: #SBATCH -c. For typical uses in Python or R for machine learning, data extraction, etc., choosing between 2 and 16 CPU cores is often sufficient. For more specific uses, you may need to adjust accordingly.\nMEM: The amount of RAM requested mainly depends on the size of your data and the size of the models used. For typical uses, between 8 and 64 GB of RAM is often sufficient. For heavier data processing tasks, you can go up to 256 GB of RAM.\nGPU: If your code uses the GPU, you can allocate 1 GPU.\n\nCheck resource usage\n\nAfter your job is completed, you can check the effective percentage of resource usage with the command reportseff --user &lt;username&gt; (for more information on the command, use reportseff --help).\n\n\n\n\n\n\nNote\n\n\n\nBe aware that session jobs (named pawner-jupyterhub) also appear in the reportseff, you can ignore them.\n\n\nThen, adjust future allocations based on effective usage and computation time.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Choosing Resources: CPUs / MEM / GPU"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/marbec-data_folders.html",
+    "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html",
+    "title": "🚀 Accessing MARBEC-DATA Folders in JupyterHub",
+    "section": "",
+    "text": "The MARBEC-DATA server is dedicated to data storage and is connected to the MARBEC-GPU server, which is used for computations.\nThe folders stored in MARBEC-DATA are always accessible via the command line.\n🔍 You can view the available folders by typing:\nls /marbec-data/\nor navigate directly to a specific folder:\ncd /marbec-data/&lt;your_folder&gt;\nHowever, these folders do not appear directly in the file tree.\nTo view them in the Jupyter file explorer, you need to create a symbolic link.\n\n\n\nOpen a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Accessing MARBEC-DATA Folders"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/marbec-data_folders.html#creating-a-symbolic-link",
+    "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html#creating-a-symbolic-link",
+    "title": "🚀 Accessing MARBEC-DATA Folders in JupyterHub",
+    "section": "",
+    "text": "Open a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec GPU",
+      "Accessing MARBEC-DATA Folders"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_data/manage_files.html",
+    "href": "pages/serveurs/marbec_data/manage_files.html",
+    "title": "Managing files from/to marbec-data",
+    "section": "",
+    "text": "Image credits: Declan Sun at Unplash",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec DATA",
+      "Manage Files"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_data/manage_files.html#create-a-shared-work-folder",
+    "href": "pages/serveurs/marbec_data/manage_files.html#create-a-shared-work-folder",
+    "title": "Managing files from/to marbec-data",
+    "section": "Create a shared work folder",
+    "text": "Create a shared work folder\n[Content in preparation]",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec DATA",
+      "Manage Files"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_data/manage_files.html#linking-a-working-folder-to-marbec-gpu.",
+    "href": "pages/serveurs/marbec_data/manage_files.html#linking-a-working-folder-to-marbec-gpu.",
+    "title": "Managing files from/to marbec-data",
+    "section": "Linking a working folder to marbec-gpu.",
+    "text": "Linking a working folder to marbec-gpu.\n[Content in preparation]",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec DATA",
+      "Manage Files"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_data/manage_files.html#managing-files-between-marbec-data-and-our-pc-filezilla",
+    "href": "pages/serveurs/marbec_data/manage_files.html#managing-files-between-marbec-data-and-our-pc-filezilla",
+    "title": "Managing files from/to marbec-data",
+    "section": "Managing files between marbec-data and our PC (FileZilla)",
+    "text": "Managing files between marbec-data and our PC (FileZilla)\n\nInstalling FileZilla and connecting to marbec-data.\nThe easiest way to move (copy, cut and paste) files from our PC to one of our shared work folders or to our marbec-gpu user folder is through the (free) FileZilla software. To download the installer, just go to its official website https://filezilla-project.org/ and select the Download FileZilla Client button.\n\nThen, by default we will be offered to download the version corresponding to the operating system (OS) where we are running our browser, but we can always choose the most appropriate version in the section More download options.\n\n\n\n\n\n\n\nOperating systems and CPU architectures\n\n\n\nIn recent years, processors with ARM architecture have been incorporated into the PC market. The most recent and famous example is Apple’s Mx series (e.g. M1); however, in recent months laptops with ARM processors (from the Snapdragon brand, for instance) have also appeared. Software compiled for an ARM architecture will not work on an x86 architecture (which is the architecture manufactured by brands such as Intel or AMD) and vice versa, so it will always be important to know not only which OS our PC is running (Windows, MacOS or Linux), but also the architecture of our processor.\n\n\nOnce the file has been downloaded, it will be enough to run it leaving most of the options by default (except those that offer us to install some additional program that we do not need, e.g. Chrome). After that, we will be able to run the program and we will obtain an environment that will look like this:\n\nThe next thing we will do is to establish a connection to marbec-data. To do this, at the top, we will fill in the following fields:\n\nServer: marbec-data.ird.fr\nUser: youruser\nPassword: yourpassword\nPort: 22\n\nIf all goes well, a message indicating that the connection has been successful will be displayed in the panel immediately below. In addition, the next two lower panels to the right will show those folders already linked and available in our marbec-data account.\n\n\n\n\n\n\n\nNote\n\n\n\nIt is not necessary to log in every time we log back into FileZilla. We could save our login and skip the above steps by clicking the small arrow to the right of Quick Login and selecting our saved login. Of course, allowing our login credentials to be saved should ONLY occur on our personal PC.\n\n\n\nAnd that is all! In the left panels, we will be able to navigate in the directories of our PC, while in the right panels we will be able to do it in the marbec-gpu and marbec-data ones.\n\n\nCopying files and folders\nIt will be as simple as dragging the element between the left and right panels. The process will start and the bottom pane (the last one) will show the queued, completed and failed transfers.\n\nAlso, if at any time FileZilla detects that there are repeated items, it will show a small window with multiple options available (overwrite and skip, verify differences in sizes or names, apply the selected option to future cases in the transfer queue, etc.).",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec DATA",
+      "Manage Files"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_data/manage_files.html#manage-files-within-marbec-data.",
+    "href": "pages/serveurs/marbec_data/manage_files.html#manage-files-within-marbec-data.",
+    "title": "Managing files from/to marbec-data",
+    "section": "Manage files within marbec-data.",
+    "text": "Manage files within marbec-data.\nWhile the marbec-data web environment explorer offers the options to copy, paste, delete, etc., it is not an efficient method when our files are medium or large (&gt;10 MB). Here is how to perform these operations from Terminal.\n\nCopy-paste\nFor this, the simplest way is through the cp command and making use of the navigation commands cited in this post (e.g. .. to indicate a previous folder). The basic syntax is the following: cp path/origin /path/destination, but there are different possible cases:\n\nCopy a file into the same folder, but with a different name (create duplicate): cp file1.csv file1-dup.csv.\nCopy a file to another folder: cp path/file1.csv path/destination.\nCopy more than one file to another folder: cp path/file1.csv path/file2.csv folder/destination\nCopy a folder to another folder: cp path/folder1 path/folder2 --recursive or cp path/folder1 path/folder2 -r.\n\n\n\n\n\n\n\nNote\n\n\n\nBy default, cp will overwrite any file with the same name. To avoid this, it is possible to add the -n option as follows: cp path/from/file1.csv path/destination -n.\n\n\n\n\nCut-paste (and also rename)\nIt will be very similar to the above, but through the mv command:\n\nRename a file (within the same folder): mv file1.csv file2.csv\nMove a file to another folder: mv path/file1.csv path/to/destination\nMove one file to another folder: mv path/file1.csv path/file2.csv path/destination\nMove one folder to another folder: mv path/old/folder path/new/folder\n\n\n\nDelete\nFor this, we will use the rm command as follows:\n\nDelete a file: rm path/to/file.csv\nDelete a folder (and all its contents): rm path/to/folder -r\n\n\n\n\n\n\n\nNo turning back\n\n\n\nWhile inside Terminal it is always possible to cancel a command using the shortcut Ctrl+C (or Cmd+C on MacOS), once the rm command completes its work, there is no way to revert the deletion or recover it from a recycle garbage can, so be very careful when using it.",
+    "crumbs": [
+      "Useful links",
+      "Servers",
+      "Marbec DATA",
+      "Manage Files"
+    ]
+  },
+  {
     "objectID": "pages/git/miroir_github_git.html",
     "href": "pages/git/miroir_github_git.html",
     "title": "Digital Ecology Scheme (DEN) Resources and Materials",
@@ -289,65 +556,6 @@
       "Useful links",
       "Version Control System",
       "Mirroring from Github to a Git Repository"
-    ]
-  },
-  {
-    "objectID": "pages/contribution.html",
-    "href": "pages/contribution.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "Do you belong to the UMR, or not, and have some pieces of code, technical documentation or any other informatics resources that you’d like to test, standardize or even share? Do you have an idea and wonder whether the process has already been developed by someone else? Then you’ve come to the right place!\nThis site, and by extension the associated resources, are the result of several hours’ work and joint reflection on subjects which, in the final analysis, are often transverse between people. Its aim is to centralize and standardize as much as possible what has been done, and its success depends entirely on the synergy we bring to creating content. In fact, these resources are just the tip of the iceberg in terms of the relationships and links we can forge with each other on our work.\nIf you’d like to contribute in some way, the key is not to be discouraged by the size of the task, which can be frightening, but to start by taking the first step. You’ll quickly realize that behind any problem or obstacle, you’ll find a rich and friendly community that’ll be able to help you, always with the aim of sharing and optimizing informatics resources.\nBehind the many different types of content we can share with each other, from markdown documentation to packages or software developed by the community, the idea is to establish standards between us that guarantee the integrity and interoperability of the content and resources available. These standards can be seen as rules, but in no way should they be assimilated to barriers to your involvement. For example, if you’re stuck on specific points (such as translating a procedure into another language or not knowing how to use forges such as git), turn to the community and you’ll find all the help you need.\nIn general, here are a few guidelines to be considered before publishing resources:\n\nthe resources on this site are intended to be used by all UMR, but also potentially by associated partners. By default, content must be published in French, but also in English to ensure maximum accessibility. Some content, such as training courses, may be exempted from these rules if this is relevant. Once again, don’t let the language barrier stop you - you’re guaranteed to find someone in our community who can help you translate.\ndepending on the type of content you want to publish, it’s sometimes best to turn to resource persons or referents who can provide you with solutions or proposals to guide you in sharing your resources. In the meantime, if you don’t know who to turn to, you can send an e-mail to DEN administrators.\ntemplates will be proposed for the different types of resources, with a view to sharing and overall harmony. In the meantime, don’t hesitate to get in touch with other members of the community to try and find a common structure wherever possible.\neven if the use of informatics resources within the UMR is really to be seen in a transversal way and without associated “borders”, the mutualization and accessibility of the resources is really in connection with the Digital Ecology Device, or DEN. This entity, which is transversal to the UMR, aims to set up, coordinate and pool technical resources, as well as exchange methodologies and new approaches in support of the digital aspects of scientific research. Getting closer to this organization and its sub-entities could be a wise move, and provide you with significant support for your activities.\nBy its very essence, this site is designed to evolve as needs change. Don’t hesitate to suggest improvements, new sections or even a different organization. In the end, this will only benefit the community.\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "I want to contribute!"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html",
-    "href": "pages/packages_logiciels/r_package_sparck.html",
-    "title": "R package sparck",
-    "section": "",
-    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "R package sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
-    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
-    "title": "R package sparck",
-    "section": "",
-    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "R package sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/ichthyop.html",
-    "href": "pages/packages_logiciels/ichthyop.html",
-    "title": "Ichthyop software",
-    "section": "",
-    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "Ichthyop software"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
-    "href": "pages/packages_logiciels/ichthyop.html#lagrangian-tool-for-simulating-ichthyoplankton-dynamics",
-    "title": "Ichthyop software",
-    "section": "",
-    "text": "Ichthyop is a free Java tool designed to study the effects of physical and biological factors on ichthyoplankton dynamics.\nIt incorporates the most important processes involved in fish early life: spawning, movement, growth, mortality and recruitment. The tool uses as input time series of velocity, temperature and salinity fields archived from ROMS, MARS, NEMO or SYMPHONIE oceanic models (either files or OpenDAP).\nThe Ichthyop software and its associted ressources are available on GitHub.",
-    "crumbs": [
-      "Useful links",
-      "Packages and software",
-      "Ichthyop software"
     ]
   },
   {
@@ -447,32 +655,58 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
+    "objectID": "pages/formations/git.html",
+    "href": "pages/formations/git.html",
+    "title": "Git training",
     "section": "",
-    "text": "Welcome!\nThe aim of this site is to centralize and provide easy access to informatics resources, procedures and other support for the work of personnel and associates of the UMR MARBEC. This structuring is based in particular on the Dispositif d’Ecologie Numérique, or DEN, which is a transversal entity associated with the UMR. Its missions are to set up, coordinate and share technical resources, and to exchange methodologies and new approaches in support of the digital aspects of scientific research.\nThere’s also an Issues section where you can, for example, report a problem in the site’s source code, or suggest an improvement or new content. These “GitHub Issues” are really to be seen as objects closely linked to a “to-do list” items, and are focused on tasks to be accomplished (for example, throught the creation of a branch dedicated to the subject).\nIn addition, you’ll find a discussion forum to exchange ideas on common topics or issues. Discussions are intended for conversations that need to be transparent and accessible, but do not need to be followed up on a project and are not code-related, unlike “GitHub Issues”.\nFor your information, UMR also has a Rocket chat server accessible through the following URL https://tchat.ird.fr/home. It is possible to access the workspace directly from the URL or by installing a heavy client (=software) on your computer and adding the URL in the “add workspace” section.\nFurthermore, to facilitate access and use by many as possible, you’ll find this website and related resources in French (by default) but also in English (use the button on the left of the search bar to switch language).\nFeel free to visit the “I want to contribute!” section if you have resources to contribute to those available, or even more generally if you want to contribute to the provision of common resources.\nIf you have any specific requirements, please contact the DEN representatives at marbec-den-admin@listes.ird.fr.\nFor your information, this site was generated using the Quarto publishing system.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "pages/support/index_support.html",
-    "href": "pages/support/index_support.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "This section is dedicated to procedures and processes for providing global support to UMR. These include support in configuring for several software (such as email clients), as well as more general processes such as setting up a daily backup solution or suggestions for password management.\n\n\n\n Back to top",
+    "text": "Git training\nThe sources of the Git training are available on GitHub. The training is accessible below.\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Useful links",
-      "Global support"
+      "Training",
+      "Git training"
     ]
   },
   {
-    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
-    "href": "pages/packages_logiciels/index_packages_logiciels.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "objectID": "pages/formations/tidyverse.html",
+    "href": "pages/formations/tidyverse.html",
+    "title": "Tidyverse training",
     "section": "",
-    "text": "In this section you’ll find all the packages, software and general informatics resources resources developed or used by UMR MARBEC and associated partners.\n\n\n\n Back to top",
+    "text": "Tidyverse training\n\n\nThe source code for the tidyverse training course is available on the GitHub repository.\nThe associated presentation is available at the following address.\nThe last session took place on March 3 and 4, 2025.\nDetails of future sessions will be announced at a later date.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Useful links",
-      "Packages and software"
+      "Training",
+      "Tidyverse training"
+    ]
+  },
+  {
+    "objectID": "pages/liens.html",
+    "href": "pages/liens.html",
+    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
+    "section": "",
+    "text": "UMR MARBEC\nGitHub repository issues\nGitHub repository discussion forum\nUMR rocket chat server URL\nDEN admin ressource contact\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html",
+    "href": "pages/packages_logiciels/r_package_sparck.html",
+    "title": "R package sparck",
+    "section": "",
+    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "R package sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
+    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge-1",
+    "title": "R package sparck",
+    "section": "",
+    "text": "The sparck package has been developed for the R software. Its aim is to provide standardized functions and processes to support work of the UMR and, by extension, its partners. The associated functions cover topics such as data manipulation, data analysis and work environment configuration. Far from the idea of covering all themes or subjects exhaustively, its vocation is really to provide a standard in terms of development in order to improve the transversality of actions and improve the associated links.\nIn relation with the “I want to contribute!” section, take a look at the general documentation, as well as the issues section of the GitHub repository.",
+    "crumbs": [
+      "Useful links",
+      "Packages and software",
+      "R package sparck"
     ]
   },
   {
@@ -497,214 +731,6 @@
       "Useful links",
       "Packages and software",
       "Osmose model"
-    ]
-  },
-  {
-    "objectID": "pages/liens.html",
-    "href": "pages/liens.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "UMR MARBEC\nGitHub repository issues\nGitHub repository discussion forum\nUMR rocket chat server URL\nDEN admin ressource contact\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "pages/calendrier/calendrier.html",
-    "href": "pages/calendrier/calendrier.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "pages/git/index_git.html",
-    "href": "pages/git/index_git.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "In this section you will find all the resources related to the use of version control systems. Several forges are used at UMR:\n\nGitHub MARBEC\nGitLab IRD\nGitLab Ifremer\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Version Control System"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_data/manage_files.html",
-    "href": "pages/serveurs/marbec_data/manage_files.html",
-    "title": "Managing files from/to marbec-data",
-    "section": "",
-    "text": "Image credits: Declan Sun at Unplash",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec DATA",
-      "Manage Files"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_data/manage_files.html#create-a-shared-work-folder",
-    "href": "pages/serveurs/marbec_data/manage_files.html#create-a-shared-work-folder",
-    "title": "Managing files from/to marbec-data",
-    "section": "Create a shared work folder",
-    "text": "Create a shared work folder\n[Content in preparation]",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec DATA",
-      "Manage Files"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_data/manage_files.html#linking-a-working-folder-to-marbec-gpu.",
-    "href": "pages/serveurs/marbec_data/manage_files.html#linking-a-working-folder-to-marbec-gpu.",
-    "title": "Managing files from/to marbec-data",
-    "section": "Linking a working folder to marbec-gpu.",
-    "text": "Linking a working folder to marbec-gpu.\n[Content in preparation]",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec DATA",
-      "Manage Files"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_data/manage_files.html#managing-files-between-marbec-data-and-our-pc-filezilla",
-    "href": "pages/serveurs/marbec_data/manage_files.html#managing-files-between-marbec-data-and-our-pc-filezilla",
-    "title": "Managing files from/to marbec-data",
-    "section": "Managing files between marbec-data and our PC (FileZilla)",
-    "text": "Managing files between marbec-data and our PC (FileZilla)\n\nInstalling FileZilla and connecting to marbec-data.\nThe easiest way to move (copy, cut and paste) files from our PC to one of our shared work folders or to our marbec-gpu user folder is through the (free) FileZilla software. To download the installer, just go to its official website https://filezilla-project.org/ and select the Download FileZilla Client button.\n\nThen, by default we will be offered to download the version corresponding to the operating system (OS) where we are running our browser, but we can always choose the most appropriate version in the section More download options.\n\n\n\n\n\n\n\nOperating systems and CPU architectures\n\n\n\nIn recent years, processors with ARM architecture have been incorporated into the PC market. The most recent and famous example is Apple’s Mx series (e.g. M1); however, in recent months laptops with ARM processors (from the Snapdragon brand, for instance) have also appeared. Software compiled for an ARM architecture will not work on an x86 architecture (which is the architecture manufactured by brands such as Intel or AMD) and vice versa, so it will always be important to know not only which OS our PC is running (Windows, MacOS or Linux), but also the architecture of our processor.\n\n\nOnce the file has been downloaded, it will be enough to run it leaving most of the options by default (except those that offer us to install some additional program that we do not need, e.g. Chrome). After that, we will be able to run the program and we will obtain an environment that will look like this:\n\nThe next thing we will do is to establish a connection to marbec-data. To do this, at the top, we will fill in the following fields:\n\nServer: marbec-data.ird.fr\nUser: youruser\nPassword: yourpassword\nPort: 22\n\nIf all goes well, a message indicating that the connection has been successful will be displayed in the panel immediately below. In addition, the next two lower panels to the right will show those folders already linked and available in our marbec-data account.\n\n\n\n\n\n\n\nNote\n\n\n\nIt is not necessary to log in every time we log back into FileZilla. We could save our login and skip the above steps by clicking the small arrow to the right of Quick Login and selecting our saved login. Of course, allowing our login credentials to be saved should ONLY occur on our personal PC.\n\n\n\nAnd that is all! In the left panels, we will be able to navigate in the directories of our PC, while in the right panels we will be able to do it in the marbec-gpu and marbec-data ones.\n\n\nCopying files and folders\nIt will be as simple as dragging the element between the left and right panels. The process will start and the bottom pane (the last one) will show the queued, completed and failed transfers.\n\nAlso, if at any time FileZilla detects that there are repeated items, it will show a small window with multiple options available (overwrite and skip, verify differences in sizes or names, apply the selected option to future cases in the transfer queue, etc.).",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec DATA",
-      "Manage Files"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_data/manage_files.html#manage-files-within-marbec-data.",
-    "href": "pages/serveurs/marbec_data/manage_files.html#manage-files-within-marbec-data.",
-    "title": "Managing files from/to marbec-data",
-    "section": "Manage files within marbec-data.",
-    "text": "Manage files within marbec-data.\nWhile the marbec-data web environment explorer offers the options to copy, paste, delete, etc., it is not an efficient method when our files are medium or large (&gt;10 MB). Here is how to perform these operations from Terminal.\n\nCopy-paste\nFor this, the simplest way is through the cp command and making use of the navigation commands cited in this post (e.g. .. to indicate a previous folder). The basic syntax is the following: cp path/origin /path/destination, but there are different possible cases:\n\nCopy a file into the same folder, but with a different name (create duplicate): cp file1.csv file1-dup.csv.\nCopy a file to another folder: cp path/file1.csv path/destination.\nCopy more than one file to another folder: cp path/file1.csv path/file2.csv folder/destination\nCopy a folder to another folder: cp path/folder1 path/folder2 --recursive or cp path/folder1 path/folder2 -r.\n\n\n\n\n\n\n\nNote\n\n\n\nBy default, cp will overwrite any file with the same name. To avoid this, it is possible to add the -n option as follows: cp path/from/file1.csv path/destination -n.\n\n\n\n\nCut-paste (and also rename)\nIt will be very similar to the above, but through the mv command:\n\nRename a file (within the same folder): mv file1.csv file2.csv\nMove a file to another folder: mv path/file1.csv path/to/destination\nMove one file to another folder: mv path/file1.csv path/file2.csv path/destination\nMove one folder to another folder: mv path/old/folder path/new/folder\n\n\n\nDelete\nFor this, we will use the rm command as follows:\n\nDelete a file: rm path/to/file.csv\nDelete a folder (and all its contents): rm path/to/folder -r\n\n\n\n\n\n\n\nNo turning back\n\n\n\nWhile inside Terminal it is always possible to cancel a command using the shortcut Ctrl+C (or Cmd+C on MacOS), once the rm command completes its work, there is no way to revert the deletion or recover it from a recycle garbage can, so be very careful when using it.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec DATA",
-      "Manage Files"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/basic_example.html",
-    "href": "pages/serveurs/marbec_gpu/basic_example.html",
-    "title": "Running a simple example on Marbec-GPU",
-    "section": "",
-    "text": "Throughout this tutorial, you will find everything you need to run a Python or R script (displaying “Hello World &lt;3”), along with additional tips and resources that will be helpful for other MARBEC-GPU tasks.\nThere are two main ways to run a program on Marbec-GPU. The first is to use a task submission script, the second is to use the session interactively. In this example, we will use the first method which is by far the most suitable and easily adaptable for more complex programs.\n\n\n\n\n\n\nNote\n\n\n\nWhen you want to run a more complex program, make sure your project works locally (on your personal computer). This means setting up your environment correctly and debugging your script locally. Once everything works successfully on your PC (even using only 1% of the dataset if you encounter computational constraints), you can then deploy your project on MARBEC-GPU.\n\n\nStart by creating a working directory in which the different files will be created. In bash command it would be :\ncd ~  # go to the home directory\nmkdir my_project  # create a folder for the project\nOtherwise you can use the Jupyter interface to create a working directory with the icon framed in red below:\n\n\n\nCreate a working directory\n\n\nThen move to this directory ( cd my_project/ ).",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "SLURM Submission : Basic R/Python example"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/basic_example.html#prepare-the-python-or-r-script",
-    "href": "pages/serveurs/marbec_gpu/basic_example.html#prepare-the-python-or-r-script",
-    "title": "Running a simple example on Marbec-GPU",
-    "section": "1. Prepare the Python or R Script",
-    "text": "1. Prepare the Python or R Script\nCreate a simple Python or R script that displays “Hello World &lt;3”. Here is an example of a script:\nprint(\"Hello World &lt;3\")\nSave this script in a file named main.py or main.R (depending on the desired language) in the working directory you created earlier.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "SLURM Submission : Basic R/Python example"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/basic_example.html#prepare-a-bash-script-with-slurm-arguments",
-    "href": "pages/serveurs/marbec_gpu/basic_example.html#prepare-a-bash-script-with-slurm-arguments",
-    "title": "Running a simple example on Marbec-GPU",
-    "section": "2. Prepare a Bash Script with SLURM Arguments",
-    "text": "2. Prepare a Bash Script with SLURM Arguments\nIn order to run the script correctly, you will need to create a bash script launch.sh taking care to mention:\n\nthe SLURM arguments, specifying which resources to allocate, the job name, the output file, etc.\nPython/R script execution.\n\nHere is a minimal example of a bash script:\n#!/bin/bash\n\n#SBATCH --job-name=my_job         # Job name\n#SBATCH --output=job_%j.out`      # Standard output and error log\n#SBATCH --gres=gpu:1             # Number of GPUs (Remove the line if no GPU is required.)\n#SBATCH --mem=4G                  # Memory allocation (4 GB)\n#SBATCH -c 1                      # Number of CPU cores\n\n# execute python file\npython main.py                    \n\n# execute R file\nRscript main.R\nIt is possible to specify other SLURM arguments. For more information on SLURM arguments, you can consult the official SLURM documentation here.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "SLURM Submission : Basic R/Python example"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/basic_example.html#execute-the-bash-script",
-    "href": "pages/serveurs/marbec_gpu/basic_example.html#execute-the-bash-script",
-    "title": "Running a simple example on Marbec-GPU",
-    "section": "3. Execute the Bash Script",
-    "text": "3. Execute the Bash Script\nAfter the previous 2 steps, the working directory should contain the following files: launch.sh and main.py/main.R:  The final step is to submit your launch.sh script created in the previous section. To do this, you need to use the sbatch command (see documentation).\nIn the terminal, run the following command:\n\nsbatch launch.sh\n\nIf the SLURM parameters (#SBATCH arg) are correctly filled in, you should see a job submission confirmation message: Submitted batch job 1234567. Otherwise, an error message will appear instead. Upon successful submission, SLURM checks the requested resources and places the job in the queue (state PENDING) until the resources become available. Once the resources are available, the job runs (state RUNNING). An output file is then created in the current directory with the name specified in the bash script (#SBATCH --output=job_%j.out). A second file containing error messages can appear if specified (#SBATCH --error=job_%j.err).\nYou can track the progress of your job with the squeue -u $USER or squeue -j 1234567 command (with 1234567 being your job number). You can also list all jobs currently running or in the queue with squeue -O NAME,UserName,TimeUsed,tres-per-node,state,JOBID. The STATE column in particular indicates the job’s status (PENDING RUNNING). For more details on the squeue command, you can consult the documentation.\nTo cancel a job (running or still in the queue), use the scancel 1234567 command (with 1234567 being your job number).\nThe output.log file containing the outputs of your python script is created in the current directory. You can view it with the cat output.log command or simply by double-clicking on it. It should look like this:\nHello World &lt;3",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "SLURM Submission : Basic R/Python example"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/marbec-data_folders.html",
-    "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html",
-    "title": "🚀 Accessing MARBEC-DATA Folders in JupyterHub",
-    "section": "",
-    "text": "The MARBEC-DATA server is dedicated to data storage and is connected to the MARBEC-GPU server, which is used for computations.\nThe folders stored in MARBEC-DATA are always accessible via the command line.\n🔍 You can view the available folders by typing:\nls /marbec-data/\nor navigate directly to a specific folder:\ncd /marbec-data/&lt;your_folder&gt;\nHowever, these folders do not appear directly in the file tree.\nTo view them in the Jupyter file explorer, you need to create a symbolic link.\n\n\n\nOpen a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "Accessing MARBEC-DATA Folders"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/marbec-data_folders.html#creating-a-symbolic-link",
-    "href": "pages/serveurs/marbec_gpu/marbec-data_folders.html#creating-a-symbolic-link",
-    "title": "🚀 Accessing MARBEC-DATA Folders in JupyterHub",
-    "section": "",
-    "text": "Open a terminal in JupyterHub.\nNavigate to the location where you want the folder to appear:\n\ncd /home/your_username/\n\nCreate the symbolic link with the name of your folder in MARBEC-DATA:\n\nln -s /marbec-data/&lt;your_folder&gt;\n\nRefresh the Jupyter interface to see the folder appear.",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "Accessing MARBEC-DATA Folders"
-    ]
-  },
-  {
-    "objectID": "pages/serveurs/marbec_gpu/basic_command.html",
-    "href": "pages/serveurs/marbec_gpu/basic_command.html",
-    "title": "Main commands in marbec-gpu Terminal",
-    "section": "",
-    "text": "Main commands in marbec-gpu Terminal\nThe first thing to keep in mind is that marbec-gpu has Ubuntu installed, so the commands listed below will be the same as the ones used in that OS. This article will show a description of the main usage modes for each command, but if you have any additional requirements, you can always search in forums like Stackoverflow or check the help for each command, which consists of placing the command name followed by --help. For example, if I want to know the help for the ls command, just run ls --help in the Terminal.\n\n\n\n\n\n\nUpper and lower case\n\n\n\nAs in R or Python, the use of upper or lower case when indicating an option does matter. For example, ls -D is not equivalent to ls -d, so be carefull.\n\n\n\nBrowsing within folders\n\nCommand: cd\nUsage: cd path/folder\n\nTo indicate a previous position (folder), you will use the statement .. as follows: ../path/folder1 (this indicates that there is a folder called path from the folder where you are, and that that has a folder called folder1 as well).\n\n\nCreate a folder\n\nCommand: mkdir\nUsage: mkdir path/folder\n\n\n\nGet the content of a folder as a list\n\nCommand: ls\nUsage: ls path/folder/\n\nMain options:\n\n--all (o -a): Displays all files and subfolders, including those protected (hidden) by the system.\n\n\n\nGenerate a list of files/folders and display the size of each item\n\nCommand: du\nUsage: du path/to/file.csv o du path/to/folder\n\nMain options:\n\n--human-readable (o -h): changes the units dynamically to avoid displaying all Kb. This is especially useful when you have large objects (subfolders or files).\n--summary (o -s): displays a summary table, i.e. it only includes the subfolders and files present at the first search level. This is useful when we just want to take a quick look and avoid displaying a complete listing of ALL internal subfolders.\n\nIf I want to get a list of all the files and folders inside a folder with their respective sizes (the three options are equivalent):\ndu ruta/de/folder/* --human-readable --summarize\ndu ruta/de/folder/* -h -s\ndu ruta/de/folder/* -hs\n\n\nCopy-paste\nFor this, the simplest way is through the cp command and making use of the navigation commands cited in this post (e.g. .. to indicate a previous folder). The basic syntax is the following: cp path/origin /path/destination, but there are different possible cases:\n\nCopy a file into the same folder, but with a different name (create duplicate): cp file1.csv file1-dup.csv.\nCopy a file to another folder: cp path/file1.csv path/destination.\nCopy more than one file to another folder: cp path/file1.csv path/file2.csv folder/destination\nCopy a folder to another folder: cp path/folder1 path/folder2 --recursive or cp path/folder1 path/folder2 -r.\n\n\n\n\n\n\n\nNote\n\n\n\nBy default, cp will overwrite any file with the same name. To avoid this, it is possible to add the -n option as follows: cp path/from/file1.csv path/destination -n.\n\n\n\n\nCut-paste (and also rename)\nIt will be very similar to the above, but through the mv command:\n\nRename a file (within the same folder): mv file1.csv file2.csv\nMove a file to another folder: mv path/file1.csv path/to/destination\nMove one file to another folder: mv path/file1.csv path/file2.csv path/destination\nMove one folder to another folder: mv path/old/folder path/new/folder\n\n\n\nDelete\nFor this, we will use the rm command as follows:\n\nDelete a file: rm path/to/file.csv\nDelete a folder (and all its contents): rm path/to/folder -r\n\n\n\n\n\n\n\nNo turning back\n\n\n\nWhile inside Terminal it is always possible to cancel a command using the shortcut Ctrl+C (or Cmd+C on MacOS), once the rm command completes its work, there is no way to revert the deletion or recover it from a recycle garbage can, so be very careful when using it.\n\n\n\n\nDisplay current processes\n\nCommand: top\n\nWhen you run it, it will show in interactive mode in Terminal the processes that are running, as well as the resources used by each of them (basically like a Task Manager). To exit this interactive mode, just press the q key.\n\n\nStop a process\nIf we want to force the closing or the cancellation of a process already started, we can use the shortcut Ctrl+C (or Cmd+C in MacOS). It is important to keep in mind that forcing the closing of a process that had in progress the handling of files or folders (creation, copy, etc.) can leave the generated files unusable.\n\n\nViewing a plain text file\nBy default, there are two tools available from Terminal: vi and nano. The syntax for their execution is as simple as vi path/file1.txt or nano path/file1.txt, where file1.txt can be any plain text file (e.g. an R or Python script). The navigation shortcuts within each of these environments are different, but documentation is abundant on the Internet. Choose the one you like best.\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Servers",
-      "Marbec GPU",
-      "Useful Commands Guide"
-    ]
-  },
-  {
-    "objectID": "pages/formations/index_formations.html",
-    "href": "pages/formations/index_formations.html",
-    "title": "Digital Ecology Scheme (DEN) Resources and Materials",
-    "section": "",
-    "text": "This section is dedicated to referencing the training courses and associated materials made available to UMR and its partners. Due to the specific nature of the training programs, the associated materials may not be available in several languages. In addition, by following this link to be defined you will find a list of the training courses organized by the UMR and, above all, the dates on which they will take place.\nFor your information, most of the following subsections link to Git repositories where you can find training resources. If you have any questions relating to these, it’s best to use the services provided by the repository (the Issues section, for example) or, alternatively, to contact the associated contact person(s) directly.\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Training"
-    ]
-  },
-  {
-    "objectID": "pages/formations/r_package_developpement.html",
-    "href": "pages/formations/r_package_developpement.html",
-    "title": "R package development training",
-    "section": "",
-    "text": "R package development training\n\n\nThe training source code is available on the GitHub repository.\nThe associated book presentation is available at the following address.\nThe training program is currently being set up and should be finalized during 2025.\nThe first training session is scheduled for late 2025 at the latest.\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Useful links",
-      "Training",
-      "R package development training"
     ]
   }
 ]
