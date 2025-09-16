@@ -1,0 +1,21 @@
+---
+author: Mathieu Depetris [mathieu.depetris@cnrs.fr](mailto:mathieu.depetris@cnrs.fr)
+date-modified: 2025/05/13
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+## Support et guide concernant les achats de ressources informatiques
+
+L'achat de matériels informatiques peut vite devenir compliqué, voir un enfer, dès que l'on commence à se poser des questions et que l'on cherche à optimiser son achat. Souvent il n'y a pas de réponse "parfaite" pour une ressource, et l'équation de décision d'achat qui est associé est souvent la combinaison de nombreux facteurs qui change tout le temps, notamment en lien avec les avancés technologiques et les besoins de chaque utilisateur (ces derniers étant bien sûr différent pour chacun de nous).
+
+L'objectif de cette page est de vous pousser à vous poser les bonnes questions, afin de pouvoir effectuer vos achats de manière éclairée et optimiser, surtout toujours en relation avec vos besoins. Par ailleurs, tout en étant très loin de l'exhaustivité des ressources types vous seront proposées en rapport avec des schémas logiques de besoins. Les achats sur les marchés publics seront prioritaires dans les propositions, mais pas exclusifs. Le moteur principal est votre besoin et ce n'est pas vous qui deviez répondre au besoin du marché, mais le contraire. Si ce dernier n'est pas en mesure de vous proposer le produit le plus adapté à vos besoins, il ne fait pas son travail correctement.
+
+Pour finir, sachez qu’au sein de l'UMR vous disposez de nombreux interlocuteurs qui peuvent vous aider et vous guider. Cela passe par les services informatiques des tutelles ou encore par des personnes comme les correspondants informatiques. En cas de doute, vous pouvez envoyer un mail à l'adresse suivante, marbec-correspondants-info@listes.ird.fr. Même si vous n'êtes pas au bon endroit, on vous redirigera avec plaisir vers la ou les bonnes personnes.
+:::
+
+::: {.content-visible when-profile="english"}
+## Content will be available soon in English. So far, you can switch to the French side if you want to have access to resources.
+:::
