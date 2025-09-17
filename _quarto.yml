@@ -1,6 +1,9 @@
 project:
   type: website
 
+website:
+  favicon: ressources/favicon.png  
+
 execute:
   freeze: auto
   default-kernel: knitr
