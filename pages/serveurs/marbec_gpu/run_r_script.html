@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,16 +70,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../../">
 <link href="../../../pages/serveurs/marbec_gpu/wich_ressource.html" rel="next">
 <link href="../../../pages/serveurs/marbec_gpu/basic_example.html" rel="prev">
+<link href="../../../ressources/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-0e1ac388cb3c61a9aae665fd9ca638d2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-85532bdef74bb9a09337c70ab29812e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -119,6 +121,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Ressources et supports du Dispositif d’Écologie Numérique (DEN)</span>
     </a>
@@ -173,6 +177,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
@@ -346,6 +354,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Gestionnaire de mots de passe</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../pages/support/achats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assistance pour l’achat de ressources informatiques</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -444,7 +458,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Just before to say <code>hello</code>
+<span class="screen-reader-only">Caution</span>Just before to say <code>hello</code>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -462,21 +476,21 @@ Just before to say <code>hello</code>
 <li><p>We will start by opening an RStudio session from the JupyterLab environment (if you want to know how to get there, check the <a href="https://luislaum.github.io/blog/marbec-data-gpu-intro/marbec-data-gpu-intro.html">post</a> of Introduction to <code>marbec-gpu</code>).</p></li>
 <li><p>Once inside the RStudio environment, we will create a new script (<em>File -&gt; New file -&gt; R script</em>) which will contain a single line:</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Hello world and hello marbec-gpu!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Hello world and hello marbec-gpu!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><p>Then, we will save that script with the name <em>code/ex1-1.R</em> (<em>code/</em> refers to a subfolder created previously inside the <em>working directory</em> of our project in RStudio).</p></li>
 <li><p>Now comes the interesting part, inside our browser, we must go back to the Launcher tab and open a <strong>Terminal</strong> window (clicking on the corresponding icon).</p></li>
 <li><p>By default, Terminal will open a session in the local folder assigned to our user. From there, we must get to the folder we have set as <em>working directory</em>; that is, the folder that our script will recognize as working directory (whether we have decided to use RStudio or not to create it or create a project inside it). Assuming that our working directory is the <code>mgpu-examples/</code> folder, we must reach it using the <code>cd</code> command:</p></li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> mgpu-examples/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> mgpu-examples/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-tip callout-titled" title="How do we know that we have arrived at the correct folder?">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-How do we know that we have arrived at the correct folder?
+<span class="screen-reader-only">Tip</span>How do we know that we have arrived at the correct folder?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -494,7 +508,7 @@ How do we know that we have arrived at the correct folder?
 <section id="example-1-2" class="level3">
 <h3 class="anchored" data-anchor-id="example-1-2">Example 1-2</h3>
 <p>In this next example, we will show a script that generates and saves files in our <em>working directory</em> where previously, we will create two new folders (<strong>figures/</strong> and <strong>outputs/</strong>) through the <code>mkdir</code> command as follows:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> figures/ outputs/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> figures/ outputs/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -511,7 +525,7 @@ Note
 <ul>
 <li>Now, let’s go to RStudio to create the following script and save it in <strong>code/ex1-2.R</strong>:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print mtcars</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print mtcars</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mtcars)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Export mtcars as a csv</span></span>
@@ -523,7 +537,7 @@ Note
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> mtcars<span class="sc">$</span>mpg, <span class="at">y =</span> mtcars<span class="sc">$</span>disp, </span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Miles per (US) gallon"</span>, <span class="at">ylab =</span> <span class="st">"Displacement (cu.in.)"</span>)</span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Next, we go back to the Terminal environment and run our new script with the command <code>Rscript code/ex1-2.R</code>. Immediately, the <code>mtcars</code> table will be displayed as that is what the first line of our script commands.</li>
 </ul>
@@ -541,7 +555,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Previewing figures
+<span class="screen-reader-only">Tip</span>Previewing figures
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -557,7 +571,7 @@ Previewing figures
 <ul>
 <li>We will start by creating a script (which we will save as <em>code/ex2-1.R</em>) containing a simple loop that generates 20 100x100 arrays with random values and saves them in separate csv files inside the <em>outputs/ex2-rndmats/</em> folder (remember to create that folder beforehand using <code>mkdir</code>):</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting number of rows and columns</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting number of rows and columns</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>row_n <span class="ot">&lt;-</span> <span class="dv">100</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>col_n <span class="ot">&lt;-</span> <span class="dv">100</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -572,7 +586,7 @@ Previewing figures
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Print a message at the end of each step</span></span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="at">fmt =</span> <span class="st">"Matrix %02d finished!</span><span class="sc">\n</span><span class="st">"</span>, i))</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Now, we will run our script in Terminal (with the command <code>Rscript code/ex2-1.R</code>) and we will observe that everything went well if the messages at the end of each step of the loop are displayed correctly and also if when we run the command <code>ls</code> on the target folder we see the files created:</li>
 </ul>
@@ -583,7 +597,7 @@ Previewing figures
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Run a small example first
+<span class="screen-reader-only">Tip</span>Run a small example first
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -596,7 +610,7 @@ Run a small example first
 <ul>
 <li>Starting from the previous example, we will convert our script into one that executes the processes in parallel. For this we will take advantage of the tools of the packages <a href="https://cran.r-project.org/package=foreach">foreach</a> and <a href="https://cran.r-project.org/package=doParallel">doParallel</a>. Note that the names of the files of this script will begin with the letters <code>mc_</code> to be able to recognize them with respect to those obtained in the previous example:</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting number of rows and columns</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setting number of rows and columns</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>row_n <span class="ot">&lt;-</span> <span class="dv">100</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>col_n <span class="ot">&lt;-</span> <span class="dv">100</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -621,7 +635,7 @@ Run a small example first
 <span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Finish cluster</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="fu">stopCluster</span>(cl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="fu">stopCluster</span>(cl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Now, we will run our script in Terminal (with the command <code>Rscript code/ex2-2.R</code>) and we will observe that everything has gone well if when executing the command <code>ls</code> on the target folder we see the created files:</li>
 </ul>
@@ -701,13 +715,14 @@ Note
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -68,16 +68,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../">
 <link href="../../pages/packages_logiciels/index_packages_logiciels.html" rel="next">
 <link href="../../pages/git/index_git.html" rel="prev">
+<link href="../../ressources/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0e1ac388cb3c61a9aae665fd9ca638d2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-85532bdef74bb9a09337c70ab29812e5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -117,6 +119,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Digital Ecology Scheme (DEN) Resources and Materials</span>
     </a>
@@ -171,6 +175,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
@@ -342,6 +350,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../pages/support/gestionnaire_mots_de_passe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Password manager</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/support/achats.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support for IT resources purchases</span></a>
   </div>
 </li>
       </ul>
@@ -610,7 +624,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="creating-and-manually-adapting-the-github-action" class="level5">
 <h5 class="anchored" data-anchor-id="creating-and-manually-adapting-the-github-action">3.1.1 Creating and manually adapting the GitHub Action</h5>
 <p>To do this, we need to go to the root of our GitHub source repository and create a “.github” folder and a “workflows” subfolder. Inside the latter folder, we’ll copy the code below into a source code editor (such as <a href="https://notepad-plus-plus.org/downloads/" class="external" target="“_blank”">Notepad</a> or <a href="https://code.visualstudio.com/download" class="external" target="“_blank”">Visual Studio Code</a>).</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> GitHub to GitLab IRD mirror with release assets</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> GitHub to GitLab IRD mirror with release assets</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span><span class="at"> </span></span>
@@ -761,7 +775,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>            BRANCH_NAME=$(git symbolic-ref --short HEAD)</span>
 <span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>            git push origin "$BRANCH_NAME"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>            git push origin "$BRANCH_NAME"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>In this script, you’ll need to adapt certain variables to suit your environment:</p>
 <ul>
 <li>&lt;github_repository_source_url&gt; for the URL address of your GitHub source directory. In this example, the value is “https://github.com/umr-marbec/my_github_repository” (without quotation marks, the same applies to all subsequent variables).</li>
@@ -775,16 +789,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h5 class="anchored" data-anchor-id="using-the-add_github_action-function-in-the-sparck-r-package">3.1.2 Using the add_github_action() function in the sparck R package</h5>
 <p>If you prefer a simplified approach, you can use the R package <a href="../../pages/packages_logiciels/r_package_sparck.html" class="external" target="“_blank”">sparck</a> and the associated function <a href="https://umr-marbec.github.io/sparck/reference/add_github_action.html" class="external" target="“_blank”">add_github_action()</a>.</p>
 <p>To do this, start by installing it under R with the following command:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You'll need the devtools package to download the sparck package from his GitHub repository.</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You'll need the devtools package to download the sparck package from his GitHub repository.</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># If necessary, use install.packages(“devtools”)</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"https://github.com/umr-marbec/sparck"</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sparck)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sparck)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Next, you need to define the R working directory as your repository. If you’re using your repository for R-related code, you may have an .Rproj file in it that allows you to launch an R session directly in the repository.</p>
 <p>The last step is to call the add_github_action() function with the configuration parameters for your environment. If we take our example for this procedure, the command line will be as follows:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">add_github_action</span>(<span class="at">github_action_name =</span> <span class="st">"mirror_github_git"</span>,</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">add_github_action</span>(<span class="at">github_action_name =</span> <span class="st">"mirror_github_git"</span>,</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">arguments =</span> <span class="fu">c</span>(<span class="st">"github_repository_source_url"</span> <span class="ot">=</span> <span class="st">"https://github.com/umr-marbec/my_github_repository"</span>,</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"secret_token_name"</span> <span class="ot">=</span> <span class="st">"TOKEN_MY_GITLABIRD_REPOSITORY"</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"git_repository_target_url"</span> <span class="ot">=</span> <span class="st">"https://forge.ird.fr/marbec/private/depetris-mathieu/my_gitlabird_repository"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"git_repository_target_url"</span> <span class="ot">=</span> <span class="st">"https://forge.ird.fr/marbec/private/depetris-mathieu/my_gitlabird_repository"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Compared with a manual modification of our “GitHub Action” (step in 3.1.1), you’ll notice that the variables to be filled in are much “simpler” and that the function automatically takes care of formatting and creating the “.github” folder and “workflows” subfolder in your working directory (you’ll need to have the associated rights to modify your file system).</p>
 </section>
 </section>
@@ -876,13 +890,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
