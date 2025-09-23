@@ -11,7 +11,7 @@ format:
 
 L'achat de matériels informatiques peut vite devenir compliqué, voir un enfer, dès que l'on commence à se poser des questions et que l'on cherche à optimiser son achat. Souvent il n'y a pas de réponse "parfaite" pour une ressource, et l'équation de décision d'achat qui est associé est souvent la combinaison de nombreux facteurs qui change tout le temps, notamment en lien avec les avancés technologiques et les besoins de chaque utilisateur (ces derniers étant bien sûr différent pour chacun de nous).
 
-L'objectif de cette page est de vous pousser à vous poser les bonnes questions, afin de pouvoir effectuer vos achats de manière éclairée et optimiser, surtout toujours en relation avec vos besoins. Par ailleurs, tout en étant très loin de l'exhaustivité des ressources types vous seront proposées en rapport avec des schémas logiques de besoins. Les achats sur les marchés publics seront prioritaires dans les propositions, mais pas exclusifs. Le moteur principal est votre besoin et ce n'est pas vous qui deviez répondre au besoin du marché, mais le contraire. Si ce dernier n'est pas en mesure de vous proposer le produit le plus adapté à vos besoins, il ne fait pas son travail correctement.
+L'objectif de cette page est de vous pousser à vous poser les bonnes questions, afin de pouvoir effectuer vos achats de manière éclairée et optimiser, surtout toujours en relation avec vos besoins. Par ailleurs, tout en étant très loin de l'exhaustivité des ressources types vous seront proposées en rapport avec des schémas logiques de besoins. Les achats sur les marchés publics seront prioritaires dans les propositions, mais pas exclusifs. Le moteur principal est votre besoin et ce n'est pas vous qui deviez répondre au besoin du marché, mais le contraire. Si ce dernier n'est pas en mesure de vous proposer le meilleur produit et le plus adapté à vos besoins, il ne fait pas son travail correctement.
 
 Pour finir, sachez qu’au sein de l'UMR vous disposez de nombreux interlocuteurs qui peuvent vous aider et vous guider. Cela passe par les services informatiques des tutelles ou encore par des personnes comme les correspondants informatiques. En cas de doute, vous pouvez envoyer un mail à l'adresse suivante, [marbec-correspondants-info@listes.ird.fr](mailto:marbec-correspondants-info@listes.ird.fr). Même si vous n'êtes pas au bon endroit, on vous redirigera avec plaisir vers la ou les bonnes personnes.
 
@@ -84,15 +84,66 @@ La notion de chiffrage est à prendre en compte. Nous y reviendrons à un autre 
 
 Comme cité plus haut, l'objectif d'une clé USB est de stocker et transporter facilement des données. Vous trouverez ci-dessous quelques références qui font partie aujourd'hui du haut du panier.
 
-Tout d'abord si vous disposez d'un ordinateur recent avec des ports USB de type USB-C (a partir des données du <a href="#table1">tableau 1</a>, il faut au moins des interfaces en USB 3.1 ou 3.2 Gen 2 pour ne pas brider la clé) et que le [**vitesse de transfert est le point le plus important pour vous**]{style="color:#ca0030;"}, la clé [Kingston DataTraveler Max](https://www.kingston.com/fr/usb-flash-drives/datatraveler-max?capacity=256gb&connector=usb-c){.external target="_blank"} est ce qui ce fait de mieux. Elle est légérement plus chère qu'une clé USB "classique" mais elle est vraiment très rapide et fonctionne aussi bien sur un pc que sur un smarphone. A note quand même que le connecteur USB-C est légérement plus fragile qu'un connecteur USB de type A et que cette clé n'est pas étanche ou antichoc. Si vous voulez en savoir plus vous trouverez un test de performance [ici](https://ssd-tester.fr/kingston_datatraveler_max_256gb.html){.external target="_blank"}.
+Tout d'abord si vous disposez d'un ordinateur récent avec des ports USB de type USB-C (à partir des données du <a href="#table1">tableau 1</a>, il faut au moins des interfaces en USB 3.1 ou 3.2 Gen 2 pour ne pas brider la clé) et que le [**vitesse de transfert est le point le plus important pour vous**]{style="color:#ca0030;"}, la clé [Kingston DataTraveler Max](https://www.kingston.com/fr/usb-flash-drives/datatraveler-max?capacity=256gb&connector=usb-c){.external target="_blank"} est ce qui ce fait de mieux. Elle est légèrement plus chère qu'une clé USB "classique" mais elle est vraiment très rapide et fonctionne aussi bien sur un pc que sur un smarphone. À note quand même que le connecteur USB-C est légèrement plus fragile qu'un connecteur USB de type A et que cette clé n'est pas étanche ou antichoc. Si vous voulez en savoir plus, vous trouverez un test de performance [ici](https://ssd-tester.fr/kingston_datatraveler_max_256gb.html){.external target="_blank"}.
 
-Maintenant, si cherche une [**clé USB simple et efficace**]{style="color:#ca0030;"}, un bon rapport qualité/prix est la [Samsung Bar Plus](https://www.samsung.com/fr/memory-storage/usb-flash-drive/bar-plus-flash-drive-64gb-muf-64be4-apc/?msockid=3ac2a5ce29856d5615c3b398288d6cd0){.external target="_blank"}. Ici on est sur un connecteur USB de type A avec un interface USB 3.1, la clé est fabriquée en métal et surtout est résistante aux chocs et à l'eau. La taille reste contenue pour une clé USB et coté vitesse on va être dans les 400 Mo/s et 100 Mo/s en lecture séquentielle (les valeurs chutent lorsque l'on s'attaque aux gros fichiers, test [ici](https://ssd-tester.fr/samsung_bar_plus_512gb.html){.external target="_blank"}). On est loin de la foudre de guerre de la Kingston DataTraveler Max mais pour un usage "basique" et durable, associé à un cout maitrisé cela reste un bon compromis. 
+Maintenant, si cherche une [**clé USB simple et efficace**]{style="color:#ca0030;"}, un bon rapport qualité/prix est la [Samsung Bar Plus](https://www.samsung.com/fr/memory-storage/usb-flash-drive/bar-plus-flash-drive-64gb-muf-64be4-apc/?msockid=3ac2a5ce29856d5615c3b398288d6cd0){.external target="_blank"}. Ici on est sur un connecteur USB de type A avec un interface USB 3.1, la clé est fabriquée en métal et surtout est résistante aux chocs et à l'eau. La taille reste contenue pour une clé USB et coté vitesse on va être dans les 400 Mo/s et 100 Mo/s en lecture séquentielle (les valeurs chutent lorsque l'on s'attaque aux gros fichiers, test [ici](https://ssd-tester.fr/samsung_bar_plus_512gb.html){.external target="_blank"}). On est loin de la foudre de guerre de la Kingston DataTraveler Max mais pour un usage "basique" et durable, associé à un cout maitrisé cela reste un bon compromis.
+
+Si votre besoin se focalise sur la [**resistance**]{style="color:#ca0030;"}, le mieux est de vous tourner vers la [Corsair Flash Survivor Stealth](https://www.corsair.com/fr/fr/p/data-storage/cmfss3b-64gb/flash-survivor-stealth-64gb-usb-3-0-flash-drive-cmfss3b-64gb){.external target="_blank"}. Sa conception et design sont loin d'être nouveaux, car la marque les propose depuis plus de 10 ans. La clé est protégée par un tube en aluminium qui, une fois vissé, protège des chocs, des vibrations, mais résiste aussi à une immersion jusqu'à 200m. Les débits sont bons, sans être exceptionnel (180 Mo/s en lecture et 90 Mo/s en écriture. Ici on vise vraiment la robustesse des composants. Vous trouverez un test [ici](https://www.cowcotland.com/articles/1265/test-cle-usb-3-0-corsair-survivor-stealth.html){.external target="_blank"}.
+
+::: callout-note
+N'oubliez pas qu'une clé USB n'a pas forcément besoin de disposer d'un espace de stockage monstrueux, l'objectif étant le transport rapide de données souvent "petites". Cela doit bien sûr être en adéquation avec vos besoins, mais demandez-vous de combien de place avez-vous vraiment besoin ? Votre budget vous dira merci et si vous avez vraiment besoin de beaucoup de place, demandez-vous s'il n'est pas plus judicieux d'orienter votre achat vers un disque dur externe (généralement plus durable).
+:::
+
+::: callout-important
+Nous parlions de chiffrement précédemment. Ces clés USB ne disposent pas de chiffrement matériel (= pour faire simple intégré dans le matériel), mais il est tout à fait possible d'effectuer du chiffrement logiciel (= via un logiciel) pour les sécuriser. Il existe des clés UBS, comme les clés [Kingston IronKey](https://www.kingston.com/fr/solutions/data-security/ironkey){.external target="_blank"} mais elles ne sont à privilégier que si le chiffrage matériel représente l'un de vos besoins.
+:::
 
 ## 1.7 - Exemple de disques durs externe
 
-# 2 - Moniteurs
+Concernant les disques durs externes, le mieux si cela est possible est de s'orienter vers un SSD. Comme expliqué dans la section 1.3, ce type de disque sera plus rapide, plus résistant aux chocs, plus silencieux et moins énergivores qu'un disque HDD "classique". Le seul hic est qu'ils sont généralement plus chers que les HDD. Mais encore une fois, posez-vous les bonnes questions dès le début : un SSD aura une durée de vie comprise entre 5 et 10 ans (selon l'usage et la charge de travail associé) contre 3 à 7 ans contre un disque HDD. Si on lisse la différence de prix sur la durée de vie, la différence est rarement significative. Par ailleurs, garder en mémoire que l'on parle ici de stocker vos données. Il suffit de perdre une fois ces données pour comprendre à quel point elles sont précieuses. Prenez ça en compte lors de votre achat et ne vous arrêtez pas uniquement au prix.
 
-# 3 - Ordinateurs
+L'un des [**meilleurs disque SSD externe**]{style="color:#ca0030;"} est sans doute la gamme des Sandisk Extreme. Vous trouverez 3 versions (attention à ne pas vous mélanger) :
+
+- le [Extreme Portable SSD](https://shop.sandisk.com/fr-fr/products/ssd/portable-ssd/portable-ssd-sandisk-extreme-usb-3-2?sku=SDSSDE61-500G-G25){.external target="_blank"} disposant d'une interface USB 3.2 Gen 2 (vitesse lecture/ecriture maximum théorique de 1050/1000 Mo/s)
+- le [Extreme PRO Portable SSD](https://shop.sandisk.com/fr-fr/products/ssd/portable-ssd/portable-ssd-sandisk-extreme-pro-usb-3-2?sku=SDSSDE81-1T00-G25){.external target="_blank"} avec une interface USB 3.2 Gen 2x2 (vitesse lecture/ecriture maximum théorique de 2000 Mo/s)
+- pour finir un monstre, le [Extreme PRO USB4](https://shop.sandisk.com/fr-fr/products/ssd/portable-ssd/sandisk-extreme-pro-usb-4-portable-ssd?sku=SDSSDE82-2T00-G25){.external target="_blank"} avec interface USB4 ou Thunderbolt 4 (vitesse lecture/ecriture maximum théorique de 3800/3700 Mo/s).
+
+Toute la gamme est IP65, posséde un chiffrement matériel intégré (AES 256 bits) et est livré avec un adaptateur USB-C vers USB-A (au cas ou).
+
+Ici il faut bien faire attention aux types d'interface que vous avez sur vos ordinateurs. Il ne sert à rien de prendre une interface USB4 si vous n'en disposez pas (les débits seront bridés), sauf si dans votre réflexion vous intégrez le long terme et potentiellement le changement de votre matériel actuel. Par ailleurs, la première version en USB 3.2 Gen 2 présente déjà des débits très intéressants. Je vous conseille donc de vous tourner vers cette version ou à la rigueur vers la seconde en USB 3.2 Gen 2x2 si par exemple en réduisant le taille du stockage afin de rester dans la même gamme de prix.
+
+Vous trouverez des tests [ici](https://charlestech.fr/test-sandisk-extreme-portable-ssd-1-to/){.external target="_blank"} et [ici](https://charlestech.fr/test-sandisk-extreme-portable-ssd-1-to/){.external target="_blank"} pour la version Extreme Portable SSD et [ici](https://droneandcam.com/post/test-du-sandisk-extreme-pro-portable-ssd-mon-avis-complet/){.external target="_blank"} pour la version Extreme PRO Portable SSD.
+
+Si vous avez vraiment un [**budget serré**]{style="color:#ca0030;"} et que vous souhaitez vous tourner vers des HDD (notamment en raison d'un grand besoin de stockage), il existe le [Toshiba Canvio Basics](https://www.toshiba-storage.com/fr/products/toshiba-portable-hard-drives-canvio-basics/){.external target="_blank"}. Interface USB 3.0 (environ 130 Mo/s) et disque au format 2,5 pouces (donc pas d'alimentation externe) cela permet d'avoir un disque fiable, économique et silencieux. Vous trouverez un test [ici](https://www.clubic.com/disque-dur-memoire/disque-dur-externe/test-produit-461541-test-toshiba-canvio-basics-2022-4-to-un-disque-dur-externe-au-rapport-capacite-prix-imbattable.html){.external target="_blank"}. Si vous avez encore besoin de plus grande capacité, il existe des disques chez Western Digital tels que les [My Book](https://www.westerndigital.com/fr-fr/products/external-drives/wd-my-book-usb-3-0-hdd?sku=WDBBGB0040HBK-EESN){.external target="_blank"} en interface USB 3.2 Gen 1. Attention par contre avec ce type de stockage, car une panne risque de faire beaucoup de dégât au vu de la quantité de données associée au stockage. 
+
+Attention avec des dernières références, par de chiffrement matériel, il faudra passer par du chiffrement logiciel.
+
+::: callout-note
+Si vous avez besoin d'un stockage vraiment important, le mieux est de vous tourner vers l'UMR via des structures comme le [DEN](https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/){.external target="_blank"} pour voir s'il existe déjà des solutions de stockage mutualisé. 
+:::
+
+# 2 - Webcams
+
+À l'heure de la popularisation des réunions en visio, une webcam est un accessoire essentiel, qui peut vite transformer une réunion en cauchemar si elle ne fonctionne pas. Avec la majorité des ordinateurs portables, vous disposez d'une webcam au sein de l'écran avec, pour les "récénts", un cache objectif. Cependant, il est parfois intéressant d'avoir aussi une webcam "externe", notamment si vous n'utilisez pas l'écran de votre ordinateur portable via votre installation. Avec des ordinateurs fixes, la question ne se pose pas, car il faut forcément investir dans ce type de matériel.
+
+Ici, le comparatif est relativement simple car [**un modèle se distingue depuis très longtemps**]{style="color:#ca0030;"}. Il s'agit du modèle Logitech C920 et plus précicement de la version [C920s](https://www.logitech.com/fr-fr/shop/p/c920s-pro-hd-webcam.960-001252){.external target="_blank"}. Compatible avec Windows, Linux et macOS cette webcam est parfaite pour un usage basique. Elle dispose d'un cache de confidentalité, d'un champe de vision fixe à 78° et est capable de filmer en Full HP à 1080p/30ips. Il n'y a pas mieux au niveau rapport qualité/prix. 
+
+# 3 - Casques
+
+En étude
+
+# 4 - Moniteurs
+
+Section à venir notamment lors de l'actualisation du marche matinfo6 (début octobre).
+
+# 5 - Ordinateurs portables
+
+Section à venir notamment lors de l'actualisation du marche matinfo6 (début octobre).
+
+# 5 - Ordinateurs fixes
+
+Section à venir notamment lors de l'actualisation du marche matinfo6 (début octobre).
+
 :::
 
 ::: {.content-visible when-profile="english"}
