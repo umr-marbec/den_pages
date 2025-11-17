@@ -341,7 +341,7 @@
   {
     "objectID": "pages/serveurs/marbec_gpu/MLflow_trainig.html#requirements",
     "href": "pages/serveurs/marbec_gpu/MLflow_trainig.html#requirements",
-    "title": "💻 MLflow Training Tracking (via Jupyter Proxy)",
+    "title": "🚀 MLflow: Training Tracking and Reproducibility on MARBEC-GPU (via Jupyter Proxy)",
     "section": "1. Requirements ⚙️",
     "text": "1. Requirements ⚙️\nBefore starting, make sure the following dependencies are installed on Marbec-GPU JupyrerLab:\n\nMLflow Installed: You must have mlflow installed in your Python environment.\npip install mlflow\nJupyter Proxy Installed: It is essential to install the extension that allows Jupyter to act as a proxy for other web services:\npip install jupyter-server-proxy\n\n\n\n\n\n\n\nImportant\n\n\n\nYour code must be configured to log run data using a local folder (in this example, runs/mlflow).",
     "crumbs": [
@@ -354,7 +354,7 @@
   {
     "objectID": "pages/serveurs/marbec_gpu/MLflow_trainig.html#starting-the-mlflow-server",
     "href": "pages/serveurs/marbec_gpu/MLflow_trainig.html#starting-the-mlflow-server",
-    "title": "💻 MLflow Training Tracking (via Jupyter Proxy)",
+    "title": "🚀 MLflow: Training Tracking and Reproducibility on MARBEC-GPU (via Jupyter Proxy)",
     "section": "2. Starting the MLflow Server 🚀",
     "text": "2. Starting the MLflow Server 🚀\nThe MLflow server must be started on the remote server, listening only on the local address (127.0.0.1) to ensure security. The Jupyter server will securely forward the traffic.\nOpen a terminal in JupyterLab and navigate to the main directory of your project (the one containing your runs folder). Then run the following command:\nmlflow server --backend-store-uri runs/mlflow --host 127.0.0.1 --port 5000",
     "crumbs": [
@@ -367,7 +367,7 @@
   {
     "objectID": "pages/serveurs/marbec_gpu/MLflow_trainig.html#accessing-the-web-interface-proxy",
     "href": "pages/serveurs/marbec_gpu/MLflow_trainig.html#accessing-the-web-interface-proxy",
-    "title": "💻 MLflow Training Tracking (via Jupyter Proxy)",
+    "title": "🚀 MLflow: Training Tracking and Reproducibility on MARBEC-GPU (via Jupyter Proxy)",
     "section": "3. Accessing the Web Interface (Proxy) 🌐",
     "text": "3. Accessing the Web Interface (Proxy) 🌐\nWhile the MLflow server is running on the remote server, you can access its web interface from your local browser using your JupyterLab session URL and adding the proxy path.\n\n\n\n\n\n\nNote\n\n\n\nIf the URL you use to access your JupyterLab is:\nhttps://[Remote_Server]/user/[Your_User]/lab\nThen the MLflow URL will be:\nhttps://[Remote_Server]/user/[Your_User]/proxy/5000/\n\n\n\n\n\n\n\n\nTipExemple:\n\n\n\nThe MLflow server URL becomes:\nhttps://marbec-gpu.ird.fr/user/crestrepo/proxy/5000/\n\n\nOpen the MLflow URL in your preferred web browser. You will be automatically redirected to the MLflow Experiments dashboard, where you can view and monitor all your runs and training sessions.\n\n\n\n\n\n\nTip:",
     "crumbs": [

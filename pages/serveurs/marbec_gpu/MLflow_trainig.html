@@ -377,7 +377,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#suivi-dentraînements-avec-mlflow-via-jupyter-proxy" id="toc-suivi-dentraînements-avec-mlflow-via-jupyter-proxy" class="nav-link active" data-scroll-target="#suivi-dentraînements-avec-mlflow-via-jupyter-proxy">💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)</a>
+  <li><a href="#mlflow-suivi-et-reproductibilité-dentraînements-dans-marbec-gpu-via-jupyter-proxy" id="toc-mlflow-suivi-et-reproductibilité-dentraînements-dans-marbec-gpu-via-jupyter-proxy" class="nav-link active" data-scroll-target="#mlflow-suivi-et-reproductibilité-dentraînements-dans-marbec-gpu-via-jupyter-proxy">🚀 MLflow: Suivi et Reproductibilité d’Entraînements dans MARBEC-GPU (via Jupyter Proxy)</a>
   <ul class="collapse">
   <li><a href="#prérequis-et-configuration" id="toc-prérequis-et-configuration" class="nav-link" data-scroll-target="#prérequis-et-configuration">1. Prérequis et Configuration ⚙️</a></li>
   <li><a href="#démarrage-du-serveur-mlflow" id="toc-démarrage-du-serveur-mlflow" class="nav-link" data-scroll-target="#démarrage-du-serveur-mlflow">2. Démarrage du Serveur MLflow 🚀</a></li>
@@ -419,9 +419,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="suivi-dentraînements-avec-mlflow-via-jupyter-proxy" class="level1">
-<h1>💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)</h1>
-<p>Cette section explique comment utiliser <strong>MLflow</strong> pour enregistrer et visualiser la performance de vos modèles (comme YOLO) lorsque vous travaillez sur un serveur distant JupyterLab <strong>sans accès SSH direct</strong>. Nous allons utiliser le serveur Jupyter comme un <em>proxy</em> pour rendre l’interface web de MLflow accessible dans votre navigateur local.</p>
+<section id="mlflow-suivi-et-reproductibilité-dentraînements-dans-marbec-gpu-via-jupyter-proxy" class="level1">
+<h1>🚀 MLflow: Suivi et Reproductibilité d’Entraînements dans MARBEC-GPU (via Jupyter Proxy)</h1>
+<p>Cette section explique comment utiliser <strong>MLflow</strong> pour enregistrer et visualiser la performance de vos modèles lorsque vous travaillez sur un serveur distant JupyterLab <strong>sans accès SSH direct</strong>, comme c’est le cas de <strong>MARBEC-GPU</strong>. Nous allons utiliser le serveur Jupyter comme un <em>proxy</em> pour rendre l’interface web de MLflow accessible dans votre navigateur local.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>MLflow
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Est une plateforme <strong>open source</strong> conçue pour gérer l’intégralité du cycle de vie du <em>Machine Learning</em> (ML), englobant l’<strong>entraînement</strong>, la reproductibilité et le déploiement. Il vous permet de suivre et de comparer les paramètres, les métriques et les modèles générés par vos différents <strong>entraînements</strong>.</p>
+<p>Pour toute information sur l’implémentation de MLflow vous pouvez vous référer à la <a href="https://mlflow.org/docs/3.4.0/ml/">🔗 Documentation Officielle de MLflow</a></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Veuillez Noter
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si vous utilisez <strong>YOLO</strong> pour vos entraînements, veuillez noter que <strong>l’intégration du suivi MLflow est déjà incluse dans le code</strong>; vous n’avez qu’à vous occuper du démarrage du serveur (<strong>section à suivre</strong>).</p>
+</div>
+</div>
 <section id="prérequis-et-configuration" class="level2">
 <h2 class="anchored" data-anchor-id="prérequis-et-configuration">1. Prérequis et Configuration ⚙️</h2>
 <p>Avant de commencer, assurez-vous que les dépendances suivantes sont installées sur <strong>Marbec-GPU JupyrerLab</strong> :</p>
