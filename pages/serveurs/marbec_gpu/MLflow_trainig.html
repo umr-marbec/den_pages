@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Auguste Verdier">
-<meta name="dcterms.date" content="2025-06-25">
+<meta name="author" content="Claudia Restrepo-Ortiz">
+<meta name="dcterms.date" content="2025-11-17">
 
-<title>wich_ressource – Digital Ecology Scheme (DEN) Resources and Materials</title>
+<title>mlflow_trainig – Ressources et supports du Dispositif d’Écologie Numérique (DEN)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,8 +67,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../pages/formations/index_formations.html" rel="next">
-<link href="../../../pages/serveurs/marbec_gpu/MLflow_trainig.html" rel="prev">
+<link href="../../../pages/serveurs/marbec_gpu/wich_ressource.html" rel="next">
+<link href="../../../pages/serveurs/marbec_gpu/run_r_script.html" rel="prev">
 <link href="../../../ressources/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -86,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Digital Ecology Scheme (DEN) Resources and Materials</span>
+    <span class="navbar-title">Ressources et supports du Dispositif d’Écologie Numérique (DEN)</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -97,30 +132,30 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../../pages/liens.html"> 
-<span class="menu-text">Useful links</span></a>
+<span class="menu-text">Liens utiles</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Help</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-aide" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Aide</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-aide">    
         <li>
     <a class="dropdown-item" href="https://github.com/umr-marbec/den_pages/discussions">
- <span class="dropdown-text">Ask a Question</span></a>
+ <span class="dropdown-text">Poser une question</span></a>
   </li>  
     </ul>
   </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../../"> 
-<span class="menu-text">Fr</span></a>
+    <a class="nav-link" href="../../../en"> 
+<span class="menu-text">En</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/umr-marbec/den_pages" title="Source code" class="quarto-navigation-tool px-1" aria-label="Source code"><i class="bi bi-github"></i></a>
-    <a href="https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/" title="DEN Global Website" class="quarto-navigation-tool px-1" aria-label="DEN Global Website"><i class="bi bi-box-arrow-up-right"></i></a>
+    <a href="https://github.com/umr-marbec/den_pages" title="Code source" class="quarto-navigation-tool px-1" aria-label="Code source"><i class="bi bi-github"></i></a>
+    <a href="https://umr-marbec.fr/recherche/dispositifs-de-recherche/den/" title="Site global du DEN" class="quarto-navigation-tool px-1" aria-label="Site global du DEN"><i class="bi bi-box-arrow-up-right"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -129,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../pages/serveurs/index_serveurs.html">Servers</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/index_marbec_gpu.html">Marbec GPU</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/wich_ressource.html">Choosing Resources: CPUs / MEM / GPU</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../pages/serveurs/index_serveurs.html">Serveurs</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/index_marbec_gpu.html">Marbec GPU</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/MLflow_trainig.html">MLflow: Suivi d’Entraînements</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -144,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../pages/serveurs/index_serveurs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Servers</span></a>
+ <span class="menu-text">Serveurs</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -162,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/serveurs/marbec_data/manage_files.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Manage Files</span></a>
+ <span class="menu-text">Gestion des Fichiers</span></a>
   </div>
 </li>
       </ul>
@@ -185,19 +220,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/serveurs/marbec_gpu/basic_command.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Useful Commands Guide</span></a>
+ <span class="menu-text">Guide des Commandes Utiles</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/serveurs/marbec_gpu/marbec-data_folders.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Accessing MARBEC-DATA Folders</span></a>
+ <span class="menu-text">Accéder aux dossiers de MARBEC-DATA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/serveurs/marbec_gpu/basic_example.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SLURM Submission : Basic R/Python example</span></a>
+ <span class="menu-text">Soumission SLURM : Exemple R/Python Basique</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -208,14 +243,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../pages/serveurs/marbec_gpu/MLflow_trainig.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MLflow: Training Tracking</span></a>
+  <a href="../../../pages/serveurs/marbec_gpu/MLflow_trainig.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">MLflow: Suivi d’Entraînements</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../pages/serveurs/marbec_gpu/wich_ressource.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Choosing Resources: CPUs / MEM / GPU</span></a>
+  <a href="../../../pages/serveurs/marbec_gpu/wich_ressource.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Choisir les Ressources : CPUs / MEM / GPU</span></a>
   </div>
 </li>
       </ul>
@@ -225,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../pages/formations/index_formations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Training</span></a>
+ <span class="menu-text">Formations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -234,19 +269,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/formations/git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git training</span></a>
+ <span class="menu-text">Formation Git</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/formations/tidyverse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tidyverse training</span></a>
+ <span class="menu-text">Formation Tidyverse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/formations/r_package_developpement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R package development training</span></a>
+ <span class="menu-text">Formation developpement de package R</span></a>
   </div>
 </li>
       </ul>
@@ -254,7 +289,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../pages/git/index_git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Version Control System</span></a>
+ <span class="menu-text">Système de contrôle de version</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -263,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/git/miroir_github_git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mirroring from Github to a Git Repository</span></a>
+ <span class="menu-text">Miroir depuis Github vers un dépôt git</span></a>
   </div>
 </li>
       </ul>
@@ -271,7 +306,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../pages/packages_logiciels/index_packages_logiciels.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Packages and software</span></a>
+ <span class="menu-text">Packages et logiciels</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -280,19 +315,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/packages_logiciels/r_package_sparck.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R package sparck</span></a>
+ <span class="menu-text">Package R sparck</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/packages_logiciels/ichthyop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Ichthyop software</span></a>
+ <span class="menu-text">Logiciel Ichthyop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/packages_logiciels/osmose.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Osmose model</span></a>
+ <span class="menu-text">Modèle Osmose</span></a>
   </div>
 </li>
       </ul>
@@ -300,13 +335,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/calendrier/calendrier.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
+ <span class="menu-text">Calendrier</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../pages/support/index_support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Global support</span></a>
+ <span class="menu-text">Support global</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -315,13 +350,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/support/gestionnaire_mots_de_passe.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Password manager</span></a>
+ <span class="menu-text">Gestionnaire de mots de passe</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/support/achats.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Support for IT resources purchases</span></a>
+ <span class="menu-text">Assistance pour l’achat de ressources informatiques</span></a>
   </div>
 </li>
       </ul>
@@ -329,7 +364,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../pages/contribution.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">I want to contribute!</span></a>
+ <span class="menu-text">Je veux contribuer !</span></a>
   </div>
 </li>
     </ul>
@@ -342,9 +377,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#choosing-resources-cpus-mem-gpu" id="toc-choosing-resources-cpus-mem-gpu" class="nav-link active" data-scroll-target="#choosing-resources-cpus-mem-gpu">Choosing Resources: CPUs / MEM / GPU</a>
+  <li><a href="#suivi-dentraînements-avec-mlflow-via-jupyter-proxy" id="toc-suivi-dentraînements-avec-mlflow-via-jupyter-proxy" class="nav-link active" data-scroll-target="#suivi-dentraînements-avec-mlflow-via-jupyter-proxy">💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)</a>
   <ul class="collapse">
-  <li><a href="#good-practices" id="toc-good-practices" class="nav-link" data-scroll-target="#good-practices">Good Practices</a></li>
+  <li><a href="#prérequis-et-configuration" id="toc-prérequis-et-configuration" class="nav-link" data-scroll-target="#prérequis-et-configuration">1. Prérequis et Configuration ⚙️</a></li>
+  <li><a href="#démarrage-du-serveur-mlflow" id="toc-démarrage-du-serveur-mlflow" class="nav-link" data-scroll-target="#démarrage-du-serveur-mlflow">2. Démarrage du Serveur MLflow 🚀</a></li>
+  <li><a href="#accès-à-linterface-web-proxy" id="toc-accès-à-linterface-web-proxy" class="nav-link" data-scroll-target="#accès-à-linterface-web-proxy">3. Accès à l’Interface Web (Proxy) 🌐</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -352,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../pages/serveurs/index_serveurs.html">Servers</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/index_marbec_gpu.html">Marbec GPU</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/wich_ressource.html">Choosing Resources: CPUs / MEM / GPU</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../pages/serveurs/index_serveurs.html">Serveurs</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/index_marbec_gpu.html">Marbec GPU</a></li><li class="breadcrumb-item"><a href="../../../pages/serveurs/marbec_gpu/MLflow_trainig.html">MLflow: Suivi d’Entraînements</a></li></ol></nav>
 <div class="quarto-title">
 </div>
 
@@ -363,14 +400,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p><a href="mailto:auguste.verdier@umontpellier.fr">Auguste Verdier</a> </p>
+             <p><a href="mailto:claudia.restrepo-ortiz@ird.fr">Claudia Restrepo-Ortiz</a> </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 25, 2025</p>
+      <p class="date">November 17, 2025</p>
     </div>
   </div>
   
@@ -382,27 +419,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="choosing-resources-cpus-mem-gpu" class="level1">
-<h1>Choosing Resources: CPUs / MEM / GPU</h1>
-<p>If you have followed the previous guides, you have already learned how to submit a SLURM job. Now, it’s time to choose the appropriate resources for your job. This point is briefly addressed in the <a href="../../../pages/serveurs/marbec_gpu/index_marbec_gpu.html#faq_english">FAD</a>.</p>
-<p>MARBEC-GPU is a shared resource with great freedom of use (no quota on computing hours or number of simultaneous jobs) and a simple scheduling system: first come, first served. Therefore, it is crucial to choose the allocated resources correctly.</p>
-<p><strong>IMPORTANT</strong>: The execution time of a job depends on several factors, including the size of your data, the resources used, but mainly on how you have written your code or the packages used. Most codes does not allow parallelization of computations (using multiple CPU cores at the same time) and even fewer support GPU execution. Thus, even if you request 10 CPU cores and a GPU, it is quite possible that your job only uses one CPU core and not use the GPU at all. Furthermore, taking twice as many CPUs does not reduce the execution time by half; it is up to you to test and find a good compromise between allocated resources and execution time.</p>
-<section id="good-practices" class="level2">
-<h2 class="anchored" data-anchor-id="good-practices">Good Practices</h2>
-<ol type="1">
-<li>Learn about the executed code</li>
-</ol>
-<p>Before running your job on MARBEC-GPU, check if your code parallelizes calculations and/or uses the GPU. If you see parameters like “workers”, “n_jobs”, “n_cpus”, “device”, or “gpu” in the documentation, it’s a good sign that the code can parallelize calculations and/or use the GPU. You can also refer to the documentation of the packages used (for commonly used packages, LLMs will know how to answer you; for niche packages or languages, don’t hesitate to ask the author). If you don’t find these parameters, it is likely that the code does not use these resources.</p>
-<ol start="2" type="1">
-<li><p>Choose the allocated resources</p>
+<section id="suivi-dentraînements-avec-mlflow-via-jupyter-proxy" class="level1">
+<h1>💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)</h1>
+<p>Cette section explique comment utiliser <strong>MLflow</strong> pour enregistrer et visualiser la performance de vos modèles (comme YOLO) lorsque vous travaillez sur un serveur distant JupyterLab <strong>sans accès SSH direct</strong>. Nous allons utiliser le serveur Jupyter comme un <em>proxy</em> pour rendre l’interface web de MLflow accessible dans votre navigateur local.</p>
+<section id="prérequis-et-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="prérequis-et-configuration">1. Prérequis et Configuration ⚙️</h2>
+<p>Avant de commencer, assurez-vous que les dépendances suivantes sont installées sur <strong>Marbec-GPU JupyrerLab</strong> :</p>
 <ul>
-<li><strong>CPU</strong>: If your code parallelizes calculations, you can allocate multiple CPU cores: <code>#SBATCH -c</code>. For typical uses in Python or R for machine learning, data extraction, etc., choosing between 2 and 16 CPU cores is often sufficient. For more specific uses, you may need to adjust accordingly.</li>
-<li><strong>MEM</strong>: The amount of RAM requested mainly depends on the size of your data and the size of the models used. For typical uses, between 8 and 64 GB of RAM is often sufficient. For heavier data processing tasks, you can go up to 256 GB of RAM.</li>
-<li><strong>GPU</strong>: If your code uses the GPU, you can allocate 1 GPU.</li>
-</ul></li>
-<li><p>Check resource usage</p></li>
-</ol>
-<p>After your job is completed, you can check the effective percentage of resource usage with the command <code>reportseff --user &lt;username&gt;</code> (for more information on the command, use <code>reportseff --help</code>).</p>
+<li><p><strong>MLflow Installé :</strong> Vous devez avoir <code>mlflow</code> installé dans votre environnement Python.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install mlflow</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p><strong>Proxy Jupyter Installé :</strong> Il est essentiel d’installer l’extension qui permet à Jupyter d’agir comme un <em>proxy</em> pour d’autres services web :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install jupyter-server-proxy</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Votre code doit être configuré pour enregistrer les données d’exécution (<em>run</em>) en utilisant un dossier local (dans cet exemple, <code>runs/mlflow</code>).</p>
+</div>
+</div>
+</section>
+<section id="démarrage-du-serveur-mlflow" class="level2">
+<h2 class="anchored" data-anchor-id="démarrage-du-serveur-mlflow">2. Démarrage du Serveur MLflow 🚀</h2>
+<p>Le serveur MLflow doit être démarré sur le serveur distant, en écoutant uniquement sur l’adresse locale (<code>127.0.0.1</code>).</p>
+<p>Ouvrez un terminal dans JupyterLab et placez-vous dans le répertoire principal de votre projet (celui qui contient votre dossier runs). Exécutez ensuite cette commande :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mlflow</span> server <span class="at">--backend-store-uri</span> runs/mlflow <span class="at">--host</span> 127.0.0.1 <span class="at">--port</span> 5000</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><img src="../../../ressources/marbec_gpu/mlflow/mlflow_proxy.png" class="img-fluid"></p>
+</section>
+<section id="accès-à-linterface-web-proxy" class="level2">
+<h2 class="anchored" data-anchor-id="accès-à-linterface-web-proxy">3. Accès à l’Interface Web (Proxy) 🌐</h2>
+<p>Tant que le serveur MLflow est en cours d’exécution sur le serveur distant, vous pouvez accéder à son interface web depuis votre navigateur local en utilisant l’URL de votre session JupyterLab et en ajoutant le chemin du proxy.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -413,10 +465,41 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Be aware that session jobs (named <code>pawner-jupyterhub</code>) also appear in the reportseff, you can ignore them.</p>
+<p>Si l’URL que vous utilisez pour accéder à votre JupyterLab est :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://[Serveur_Distant]/user/[Votre_Utilisateur]/lab</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>L’URL pour MLflow sera :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://[Serveur_Distant]/user/[Votre_Utilisateur]/proxy/5000/</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
-<p>Then, adjust future allocations based on effective usage and computation time.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Exemple:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>L’URL pour accéder au serveur MLflow est :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://marbec-gpu.ird.fr/user/crestrepo/proxy/5000/</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<p>Ouvrez l’URL MLflow dans votre navigateur habituel. Vous serez automatiquement redirigé vers le tableau de bord des expériences MLflow, où vous pourrez visualiser et suivre toutes vos exécutions et sessions d’entraînement.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><img src="../../../ressources/marbec_gpu/mlflow/mlflow_ex.png" class="img-fluid"></p>
+</div>
+</div>
+<hr>
 
 
 </section>
@@ -825,13 +908,13 @@ Note
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../pages/serveurs/marbec_gpu/MLflow_trainig.html" class="pagination-link" aria-label="MLflow: Training Tracking">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">MLflow: Training Tracking</span>
+      <a href="../../../pages/serveurs/marbec_gpu/run_r_script.html" class="pagination-link" aria-label="R Scripts Running">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">R Scripts Running</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../pages/formations/index_formations.html" class="pagination-link" aria-label="Training">
-        <span class="nav-page-text">Training</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../pages/serveurs/marbec_gpu/wich_ressource.html" class="pagination-link" aria-label="Choisir les Ressources : CPUs / MEM / GPU">
+        <span class="nav-page-text">Choisir les Ressources : CPUs / MEM / GPU</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -842,7 +925,7 @@ Note
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Copyright UMR MARBEC (IRD, Ifremer, Montpellier University, CNRS)</p>
+<p>Copyright UMR MARBEC (IRD, Ifremer, Montpellier university, CNRS)</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

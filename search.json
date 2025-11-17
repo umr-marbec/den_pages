@@ -320,69 +320,16 @@
     ]
   },
   {
-    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
-    "href": "pages/packages_logiciels/index_packages_logiciels.html",
-    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "objectID": "pages/serveurs/marbec_gpu/basic_command.html",
+    "href": "pages/serveurs/marbec_gpu/basic_command.html",
+    "title": "Main commands in marbec-gpu Terminal",
     "section": "",
-    "text": "Vous trouverez dans cette section tous les packages, logiciels ou de manière générale les ressources informatiques developés ou utilisés par les personnels et partenaires associés de l’UMR MARBEC.\n\n\n\n Back to top",
+    "text": "Main commands in marbec-gpu Terminal\nThe first thing to keep in mind is that marbec-gpu has Ubuntu installed, so the commands listed below will be the same as the ones used in that OS. This article will show a description of the main usage modes for each command, but if you have any additional requirements, you can always search in forums like Stackoverflow or check the help for each command, which consists of placing the command name followed by --help. For example, if I want to know the help for the ls command, just run ls --help in the Terminal.\n\n\n\n\n\n\nNoteUpper and lower case\n\n\n\nAs in R or Python, the use of upper or lower case when indicating an option does matter. For example, ls -D is not equivalent to ls -d, so be carefull.\n\n\n\nBrowsing within folders\n\nCommand: cd\nUsage: cd path/folder\n\nTo indicate a previous position (folder), you will use the statement .. as follows: ../path/folder1 (this indicates that there is a folder called path from the folder where you are, and that that has a folder called folder1 as well).\n\n\nCreate a folder\n\nCommand: mkdir\nUsage: mkdir path/folder\n\n\n\nGet the content of a folder as a list\n\nCommand: ls\nUsage: ls path/folder/\n\nMain options:\n\n--all (o -a): Displays all files and subfolders, including those protected (hidden) by the system.\n\n\n\nGenerate a list of files/folders and display the size of each item\n\nCommand: du\nUsage: du path/to/file.csv o du path/to/folder\n\nMain options:\n\n--human-readable (o -h): changes the units dynamically to avoid displaying all Kb. This is especially useful when you have large objects (subfolders or files).\n--summary (o -s): displays a summary table, i.e. it only includes the subfolders and files present at the first search level. This is useful when we just want to take a quick look and avoid displaying a complete listing of ALL internal subfolders.\n\nIf I want to get a list of all the files and folders inside a folder with their respective sizes (the three options are equivalent):\ndu ruta/de/folder/* --human-readable --summarize\ndu ruta/de/folder/* -h -s\ndu ruta/de/folder/* -hs\n\n\nCopy-paste\nFor this, the simplest way is through the cp command and making use of the navigation commands cited in this post (e.g. .. to indicate a previous folder). The basic syntax is the following: cp path/origin /path/destination, but there are different possible cases:\n\nCopy a file into the same folder, but with a different name (create duplicate): cp file1.csv file1-dup.csv.\nCopy a file to another folder: cp path/file1.csv path/destination.\nCopy more than one file to another folder: cp path/file1.csv path/file2.csv folder/destination\nCopy a folder to another folder: cp path/folder1 path/folder2 --recursive or cp path/folder1 path/folder2 -r.\n\n\n\n\n\n\n\nNote\n\n\n\nBy default, cp will overwrite any file with the same name. To avoid this, it is possible to add the -n option as follows: cp path/from/file1.csv path/destination -n.\n\n\n\n\nCut-paste (and also rename)\nIt will be very similar to the above, but through the mv command:\n\nRename a file (within the same folder): mv file1.csv file2.csv\nMove a file to another folder: mv path/file1.csv path/to/destination\nMove one file to another folder: mv path/file1.csv path/file2.csv path/destination\nMove one folder to another folder: mv path/old/folder path/new/folder\n\n\n\nDelete\nFor this, we will use the rm command as follows:\n\nDelete a file: rm path/to/file.csv\nDelete a folder (and all its contents): rm path/to/folder -r\n\n\n\n\n\n\n\nCautionNo turning back\n\n\n\nWhile inside Terminal it is always possible to cancel a command using the shortcut Ctrl+C (or Cmd+C on MacOS), once the rm command completes its work, there is no way to revert the deletion or recover it from a recycle garbage can, so be very careful when using it.\n\n\n\n\nDisplay current processes\n\nCommand: top\n\nWhen you run it, it will show in interactive mode in Terminal the processes that are running, as well as the resources used by each of them (basically like a Task Manager). To exit this interactive mode, just press the q key.\n\n\nStop a process\nIf we want to force the closing or the cancellation of a process already started, we can use the shortcut Ctrl+C (or Cmd+C in MacOS). It is important to keep in mind that forcing the closing of a process that had in progress the handling of files or folders (creation, copy, etc.) can leave the generated files unusable.\n\n\nViewing a plain text file\nBy default, there are two tools available from Terminal: vi and nano. The syntax for their execution is as simple as vi path/file1.txt or nano path/file1.txt, where file1.txt can be any plain text file (e.g. an R or Python script). The navigation shortcuts within each of these environments are different, but documentation is abundant on the Internet. Choose the one you like best.\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Liens utiles",
-      "Packages et logiciels"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html",
-    "href": "pages/packages_logiciels/r_package_sparck.html",
-    "title": "Package R sparck",
-    "section": "",
-    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
-    "crumbs": [
-      "Liens utiles",
-      "Packages et logiciels",
-      "Package R sparck"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
-    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
-    "title": "Package R sparck",
-    "section": "",
-    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
-    "crumbs": [
-      "Liens utiles",
-      "Packages et logiciels",
-      "Package R sparck"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bienvenue !",
-    "section": "",
-    "text": "Bienvenue !\nL’objectif de ce site est de centraliser et mettre facilement à disposition des ressources informatiques, procédures et autres supports permettant d’appuyer de manière globale les travaux des personnelles et personnes associées de l’UMR MARBEC. Cette structuration s’appuie notamment sur Dispositif d’Ecologie Numérique, ou DEN, qui est une structure transversale associée à l’UMR. Ces missions sont la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique.\nVous disposez aussi d’une section Issues vous permettant par exemple de faire remonter un problème dans le code source du site ou encore proposer une amélioration ou du contenu. Ces “GitHub Issues” sont vraiment à voir comme des objets s’apparentent davantage à des éléments « à faire » et sont axées sur les tâches à accomplir (par exemple via la création de branche dédié au sujet).\nDe plus, vous trouverez un forum de discussion afin d’échanger sur des sujets ou des problématiques communes. Les discussions sont destinées aux conversations qui doivent être transparentes et accessibles, mais qui n’ont pas besoin d’être suivies sur un projet et qui ne sont pas liées au code, contrairement aux “GitHub Issues”.\nPour information, l’UMR dispose aussi d’un serveur Rocket chat accessible via l’URL suivante https://tchat.ird.fr/home. Il est possible d’accéder à l’espace de travail directement depuis l’URL ou en installant un client lourd (=logiciel) sur votre ordinateur et en ajoutant l’URL dans la section “add workspace”.\nPar ailleurs, afin de faciliter l’accès et l’utilisation par le plus grand nombre, vous trouverez ce site et les ressources associées en français (par défaut) mais aussi en anglais (utilisez le bouton à gauche de barre de recherche pour changer de langue).\nN’hésitez pas visiter aussi la section “Je veux contribuer !” si vous disposez de ressources susceptibles d’alimenter celles disponibles via ce site ou même de manière générale si vous voulez contribuer à la mise a disposition de ressources communes.\nEn cas de besoin spécifique, vous pouvez contacter les représentant(e)s et référent(e)s du DEN à l’adresse suivante : marbec-den-admin@listes.ird.fr\nPour information, ce site a été généré via le système de publication Quarto.\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "pages/packages_logiciels/osmose.html",
-    "href": "pages/packages_logiciels/osmose.html",
-    "title": "Modèle Osmose",
-    "section": "",
-    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
-    "crumbs": [
-      "Liens utiles",
-      "Packages et logiciels",
-      "Modèle Osmose"
-    ]
-  },
-  {
-    "objectID": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
-    "href": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
-    "title": "Modèle Osmose",
-    "section": "",
-    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
-    "crumbs": [
-      "Liens utiles",
-      "Packages et logiciels",
-      "Modèle Osmose"
+      "Serveurs",
+      "Marbec GPU",
+      "Guide des Commandes Utiles"
     ]
   },
   {
@@ -410,16 +357,121 @@
     ]
   },
   {
-    "objectID": "pages/serveurs/marbec_gpu/basic_command.html",
-    "href": "pages/serveurs/marbec_gpu/basic_command.html",
-    "title": "Main commands in marbec-gpu Terminal",
+    "objectID": "pages/packages_logiciels/osmose.html",
+    "href": "pages/packages_logiciels/osmose.html",
+    "title": "Modèle Osmose",
     "section": "",
-    "text": "Main commands in marbec-gpu Terminal\nThe first thing to keep in mind is that marbec-gpu has Ubuntu installed, so the commands listed below will be the same as the ones used in that OS. This article will show a description of the main usage modes for each command, but if you have any additional requirements, you can always search in forums like Stackoverflow or check the help for each command, which consists of placing the command name followed by --help. For example, if I want to know the help for the ls command, just run ls --help in the Terminal.\n\n\n\n\n\n\nNoteUpper and lower case\n\n\n\nAs in R or Python, the use of upper or lower case when indicating an option does matter. For example, ls -D is not equivalent to ls -d, so be carefull.\n\n\n\nBrowsing within folders\n\nCommand: cd\nUsage: cd path/folder\n\nTo indicate a previous position (folder), you will use the statement .. as follows: ../path/folder1 (this indicates that there is a folder called path from the folder where you are, and that that has a folder called folder1 as well).\n\n\nCreate a folder\n\nCommand: mkdir\nUsage: mkdir path/folder\n\n\n\nGet the content of a folder as a list\n\nCommand: ls\nUsage: ls path/folder/\n\nMain options:\n\n--all (o -a): Displays all files and subfolders, including those protected (hidden) by the system.\n\n\n\nGenerate a list of files/folders and display the size of each item\n\nCommand: du\nUsage: du path/to/file.csv o du path/to/folder\n\nMain options:\n\n--human-readable (o -h): changes the units dynamically to avoid displaying all Kb. This is especially useful when you have large objects (subfolders or files).\n--summary (o -s): displays a summary table, i.e. it only includes the subfolders and files present at the first search level. This is useful when we just want to take a quick look and avoid displaying a complete listing of ALL internal subfolders.\n\nIf I want to get a list of all the files and folders inside a folder with their respective sizes (the three options are equivalent):\ndu ruta/de/folder/* --human-readable --summarize\ndu ruta/de/folder/* -h -s\ndu ruta/de/folder/* -hs\n\n\nCopy-paste\nFor this, the simplest way is through the cp command and making use of the navigation commands cited in this post (e.g. .. to indicate a previous folder). The basic syntax is the following: cp path/origin /path/destination, but there are different possible cases:\n\nCopy a file into the same folder, but with a different name (create duplicate): cp file1.csv file1-dup.csv.\nCopy a file to another folder: cp path/file1.csv path/destination.\nCopy more than one file to another folder: cp path/file1.csv path/file2.csv folder/destination\nCopy a folder to another folder: cp path/folder1 path/folder2 --recursive or cp path/folder1 path/folder2 -r.\n\n\n\n\n\n\n\nNote\n\n\n\nBy default, cp will overwrite any file with the same name. To avoid this, it is possible to add the -n option as follows: cp path/from/file1.csv path/destination -n.\n\n\n\n\nCut-paste (and also rename)\nIt will be very similar to the above, but through the mv command:\n\nRename a file (within the same folder): mv file1.csv file2.csv\nMove a file to another folder: mv path/file1.csv path/to/destination\nMove one file to another folder: mv path/file1.csv path/file2.csv path/destination\nMove one folder to another folder: mv path/old/folder path/new/folder\n\n\n\nDelete\nFor this, we will use the rm command as follows:\n\nDelete a file: rm path/to/file.csv\nDelete a folder (and all its contents): rm path/to/folder -r\n\n\n\n\n\n\n\nCautionNo turning back\n\n\n\nWhile inside Terminal it is always possible to cancel a command using the shortcut Ctrl+C (or Cmd+C on MacOS), once the rm command completes its work, there is no way to revert the deletion or recover it from a recycle garbage can, so be very careful when using it.\n\n\n\n\nDisplay current processes\n\nCommand: top\n\nWhen you run it, it will show in interactive mode in Terminal the processes that are running, as well as the resources used by each of them (basically like a Task Manager). To exit this interactive mode, just press the q key.\n\n\nStop a process\nIf we want to force the closing or the cancellation of a process already started, we can use the shortcut Ctrl+C (or Cmd+C in MacOS). It is important to keep in mind that forcing the closing of a process that had in progress the handling of files or folders (creation, copy, etc.) can leave the generated files unusable.\n\n\nViewing a plain text file\nBy default, there are two tools available from Terminal: vi and nano. The syntax for their execution is as simple as vi path/file1.txt or nano path/file1.txt, where file1.txt can be any plain text file (e.g. an R or Python script). The navigation shortcuts within each of these environments are different, but documentation is abundant on the Internet. Choose the one you like best.\n\n\n\n\n\n Back to top",
+    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
+    "crumbs": [
+      "Liens utiles",
+      "Packages et logiciels",
+      "Modèle Osmose"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
+    "href": "pages/packages_logiciels/osmose.html#simulateur-orienté-objet-des-écosystèmes-marins",
+    "title": "Modèle Osmose",
+    "section": "",
+    "text": "OSMOSE est un modèle multi-espèces et basé sur l’individu (IBM) qui se concentre sur les espèces de poissons. Ce modèle suppose une prédation opportuniste basée sur la cooccurrence spatiale et l’adéquation de taille entre un prédateur et sa proie (prédation opportuniste basée sur la taille). Il représente des individus de poissons regroupés en bancs, caractérisés par leur taille, leur poids, leur âge, leur taxonomie et leur localisation géographique (modèle 2D), et qui subissent les principaux processus du cycle de vie des poissons (croissance, prédation explicite, mortalité naturelle et par inanition, reproduction et migration) et de l’exploitation par la pêche.\nLe modèle a besoin de paramètres biologiques de base qui sont souvent disponibles pour une large gamme d’espèces, et qui peuvent être trouvés dans FishBase par exemple, et de données sur la distribution spatiale des poissons. Ce paquetage fournit des outils pour construire un modèle et effectuer des simulations en utilisant le modèle OSMOSE.\nLe modèle est disponible sur GitHub.",
+    "crumbs": [
+      "Liens utiles",
+      "Packages et logiciels",
+      "Modèle Osmose"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenue !",
+    "section": "",
+    "text": "Bienvenue !\nL’objectif de ce site est de centraliser et mettre facilement à disposition des ressources informatiques, procédures et autres supports permettant d’appuyer de manière globale les travaux des personnelles et personnes associées de l’UMR MARBEC. Cette structuration s’appuie notamment sur Dispositif d’Ecologie Numérique, ou DEN, qui est une structure transversale associée à l’UMR. Ces missions sont la mise en place, la coordination et la mutualisation des moyens techniques ainsi que l’échange de méthodologies et de nouvelles approches en support aux aspects numériques des travaux de recherche scientifique.\nVous disposez aussi d’une section Issues vous permettant par exemple de faire remonter un problème dans le code source du site ou encore proposer une amélioration ou du contenu. Ces “GitHub Issues” sont vraiment à voir comme des objets s’apparentent davantage à des éléments « à faire » et sont axées sur les tâches à accomplir (par exemple via la création de branche dédié au sujet).\nDe plus, vous trouverez un forum de discussion afin d’échanger sur des sujets ou des problématiques communes. Les discussions sont destinées aux conversations qui doivent être transparentes et accessibles, mais qui n’ont pas besoin d’être suivies sur un projet et qui ne sont pas liées au code, contrairement aux “GitHub Issues”.\nPour information, l’UMR dispose aussi d’un serveur Rocket chat accessible via l’URL suivante https://tchat.ird.fr/home. Il est possible d’accéder à l’espace de travail directement depuis l’URL ou en installant un client lourd (=logiciel) sur votre ordinateur et en ajoutant l’URL dans la section “add workspace”.\nPar ailleurs, afin de faciliter l’accès et l’utilisation par le plus grand nombre, vous trouverez ce site et les ressources associées en français (par défaut) mais aussi en anglais (utilisez le bouton à gauche de barre de recherche pour changer de langue).\nN’hésitez pas visiter aussi la section “Je veux contribuer !” si vous disposez de ressources susceptibles d’alimenter celles disponibles via ce site ou même de manière générale si vous voulez contribuer à la mise a disposition de ressources communes.\nEn cas de besoin spécifique, vous pouvez contacter les représentant(e)s et référent(e)s du DEN à l’adresse suivante : marbec-den-admin@listes.ird.fr\nPour information, ce site a été généré via le système de publication Quarto.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html",
+    "href": "pages/packages_logiciels/r_package_sparck.html",
+    "title": "Package R sparck",
+    "section": "",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
+    "crumbs": [
+      "Liens utiles",
+      "Packages et logiciels",
+      "Package R sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "href": "pages/packages_logiciels/r_package_sparck.html#support-package-for-analysis-research-collaboration-and-knowledge",
+    "title": "Package R sparck",
+    "section": "",
+    "text": "Le package sparck est un package développé pour le logiciel R. Ses objectifs sont de fournir des fonctions et processus standradrisés permettant, de manière générale, d’appuyer le travail des personnes de l’UMR et pas extension de ses partenaires. Les fonctions associées vont aussi bien de sujets comme la manipulation de données, l’analyse de données ou encore la configuration de l’environnement de travail. Loin de l’idée d’aborder de manière exhaustive l’ensemble des thématiques ou sujets, sa vocation est vraiment d’apporter un standard en termes de développement afin d’améliorer la transversalité des actions et améliorer les liens associés.\nEn lien notamment avec la section “Je veux contribuer !”, n’hesitez pas à jeter un coup d’oeil à la documentation générale mais aussi la section issues du dépôt GitHub.",
+    "crumbs": [
+      "Liens utiles",
+      "Packages et logiciels",
+      "Package R sparck"
+    ]
+  },
+  {
+    "objectID": "pages/packages_logiciels/index_packages_logiciels.html",
+    "href": "pages/packages_logiciels/index_packages_logiciels.html",
+    "title": "Ressources et supports du Dispositif d’Écologie Numérique (DEN)",
+    "section": "",
+    "text": "Vous trouverez dans cette section tous les packages, logiciels ou de manière générale les ressources informatiques developés ou utilisés par les personnels et partenaires associés de l’UMR MARBEC.\n\n\n\n Back to top",
+    "crumbs": [
+      "Liens utiles",
+      "Packages et logiciels"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/MLflow_trainig.html",
+    "href": "pages/serveurs/marbec_gpu/MLflow_trainig.html",
+    "title": "💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)",
+    "section": "",
+    "text": "Cette section explique comment utiliser MLflow pour enregistrer et visualiser la performance de vos modèles (comme YOLO) lorsque vous travaillez sur un serveur distant JupyterLab sans accès SSH direct. Nous allons utiliser le serveur Jupyter comme un proxy pour rendre l’interface web de MLflow accessible dans votre navigateur local.\n\n\nAvant de commencer, assurez-vous que les dépendances suivantes sont installées sur Marbec-GPU JupyrerLab :\n\nMLflow Installé : Vous devez avoir mlflow installé dans votre environnement Python.\npip install mlflow\nProxy Jupyter Installé : Il est essentiel d’installer l’extension qui permet à Jupyter d’agir comme un proxy pour d’autres services web :\npip install jupyter-server-proxy\n\n\n\n\n\n\n\nImportant\n\n\n\nVotre code doit être configuré pour enregistrer les données d’exécution (run) en utilisant un dossier local (dans cet exemple, runs/mlflow).\n\n\n\n\n\nLe serveur MLflow doit être démarré sur le serveur distant, en écoutant uniquement sur l’adresse locale (127.0.0.1).\nOuvrez un terminal dans JupyterLab et placez-vous dans le répertoire principal de votre projet (celui qui contient votre dossier runs). Exécutez ensuite cette commande :\nmlflow server --backend-store-uri runs/mlflow --host 127.0.0.1 --port 5000\n\n\n\n\nTant que le serveur MLflow est en cours d’exécution sur le serveur distant, vous pouvez accéder à son interface web depuis votre navigateur local en utilisant l’URL de votre session JupyterLab et en ajoutant le chemin du proxy.\n\n\n\n\n\n\nNote\n\n\n\nSi l’URL que vous utilisez pour accéder à votre JupyterLab est :\nhttps://[Serveur_Distant]/user/[Votre_Utilisateur]/lab\nL’URL pour MLflow sera :\nhttps://[Serveur_Distant]/user/[Votre_Utilisateur]/proxy/5000/\n\n\n\n\n\n\n\n\nTipExemple:\n\n\n\nL’URL pour accéder au serveur MLflow est :\nhttps://marbec-gpu.ird.fr/user/crestrepo/proxy/5000/\n\n\nOuvrez l’URL MLflow dans votre navigateur habituel. Vous serez automatiquement redirigé vers le tableau de bord des expériences MLflow, où vous pourrez visualiser et suivre toutes vos exécutions et sessions d’entraînement.\n\n\n\n\n\n\nTip:",
     "crumbs": [
       "Liens utiles",
       "Serveurs",
       "Marbec GPU",
-      "Guide des Commandes Utiles"
+      "MLflow: Suivi d’Entraînements"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/MLflow_trainig.html#prérequis-et-configuration",
+    "href": "pages/serveurs/marbec_gpu/MLflow_trainig.html#prérequis-et-configuration",
+    "title": "💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)",
+    "section": "",
+    "text": "Avant de commencer, assurez-vous que les dépendances suivantes sont installées sur Marbec-GPU JupyrerLab :\n\nMLflow Installé : Vous devez avoir mlflow installé dans votre environnement Python.\npip install mlflow\nProxy Jupyter Installé : Il est essentiel d’installer l’extension qui permet à Jupyter d’agir comme un proxy pour d’autres services web :\npip install jupyter-server-proxy\n\n\n\n\n\n\n\nImportant\n\n\n\nVotre code doit être configuré pour enregistrer les données d’exécution (run) en utilisant un dossier local (dans cet exemple, runs/mlflow).",
+    "crumbs": [
+      "Liens utiles",
+      "Serveurs",
+      "Marbec GPU",
+      "MLflow: Suivi d’Entraînements"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/MLflow_trainig.html#démarrage-du-serveur-mlflow",
+    "href": "pages/serveurs/marbec_gpu/MLflow_trainig.html#démarrage-du-serveur-mlflow",
+    "title": "💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)",
+    "section": "",
+    "text": "Le serveur MLflow doit être démarré sur le serveur distant, en écoutant uniquement sur l’adresse locale (127.0.0.1).\nOuvrez un terminal dans JupyterLab et placez-vous dans le répertoire principal de votre projet (celui qui contient votre dossier runs). Exécutez ensuite cette commande :\nmlflow server --backend-store-uri runs/mlflow --host 127.0.0.1 --port 5000",
+    "crumbs": [
+      "Liens utiles",
+      "Serveurs",
+      "Marbec GPU",
+      "MLflow: Suivi d’Entraînements"
+    ]
+  },
+  {
+    "objectID": "pages/serveurs/marbec_gpu/MLflow_trainig.html#accès-à-linterface-web-proxy",
+    "href": "pages/serveurs/marbec_gpu/MLflow_trainig.html#accès-à-linterface-web-proxy",
+    "title": "💻 Suivi d’Entraînements avec MLflow (via Jupyter Proxy)",
+    "section": "",
+    "text": "Tant que le serveur MLflow est en cours d’exécution sur le serveur distant, vous pouvez accéder à son interface web depuis votre navigateur local en utilisant l’URL de votre session JupyterLab et en ajoutant le chemin du proxy.\n\n\n\n\n\n\nNote\n\n\n\nSi l’URL que vous utilisez pour accéder à votre JupyterLab est :\nhttps://[Serveur_Distant]/user/[Votre_Utilisateur]/lab\nL’URL pour MLflow sera :\nhttps://[Serveur_Distant]/user/[Votre_Utilisateur]/proxy/5000/\n\n\n\n\n\n\n\n\nTipExemple:\n\n\n\nL’URL pour accéder au serveur MLflow est :\nhttps://marbec-gpu.ird.fr/user/crestrepo/proxy/5000/\n\n\nOuvrez l’URL MLflow dans votre navigateur habituel. Vous serez automatiquement redirigé vers le tableau de bord des expériences MLflow, où vous pourrez visualiser et suivre toutes vos exécutions et sessions d’entraînement.\n\n\n\n\n\n\nTip:",
+    "crumbs": [
+      "Liens utiles",
+      "Serveurs",
+      "Marbec GPU",
+      "MLflow: Suivi d’Entraînements"
     ]
   },
   {
