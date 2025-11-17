@@ -1,0 +1,158 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Claudia Restrepo-Ortiz](mailto:claudia.restrepo-ortiz@ird.fr)"
+date: 2025-11-17
+---
+
+
+::: {.content-visible when-profile="french"}
+
+# 💻 Suivi d'Entraînements avec MLflow (via Jupyter Proxy)
+
+Cette section explique comment utiliser **MLflow** pour enregistrer et visualiser la performance de vos modèles (comme YOLO) lorsque vous travaillez sur un serveur distant JupyterLab **sans accès SSH direct**. Nous allons utiliser le serveur Jupyter comme un *proxy* pour rendre l'interface web de MLflow accessible dans votre navigateur local.
+
+## 1. Prérequis et Configuration ⚙️
+
+Avant de commencer, assurez-vous que les dépendances suivantes sont installées sur **Marbec-GPU JupyrerLab** :
+
+* **MLflow Installé :** Vous devez avoir `mlflow` installé dans votre environnement Python.
+
+  ```bash
+  pip install mlflow
+  ```
+* **Proxy Jupyter Installé :** Il est essentiel d'installer l'extension qui permet à Jupyter d'agir comme un *proxy* pour d'autres services web :
+
+  ```bash
+  pip install jupyter-server-proxy
+  ```
+
+::: {.callout-important}
+ Votre code doit être configuré pour enregistrer les données d'exécution (*run*) en utilisant un dossier local (dans cet exemple, `runs/mlflow`).
+
+:::
+
+## 2. Démarrage du Serveur MLflow 🚀
+
+Le serveur MLflow doit être démarré sur le serveur distant, en écoutant uniquement sur l'adresse locale (`127.0.0.1`).
+
+Ouvrez un terminal dans JupyterLab et placez-vous dans le répertoire principal de votre projet (celui qui contient votre dossier runs). Exécutez ensuite cette commande :
+
+```bash
+mlflow server --backend-store-uri runs/mlflow --host 127.0.0.1 --port 5000
+```
+
+![](../../../ressources/marbec_gpu/mlflow/mlflow_proxy.png)
+
+## 3. Accès à l'Interface Web (Proxy) 🌐
+
+Tant que le serveur MLflow est en cours d'exécution sur le serveur distant, vous pouvez accéder à son interface web depuis votre navigateur local en utilisant l'URL de votre session JupyterLab et en ajoutant le chemin du proxy.
+
+::: {.callout-note}
+Si l'URL que vous utilisez pour accéder à votre JupyterLab est :
+
+```bash
+https://[Serveur_Distant]/user/[Votre_Utilisateur]/lab
+```
+
+L'URL pour MLflow sera :
+
+```bash
+https://[Serveur_Distant]/user/[Votre_Utilisateur]/proxy/5000/
+```
+::: 
+
+
+::: {.callout-tip}
+## Exemple:
+L'URL pour accéder au serveur MLflow est :
+
+```bash
+https://marbec-gpu.ird.fr/user/crestrepo/proxy/5000/
+```
+:::
+
+Ouvrez l'URL MLflow dans votre navigateur habituel. Vous serez automatiquement redirigé vers le tableau de bord des expériences MLflow, où vous pourrez visualiser et suivre toutes vos exécutions et sessions d'entraînement.  
+
+::: {.callout-tip}
+## : 
+![](../../../ressources/marbec_gpu/mlflow/mlflow_ex.png)
+:::
+:::
+
+---
+
+::: {.content-visible when-profile="english"}
+
+# 💻 MLflow Training Tracking (via Jupyter Proxy)
+
+This section explains how to use **MLflow** to log and visualize the performance of your models (like YOLO) when working on a remote JupyterLab server **without direct SSH access**. We will use the Jupyter server as a proxy to make the MLflow web interface accessible in your local browser.
+
+## 1. Requirements ⚙️
+
+Before starting, make sure the following dependencies are installed on **Marbec-GPU JupyrerLab**:
+
+* **MLflow Installed:** You must have `mlflow` installed in your Python environment.
+
+  ```bash
+  pip install mlflow
+  ```
+* **Jupyter Proxy Installed:** It is essential to install the extension that allows Jupyter to act as a proxy for other web services:
+
+  ```bash
+  pip install jupyter-server-proxy
+  ```
+  
+::: {.callout-important}
+Your code must be configured to log run data using a local folder (in this example, `runs/mlflow`).
+:::
+
+## 2. Starting the MLflow Server 🚀
+
+The MLflow server must be started on the remote server, listening only on the local address (`127.0.0.1`) to ensure security. The Jupyter server will securely forward the traffic.
+
+Open a terminal in JupyterLab and navigate to the main directory of your project (the one containing your runs folder). Then run the following command:
+
+```bash
+mlflow server --backend-store-uri runs/mlflow --host 127.0.0.1 --port 5000
+```
+![](../../../ressources/marbec_gpu/mlflow/mlflow_proxy.png)
+
+
+## 3. Accessing the Web Interface (Proxy) 🌐
+
+While the MLflow server is running on the remote server, you can access its web interface from your local browser using your JupyterLab session URL and adding the proxy path.
+
+::: {.callout-note}
+If the URL you use to access your JupyterLab is:
+
+```bash
+https://[Remote_Server]/user/[Your_User]/lab
+```
+
+Then the MLflow URL will be:
+
+```bash
+https://[Remote_Server]/user/[Your_User]/proxy/5000/
+```
+:::
+
+::: {.callout-tip}
+## Exemple:
+
+The MLflow server URL becomes:
+
+```bash
+https://marbec-gpu.ird.fr/user/crestrepo/proxy/5000/
+```
+:::
+
+Open the MLflow URL in your preferred web browser. You will be automatically redirected to the MLflow Experiments dashboard, where you can view and monitor all your runs and training sessions.
+
+::: {.callout-tip}
+## : 
+![](../../../ressources/marbec_gpu/mlflow/mlflow_ex.png)
+:::
+
+:::
