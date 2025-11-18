@@ -1,0 +1,17 @@
+---
+author: Mathieu Depetris [mathieu.depetris@cnrs.fr](mailto:mathieu.depetris@cnrs.fr)
+date-modified: 2025/11/18
+format:
+  html:
+    css: ../../styles.css
+---
+
+::: {.content-visible when-profile="french"}
+# Sauvegarde de ces données
+La sauvegarde régulière de ses données est une étape incontournable et essentielle donc on ne réalise l'importance que souvent trop. Il suffit de perdre une fois ses données pour comprendre qu'il n'y a pas de seconde chance à ce jeu et à quel point nos structures de stockage sont loin d'être immortel. 
+
+:::
+
+::: {.content-visible when-profile="english"}
+# Content will be available soon in English. So far, you can switch to the French side if you want to have access to resources.
+:::

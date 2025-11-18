@@ -89,6 +89,8 @@ website:
             href : pages/support/gestionnaire_mots_de_passe.qmd
           - text: "Support for IT resources purchases"
             href : pages/support/achats.qmd
+          - text: "Automatic data backup"
+            href : pages/support/sauvegarde.qmd
       - text: "I want to contribute!"
         href: pages/contribution.qmd
 

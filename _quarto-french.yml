@@ -89,6 +89,8 @@ website:
             href : pages/support/gestionnaire_mots_de_passe.qmd
           - text: "Assistance pour l'achat de ressources informatiques"
             href : pages/support/achats.qmd
+          - text: "Sauvegarde de données automatique"
+            href : pages/support/sauvegarde.qmd
       - text: "Je veux contribuer !"
         href: pages/contribution.qmd
 
