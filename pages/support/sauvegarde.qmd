@@ -8,7 +8,33 @@ format:
 
 ::: {.content-visible when-profile="french"}
 # Sauvegarde de ces données
-La sauvegarde régulière de ses données est une étape incontournable et essentielle donc on ne réalise l'importance que souvent trop. Il suffit de perdre une fois ses données pour comprendre qu'il n'y a pas de seconde chance à ce jeu et à quel point nos structures de stockage sont loin d'être immortel. 
+La sauvegarde régulière de ses données est une étape incontournable et essentielle donc on ne réalise l'importance que souvent trop tard. Il suffit de perdre une fois ses données pour comprendre qu'il n'y a pas de seconde chance à ce jeu et à quel point nos structures de stockage sont loin d'être immortelles.
+
+Afin de mieux cerner le sujet, le plus simple est de comprendre quels sont les intérêts et les objectifs derrière une sauvegarde (aussi appelé plus communément backup). Faire une sauvegarde permet de disposer de mesure de restauration pour ces données, enregistrées à un moment précis. Ce moment précis est quelque chose que l'utilisateur doit définir. Cela peut être par exemple une fois par jour, une fois par semaine ou encore pour les plus exigeants toutes les minutes. Concrètement une sauvegarde permet de répondre à de nombreuses exigences, qui sont par exemple le transfert de données vers un nouveau périphérique, la protection contre la perte de données en cas de vol, d'accidents comme un incendie ou une panne matériels, ou même plus généralement contre l'erreur humaine (si on supprime un fichier ou dossier important sans faire exprès).
+
+Dans cet article nous allons aborder deux types de processus. Le [premier]{style="color:#ca0030;"} est la mise en place d'un processus de sauvegarde sur un support souvent externe, comme un disque dur externe ou encore une clé USB. Cette étape est vraiment le "minimum à mettre en place" et nous aborderons dans la partie dédiée rapidement les avantages et inconvénients. Le [second]{style="color:#ca0030;"} processus et la mise en place d'un processus de sauvegarde de manière centralisé associé à des ressources en réseau. Cette étape est l'évolution de la première et vous verrez qu'elle apporte une solution à plusieurs inconvénients de la première méthode. Cependant elle nécessite plus de ressources et d'organisation pour être déployée et opérationnelle à l'échelle de notre UMR. Elle doit être vue comme une solution à atteindre, alors que la première est vraiment une méthode permettant d'effectuer "immédiatement" une sauvegarde sûre et efficace de nos données.
+
+# Vers quel logiciel ou technique ce tourner
+
+Maintenant que vous savez pourquoi il nécessaire de faire des sauvegardes de vos données, la question se pose quand au logiciel et la méthode à utiliser. Ici il a été choisi d'utiliser le logiciel [BorgBackup](https://www.borgbackup.org/){.external target="_blank"} (Borg en abrégé). Ce logiciel presente de nombreux avantages :
+
+- c'est un logiciel libre sous licence BSD,
+- il est facilement utilisable sous différentes OS, dans notre cas il est compatible Linux, macOS et Windows,
+- il présente des méthodes de compressions (pour information : lz4, zstd, zlib ou lzma) et permet donc de réduire la taille des sauvegardes,
+- propose des techniques de chiffrement des sauvegardes, ce qui permet de marquer des points concernant la sécurisation de nos données,
+- ce logiciel utilise des processus de sauvegarde de type incrémentielle (chaque nouvelle sauvegarde ne stocke sur les modifications depuis la dernière) et de la déduplication basée sur le contenu (découpe les fichiers en blocs définis par le contenu et permet d'éviter les doublons). Cela permet d'avoir un sauvegarde rapide et ciblée, tout en réduisant drastiquement l'espace utilisé,
+- de monter les sauvegardes comme un système de fichiers pour y accéder et restaurer l'intégralité ou juste une partie de cette dernière,
+- soutenu par une communauté open source importante et active, ce qui permet notamment d'avoir accés à des extensions, comme par exemple des interfaces graphiques (on va y venir plus loin),
+- pour finir, ce logiciel peut aussi bien être utilisé pour sauvegarder sur un support externe (type disque dur) que sur des serveurs ou peripheriques distants.
+
+::: callout-note
+Si vous êtes utilisateurs d'OS Windows ou macOS, vous pouvez vous demander pourquoi on ne vous proposons pas d'outils natifs de ces systèmes comme Time Machine, iCould ou encore la méthode de sauvegarde Windows sur OneDrive. Ça marche plutôt bien, non ? Et en plus ils disposent de beaucoup de ressources humaines et financières pour maintenir ces solutions. On pourrait même penser aux multiples outils de Google ?
+
+La question qui doit émerger dans votre esprit est de se demander ce que cela implique d'utiliser ce type d'outil, notamment en termes de dépendance aux entreprises associées. L'avantage de ces outils est qu'ils fonctionnent très bien, mais au final ils ne sont qu'une stratégie de réponse à notre besoin qui est de sauvegarder nos données. De plus cette stratégie vient souvent avec l'utilisation de serveur distant ou d'autres services/écosystèmes souvent associés à une règlementation (par exemple le USA PATRIOT Act) qui peut être problématique dans le cadre de nos activités.
+Cette réflexion doit être beaucoup plus poussée et réfléchie au niveau de notre UMR et plus globalement au niveau de nos activités, mais pour recentrer le débat sur le sujet des sauvegardes : notre besoin est de sauvegarder nos données, de manière sécurisée à plusieurs niveaux tout en gardant la main à 100% sur le processus. Ici ce logiciel permet d'avoir une approche globale à l'échelle de l'UMR, notamment car il est compatible multi-OS, et nous permet de ne pas faire transiter notre processus and co par d'autres services, tout en garantissant la transparence du processus employé (logiciel open source).
+
+Certes il est "legerement" plus compliqué à mettre en place, mais doit être vu comme une stratégie à déployer pour l'UMR avec le soutien de personnes-ressources et en aucun cas comme une directive à application, si on y arrive, "bettement" et de manière isolée. Par ailleurs, cette stratégie est vouée à évoluer avec le temps (ci-dessus exemple des deux processus) et sera beaucoup plus "indolore" pour les utilisateurs au fur et à mesure de son évolution et processus de maturité.
+:::
 
 :::
 
