@@ -694,7 +694,9 @@ Go to the download page on the official website via the following [link](https:/
 
 If the default installation path points to something like “C:\\Users\\nom_user”, you have not launched the installation with administrator rights.
 
+::: callout-important
 Note that for some users, the software won't launch after installation, even if you click on the run shortcut. To remedy this, you need to install the latest Microsoft Visual C++ libraries. These can be found at [next](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170){.external target=“_blank”}.
+:::
 
 #### 1.2.2 - Linux
 
