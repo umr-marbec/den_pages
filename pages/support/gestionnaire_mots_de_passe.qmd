@@ -71,7 +71,9 @@ Rendez-vous sur la page de téléchargement du site officiel via le [lien](https
 
 Si le chemin d'installation par défaut pointe vers quelque chose comme "C:\\Users\\nom_utilisateur" c'est que vous n'avez pas lancé l'installation avec les droits administateur.
 
-Noter que pour certains utilisateurs, le logiciel ne se lance pas après l'installation, même si l'on clique sur le raccourci d'exécution. Pour remédier à cela, il est nécessaire d'installer les dernières bibliothèques Microsoft Visual C++. Vous pourrez les trouver via le lien [suivant](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170){.external target="_blank"}. 
+::: callout-important
+Noter que pour certains utilisateurs, le logiciel ne se lance pas après l'installation, même si l'on clique sur le raccourci d'exécution. Pour remédier à cela, il est nécessaire d'installer les dernières bibliothèques Microsoft Visual C++. Vous pourrez les trouver via le lien [suivant](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170){.external target="_blank"}.
+:::
 
 #### 1.2.2 - Sous Linux
 
