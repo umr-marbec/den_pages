@@ -145,3 +145,13 @@ salloc --partition cpu-dedicated --account=dedicated-cpu@marbec-scenlab --qos=de
 ```
 
 Il est aussi possible de spécifier d'autres arguments (`--mem`, `--ntasks`, etc.)
+
+### Notebooks
+
+Pour lancer des modes de calcul interactifs de type Jupyter ou RStudio Server, il faut se connecter au lien suivant: <https://io-ood.meso.umontpellier.fr/>
+
+![Connexion à la plateforme Open On Demand d'ISDM-MESO](../../../ressources/isdm-meso/meso-1.png){#fig-meso-1}
+
+Il faut ensuite cliquer sur `Interactive Apps` et choisir l'application voulue. Ensuite, il suffit de renseigner les bonnes informations concernant les QOS, comme indiqué sur la @fig-meso-2
+
+![Connexion à la plateforme Open On Demand d'ISDM-MESO](../../../ressources/isdm-meso/meso-1.png){#fig-meso-2}
