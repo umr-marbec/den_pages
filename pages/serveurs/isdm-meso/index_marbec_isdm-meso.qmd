@@ -1,0 +1,73 @@
+---
+format:
+  html:
+    css: ../../../styles.css
+author: "[Nicolas Barrier](mailto:nicolas.barrier@ird.fr)"
+date: "2026-03-10"
+---
+
+::: {.content-visible when-profile="french"}
+
+# Documentation ISDM-MESO
+
+Bienvenue dans la documentation du cluster ISDM-MESO. Ce document fournit des informations concernant l'utilisation du cluster ISDM-MESO au sein de MARBEC
+
+## Caractéristiques
+
+Au sein d'une convention signée entre MARBEC et l'ISDM-MESO, le personnel MARBEC a accès, de manière exclusive, à:
+
+- 6 noeuds de 28 coeurs
+- 100 To de stockage
+
+## Inscription
+
+Pour obtenir un compte sur le calculateur ISDM-MESO, il faut:
+
+- remplir la charte du DEN ([version fr](https://drive.ird.fr/s/JtAWpZm3AZgb3Rm), [version en](https://drive.ird.fr/s/JtAWpZm3AZgb3Rm)) signée aux [administrateurs du DEN](mailto:marbec-den-admin@listes.ird.fr)
+- remplir et signer la [charte ISDM-MESO](https://isdm.umontpellier.fr/wp-content/uploads/2025/04/CharteMeso-CALCUL.pdf) et l'envoyer à [Nicolas Barrier](mailto:nicolas.barrier@ird.fr)
+
+## Support
+
+Le support de ISDM-MESO est accessible ici: [https://tickets.meso.umontpellier.fr/](https://tickets.meso.umontpellier.fr/). La
+connection se fait avec les identifiants fournis par ISDM-MESO lors de la demande d'ouverture de compte.
+
+## Documentation
+
+La documentation complète du cluster est accessible ici: [https://docs.meso.umontpellier.fr/fr/home](https://docs.meso.umontpellier.fr/fr/home)
+
+Ci-dessous, un résumé de la documentation adapté aux usages de MARBEC est proposé.
+
+### Connexion
+
+Pour se connecter au cluster, ouvrir un Terminal ou une application type MobaXTerm et taper:
+
+```bash
+ssh -X barriern@io-login.meso.umontpellier.fr
+```
+
+en remplaçant `barriern` par votre login.
+
+### Premiere utilisation
+
+Lors de votre première connexion, ouvrir le fichier `.bashrc` (en utilisant n'importe quel éditeur de texte, comme `nano`, `vi` ou `gedit`) et y ajouter la ligne suivante:
+
+```bash
+export MODULEPATH=/home/barriern/work_marbec/marbec_module/modulefiles:$MODULEPATH
+```
+
+Ceci vous permettra d'accèder à des modules supplémentaires compilés par les membres du DEN
+
+### Gestion des espaces
+
+Sur ISDM-MESO, les dossiers sont organisés de la manière suivante (cf. [documentation](https://docs.meso.umontpellier.fr/fr/HPC/CLUSTER/cluster-io-specifications#_syst%C3%A8mes_de_fichiers_et_stockage))
+
+- le dossier `$HOME` (180Go), dossier personnel qui contient les code source, scripts, petits fichiers de conf/résultats, logiciels perso (conda envs…​).
+- le dossier `/scratch/users/LOGIN`, qui est un espace de travail personnel temporaire pour les données des jobs en cours. Il permet des I/O intensifs, gros fichiers temporaires/résultats intermédiaires (remplacer `LOGIN` par votre login)
+- les dossiers `/scratch/projects/PROJET`, qui sont des espaces  de travail partagés temporaire pour les données des jobs en cours. Il permet des I/O intensifs, gros fichiers temporaires/résultats intermédiaires (remplacer `PROJET` par un nom de projet auquel vous êtes associé)
+- les dossiers `/storage/simple/projects/` qui sont des espaces  de stockage partagés pour des données communes à conserver longtemps (sorties de modeles, forcages, etc.)
+
+::: {.callout-warning}
+
+Les données des espaces temporaires (`scratch`) sont supprimés tous les 2 mois. Il ne faut pas stocker de données dans ces espaces
+
+:::

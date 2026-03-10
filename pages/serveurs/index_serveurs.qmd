@@ -14,6 +14,9 @@ Le DEN Marbec propose deux serveurs, un serveur de calcul **MARBEC-GPU** et un s
 - [MARBEC-DATA Intro](marbec_data/index_marbec_data.qmd)
 - [Gestion des données sur MARBEC-DATA](marbec_data/manage_files.qmd)
 
+Il propose aussi l'accès à des serveurs externes:
+
+- [ISDM-MESO](isdm-meso/index_marbec_isdm-meso.qmd)
 
 Tout utilisateur voulant contribuer à la documentation ou faire des retours est le bienvenu : [comment contribuer](../contribution.qmd).
 

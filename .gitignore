@@ -56,3 +56,4 @@ README.html
 
 #maos dsstore
 .DS_Store
+**/*.quarto_ipynb
