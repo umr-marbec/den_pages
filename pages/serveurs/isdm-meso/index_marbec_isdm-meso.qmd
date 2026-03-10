@@ -33,6 +33,8 @@ Le support de ISDM-MESO est accessible ici: <https://tickets.meso.umontpellier.f
 
 La documentation complète du cluster est accessible ici: <https://docs.meso.umontpellier.fr/fr/home>
 
+Par ailleurs, une documentation, fournie par les membres de l'UMR AMAP, est aussi disponible ici: <https://site.amaplab.fr/polis/dev>
+
 Ci-dessous, un résumé de la documentation adapté aux usages de MARBEC est proposé.
 
 ### Connexion
@@ -68,6 +70,10 @@ Sur ISDM-MESO, les dossiers sont organisés de la manière suivante (cf. [docume
 Les données des espaces temporaires (`scratch`) sont supprimés tous les 2 mois. Il ne faut pas stocker de données dans ces espaces
 :::
 
+### Modules
+
+La gestion des modules sur ISDM-MESO est un peu archaique.
+
 ### Soumission de jobs
 
 La soumission de jobs est gérée par l'ordonnanceur SLURM.
@@ -95,7 +101,7 @@ module load openmpi/psm2/gcc75/3.1.6
 module load netcdf
 
 cd /scratch/users/barriern/
-srun program.exe
+srun program.exe >& compute.log
 ```
 
 - Les lignes commencant par `#SBATCH` sont les reglages du job (et non des commentaires!). La description des parametres est fournie @tbl-slurm-params.
@@ -122,3 +128,20 @@ de sortie ne seront pas ecrits
 | `--qos`           | QOS utilise                  |
 
 : Description des parametres d'un job SLURM {#tbl-slurm-params}
+
+:::{.callout-warning}
+
+Les parametres `partition`,  `account` et `qos` ne doivent pas etre changes pour beneficier de l'utilisation
+des ressources allouees a MARBEC
+
+:::
+
+#### Job interactif
+
+Pour soumettre un job interactif, il faut utiliser la commande `salloc`:
+
+```bash
+salloc --partition cpu-dedicated --account=dedicated-cpu@marbec-scenlab --qos=dedicated
+```
+
+Il est aussi possible de spécifier d'autres arguments (`--mem`, `--ntasks`, etc.)
