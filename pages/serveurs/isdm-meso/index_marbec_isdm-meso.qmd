@@ -6,7 +6,7 @@ author: "[Nicolas Barrier](mailto:nicolas.barrier@ird.fr)"
 date: "2026-03-10"
 ---
 
-:::: {.content-visible when-profile="french"}
+::: {.content-visible when-profile="french"}
 # Documentation ISDM-MESO
 
 Bienvenue dans la documentation du cluster ISDM-MESO. Ce document fournit des informations concernant l'utilisation du cluster ISDM-MESO au sein de MARBEC
@@ -104,17 +104,14 @@ cd /scratch/users/barriern/
 srun program.exe >& compute.log
 ```
 
-- Les lignes commencant par `#SBATCH` sont les reglages du job (et non des commentaires!). La description des parametres est fournie @tbl-slurm-params.
-- Ensuite, les modules utilisés par le job sont chargés
-- Puis on se deplace un des espaces de travail temporaires (`/scratch`)
-- Et enfin on lance le job parallèle avec la commande `srun`.
+-   Les lignes commencant par `#SBATCH` sont les reglages du job (et non des commentaires!). La description des parametres est fournie @tbl-slurm-params.
+-   Ensuite, les modules utilisés par le job sont chargés
+-   Puis on se deplace un des espaces de travail temporaires (`/scratch`)
+-   Et enfin on lance le job parallèle avec la commande `srun`.
 
-:::{.callout-warning}
-
-Un job soumis ne pourra écrire que dans un espace `/scratch`. Si le job est execute dans un autre espace, alors les fichiers
-de sortie ne seront pas ecrits
-
-::::
+::: callout-warning
+Un job soumis ne pourra écrire que dans un espace `/scratch`. Si le job est execute dans un autre espace, alors les fichiers de sortie ne seront pas ecrits
+:::
 
 | Parametre         | Description                  |
 |-------------------|------------------------------|
@@ -129,18 +126,15 @@ de sortie ne seront pas ecrits
 
 : Description des parametres d'un job SLURM {#tbl-slurm-params}
 
-:::{.callout-warning}
-
-Les parametres `partition`,  `account` et `qos` ne doivent pas etre changes pour beneficier de l'utilisation
-des ressources allouees a MARBEC
-
+::: callout-warning
+Les parametres `partition`, `account` et `qos` ne doivent pas etre changes pour beneficier de l'utilisation des ressources allouees a MARBEC
 :::
 
 #### Job interactif
 
 Pour soumettre un job interactif, il faut utiliser la commande `salloc`:
 
-```bash
+``` bash
 salloc --partition cpu-dedicated --account=dedicated-cpu@marbec-scenlab --qos=dedicated
 ```
 
@@ -155,3 +149,4 @@ Pour lancer des modes de calcul interactifs de type Jupyter ou RStudio Server, i
 Il faut ensuite cliquer sur `Interactive Apps` et choisir l'application voulue. Ensuite, il suffit de renseigner les bonnes informations concernant les QOS, comme indiqué sur la @fig-meso-2
 
 ![Connexion à la plateforme Open On Demand d'ISDM-MESO](../../../ressources/isdm-meso/meso-2.png){#fig-meso-2}
+:::
