@@ -59,6 +59,9 @@ website:
                 href: pages/serveurs/marbec_gpu/wich_ressource.qmd
           - section: "ISDM-MESO"
             href: pages/serveurs/isdm-meso/index_marbec_isdm-meso.qmd
+            contents:
+              - text: "Guide d'utilisation"
+                href: pages/serveurs/isdm-meso/index_marbec_isdm-meso.qmd
       - text: "Formations"
         href: pages/formations/index_formations.qmd
         contents:
