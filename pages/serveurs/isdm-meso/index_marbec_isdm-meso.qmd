@@ -154,4 +154,4 @@ Pour lancer des modes de calcul interactifs de type Jupyter ou RStudio Server, i
 
 Il faut ensuite cliquer sur `Interactive Apps` et choisir l'application voulue. Ensuite, il suffit de renseigner les bonnes informations concernant les QOS, comme indiqué sur la @fig-meso-2
 
-![Connexion à la plateforme Open On Demand d'ISDM-MESO](../../../ressources/isdm-meso/meso-1.png){#fig-meso-2}
+![Connexion à la plateforme Open On Demand d'ISDM-MESO](../../../ressources/isdm-meso/meso-2.png){#fig-meso-2}
