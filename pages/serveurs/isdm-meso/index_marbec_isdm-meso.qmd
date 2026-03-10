@@ -6,8 +6,7 @@ author: "[Nicolas Barrier](mailto:nicolas.barrier@ird.fr)"
 date: "2026-03-10"
 ---
 
-::: {.content-visible when-profile="french"}
-
+:::: {.content-visible when-profile="french"}
 # Documentation ISDM-MESO
 
 Bienvenue dans la documentation du cluster ISDM-MESO. Ce document fournit des informations concernant l'utilisation du cluster ISDM-MESO au sein de MARBEC
@@ -16,24 +15,23 @@ Bienvenue dans la documentation du cluster ISDM-MESO. Ce document fournit des in
 
 Au sein d'une convention signée entre MARBEC et l'ISDM-MESO, le personnel MARBEC a accès, de manière exclusive, à:
 
-- 6 noeuds de 28 coeurs
-- 100 To de stockage
+-   6 noeuds de 28 coeurs
+-   100 To de stockage
 
 ## Inscription
 
 Pour obtenir un compte sur le calculateur ISDM-MESO, il faut:
 
-- remplir la charte du DEN ([version fr](https://drive.ird.fr/s/JtAWpZm3AZgb3Rm), [version en](https://drive.ird.fr/s/JtAWpZm3AZgb3Rm)) signée aux [administrateurs du DEN](mailto:marbec-den-admin@listes.ird.fr)
-- remplir et signer la [charte ISDM-MESO](https://isdm.umontpellier.fr/wp-content/uploads/2025/04/CharteMeso-CALCUL.pdf) et l'envoyer à [Nicolas Barrier](mailto:nicolas.barrier@ird.fr)
+-   remplir la charte du DEN ([version fr](https://drive.ird.fr/s/JtAWpZm3AZgb3Rm), [version en](https://drive.ird.fr/s/JtAWpZm3AZgb3Rm)) signée aux [administrateurs du DEN](mailto:marbec-den-admin@listes.ird.fr)
+-   remplir et signer la [charte ISDM-MESO](https://isdm.umontpellier.fr/wp-content/uploads/2025/04/CharteMeso-CALCUL.pdf) et l'envoyer à [Nicolas Barrier](mailto:nicolas.barrier@ird.fr)
 
 ## Support
 
-Le support de ISDM-MESO est accessible ici: [https://tickets.meso.umontpellier.fr/](https://tickets.meso.umontpellier.fr/). La
-connection se fait avec les identifiants fournis par ISDM-MESO lors de la demande d'ouverture de compte.
+Le support de ISDM-MESO est accessible ici: <https://tickets.meso.umontpellier.fr/>. La connection se fait avec les identifiants fournis par ISDM-MESO lors de la demande d'ouverture de compte.
 
 ## Documentation
 
-La documentation complète du cluster est accessible ici: [https://docs.meso.umontpellier.fr/fr/home](https://docs.meso.umontpellier.fr/fr/home)
+La documentation complète du cluster est accessible ici: <https://docs.meso.umontpellier.fr/fr/home>
 
 Ci-dessous, un résumé de la documentation adapté aux usages de MARBEC est proposé.
 
@@ -41,7 +39,7 @@ Ci-dessous, un résumé de la documentation adapté aux usages de MARBEC est pro
 
 Pour se connecter au cluster, ouvrir un Terminal ou une application type MobaXTerm et taper:
 
-```bash
+``` bash
 ssh -X barriern@io-login.meso.umontpellier.fr
 ```
 
@@ -51,7 +49,7 @@ en remplaçant `barriern` par votre login.
 
 Lors de votre première connexion, ouvrir le fichier `.bashrc` (en utilisant n'importe quel éditeur de texte, comme `nano`, `vi` ou `gedit`) et y ajouter la ligne suivante:
 
-```bash
+``` bash
 export MODULEPATH=/home/barriern/work_marbec/marbec_module/modulefiles:$MODULEPATH
 ```
 
@@ -61,13 +59,66 @@ Ceci vous permettra d'accèder à des modules supplémentaires compilés par les
 
 Sur ISDM-MESO, les dossiers sont organisés de la manière suivante (cf. [documentation](https://docs.meso.umontpellier.fr/fr/HPC/CLUSTER/cluster-io-specifications#_syst%C3%A8mes_de_fichiers_et_stockage))
 
-- le dossier `$HOME` (180Go), dossier personnel qui contient les code source, scripts, petits fichiers de conf/résultats, logiciels perso (conda envs…​).
-- le dossier `/scratch/users/LOGIN`, qui est un espace de travail personnel temporaire pour les données des jobs en cours. Il permet des I/O intensifs, gros fichiers temporaires/résultats intermédiaires (remplacer `LOGIN` par votre login)
-- les dossiers `/scratch/projects/PROJET`, qui sont des espaces  de travail partagés temporaire pour les données des jobs en cours. Il permet des I/O intensifs, gros fichiers temporaires/résultats intermédiaires (remplacer `PROJET` par un nom de projet auquel vous êtes associé)
-- les dossiers `/storage/simple/projects/` qui sont des espaces  de stockage partagés pour des données communes à conserver longtemps (sorties de modeles, forcages, etc.)
+-   le dossier `$HOME` (180Go), dossier personnel qui contient les code source, scripts, petits fichiers de conf/résultats, logiciels perso (conda envs…​).
+-   le dossier `/scratch/users/LOGIN`, qui est un espace de travail personnel temporaire pour les données des jobs en cours. Il permet des I/O intensifs, gros fichiers temporaires/résultats intermédiaires (remplacer `LOGIN` par votre login)
+-   les dossiers `/scratch/projects/PROJET`, qui sont des espaces de travail partagés temporaire pour les données des jobs en cours. Il permet des I/O intensifs, gros fichiers temporaires/résultats intermédiaires (remplacer `PROJET` par un nom de projet auquel vous êtes associé)
+-   les dossiers `/storage/simple/projects/` qui sont des espaces de stockage partagés pour des données communes à conserver longtemps (sorties de modeles, forcages, etc.)
 
-::: {.callout-warning}
-
+::: callout-warning
 Les données des espaces temporaires (`scratch`) sont supprimés tous les 2 mois. Il ne faut pas stocker de données dans ces espaces
-
 :::
+
+### Soumission de jobs
+
+La soumission de jobs est gérée par l'ordonnanceur SLURM.
+
+#### Job non interactif
+
+La soumission d'un job non interactif se fait via l'écriture d'un fichier de soumission de job (format `.slurm`), de cette forme là:
+
+``` bash
+##!/bin/bash
+
+#SBATCH --job-name=orca2_fishing
+#SBATCH --time=160:00:00
+#SBATCH --ntasks=168
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=128G
+#SBATCH --partition cpu-dedicated
+#SBATCH --account=dedicated-cpu@marbec-scenlab
+#SBATCH --qos=dedicated
+
+export MODULEPATH=/home/barriern/work_marbec/marbec_module/modulefiles:$MODULEPATH
+module purge
+module load io-local
+module load openmpi/psm2/gcc75/3.1.6
+module load netcdf
+
+cd /scratch/users/barriern/
+srun program.exe
+```
+
+- Les lignes commencant par `#SBATCH` sont les reglages du job (et non des commentaires!). La description des parametres est fournie @tbl-slurm-params.
+- Ensuite, les modules utilisés par le job sont chargés
+- Puis on se deplace un des espaces de travail temporaires (`/scratch`)
+- Et enfin on lance le job parallèle avec la commande `srun`.
+
+:::{.callout-warning}
+
+Un job soumis ne pourra écrire que dans un espace `/scratch`. Si le job est execute dans un autre espace, alors les fichiers
+de sortie ne seront pas ecrits
+
+::::
+
+| Parametre         | Description                  |
+|-------------------|------------------------------|
+| `--job-name`      | Nom du job                   |
+| `--time`          | Walltime demande pour le job |
+| `--ntasks`        | Nombre de processus demandés |
+| `--cpus-per-task` | Nombre de coeurs par tâche   |
+| `--mem`           | Mémoire demandé              |
+| `--partition`     | Partition pour le calcul     |
+| `--account`       | Compte pour le calcul        |
+| `--qos`           | QOS utilise                  |
+
+: Description des parametres d'un job SLURM {#tbl-slurm-params}
